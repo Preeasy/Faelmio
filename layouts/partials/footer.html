@@ -1,0 +1,111 @@
+<div class="footer custom-footer">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <strong>Faelmio | Yiwu Toy Sourcing Agent</strong>
+      <p>Yiwu toy sourcing agent for B2B buyers worldwide.</p>
+    </div>
+    <div class="footer-col">
+      <strong>Contact Us</strong>
+      <ul>
+        <li>Email: <a href="mailto:etruetrading@gmail.com">etruetrading@gmail.com</a></li>
+        <li>WhatsApp: <a href="https://wa.me/86xxxxxxxx" target="_blank" rel="noopener noreferrer">+86xxxxxxxx</a></li>
+        <li>Address: Yiwu International Trade City, Zhejiang, China</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <strong>Quick Links</strong>
+      <ul>
+        <li><a href="{{ "/toys/" | absLangURL }}">Products</a></li>
+        <li><a href="{{ "/custom-toy-oem/" | absLangURL }}">Services</a></li>
+        <li><a href="{{ "/about/" | absLangURL }}">About</a></li>
+        <li><a href="https://yeatru.com" target="_blank" rel="noopener noreferrer">yeatru.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© {{ now.Year }} Faelmio. All rights reserved.</span>
+    <span class="footer-credit">Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo</a> & <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a></span>
+  </div>
+</div>
+
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+let menu = document.getElementById('menu');
+if (menu) {
+    const scrollPosition = localStorage.getItem("menu-scroll-position");
+    if (scrollPosition) {
+        menu.scrollLeft = parseInt(scrollPosition, 10);
+    }
+    let menuScrollTimeout;
+    menu.addEventListener("scroll", function () {
+        clearTimeout(menuScrollTimeout);
+        menuScrollTimeout = setTimeout(function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }, 150);
+    }, { passive: true });
+}
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        var id = this.getAttribute("href").substr(1);
+        const target = document.querySelector(`[id='${decodeURIComponent(id)}']`);
+        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            target.scrollIntoView({ behavior: "smooth" });
+        } else {
+            target.scrollIntoView();
+        }
+        if (target.tabIndex < 0 && !target.hasAttribute("tabindex")) {
+            target.setAttribute("tabindex", "-1");
+        }
+        target.focus({ preventScroll: true });
+    });
+});
+</script>
+<script>
+var toplink = document.getElementById("top-link");
+var scrollTicking = false;
+window.addEventListener("scroll", function () {
+    if (scrollTicking) return;
+    scrollTicking = true;
+    requestAnimationFrame(function () {
+        const e = window.innerHeight;
+        const shown = document.body.scrollTop > e || document.documentElement.scrollTop > e;
+        toplink.classList.toggle("hidden", !shown);
+        scrollTicking = false;
+    });
+}, { passive: true });
+</script>
+<script>
+document.getElementById("theme-toggle")?.addEventListener("click", () => {
+    const html = document.querySelector("html");
+    if (html.dataset.theme === "dark") {
+        html.dataset.theme = 'light';
+        localStorage.setItem("pref-theme", 'light');
+    } else {
+        html.dataset.theme = 'dark';
+        localStorage.setItem("pref-theme", 'dark');
+    }
+});
+</script>
+<script>
+const langToggle = document.querySelector(".lang-toggle");
+const langMenu = document.querySelector(".lang-menu");
+langToggle && langMenu && (
+  langToggle.addEventListener("click", function (e) {
+    e.stopPropagation();
+    const expanded = this.getAttribute("aria-expanded") === "true";
+    this.setAttribute("aria-expanded", String(!expanded));
+    langMenu.classList.toggle("open");
+  }),
+  document.addEventListener("click", function () {
+    langToggle.setAttribute("aria-expanded", "false");
+    langMenu.classList.remove("open");
+  })
+);
+</script>

@@ -1,0 +1,105 @@
+{{- define "main" }}
+<section class="hero">
+  <div class="hero-inner">
+    <h1>{{ i18n "hero_title" | default "Faelmio | Yiwu Toy Sourcing Agent" }}</h1>
+    <p class="hero-subtitle">{{ i18n "hero_subtitle" | default "One-stop OEM Toy Sourcing, AQL QC, Consolidation & Worldwide DDP Shipping" }}</p>
+    <div class="hero-actions">
+      <a href="{{ "/contact/" | absLangURL }}" class="btn btn-primary">{{ i18n "contact_us" | default "Contact Us" }}</a>
+      <a href="{{ "/toys/" | absLangURL }}" class="btn btn-secondary">{{ i18n "view_categories" | default "View Toy Categories" }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="home-section services-section">
+  <div class="container">
+    <h2>{{ i18n "our_services" | default "Our Services" }}</h2>
+    <div class="card-grid">
+      <div class="card service-card">
+        <h3>{{ i18n "service_supplier" | default "Supplier Verification & Price Negotiation" }}</h3>
+        <p>{{ i18n "service_supplier_desc" | default "We audit factories, verify licenses and negotiate MOQ & price on your behalf." }}</p>
+      </div>
+      <div class="card service-card">
+        <h3>{{ i18n "service_aql" | default "AQL Level II Pre-shipment Inspection" }}</h3>
+        <p>{{ i18n "service_aql_desc" | default "Acceptable Quality Level inspections before every shipment to protect your brand." }}</p>
+      </div>
+      <div class="card service-card">
+        <h3>{{ i18n "service_onsite" | default "On-site Factory QC (Zhejiang & Guangdong)" }}</h3>
+        <p>{{ i18n "service_onsite_desc" | default "Local inspectors visit production lines and test samples against your specs." }}</p>
+      </div>
+      <div class="card service-card">
+        <h3>{{ i18n "service_warehouse" | default "15 Days Free Warehouse Consolidation" }}</h3>
+        <p>{{ i18n "service_warehouse_desc" | default "Combine orders from multiple suppliers into one efficient shipment." }}</p>
+      </div>
+      <div class="card service-card">
+        <h3>{{ i18n "service_oem" | default "OEM Sampling & Molding Management" }}</h3>
+        <p>{{ i18n "service_oem_desc" | default "From prototype to mass production, we manage tooling, samples and revisions." }}</p>
+      </div>
+      <div class="card service-card">
+        <h3>{{ i18n "service_logistics" | default "Global DDP Logistics to EU, USA, Latin America, Japan" }}</h3>
+        <p>{{ i18n "service_logistics_desc" | default "Door-to-door delivery with customs clearance to EU, USA, Latin America and Japan." }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="home-section categories-section">
+  <div class="container">
+    <h2>{{ i18n "product_categories" | default "Product Categories" }}</h2>
+    <div class="card-grid categories-grid">
+      <a href="{{ "/toys/plush-toys/" | absLangURL }}" class="card category-card">
+        <img src="https://images.faelmio.com/toys/plush-toys/plush-toys.webp" alt="Plush Toys" loading="lazy">
+        <h3>{{ i18n "cat_plush" | default "Plush Toys" }}</h3>
+      </a>
+      <a href="{{ "/toys/educational-stem-toys/" | absLangURL }}" class="card category-card">
+        <img src="https://images.faelmio.com/toys/educational-stem-toys/educational-stem-toys.webp" alt="Educational & STEM Toys" loading="lazy">
+        <h3>{{ i18n "cat_educational" | default "Educational & STEM Toys" }}</h3>
+      </a>
+      <a href="{{ "/toys/fidget-sensory-toys/" | absLangURL }}" class="card category-card">
+        <img src="https://images.faelmio.com/toys/fidget-sensory-toys/fidget-sensory-toys.webp" alt="Fidget & Sensory Toys" loading="lazy">
+        <h3>{{ i18n "cat_fidget" | default "Fidget & Sensory Toys" }}</h3>
+      </a>
+      <a href="{{ "/toys/dolls-action-figures/" | absLangURL }}" class="card category-card">
+        <img src="https://images.faelmio.com/toys/dolls-action-figures/dolls-action-figures.webp" alt="Dolls & Action Figures" loading="lazy">
+        <h3>{{ i18n "cat_dolls" | default "Dolls & Action Figures" }}</h3>
+      </a>
+      <a href="{{ "/toys/rc-electronic-toys/" | absLangURL }}" class="card category-card">
+        <img src="https://images.faelmio.com/toys/rc-electronic-toys/rc-electronic-toys.webp" alt="RC & Electronic Toys" loading="lazy">
+        <h3>{{ i18n "cat_rc" | default "RC & Electronic Toys" }}</h3>
+      </a>
+      <a href="{{ "/toys/party-promotional-toys/" | absLangURL }}" class="card category-card">
+        <img src="https://images.faelmio.com/toys/party-promotional-toys/party-promotional-toys.webp" alt="Party & Promotional Toys" loading="lazy">
+        <h3>{{ i18n "cat_party" | default "Party & Promotional Toys" }}</h3>
+      </a>
+      <a href="{{ "/toys/outdoor-water-toys/" | absLangURL }}" class="card category-card">
+        <img src="https://images.faelmio.com/toys/outdoor-water-toys/outdoor-water-toys.webp" alt="Outdoor & Water Toys" loading="lazy">
+        <h3>{{ i18n "cat_outdoor" | default "Outdoor & Water Toys" }}</h3>
+      </a>
+      <a href="{{ "/custom-toy-oem/" | absLangURL }}" class="card category-card">
+        <img src="https://images.faelmio.com/custom-toy-oem/custom-toy-oem.webp" alt="Custom Toy OEM" loading="lazy">
+        <h3>{{ i18n "cat_oem" | default "Custom Toy OEM" }}</h3>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="home-section advantages-section">
+  <div class="container">
+    <h2>{{ i18n "our_advantages" | default "Our Advantages" }}</h2>
+    <ul class="advantage-list">
+      <li><strong>{{ i18n "adv_experience" | default "17 Years Yiwu Foreign Trade Experience" }}</strong> — {{ i18n "adv_experience_desc" | default "Deep knowledge of Yiwu toy markets and supply chains." }}</li>
+      <li><strong>{{ i18n "adv_team" | default "Local Team On-site in China" }}</strong> — {{ i18n "adv_team_desc" | default "Bilingual staff on the ground for negotiation and QC." }}</li>
+      <li><strong>{{ i18n "adv_fees" | default "Transparent & Fixed Service Fees" }}</strong> — {{ i18n "adv_fees_desc" | default "Clear commission structure with no hidden charges." }}</li>
+      <li><strong>{{ i18n "adv_qc" | default "Strict QC & CE/EN71/ASTM/GPSR Compliance" }}</strong> — {{ i18n "adv_qc_desc" | default "CE, EN71, ASTM, CPSIA, GPSR compliance support." }}</li>
+      <li><strong>{{ i18n "adv_moq" | default "Low MOQ for Small Amazon Sellers" }}</strong> — {{ i18n "adv_moq_desc" | default "Flexible minimums for startups and small businesses." }}</li>
+    </ul>
+  </div>
+</section>
+
+<section class="home-section cta-section">
+  <div class="container">
+    <h2>{{ i18n "cta_title" | default "Ready to source toys from Yiwu?" }}</h2>
+    <p>{{ i18n "cta_subtitle" | default "Tell us what you need and get a free quote within 24 hours." }}</p>
+    <a href="{{ "/contact/" | absLangURL }}" class="btn btn-primary">{{ i18n "get_quote" | default "Get a Free Quote" }}</a>
+  </div>
+</section>
+{{- end }}

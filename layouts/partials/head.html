@@ -1,0 +1,72 @@
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{{- if hugo.IsProduction | or (eq site.Params.env "production") | and (ne .Params.robotsNoIndex true) }}
+<meta name="robots" content="index, follow">
+{{- else }}
+<meta name="robots" content="noindex, nofollow">
+{{- end }}
+
+{{- /* Title */}}
+<title>{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ site.Title }}</title>
+
+{{- /* Meta */}}
+{{- if .IsHome }}
+{{ with site.Params.keywords -}}<meta name="keywords" content="{{- range $i, $e := . }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}">{{ end }}
+{{- else }}
+<meta name="keywords" content="{{ if .Params.keywords -}}
+    {{- range $i, $e := .Params.keywords }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} {{- else }}
+    {{- range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} {{- end -}}">
+{{- end }}
+<meta name="description" content="{{- with .Description }}{{ . }}{{- else }}{{- if or .IsPage .IsSection}}
+    {{- .Summary | default (printf "%s - %s" .Title site.Title) }}{{- else }}
+    {{- with site.Params.description }}{{ . }}{{- end }}{{- end }}{{- end -}}">
+<meta name="author" content="{{ site.Params.author }}">
+<link rel="canonical" href="{{ if .Params.canonicalURL -}} {{ trim .Params.canonicalURL " " }} {{- else -}} {{ .Permalink }} {{- end }}">
+
+{{- /* Styles */}}
+{{- $theme_vars := (resources.Get "css/core/theme-vars.css") }}
+{{- $reset := (resources.Get "css/core/reset.css") }}
+{{- $media := (resources.Get "css/core/zmedia.css") }}
+{{- $license_css := (resources.Get "css/core/license.css") }}
+{{- $common := (resources.Match "css/common/*.css") | resources.Concat "assets/css/common.css" }}
+
+{{- $chroma_styles := (resources.Get "css/includes/chroma-styles.css") }}
+{{- $chroma_mod := (resources.Get "css/includes/chroma-mod.css") }}
+
+{{- $core := (slice $theme_vars $reset $common $chroma_styles $chroma_mod $media) | resources.Concat "assets/css/core.css" | resources.Minify }}
+{{- $extended := (resources.Match "css/extended/*.css") | resources.Concat "assets/css/extended.css" | resources.Minify }}
+
+{{- $stylesheet := (slice $license_css $core $extended) | resources.Concat "assets/css/stylesheet.css" }}
+
+{{- if not site.Params.assets.disableFingerprinting }}
+{{- $stylesheet := $stylesheet | fingerprint }}
+<link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" integrity="{{ $stylesheet.Data.Integrity }}" rel="preload stylesheet" as="style">
+{{- else }}
+<link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" rel="preload stylesheet" as="style">
+{{- end }}
+
+{{- /* Favicons */}}
+<link rel="icon" href="{{ site.Params.assets.favicon | default "favicon.ico" | absURL }}">
+<meta name="theme-color" content="{{ site.Params.assets.theme_color | default "#0F3460" }}">
+
+{{- /* hreflang */}}
+{{- range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+{{- end }}
+
+<noscript>
+    <style>
+        #theme-toggle, .top-link { display: none; }
+    </style>
+</noscript>
+
+{{- /* theme-toggle is disabled, force light */}}
+{{- if (eq site.Params.defaultTheme "light") }}
+<script>
+    document.documentElement.dataset.theme = 'light';
+</script>
+{{- end }}
+
+{{- partial "extend_head.html" . -}}
+{{- partial "schema_org.html" . }}

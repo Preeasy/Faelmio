@@ -1,0 +1,14 @@
+User-agent: *
+{{- if hugo.IsProduction | or (eq site.Params.env "production") }}
+Disallow: /tags/
+Disallow: /categories/
+Disallow: /es/tags/
+Disallow: /es/categories/
+Disallow: /ja/tags/
+Disallow: /ja/categories/
+Disallow: /*/page/
+Allow: /
+{{- else }}
+Disallow: /
+{{- end }}
+Sitemap: {{ "sitemap.xml" | absURL }}

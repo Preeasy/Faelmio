@@ -1,0 +1,528 @@
+/* ========== Faelmio Custom Styles ========== */
+:root {
+  --primary: #0F3460;
+  --primary-dark: #0a2540;
+  --primary-light: #164e8f;
+  --whatsapp-green: #25D366;
+  --bg-light: #f8f9fa;
+  --card-shadow: 0 4px 18px rgba(15, 52, 96, 0.08);
+  --card-hover-shadow: 0 8px 28px rgba(15, 52, 96, 0.14);
+}
+
+/* ========== CONTAINER ========== */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ========== HERO ========== */
+.hero {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: #fff;
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 0;
+  margin-bottom: 40px;
+}
+.hero h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff !important;
+}
+.hero-subtitle {
+  max-width: 700px;
+  margin: 0 auto 32px;
+  font-size: 1.15rem;
+  opacity: 0.92;
+  line-height: 1.6;
+}
+.hero-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* ========== BUTTONS ========== */
+.btn {
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+}
+.btn-primary {
+  background: var(--whatsapp-green);
+  color: #fff;
+}
+.btn-secondary {
+  background: #fff;
+  color: var(--primary);
+  border: 2px solid #fff;
+}
+
+/* ========== SECTIONS ========== */
+.home-section {
+  padding: 60px 20px;
+}
+.home-section h2 {
+  text-align: center;
+  color: var(--primary);
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+.home-section > .container > p.section-desc {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 36px;
+  color: #6c757d;
+}
+
+/* ========== CARD GRID ========== */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+.card {
+  background: #fff;
+  box-shadow: var(--card-shadow);
+  border-radius: 12px;
+  padding: 24px;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--card-hover-shadow);
+}
+
+/* ========== SERVICE CARDS ========== */
+.service-card {
+  text-align: center;
+  padding: 32px 24px;
+}
+.service-card h3 {
+  color: var(--primary);
+  font-size: 1.15rem;
+  margin-bottom: 12px;
+}
+.service-card p {
+  color: #6c757d;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* ========== CATEGORY CARDS ========== */
+.category-card {
+  padding: 0;
+  overflow: hidden;
+}
+.category-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+.category-card h3 {
+  text-align: center;
+  padding: 16px;
+  color: var(--primary);
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+/* ========== ADVANTAGES ========== */
+.advantage-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 760px;
+  text-align: center;
+}
+.advantage-list li {
+  background: #fff;
+  border-left: 4px solid var(--primary);
+  padding: 18px 22px;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  box-shadow: var(--card-shadow);
+  text-align: left;
+  font-weight: 500;
+  color: #333;
+}
+
+/* ========== CTA SECTION ========== */
+.cta-section {
+  background: var(--primary);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  margin: 40px 0;
+}
+.cta-section h2 {
+  color: #fff !important;
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+.cta-section p {
+  opacity: 0.9;
+  margin-bottom: 28px;
+  font-size: 1.05rem;
+}
+
+/* ========== PRODUCT CARDS (LIST PAGE) ========== */
+.product-card {
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px 12px 0 0;
+}
+.product-card-body {
+  padding: 20px;
+  flex: 1;
+}
+.product-card h3 {
+  color: var(--primary);
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+.product-card p {
+  color: #6c757d;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+/* ========== BADGES ========== */
+.badge {
+  display: inline-block;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 50px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+.badge-moq {
+  background: #e7f1ff;
+  color: var(--primary);
+}
+.badge-oem {
+  background: #e6f9ed;
+  color: #159c43;
+}
+.cert-tag {
+  display: inline-block;
+  font-size: 0.78rem;
+  color: #6c757d;
+  background: var(--bg-light);
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+
+/* ========== PRODUCT META (SINGLE PAGE) ========== */
+.product-meta {
+  background: var(--bg-light);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 24px 0;
+}
+.product-meta .meta-row {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+.product-meta .meta-item {
+  display: flex;
+  flex-direction: column;
+}
+.product-meta .meta-label {
+  font-size: 0.8rem;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+.product-meta .meta-value {
+  font-weight: 600;
+  color: var(--primary);
+}
+.inquiry-cta {
+  margin: 24px 0;
+  text-align: center;
+}
+
+/* ========== CONTACT FORM ========== */
+.contact-form {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 32px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: var(--card-shadow);
+}
+.contact-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--primary);
+  font-size: 0.95rem;
+}
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background: #fff;
+}
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(15, 52, 96, 0.1);
+}
+.contact-form button {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s;
+}
+.contact-form button:hover {
+  background: var(--primary-dark);
+}
+
+/* ========== WHATSAPP FLOAT ========== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 56px;
+  height: 56px;
+  background: var(--whatsapp-green);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
+  z-index: 9999;
+  transition: transform 0.2s;
+  text-decoration: none;
+}
+.whatsapp-float:hover {
+  transform: scale(1.08);
+  text-decoration: none;
+  color: #fff;
+}
+.whatsapp-float svg {
+  width: 28px;
+  height: 28px;
+}
+
+/* ========== LANG DROPDOWN ========== */
+.lang-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.lang-toggle {
+  background: transparent;
+  border: 1px solid currentColor;
+  border-radius: 6px;
+  padding: 4px 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: inherit;
+}
+.lang-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 6px);
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 6px 0;
+  min-width: 120px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  list-style: none;
+  margin: 0;
+}
+.lang-menu.open {
+  display: block;
+}
+.lang-menu li a {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: inherit;
+  font-size: 0.9rem;
+}
+.lang-menu li a:hover {
+  background: var(--bg-light);
+  text-decoration: none;
+}
+
+/* ========== CUSTOM FOOTER ========== */
+.custom-footer {
+  background: var(--primary);
+  color: rgba(255, 255, 255, 0.85);
+  padding: 48px 20px 24px;
+  font-size: 0.95rem;
+  margin-top: 60px;
+}
+.custom-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+.custom-footer a:hover {
+  text-decoration: underline;
+}
+.custom-footer strong {
+  color: #fff;
+  display: block;
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+}
+.custom-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.custom-footer li {
+  margin-bottom: 8px;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 32px;
+  max-width: 1100px;
+  margin: 0 auto 32px;
+}
+.footer-bottom {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  font-size: 0.88rem;
+  opacity: 0.75;
+}
+
+/* ========== HEADER NAV ========== */
+.header-nav {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.05);
+  z-index: 1000;
+}
+
+/* ========== FEE TABLE ========== */
+.fee-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: 0.95rem;
+}
+.fee-table th,
+.fee-table td {
+  border: 1px solid #e9ecef;
+  padding: 14px 16px;
+  text-align: left;
+}
+.fee-table th {
+  background: var(--primary);
+  color: #fff;
+  font-weight: 600;
+}
+.fee-table tr:nth-child(even) {
+  background: var(--bg-light);
+}
+
+/* ========== THANKS PAGE ========== */
+.thanks-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+.thanks-section h1 {
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+.thanks-section a {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+/* ========== POST CONTENT TWEAKS ========== */
+.post-content h2 {
+  color: var(--primary);
+  margin-top: 40px;
+}
+.post-content img {
+  border-radius: 12px;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .hero {
+    padding: 56px 20px;
+  }
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  .home-section {
+    padding: 40px 16px;
+  }
+  .contact-form {
+    padding: 24px 16px;
+  }
+}

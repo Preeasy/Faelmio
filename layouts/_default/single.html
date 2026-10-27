@@ -1,0 +1,45 @@
+{{- define "main" }}
+<article class="post-single">
+  <header class="post-header">
+    {{ partial "breadcrumbs.html" . }}
+    <h1 class="post-title entry-hint-parent">{{ .Title }}</h1>
+    {{- if .Description }}<div class="post-description">{{ .Description }}</div>{{- end }}
+  </header>
+
+  {{- $isHidden := (.Param "cover.hiddenInSingle") | default (.Param "cover.hidden") | default false }}
+  {{- partial "cover.html" (dict "cxt" . "IsSingle" true "isHidden" $isHidden) }}
+
+  {{- if (.Param "ShowToc") }}{{- partial "toc.html" . }}{{- end }}
+
+  {{- if or .Params.moq .Params.oem_support .Params.certifications }}
+  <div class="product-meta">
+    {{- if .Params.moq }}<div class="meta-row"><strong>{{ i18n "moq" | default "MOQ" }}:</strong> {{ .Params.moq }}</div>{{- end }}
+    {{- if .Params.oem_support }}<div class="meta-row"><strong>{{ i18n "oem_support" | default "OEM Support" }}:</strong> {{ i18n "yes" | default "Yes" }}</div>{{- end }}
+    {{- if .Params.certifications }}
+    <div class="meta-row"><strong>{{ i18n "certifications" | default "Certifications" }}:</strong>
+      {{- range .Params.certifications }}<span class="cert-tag">{{ . }}</span>{{- end }}
+    </div>{{- end }}
+    {{- if .Params.tags }}
+    <div class="meta-row"><strong>{{ i18n "tags" | default "Tags" }}:</strong>
+      {{- range .Params.tags }}<span class="cert-tag">{{ . }}</span>{{- end }}
+    </div>{{- end }}
+  </div>
+  {{- end }}
+
+  <div class="inquiry-cta">
+    <a href="{{ "/contact/" | absLangURL }}?product={{ .Title | urlquery }}" class="btn btn-primary">{{ i18n "send_inquiry" | default "Send Inquiry" }}</a>
+  </div>
+
+  {{- if .Content }}
+  <div class="post-content md-content">
+    {{- partial "anchored_headings.html" .Content -}}
+  </div>
+  {{- end }}
+
+  <footer class="post-footer">
+    {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}
+    <ul class="post-tags">{{- range ($.GetTerms $tags) }}<li><a href="{{ .Permalink }}">{{ .LinkTitle }}</a></li>{{- end }}</ul>
+    {{- if (.Param "ShowPostNavLinks") }}{{- partial "post_nav_links.html" . }}{{- end }}
+  </footer>
+</article>
+{{- end }}
