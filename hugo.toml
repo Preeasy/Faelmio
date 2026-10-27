@@ -1,0 +1,157 @@
+baseURL = "https://www.faelmio.com"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+languageCode = "en-us"
+title = "Faelmio | Yiwu Toy Sourcing Agent"
+theme = "PaperMod"
+enableRobotsTXT = true
+enableEmoji = true
+enableInlineShortcodes = true
+paginate = 12
+paginatePath = "page"
+
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+page = ["HTML"]
+section = ["HTML", "RSS"]
+
+[minify]
+disableCSS = false
+disableHTML = false
+disableJS = false
+disableJSON = false
+
+[sitemap]
+changefreq = "weekly"
+filename = "sitemap.xml"
+priority = 0.5
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+[Languages]
+[Languages.en]
+languageName = "English"
+languageCode = "en-us"
+weight = 1
+[Languages.en.menu]
+[[Languages.en.menu.main]]
+name = "Home"
+url = "/"
+weight = 1
+[[Languages.en.menu.main]]
+name = "Products"
+url = "/toys/"
+weight = 2
+[[Languages.en.menu.main]]
+name = "Service"
+url = "/custom-toy-oem/"
+weight = 3
+[[Languages.en.menu.main]]
+name = "About"
+url = "/about/"
+weight = 4
+[[Languages.en.menu.main]]
+name = "Contact"
+url = "/contact/"
+weight = 5
+
+[Languages.es]
+languageName = "Español"
+languageCode = "es"
+weight = 2
+[Languages.es.menu]
+[[Languages.es.menu.main]]
+name = "Inicio"
+url = "/es/"
+weight = 1
+[[Languages.es.menu.main]]
+name = "Productos"
+url = "/es/toys/"
+weight = 2
+[[Languages.es.menu.main]]
+name = "Servicio"
+url = "/es/custom-toy-oem/"
+weight = 3
+[[Languages.es.menu.main]]
+name = "Nosotros"
+url = "/es/about/"
+weight = 4
+[[Languages.es.menu.main]]
+name = "Contacto"
+url = "/es/contact/"
+weight = 5
+
+[Languages.ja]
+languageName = "日本語"
+languageCode = "ja"
+weight = 3
+[Languages.ja.menu]
+[[Languages.ja.menu.main]]
+name = "ホーム"
+url = "/ja/"
+weight = 1
+[[Languages.ja.menu.main]]
+name = "製品"
+url = "/ja/toys/"
+weight = 2
+[[Languages.ja.menu.main]]
+name = "サービス"
+url = "/ja/custom-toy-oem/"
+weight = 3
+[[Languages.ja.menu.main]]
+name = "会社概要"
+url = "/ja/about/"
+weight = 4
+[[Languages.ja.menu.main]]
+name = "お問い合わせ"
+url = "/ja/contact/"
+weight = 5
+
+[params]
+env = "production"
+title = "Faelmio | Yiwu Toy Sourcing Agent"
+description = "Professional Yiwu toy sourcing agent for B2B buyers. OEM custom toys, AQL QC, consolidation and DDP shipping to EU, USA, Latin America and Japan."
+keywords = ["Yiwu toy sourcing agent", "toy sourcing China", "OEM toy manufacturer", "wholesale toys Yiwu", "Amazon FBA toy supplier", "plush toys wholesale", "educational toys sourcing", "fidget toys supplier"]
+author = "Faelmio"
+images = ["https://images.faelmio.com/social/faelmio-og.jpg"]
+DateFormat = "January 2, 2006"
+defaultTheme = "light"
+disableThemeToggle = true
+ShowReadingTime = false
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = false
+ShowWordCount = false
+ShowRssButtonInSectionTermList = false
+UseHugoToc = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = false
+hidemeta = true
+hideSummary = false
+showtoc = true
+tocopen = false
+copyright = "© 2026 Faelmio. All rights reserved."
+
+[params.assets]
+disableFingerprinting = true
+favicon = "https://images.faelmio.com/favicon.ico"
+
+[params.schema]
+publisherType = "WholesaleStore"
+
+[privacy]
+[privacy.disqus]
+disable = true
+[privacy.googleAnalytics]
+disable = true
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
+[markup.highlight]
+noclasses = false
+style = "github"
