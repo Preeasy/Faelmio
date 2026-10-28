@@ -7,10 +7,10 @@ oem:
   eyebrow: "Custom Toy OEM"
   lede: "Bring your own toy line to life. We run design, tooling, sampling and mass production in Yiwu — one accountable partner from first sketch to delivered carton."
   facts:
-    - value: "8–12%"
-      label: "OEM service fee"
-    - value: "500 pcs"
-      label: "Typical MOQ"
+    - value: "From 100 pcs"
+      label: "Low MOQ"
+    - value: "AQL Level II"
+      label: "On-site quality control"
     - value: "25–45 days"
       label: "Sample to shipment"
   journey:
@@ -36,17 +36,6 @@ oem:
 5. Goods consolidation with 15 days free warehouse storage
 6. OEM project management & sample tracking
 7. Global shipping & DDP door-to-door delivery
-
-## Fee structure
-
-| Service | Fee |
-| --- | --- |
-| Normal bulk purchase | **5% – 8%** of goods value |
-| OEM custom toy order | **8% – 12%** of goods value |
-| Cross-category items (e.g. wigs) | fixed **5%** |
-| Small order handling | **$50** per order |
-| Monthly minimum service charge | **$100** |
-| Sample cost | **$50** per sample |
 
 ## Compliance support
 

@@ -27,7 +27,7 @@ There are three main paths:
 
 **Use B2B platforms.** Alibaba.com and Made-in-China.com have thousands of Yiwu-listed toy suppliers. Filter by "Verified Gold Supplier" and request factory audit reports before ordering samples. Be wary of suppliers with generic product photos and no company location details.
 
-**Work with a local agent.** A reliable sourcing agent based in Yiwu will save you months of trial and error. They maintain direct factory relationships, can negotiate 30–50% lower MOQs, and handle on-site QC during production. Most agents charge 5–8% commission with no hidden fees.
+**Work with a local agent.** A reliable sourcing agent based in Yiwu will save you months of trial and error. They maintain direct factory relationships, can negotiate 30–50% lower MOQs, and handle on-site QC during production.
 
 ## Avoiding Common Pitfalls
 The biggest mistake new buyers make is ordering blind. Always:
@@ -37,6 +37,6 @@ The biggest mistake new buyers make is ordering blind. Always:
 4. **Clarify Incoterms.** FOB Yiwu is standard; beware suppliers quoting EXW who expect you to handle local transport and export customs.
 
 ## Working with a Sourcing Agent
-A good sourcing agent provides end-to-end service: supplier shortlisting, price negotiation, sample management, factory QC, consolidation and DDP shipping. The best agents have bilingual staff on the ground, maintain relationships with 200+ verified factories, and offer transparent fee structures. For most buyers, the agent's commission pays for itself in lower prices, better MOQs and avoided shipping delays.
+A good sourcing agent provides end-to-end service: supplier shortlisting, price negotiation, sample management, factory QC, consolidation and DDP shipping. The best agents have bilingual staff on the ground and maintain relationships with 200+ verified factories. For most buyers, working with a local agent delivers better prices, better MOQs and avoided shipping delays.
 
 Yiwu toy sourcing rewards preparation. Come with clear specifications, reasonable MOQ expectations and a budget for samples, and you'll find suppliers that deliver quality toys at prices that let you compete in Amazon, retail and wholesale channels.

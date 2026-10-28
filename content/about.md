@@ -18,8 +18,8 @@ about:
   mission: "To make it possible for toy brands of any size to source confidently from China — with the quality control, compliance paperwork and logistics normally reserved for the largest importers."
   values:
     - kicker: "Transparency"
-      title: "Fixed service fees, no hidden charges"
-      desc: "5–8% for bulk orders, 8–12% for OEM. We publish our fees upfront and honour them."
+      title: "Clear communication, no surprises"
+      desc: "We quote real landed cost — one number that covers factory price, QC, consolidation and DDP shipping. No add-ons later."
     - kicker: "On-site QC"
       title: "Local inspectors in Zhejiang & Guangdong"
       desc: "Every AQL report is signed by an inspector who was physically on the production line."

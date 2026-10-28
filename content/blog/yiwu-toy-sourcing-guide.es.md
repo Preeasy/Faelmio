@@ -24,4 +24,4 @@ Tres caminos principales: visitar el mercado, usar plataformas B2B (Alibaba.com,
 Siempre solicite licencias de fábrica verificables, pida muestras antes del volumen, inspeccione antes del envío y aclare los Incoterms. El error más grande que cometen los nuevos compradores es ordenar a ciegas.
 
 ## Trabajar con un Agente
-Un buen agente proporciona servicio integral: selección de proveedores, negociación de precios, gestión de muestras, QC de fábrica, consolidación y envío DDP. La comisión se paga sola con precios más bajos y mejores MOQs.
+Un buen agente proporciona servicio integral: selección de proveedores, negociación de precios, gestión de muestras, QC de fábrica, consolidación y envío DDP. Para la mayoría de compradores, trabajar con un agente local se traduce en mejores precios, mejores MOQs y menos retrasos de envío.

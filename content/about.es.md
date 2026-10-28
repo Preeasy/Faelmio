@@ -17,8 +17,8 @@ about:
   mission: "Hacer posible que marcas de juguetes de cualquier tamaño se abastezcan con confianza desde China — con el control de calidad, el cumplimiento y la logística normalmente reservados a los importadores más grandes."
   values:
     - kicker: "Transparencia"
-      title: "Tarifas de servicio fijas, sin cargos ocultos"
-      desc: "5–8% para pedidos a granel, 8–12% para OEM. Publicamos nuestras tarifas por adelantado y las cumplimos."
+      title: "Comunicación clara, sin sorpresas"
+      desc: "Cotizamos el costo real de entrega — un número que incluye precio de fábrica, QC, consolidación y envío DDP. Sin cargos adicionales después."
     - kicker: "QC en sitio"
       title: "Inspectores locales en Zhejiang y Guangdong"
       desc: "Cada informe AQL está firmado por un inspector que estuvo físicamente en la línea de producción."

@@ -7,10 +7,10 @@ oem:
   eyebrow: "OEM de Juguetes"
   lede: "Da vida a tu propia línea de juguetes. Gestionamos diseño, moldes, muestras y producción en serie en Yiwu — un solo socio responsable desde el primer boceto hasta el cartón entregado."
   facts:
-    - value: "8–12%"
-      label: "Tarifa de servicio OEM"
-    - value: "500 pzs"
-      label: "MOQ habitual"
+    - value: "Desde 100 pzs"
+      label: "MOQ bajo"
+    - value: "Nivel II AQL"
+      label: "Control de calidad en sitio"
     - value: "25–45 días"
       label: "De muestra a embarque"
   journey:
@@ -36,17 +36,6 @@ oem:
 5. Consolidación de mercancías con 15 días de almacenamiento gratuito
 6. Gestión de proyectos OEM y seguimiento de muestras
 7. Envío global y entrega puerta a puerta DDP
-
-## Estructura de tarifas
-
-| Servicio | Tarifa |
-| --- | --- |
-| Compra al por mayor normal | **5% – 8%** del valor de la mercancía |
-| Pedido OEM personalizado | **8% – 12%** del valor de la mercancía |
-| Artículos de otra categoría (p. ej. pelucas) | fijo **5%** |
-| Gestión de pedido pequeño | **$50** por pedido |
-| Cargo mínimo mensual | **$100** |
-| Costo de muestra | **$50** por muestra |
 
 ## Soporte de cumplimiento
 
