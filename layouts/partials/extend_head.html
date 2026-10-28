@@ -1,1 +1,2 @@
-<link rel="stylesheet" href="{{ "/css/custom.min.css" | absURL }}">
+{{- /* Custom head additions. Extended CSS is bundled automatically from assets/css/extended/. */ -}}
+{{- with site.Params.extend_head }}{{ . | safeHTML }}{{ end }}

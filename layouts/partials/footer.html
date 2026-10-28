@@ -109,3 +109,15 @@ langToggle && langMenu && (
   })
 );
 </script>
+<script>
+/* Graceful fallback for images that are not yet uploaded to R2 */
+function markMissing(img) {
+  img.classList.add("img-missing");
+  var card = img.closest(".category-card, .hero-visual, .post-cover");
+  if (card) card.classList.add("img-missing-parent");
+}
+document.querySelectorAll("img").forEach(function (img) {
+  if (img.complete && img.naturalWidth === 0) markMissing(img);
+  img.addEventListener("error", function () { markMissing(img); });
+});
+</script>
