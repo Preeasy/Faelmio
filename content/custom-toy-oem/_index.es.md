@@ -1,22 +1,53 @@
 ---
-title: "Nuestros Servicios y Estructura de Tarifas"
-description: "Tarifas de servicio transparentes para abastecimiento de juguetes en Yiwu, OEM, QC AQL y envío DDP mundial."
+title: "OEM de Juguetes Personalizado — Del Boceto al Estante"
+description: "Fabricación de juguetes personalizados en Yiwu: diseño 3D, prototipos, moldes, muestras, producción en serie, QC AQL y entrega DDP."
 cover:
   image: "https://images.faelmio.com/custom-toy-oem/custom-toy-oem.webp"
+oem:
+  eyebrow: "OEM de Juguetes"
+  lede: "Da vida a tu propia línea de juguetes. Gestionamos diseño, moldes, muestras y producción en serie en Yiwu — un solo socio responsable desde el primer boceto hasta el cartón entregado."
+  facts:
+    - value: "8–12%"
+      label: "Tarifa de servicio OEM"
+    - value: "500 pzs"
+      label: "MOQ habitual"
+    - value: "25–45 días"
+      label: "De muestra a embarque"
+  journey:
+    - title: "Concepto y diseño 3D"
+      desc: "Tu boceto, referencia o mood board se convierte en un archivo 3D fabricable."
+    - title: "Muestra prototipo"
+      desc: "Muestra hecha a mano o impresa en 3D para revisar forma, tamaño y seguridad."
+    - title: "Moldes y utillaje"
+      desc: "Moldes de acero o suaves fabricados en talleres asociados, con control de versiones."
+    - title: "Inspección de primera pieza"
+      desc: "Verificación dimensional, de material y de seguridad antes de producir."
+    - title: "Lote de preproducción"
+      desc: "100–500 pzs de prueba para tu aprobación final."
+    - title: "Producción en serie y DDP"
+      desc: "Lote masivo, inspección AQL Nivel II, consolidación y entrega puerta a puerta."
 ---
-## Elementos del Servicio
+## Qué incluye
+
 1. Búsqueda de proveedores y verificación de fábricas
 2. Negociación de precios y seguimiento completo del pedido
 3. Inspección previa al envío (AQL Nivel II)
-4. Tarifa de QC en fábrica: $350/día (Guangdong), $250/día (Zhejiang)
-5. Consolidación de mercancías, 15 días de almacenamiento gratuito
+4. QC en fábrica — $350/día Guangdong, $250/día Zhejiang
+5. Consolidación de mercancías con 15 días de almacenamiento gratuito
 6. Gestión de proyectos OEM y seguimiento de muestras
 7. Envío global y entrega puerta a puerta DDP
 
-## Tarifa de Servicio
-- Compra al por mayor normal: **5% – 8%** del valor total
-- Pedido de juguetes OEM personalizados: **8% – 12%** del valor
-- Productos de pelucas (categoría cruzada): tarifa fija de **5%**
-- Tarifa de gestión de pedidos pequeños: **$50** fijos por pedido
-- Cargo mínimo mensual de servicio: **$100**
-- Costo de muestra: **$50** por muestra
+## Estructura de tarifas
+
+| Servicio | Tarifa |
+| --- | --- |
+| Compra al por mayor normal | **5% – 8%** del valor de la mercancía |
+| Pedido OEM personalizado | **8% – 12%** del valor de la mercancía |
+| Artículos de otra categoría (p. ej. pelucas) | fijo **5%** |
+| Gestión de pedido pequeño | **$50** por pedido |
+| Cargo mínimo mensual | **$100** |
+| Costo de muestra | **$50** por muestra |
+
+## Soporte de cumplimiento
+
+Cada proyecto OEM puede entregarse con las certificaciones que exige tu mercado — CE y EN71 para la UE, ASTM F963 y CPSIA para EE. UU., documentación GPSR e informes de inspección AQL Nivel II en cada lote.

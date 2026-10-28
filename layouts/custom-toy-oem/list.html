@@ -1,0 +1,116 @@
+{{- define "main" }}
+{{- $oem := .Params.oem | default dict }}
+
+<!-- ==================== OEM HERO ==================== -->
+<section class="oem-hero">
+  <div class="container">
+    <div class="oem-hero-grid">
+      <div class="oem-hero-copy">
+        <span class="section-eyebrow">{{ $oem.eyebrow | default "Custom Toy OEM" }}</span>
+        <h1>{{ .Title }}</h1>
+        <p class="oem-lede">{{ $oem.lede | default .Description }}</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="{{ "/contact/" | absLangURL }}">{{ i18n "nav_cta" | default "Get a Quote" }}</a>
+          <a class="btn btn-secondary" href="#oem-scope">{{ i18n "oem_see_fees" | default "See fee structure" }}</a>
+        </div>
+      </div>
+      {{- with $oem.facts }}
+      <div class="oem-facts">
+        {{- range . }}
+        <div class="oem-fact">
+          <strong>{{ .value }}</strong>
+          <span>{{ .label }}</span>
+        </div>
+        {{- end }}
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+<!-- ==================== JOURNEY ==================== -->
+{{- with $oem.journey }}
+<section class="home-section">
+  <div class="container">
+    <div class="section-head">
+      <div class="head-copy">
+        <span class="section-eyebrow">{{ i18n "oem_journey_eyebrow" | default "The process" }}</span>
+        <h2>{{ i18n "oem_journey_title" | default "How an OEM project runs" }}</h2>
+        <p class="section-sub">{{ i18n "oem_journey_sub" | default "Six checkpoints, each with a deliverable you sign off before we move on." }}</p>
+      </div>
+    </div>
+    <div class="oem-steps">
+      {{- range $i, $s := . }}
+      <div class="oem-step">
+        <span class="oem-step-num">{{ printf "%02d" (add $i 1) }}</span>
+        <h3>{{ $s.title }}</h3>
+        <p>{{ $s.desc }}</p>
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+{{- end }}
+
+<!-- ==================== SCOPE & FEES (markdown) ==================== -->
+<section class="home-section on-paper" id="oem-scope">
+  <div class="container">
+    <div class="section-head">
+      <div class="head-copy">
+        <span class="section-eyebrow">{{ i18n "oem_scope_eyebrow" | default "Scope & fees" }}</span>
+        <h2>{{ i18n "oem_scope_title" | default "What's included and what it costs" }}</h2>
+      </div>
+    </div>
+    <div class="post-content md-content oem-content">
+      {{- .Content -}}
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CERT STRIP ==================== -->
+<section class="cert-strip">
+  <div class="container">
+    <span class="cert-label">{{ i18n "cert_label" | default "Certifications we handle" }}</span>
+    <ul class="cert-list">
+      <li>CE</li><li>EN71</li><li>ASTM F963</li><li>CPSIA</li><li>GPSR</li><li>AQL II</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ==================== DEEP DIVES ==================== -->
+{{- with .Pages }}
+<section class="home-section tight">
+  <div class="container">
+    <div class="section-head">
+      <div class="head-copy">
+        <span class="section-eyebrow">{{ i18n "oem_deep_eyebrow" | default "Deep dives" }}</span>
+        <h2>{{ i18n "oem_deep_title" | default "Explore each stage" }}</h2>
+      </div>
+    </div>
+    <div class="oem-links">
+      {{- range . }}
+      <a class="oem-link" href="{{ .Permalink }}">
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Description | default (.Summary | plainify | truncate 120) }}</p>
+        <span class="oem-link-arrow">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </span>
+      </a>
+      {{- end }}
+    </div>
+  </div>
+</section>
+{{- end }}
+
+<!-- ==================== CTA ==================== -->
+<section class="cta-section">
+  <div class="container">
+    <h2>{{ i18n "oem_cta_title" | default "Send us your sketch — we'll quote it in <em>48 hours</em>" | safeHTML }}</h2>
+    <p>{{ i18n "oem_cta_sub" | default "Tell us the product idea, target quantity and destination market. You'll get tooling cost, unit price and a realistic timeline." }}</p>
+    <div class="cta-actions">
+      <a class="btn btn-primary" href="{{ "/contact/" | absLangURL }}">{{ i18n "nav_cta" | default "Get a Quote" }}</a>
+      <a class="btn btn-secondary" href="https://wa.me/{{ site.Params.contact.whatsapp | default "8618257499725" }}" target="_blank" rel="noopener">{{ i18n "chat_whatsapp" | default "Chat on WhatsApp" }}</a>
+    </div>
+  </div>
+</section>
+{{- end }}
