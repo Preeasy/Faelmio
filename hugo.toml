@@ -122,7 +122,7 @@ text = "Faelmio"
 
 [params.assets]
 disableFingerprinting = false
-favicon = "https://images.faelmio.com/favicon.ico"
+favicon = "/images/brand/favicon.ico"
 
 [params.schema]
 publisherType = "WholesaleStore"
