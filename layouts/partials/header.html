@@ -3,8 +3,10 @@
         <div class="logo">
             {{- $label_text := (site.Params.label.text | default site.Title) }}
             {{- if site.Title }}
-            <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)">
-                {{- $label_text -}}
+            <a href="{{ "" | absLangURL }}" accesskey="h" title="{{ $label_text }} (Alt + H)" class="logo-link">
+                <img src="{{ "images/brand/logo-faelmio.svg" | relURL }}"
+                     alt="Faelmio — Yiwu Toy Sourcing Agent"
+                     width="156" height="39" loading="eager" decoding="async">
             </a>
             {{- end }}
 

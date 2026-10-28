@@ -2,7 +2,9 @@
 <div class="footer custom-footer">
   <div class="footer-grid">
     <div class="footer-col footer-brand">
-      <div class="footer-logo">Faelmio</div>
+      <a href="{{ "" | absLangURL }}" class="footer-logo" aria-label="Faelmio home">
+        <img src="{{ "images/brand/logo-faelmio.svg" | relURL }}" alt="Faelmio" width="128" height="32" loading="lazy" decoding="async">
+      </a>
       <p>{{ i18n "footer_blurb" | default "Toy sourcing agent based in Yiwu, China — OEM development, AQL quality control, consolidation and DDP shipping for B2B buyers worldwide." }}</p>
       <div class="footer-certs">
         <span>CE</span><span>EN71</span><span>ASTM</span><span>CPSIA</span><span>GPSR</span>
