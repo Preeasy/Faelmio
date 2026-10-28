@@ -7,4 +7,4 @@ Disallow: /ja/tags/
 Disallow: /ja/categories/
 Disallow: /*/page/
 Allow: /
-Sitemap: http://localhost:1313/sitemap.xml
+Sitemap: https://www.faelmio.com/sitemap.xml
