@@ -14,23 +14,29 @@
           <a class="btn btn-secondary" href="#oem-scope">{{ i18n "oem_see_fees" | default "See fee structure" }}</a>
         </div>
       </div>
-      {{- with $oem.facts }}
-      <div class="oem-facts">
-        {{- range . }}
-        <div class="oem-fact">
-          <strong>{{ .value }}</strong>
-          <span>{{ .label }}</span>
+      <div class="oem-hero-media">
+        <div class="oem-hero-img">
+          <img src="{{ "images/oem/oem-workshop.jpg" | relURL }}" alt="OEM workshop in Yiwu" loading="eager">
+          <span class="oem-hero-badge">{{ i18n "oem_badge" | default "Yiwu · Studio" }}</span>
+        </div>
+        {{- with $oem.facts }}
+        <div class="oem-facts">
+          {{- range . }}
+          <div class="oem-fact">
+            <strong>{{ .value }}</strong>
+            <span>{{ .label }}</span>
+          </div>
+          {{- end }}
         </div>
         {{- end }}
       </div>
-      {{- end }}
     </div>
   </div>
 </section>
 
 <!-- ==================== JOURNEY ==================== -->
 {{- with $oem.journey }}
-<section class="home-section">
+<section class="oem-journey">
   <div class="container">
     <div class="section-head">
       <div class="head-copy">
@@ -53,7 +59,7 @@
 {{- end }}
 
 <!-- ==================== SCOPE & FEES (markdown) ==================== -->
-<section class="home-section on-paper" id="oem-scope">
+<section class="oem-scope" id="oem-scope">
   <div class="container">
     <div class="section-head">
       <div class="head-copy">
@@ -79,7 +85,7 @@
 
 <!-- ==================== DEEP DIVES ==================== -->
 {{- with .Pages }}
-<section class="home-section tight">
+<section class="oem-deep">
   <div class="container">
     <div class="section-head">
       <div class="head-copy">

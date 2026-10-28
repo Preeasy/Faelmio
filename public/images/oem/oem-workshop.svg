@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F4EDE0"/>
+      <stop offset="1" stop-color="#E7DAC3"/>
+    </linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBF7EE"/>
+      <stop offset="1" stop-color="#E9DDC6"/>
+    </linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#D9CAAF"/>
+      <stop offset="1" stop-color="#B9A788"/>
+    </linearGradient>
+    <linearGradient id="box-coral" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F2643C"/>
+      <stop offset="1" stop-color="#C9471F"/>
+    </linearGradient>
+    <linearGradient id="box-ink" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2A3348"/>
+      <stop offset="1" stop-color="#141B2D"/>
+    </linearGradient>
+  </defs>
+  <!-- backdrop -->
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <!-- wall -->
+  <rect y="0" width="1600" height="600" fill="url(#wall)"/>
+  <!-- floor line -->
+  <rect y="600" width="1600" height="300" fill="url(#floor)"/>
+  <line x1="0" y1="600" x2="1600" y2="600" stroke="#B49F7D" stroke-width="3"/>
+  <!-- floor grid perspective -->
+  <g stroke="#A99472" stroke-width="1" opacity="0.45">
+    <line x1="200" y1="600" x2="0" y2="900"/>
+    <line x1="400" y1="600" x2="200" y2="900"/>
+    <line x1="600" y1="600" x2="400" y2="900"/>
+    <line x1="800" y1="600" x2="800" y2="900"/>
+    <line x1="1000" y1="600" x2="1200" y2="900"/>
+    <line x1="1200" y1="600" x2="1600" y2="900"/>
+  </g>
+
+  <!-- back shelf (high) -->
+  <g transform="translate(0 420)">
+    <rect x="40" y="0" width="1520" height="24" fill="#B68648"/>
+    <rect x="40" y="180" width="1520" height="24" fill="#B68648"/>
+    <rect x="60" y="24" width="16" height="156" fill="#8A5E2E"/>
+    <rect x="1524" y="24" width="16" height="156" fill="#8A5E2E"/>
+  </g>
+
+  <!-- boxes on back shelf -->
+  <g transform="translate(120 340)">
+    <rect x="0" y="0" width="120" height="80" fill="url(#box-ink)" rx="3"/>
+    <rect x="0" y="0" width="120" height="80" fill="none" stroke="#FBF7EE" stroke-opacity="0.22" stroke-width="1"/>
+    <text x="60" y="46" font-family="Fraunces, Georgia, serif" font-size="14" font-weight="700" fill="#FBF7EE" text-anchor="middle">OEM-01</text>
+  </g>
+  <g transform="translate(260 350)">
+    <rect x="0" y="0" width="100" height="70" fill="url(#box-coral)" rx="3"/>
+    <text x="50" y="42" font-family="Fraunces, Georgia, serif" font-size="13" font-weight="700" fill="#fff" text-anchor="middle">QC</text>
+  </g>
+  <g transform="translate(380 330)">
+    <rect x="0" y="0" width="140" height="90" fill="#F4B740" rx="3"/>
+    <rect x="8" y="8" width="124" height="74" fill="none" stroke="#8A6A4F" stroke-width="1" stroke-dasharray="4 4"/>
+    <text x="70" y="52" font-family="Fraunces, Georgia, serif" font-size="14" font-weight="700" fill="#5C4433" text-anchor="middle">SAMPLE A</text>
+  </g>
+
+  <!-- toy on foreground table (plush mockup) -->
+  <g transform="translate(1040 500)">
+    <!-- table -->
+    <rect x="-20" y="0" width="480" height="16" fill="#B68648" rx="2"/>
+    <rect x="0" y="16" width="12" height="100" fill="#8A5E2E"/>
+    <rect x="448" y="16" width="12" height="100" fill="#8A5E2E"/>
+    <!-- plush body -->
+    <ellipse cx="220" cy="-30" rx="80" ry="72" fill="#F4B740"/>
+    <circle cx="170" cy="-90" r="36" fill="#F4B740"/>
+    <circle cx="270" cy="-90" r="36" fill="#F4B740"/>
+    <circle cx="158" cy="-102" r="18" fill="#D99A22"/>
+    <circle cx="282" cy="-102" r="18" fill="#D99A22"/>
+    <!-- face -->
+    <circle cx="200" cy="-40" r="8" fill="#141B2D"/>
+    <circle cx="240" cy="-40" r="8" fill="#141B2D"/>
+    <path d="M208 -22 Q220 -14 232 -22" stroke="#141B2D" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <circle cx="220" cy="-4" r="12" fill="#D94E28"/>
+    <!-- tag -->
+    <rect x="292" y="-34" width="60" height="32" fill="#FBF7EE" stroke="#141B2D" stroke-width="2" transform="rotate(12 322 -18)"/>
+    <text x="322" y="-14" font-family="Inter, sans-serif" font-size="11" font-weight="700" fill="#141B2D" text-anchor="middle" transform="rotate(12 322 -18)">FAELMIO</text>
+  </g>
+
+  <!-- desk lamp glow -->
+  <g transform="translate(1200 180)">
+    <rect x="-4" y="0" width="8" height="160" fill="#2A3348"/>
+    <path d="M-50 0 L50 0 L30 -40 L-30 -40 Z" fill="#F2643C"/>
+    <ellipse cx="0" cy="440" rx="240" ry="50" fill="#F2643C" opacity="0.16"/>
+  </g>
+
+  <!-- foreground boxes -->
+  <g transform="translate(80 650)">
+    <rect x="0" y="0" width="180" height="140" fill="url(#box-ink)" rx="4"/>
+    <rect x="12" y="12" width="156" height="116" fill="none" stroke="#FBF7EE" stroke-opacity="0.22" stroke-width="1.5"/>
+    <text x="90" y="60" font-family="Fraunces, Georgia, serif" font-size="18" font-weight="700" fill="#FBF7EE" text-anchor="middle">CARTON</text>
+    <text x="90" y="82" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#F4B740" letter-spacing="2" text-anchor="middle">50 PCS</text>
+    <line x1="0" y1="70" x2="180" y2="70" stroke="#FBF7EE" stroke-opacity="0.18" stroke-width="1"/>
+  </g>
+  <g transform="translate(280 660)">
+    <rect x="0" y="0" width="150" height="130" fill="url(#box-coral)" rx="4"/>
+    <text x="75" y="72" font-family="Fraunces, Georgia, serif" font-size="16" font-weight="700" fill="#fff" text-anchor="middle">AQL QC</text>
+  </g>
+
+  <!-- tiny people silhouette -->
+  <g transform="translate(1480 600)" fill="#2A3348" opacity="0.85">
+    <circle cx="0" cy="-20" r="14"/>
+    <rect x="-12" y="-6" width="24" height="50" rx="6"/>
+    <rect x="-14" y="44" width="10" height="30"/>
+    <rect x="4" y="44" width="10" height="30"/>
+    <rect x="-28" y="0" width="14" height="36" rx="6" transform="rotate(-20 -21 18)"/>
+    <rect x="14" y="0" width="14" height="36" rx="6" transform="rotate(20 21 18)"/>
+  </g>
+</svg>
