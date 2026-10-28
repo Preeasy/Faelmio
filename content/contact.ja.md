@@ -32,6 +32,6 @@ description: "おもちゃ調達のお問い合わせ、OEM見積もり依頼を
 </form>
 
 ## 連絡先情報
-- WhatsApp: [+86 xxxxxxxx](https://wa.me/86xxxxxxxx)
+- WhatsApp: [+86 182 5749 9725](https://wa.me/8618257499725)
 - ビジネスメール: [etruetrading@gmail.com](mailto:etruetrading@gmail.com)
 - 事務所住所：中国浙江省義烏市

@@ -32,6 +32,6 @@ Envíe su consulta con fotos de productos, MOQ objetivo y especificaciones. Resp
 </form>
 
 ## Información de Contacto
-- WhatsApp: [+86 xxxxxxxx](https://wa.me/86xxxxxxxx)
+- WhatsApp: [+86 182 5749 9725](https://wa.me/8618257499725)
 - Correo Empresarial: [etruetrading@gmail.com](mailto:etruetrading@gmail.com)
 - Dirección de Oficina: Yiwu, Zhejiang, China
