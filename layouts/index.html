@@ -64,6 +64,7 @@
         (dict "title" (i18n "cat_rc" | default "RC & Electronic") "kicker" "05 · Tech toys" "img" "images/toys/rc-electronic-toys.jpg" "url" "/toys/rc-electronic-toys/")
         (dict "title" (i18n "cat_party" | default "Party & Promotional") "kicker" "06 · Seasonal" "img" "images/toys/party-promotional-toys.jpg" "url" "/toys/party-promotional-toys/")
         (dict "title" (i18n "cat_outdoor" | default "Outdoor & Water") "kicker" "07 · Summer" "img" "images/toys/outdoor-water-toys.jpg" "url" "/toys/outdoor-water-toys/")
+        (dict "title" (i18n "cat_pet" | default "Pet Toys") "kicker" "08 · Pets" "img" "images/toys/pet-toys.jpg" "url" "/toys/pet-toys/")
       -}}
       {{- range $cats }}
       <a class="cat-card" href="{{ .url | absLangURL }}">
@@ -80,7 +81,7 @@
         <img src="{{ "images/oem/oem-process.jpg" | relURL }}" alt="Custom toy OEM service" loading="lazy">
         <span class="shade"></span>
         <span class="cat-body">
-          <span class="cat-name"><span class="cat-kicker">08 · Your brand</span>{{ i18n "cat_oem" | default "Custom Toy OEM" }}</span>
+          <span class="cat-name"><span class="cat-kicker">09 · Your brand</span>{{ i18n "cat_oem" | default "Custom Toy OEM" }}</span>
           <span class="cat-arrow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </span>
       </a>

@@ -386,6 +386,88 @@ img { max-width: 100%; }
 .checklist li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.94rem; color: var(--ink-2); }
 .checklist li svg { flex-shrink: 0; color: var(--coral); margin-top: 4px; }
 
+/* ===================== OEM SERVICE PAGE ===================== */
+.oem-hero {
+  padding: 88px 0 64px; background: var(--cream);
+  border-bottom: 1px solid var(--line);
+}
+.oem-hero-grid {
+  display: grid; grid-template-columns: 1.3fr 1fr; gap: 56px; align-items: center;
+}
+.oem-hero h1 {
+  font-size: clamp(2.2rem, 4.6vw, 3.6rem);
+  line-height: 1.04; letter-spacing: -0.02em; margin: 14px 0 22px;
+}
+.oem-lede {
+  font-size: 1.12rem; line-height: 1.65;
+  color: var(--muted); margin-bottom: 30px; max-width: 560px;
+}
+.oem-facts {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;
+  background: var(--ink); color: var(--cream);
+  border-radius: var(--r-xl); padding: 30px;
+  box-shadow: var(--shadow-md);
+}
+.oem-fact {
+  text-align: center; padding: 8px 4px;
+  border-right: 1px solid rgba(251, 247, 238, 0.14);
+}
+.oem-fact:last-child { border-right: none; }
+.oem-fact strong {
+  display: block; font-family: 'Fraunces', serif;
+  font-size: clamp(1.3rem, 2.2vw, 1.7rem); font-weight: 700;
+  color: #fff; line-height: 1; margin-bottom: 6px;
+}
+.oem-fact span {
+  display: block; font-size: 0.76rem; letter-spacing: 0.14em;
+  text-transform: uppercase; color: rgba(251, 247, 238, 0.65); font-weight: 600;
+}
+
+/* 6-step journey */
+.oem-steps {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px;
+  position: relative;
+}
+.oem-step {
+  border: 1px solid var(--line);
+  background: var(--paper); border-radius: var(--r-lg);
+  padding: 28px 26px; transition: border-color var(--dur) var(--ease), transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+.oem-step:hover {
+  border-color: var(--coral); transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+.oem-step-num {
+  font-family: 'Fraunces', serif; font-size: 0.82rem; font-weight: 700;
+  letter-spacing: 0.08em; color: var(--coral);
+  display: inline-block; padding: 4px 10px;
+  background: linear-gradient(180deg, #FBE2D6, #FAD1BF);
+  border-radius: var(--r-pill); margin-bottom: 14px;
+}
+.oem-step h3 { font-size: 1.08rem; margin: 0 0 8px; font-weight: 600; }
+.oem-step p { margin: 0; font-size: 0.92rem; line-height: 1.62; color: var(--muted); }
+
+/* fee table in markdown */
+.oem-content { margin-top: 10px; }
+.oem-content h2 { margin-top: 44px; font-size: 1.46rem; letter-spacing: -0.008em; }
+.oem-content ol, .oem-content ul { padding-left: 20px; margin-bottom: 1.4em; }
+.oem-content li { margin-bottom: 0.4em; }
+
+/* sub-page deep links */
+.oem-links { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.oem-link {
+  display: block; background: var(--cream);
+  border: 1px solid var(--line); border-radius: var(--r-lg);
+  padding: 26px 26px 22px; text-decoration: none; color: inherit;
+  position: relative; overflow: hidden;
+  transition: border-color var(--dur) var(--ease), transform var(--dur) var(--ease), background var(--dur) var(--ease);
+}
+.oem-link:hover { border-color: var(--coral); transform: translateY(-4px); background: var(--paper); text-decoration: none; }
+.oem-link h3 { font-size: 1.04rem; margin: 0 0 8px; font-weight: 600; color: var(--ink); }
+.oem-link p { margin: 0 0 14px; color: var(--muted); font-size: 0.9rem; line-height: 1.6; }
+.oem-link-arrow { color: var(--coral); display: inline-flex; transition: transform var(--dur) var(--ease); }
+.oem-link:hover .oem-link-arrow { transform: translateX(4px); }
+
 /* ===================== ADVANTAGES ===================== */
 .adv-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 .adv-item {
