@@ -101,18 +101,45 @@
 
     <div class="svc-grid">
       {{- $svc := slice
-        (dict "n" "01" "t" (i18n "service_manufacturing" | default "Toy Manufacturing & Stock Supply") "d" (i18n "service_manufacturing_desc" | default "Custom toy production, OEM processing, and ready-made stock toys covering plush, STEM, fidget, RC, dolls, party and outdoor categories."))
-        (dict "n" "02" "t" (i18n "service_sourcing" | default "Sourcing & Supplier Audit") "d" (i18n "service_sourcing_desc" | default "Yiwu sourcing team shortlists factories, verifies licenses, on-site audits and negotiates MOQ and price on your behalf."))
-        (dict "n" "03" "t" (i18n "service_aql" | default "AQL Level II Pre-shipment Inspection") "d" (i18n "service_aql_desc" | default "Acceptable Quality Level random sampling before every shipment — professional third-party reports to protect your brand."))
-        (dict "n" "04" "t" (i18n "service_onsite" | default "On-site Factory QC (Zhejiang & Guangdong)") "d" (i18n "service_onsite_desc" | default "Local inspectors visit production lines during manufacturing and test samples against your specs, packaging and safety standards."))
-        (dict "n" "05" "t" (i18n "service_warehouse" | default "15-Day Free Warehouse Consolidation") "d" (i18n "service_warehouse_desc" | default "Combine orders from multiple suppliers into one efficient shipment — free storage up to 15 days, pick & pack per your SKU list."))
-        (dict "n" "06" "t" (i18n "service_logistics" | default "Global DDP Logistics to EU, USA, LATAM & Japan") "d" (i18n "service_logistics_desc" | default "Door-to-door delivery with customs clearance, duties and taxes prepaid. Direct FCL/LCL from Yiwu or Ningbo."))
+        (dict
+          "n" "01"
+          "icon" `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="22" width="22" height="20" rx="4"/><rect x="14" y="10" width="16" height="14" rx="3"/><circle cx="19" cy="17" r="1.8" fill="currentColor" stroke="none"/><circle cx="25" cy="17" r="1.8" fill="currentColor" stroke="none"/><path d="M33 34h9"/><circle cx="39" cy="34" r="3"/></svg>`
+          "t" (i18n "service_manufacturing" | default "Toy Manufacturing & Stock Supply")
+          "d" (i18n "service_manufacturing_desc" | default "Custom toy production, OEM processing, and ready-made stock toys covering plush, STEM, fidget, RC, dolls, party and outdoor categories."))
+        (dict
+          "n" "02"
+          "icon" `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="20" cy="20" r="10"/><path d="M27 27l8 8"/><path d="M9 38h22"/><path d="M12 24v14"/><path d="M22 16v14"/><path d="M12 24h12"/></svg>`
+          "t" (i18n "service_sourcing" | default "Sourcing & Supplier Audit")
+          "d" (i18n "service_sourcing_desc" | default "Yiwu sourcing team shortlists factories, verifies licenses, on-site audits and negotiates MOQ and price on your behalf."))
+        (dict
+          "n" "03"
+          "icon" `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="10" y="7" width="22" height="34" rx="3"/><path d="M14 16h14"/><path d="M14 23h14"/><path d="M14 30h9"/><path d="M36 28l-5 5-2-2"/></svg>`
+          "t" (i18n "service_aql" | default "AQL Level II Pre-shipment Inspection")
+          "d" (i18n "service_aql_desc" | default "Acceptable Quality Level random sampling before every shipment — professional third-party reports to protect your brand."))
+        (dict
+          "n" "04"
+          "icon" `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 38h26"/><path d="M9 38V18l6-4 6 4v6h4V14l7 5v19"/><path d="M15 38v-8"/><path d="M25 38v-8"/><path d="M29 14h6"/></svg>`
+          "t" (i18n "service_onsite" | default "On-site Factory QC (Zhejiang & Guangdong)")
+          "d" (i18n "service_onsite_desc" | default "Local inspectors visit production lines during manufacturing and test samples against your specs, packaging and safety standards."))
+        (dict
+          "n" "05"
+          "icon" `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17l5-4h24l5 4v20l-5 4H12l-5-4z"/><path d="M12 37V17"/><path d="M36 37V17"/><path d="M7 27h34"/><path d="M24 13v24"/></svg>`
+          "t" (i18n "service_warehouse" | default "15-Day Free Warehouse Consolidation")
+          "d" (i18n "service_warehouse_desc" | default "Combine orders from multiple suppliers into one efficient shipment — free storage up to 15 days, pick & pack per your SKU list."))
+        (dict
+          "n" "06"
+          "icon" `<svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="24" cy="24" r="14"/><path d="M10 24h28"/><path d="M24 10c6 5 6 23 0 28"/><path d="M24 10c-6 5-6 23 0 28"/><path d="M30 36h7"/><circle cx="35" cy="39" r="2" fill="currentColor" stroke="none"/><circle cx="14" cy="39" r="2" fill="currentColor" stroke="none"/></svg>`
+          "t" (i18n "service_logistics" | default "Global DDP Logistics to EU, USA, LATAM & Japan")
+          "d" (i18n "service_logistics_desc" | default "Door-to-door delivery with customs clearance, duties and taxes prepaid. Direct FCL/LCL from Yiwu or Ningbo."))
       -}}
       {{- range $svc }}
       <div class="svc-item">
-        <span class="num">{{ .n }}</span>
-        <div>
-          <h3>{{ .t }}</h3>
+        <div class="svc-icon" aria-hidden="true">{{ .icon | safeHTML }}</div>
+        <div class="svc-body">
+          <div class="svc-head">
+            <span class="num">{{ .n }}</span>
+            <h3>{{ .t }}</h3>
+          </div>
           <p>{{ .d }}</p>
         </div>
       </div>
