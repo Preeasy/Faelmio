@@ -50,18 +50,18 @@
             </li>
             {{- end }}
 
-            <li><a href="{{ "/contact/" | absLangURL }}" class="nav-cta">{{ i18n "get_quote" | default "Get a Quote" }}</a></li>
+            <li><a href="{{ "/contact/" | absLangURL }}" class="nav-cta">{{ i18n "nav_cta" | default "Get a Quote" }}</a></li>
 
             {{- if hugo.IsMultilingual }}
             <li>
                 <div class="lang-dropdown">
                     <button class="lang-toggle" aria-haspopup="true" aria-expanded="false" aria-label="Select language" onclick="this.nextElementSibling.classList.toggle('open')">
-                        {{- .Language.LanguageCode | title -}}
-                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                        {{- .Lang | upper -}}
+                        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
                     </button>
                     <ul class="lang-menu" role="menu">
                         {{- range .AllTranslations -}}
-                        <li role="none"><a href="{{ .Permalink }}" role="menuitem" lang="{{ .Lang }}">{{ .Language.LanguageCode | title }}</a></li>
+                        <li role="none"><a href="{{ .Permalink }}" role="menuitem" lang="{{ .Lang }}">{{ .Language.LanguageName }}</a></li>
                         {{- end -}}
                     </ul>
                 </div>

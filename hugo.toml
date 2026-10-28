@@ -37,15 +37,11 @@ languageCode = "en-us"
 weight = 1
 [Languages.en.menu]
 [[Languages.en.menu.main]]
-name = "Home"
-url = "/"
-weight = 1
-[[Languages.en.menu.main]]
 name = "Products"
 url = "/toys/"
 weight = 2
 [[Languages.en.menu.main]]
-name = "Service"
+name = "OEM Service"
 url = "/custom-toy-oem/"
 weight = 3
 [[Languages.en.menu.main]]
@@ -63,15 +59,11 @@ languageCode = "es"
 weight = 2
 [Languages.es.menu]
 [[Languages.es.menu.main]]
-name = "Inicio"
-url = "/es/"
-weight = 1
-[[Languages.es.menu.main]]
 name = "Productos"
 url = "/es/toys/"
 weight = 2
 [[Languages.es.menu.main]]
-name = "Servicio"
+name = "Servicio OEM"
 url = "/es/custom-toy-oem/"
 weight = 3
 [[Languages.es.menu.main]]
@@ -89,15 +81,11 @@ languageCode = "ja"
 weight = 3
 [Languages.ja.menu]
 [[Languages.ja.menu.main]]
-name = "ホーム"
-url = "/ja/"
-weight = 1
-[[Languages.ja.menu.main]]
 name = "製品"
 url = "/ja/toys/"
 weight = 2
 [[Languages.ja.menu.main]]
-name = "サービス"
+name = "OEMサービス"
 url = "/ja/custom-toy-oem/"
 weight = 3
 [[Languages.ja.menu.main]]
@@ -141,8 +129,11 @@ phone_display = "+86 182 5749 9725"
 email = "etruetrading@gmail.com"
 address = "Yiwu International Trade City, Zhejiang, China"
 
+[params.label]
+text = "Faelmio"
+
 [params.assets]
-disableFingerprinting = true
+disableFingerprinting = false
 favicon = "https://images.faelmio.com/favicon.ico"
 
 [params.schema]
