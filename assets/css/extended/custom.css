@@ -465,12 +465,57 @@ img { max-width: 100%; }
 .product-meta {
   background: var(--paper); border: 1px solid var(--line);
   border-radius: var(--r-lg); padding: 26px; margin: 26px 0;
+  box-shadow: var(--shadow-sm);
 }
-.product-meta .meta-row { display: flex; gap: 34px; flex-wrap: wrap; }
-.product-meta .meta-item { display: flex; flex-direction: column; }
+.product-meta .meta-row { display: flex; gap: 34px; flex-wrap: wrap; margin-bottom: 14px; }
+.product-meta .meta-row:last-child { margin-bottom: 0; }
+.product-meta .meta-item { display: flex; flex-direction: column; min-width: 120px; }
 .product-meta .meta-label { font-size: 0.7rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 4px; font-weight: 600; }
-.product-meta .meta-value { font-weight: 600; color: var(--ink); }
-.inquiry-cta { margin: 28px 0; }
+.product-meta .meta-value { font-weight: 600; color: var(--ink); font-size: 0.98rem; }
+.product-meta .price { color: var(--coral); font-size: 1.05rem; }
+
+/* product inquiry */
+.product-single .contact-form { margin: 22px 0 34px; }
+.product-inquiry {
+  background: var(--paper); border: 1px solid var(--line);
+  border-radius: var(--r-lg); padding: 38px 34px; margin: 40px 0 10px;
+  box-shadow: var(--shadow-sm);
+}
+.product-inquiry h3 { font-family: 'Fraunces', serif; font-size: 1.45rem; margin: 0 0 6px; letter-spacing: -0.01em; }
+.product-inquiry .inquiry-lede { color: var(--muted); margin: 0 0 22px; font-size: 0.98rem; }
+.product-inquiry .contact-form.compact { padding: 0; box-shadow: none; border: none; background: transparent; }
+.product-inquiry .contact-form.compact label { margin-bottom: 0; font-size: 0.82rem; font-weight: 600; color: var(--ink); text-transform: uppercase; letter-spacing: 0.08em; }
+.product-inquiry .contact-form.compact input,
+.product-inquiry .contact-form.compact textarea { margin-bottom: 14px; margin-top: 5px; font-size: 0.94rem; }
+.product-inquiry .form-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px 18px; margin-bottom: 6px;
+}
+.product-inquiry .form-grid label { display: flex; flex-direction: column; }
+.product-inquiry .block-label { display: block !important; margin-bottom: 0 !important; }
+
+/* card quick actions */
+.product-card .card-actions {
+  position: relative; z-index: 2;
+  display: flex; gap: 8px; margin-top: auto; padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+.product-card .card-actions a {
+  flex: 1; text-align: center; text-decoration: none;
+  padding: 8px 12px; border-radius: var(--r-pill);
+  font-size: 0.78rem; font-weight: 600; letter-spacing: 0.02em;
+  border: 1.5px solid var(--ink); color: var(--ink);
+  transition: background var(--dur) var(--ease), color var(--dur) var(--ease), border-color var(--dur) var(--ease);
+}
+.product-card .card-actions a.cta-inquiry {
+  background: var(--ink); color: var(--cream); border-color: var(--ink);
+}
+.product-card .card-actions a.cta-inquiry:hover { background: var(--coral); border-color: var(--coral); }
+.product-card .card-actions a.cta-detail { border-color: var(--line-2); }
+.product-card .card-actions a.cta-detail:hover { border-color: var(--ink); }
+.product-card .card-price {
+  font-family: 'Fraunces', serif; font-size: 1.08rem; font-weight: 600;
+  color: var(--coral); margin-bottom: 8px; letter-spacing: -0.01em;
+}
 
 .fee-table { width: 100%; border-collapse: collapse; margin: 22px 0; font-size: 0.93rem; }
 .fee-table th, .fee-table td { border-bottom: 1px solid var(--line); padding: 13px 15px; text-align: left; }
@@ -667,6 +712,8 @@ img.img-missing { display: none !important; }
   .page-header { padding-top: 34px; }
   .post-single { padding-top: 34px; }
   .contact-form { padding: 22px 18px; }
+  .product-inquiry { padding: 28px 20px; }
+  .product-inquiry .form-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
   .custom-footer { padding: 48px 0 22px; }
   .whatsapp-float { width: 52px; height: 52px; right: 16px; bottom: 16px; }

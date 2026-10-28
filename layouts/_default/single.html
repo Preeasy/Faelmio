@@ -1,5 +1,5 @@
 {{- define "main" }}
-<article class="post-single">
+<article class="post-single product-single">
   <header class="post-header">
     {{ partial "breadcrumbs.html" . }}
     <h1 class="post-title entry-hint-parent">{{ .Title }}</h1>
@@ -11,10 +11,15 @@
 
   {{- if (.Param "ShowToc") }}{{- partial "toc.html" . }}{{- end }}
 
-  {{- if or .Params.moq .Params.oem_support .Params.certifications }}
+  {{- if or .Params.moq .Params.price_range .Params.oem_support .Params.certifications .Params.fob_port .Params.lead_time }}
   <div class="product-meta">
-    {{- if .Params.moq }}<div class="meta-row"><strong>{{ i18n "moq" | default "MOQ" }}:</strong> {{ .Params.moq }}</div>{{- end }}
-    {{- if .Params.oem_support }}<div class="meta-row"><strong>{{ i18n "oem_support" | default "OEM Support" }}:</strong> {{ i18n "yes" | default "Yes" }}</div>{{- end }}
+    <div class="meta-row">
+      {{- if .Params.moq }}<div class="meta-item"><span class="meta-label">{{ i18n "moq" | default "MOQ" }}</span><span class="meta-value">{{ .Params.moq }}</span></div>{{- end }}
+      {{- if .Params.price_range }}<div class="meta-item"><span class="meta-label">{{ i18n "price_range" | default "Price Range" }}</span><span class="meta-value">{{ .Params.price_range }}</span></div>{{- end }}
+      {{- if .Params.oem_support }}<div class="meta-item"><span class="meta-label">{{ i18n "oem_support" | default "OEM Support" }}</span><span class="meta-value">{{ i18n "yes" | default "Yes" }}</span></div>{{- end }}
+      {{- if .Params.fob_port }}<div class="meta-item"><span class="meta-label">{{ i18n "fob_port" | default "FOB Port" }}</span><span class="meta-value">{{ .Params.fob_port }}</span></div>{{- end }}
+      {{- if .Params.lead_time }}<div class="meta-item"><span class="meta-label">{{ i18n "lead_time" | default "Lead Time" }}</span><span class="meta-value">{{ .Params.lead_time }}</span></div>{{- end }}
+    </div>
     {{- if .Params.certifications }}
     <div class="meta-row"><strong>{{ i18n "certifications" | default "Certifications" }}:</strong>
       {{- range .Params.certifications }}<span class="cert-tag">{{ . }}</span>{{- end }}
@@ -26,15 +31,35 @@
   </div>
   {{- end }}
 
-  <div class="inquiry-cta">
-    <a href="{{ "/contact/" | absLangURL }}?product={{ .Title | urlquery }}" class="btn btn-primary">{{ i18n "send_inquiry" | default "Send Inquiry" }}</a>
-  </div>
-
   {{- if .Content }}
   <div class="post-content md-content">
     {{- partial "anchored_headings.html" .Content -}}
   </div>
   {{- end }}
+
+  <section class="product-inquiry" id="inquiry">
+    <h3>{{ i18n "inquiry_title" | default "Inquire About This Product" }}</h3>
+    <p class="inquiry-lede">{{ i18n "inquiry_lede" | default "Share your target quantity, destination country and any customization notes. Our sourcing team replies within 24 hours." }}</p>
+    {{- $product := .Title }}
+    <form class="contact-form compact" action="https://formsubmit.co/etruetrading@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Product Inquiry | {{ .Title }} | Faelmio">
+      <input type="hidden" name="_next" value="https://www.faelmio.com/thanks/">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_honeypot" value="">
+      <input type="hidden" name="product" value="{{ .Title }}">
+      <input type="hidden" name="source_url" value="{{ .Permalink }}">
+      <div class="form-grid">
+        <label for="name">Full Name *<input type="text" id="name" name="name" required></label>
+        <label for="email">Business Email *<input type="email" id="email" name="email" required></label>
+        <label for="whatsapp">WhatsApp<input type="text" id="whatsapp" name="whatsapp"></label>
+        <label for="country">Country / Region<input type="text" id="country" name="country"></label>
+        <label for="quantity">Target Quantity<input type="text" id="quantity" name="quantity" placeholder="e.g. 5,000 pcs"></label>
+        <label for="specs">Specs / Customization<input type="text" id="specs" name="specs" placeholder="Colors, logo, packaging..."></label>
+      </div>
+      <label for="message" class="block-label">Message *<textarea id="message" name="message" rows="4" required placeholder="Tell us what you need: target MOQ, destination, customization, any special requirements..."></textarea></label>
+      <button type="submit">{{ i18n "send_inquiry" | default "Send Inquiry" }}</button>
+    </form>
+  </section>
 
   <footer class="post-footer">
     {{- $tags := .Language.Params.Taxonomies.tag | default "tags" }}

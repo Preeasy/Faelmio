@@ -29,11 +29,16 @@
     {{- else if .Summary }}
     <p>{{ .Summary | plainify | htmlUnescape | truncate 120 }}{{ if .Truncated }}...{{ end }}</p>
     {{- end }}
+    {{- if .Params.price_range }}<div class="card-price">{{ .Params.price_range }}</div>{{- end }}
     {{- if .Params.moq }}<span class="badge badge-moq">MOQ: {{ .Params.moq }}</span>{{- end }}
     {{- if .Params.oem_support }}<span class="badge badge-oem">OEM</span>{{- end }}
     {{- if .Params.certifications }}
     <div class="cert-tags">{{- range .Params.certifications }}<span class="cert-tag">{{ . }}</span>{{- end }}</div>
     {{- end }}
+    <div class="card-actions">
+      <a class="cta-detail" href="{{ .Permalink }}">{{ i18n "view_detail" | default "View Detail" }}</a>
+      <a class="cta-inquiry" href="{{ "/contact/" | absLangURL }}?product={{ .Title | urlquery }}">{{ i18n "inquiry" | default "Inquire" }}</a>
+    </div>
   </div>
   <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
 </article>
