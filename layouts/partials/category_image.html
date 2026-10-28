@@ -1,0 +1,17 @@
+{{- /* Returns a local category image path for a page based on its URL. */ -}}
+{{- $rel := .RelPermalink -}}
+{{- $map := dict
+  "plush-toys" "images/toys/plush-toys.jpg"
+  "educational-stem-toys" "images/toys/educational-stem-toys.jpg"
+  "fidget-sensory-toys" "images/toys/fidget-sensory-toys.jpg"
+  "dolls-action-figures" "images/toys/dolls-action-figures.jpg"
+  "rc-electronic-toys" "images/toys/rc-electronic-toys.jpg"
+  "party-promotional-toys" "images/toys/party-promotional-toys.jpg"
+  "outdoor-water-toys" "images/toys/outdoor-water-toys.jpg"
+  "custom-toy-oem" "images/oem/oem-process.jpg"
+-}}
+{{- $out := "" -}}
+{{- range $key, $val := $map -}}
+  {{- if in $rel $key -}}{{- $out = $val -}}{{- end -}}
+{{- end -}}
+{{- return $out -}}

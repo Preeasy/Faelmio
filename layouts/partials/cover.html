@@ -1,4 +1,5 @@
 {{- with .cxt}} {{/* Apply proper context from dict */}}
+{{- $fallback := partial "category_image.html" . }}
 {{- if (and .Params.cover.image (not $.isHidden)) }}
 <figure class="entry-cover">
     {{- $loading := cond $.IsSingle "eager" "lazy" }}
@@ -45,7 +46,7 @@
         {{- end }}
     {{- else }}
         {{- /* For absolute urls and external links, no img processing here */}}
-        <img loading="{{ $loading }}" src="{{ $imgdl }}" alt="{{ $alt }}">
+        <img loading="{{ $loading }}" src="{{ $imgdl }}" alt="{{ $alt }}"{{ with $fallback }} data-fallback="{{ . | relURL }}"{{ end }}>
     {{- end }}
 
     {{- if $addLink }}
@@ -58,6 +59,11 @@
             <figcaption>{{ . | markdownify }}</figcaption>
         {{- end }}
     {{- end }}
+
+</figure>
+{{- else if $fallback }}
+<figure class="entry-cover">
+    <img loading="{{ cond $.IsSingle "eager" "lazy" }}" src="{{ $fallback | relURL }}" alt="{{ .Title }}" />
 </figure>
 {{- end }}{{/* End image */}}
 {{- end -}}{{/* End context */ -}}

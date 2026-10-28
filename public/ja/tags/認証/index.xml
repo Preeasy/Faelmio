@@ -1,1 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>認証 on Faelmio | Yiwu Toy Sourcing Agent</title><link>https://www.faelmio.com/ja/tags/%E8%AA%8D%E8%A8%BC/</link><description>Recent content in 認証 on Faelmio | Yiwu Toy Sourcing Agent</description><image><title>Faelmio | Yiwu Toy Sourcing Agent</title><url>https://images.faelmio.com/social/faelmio-og.jpg</url><link>https://images.faelmio.com/social/faelmio-og.jpg</link></image><generator>Hugo</generator><language>ja</language><lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://www.faelmio.com/ja/tags/%E8%AA%8D%E8%A8%BC/index.xml" rel="self" type="application/rss+xml"/><item><title>おもちゃ安全認証：CE、EN71、ASTM F963、GPSR を解説</title><link>https://www.faelmio.com/ja/blog/toy-safety-certifications/</link><pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate><guid>https://www.faelmio.com/ja/blog/toy-safety-certifications/</guid><description>B2Bおもちゃ購入者が知るべき世界のおもちゃ安全認証。必要なもの、取得方法、高コストな失敗の回避法。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>認証 on Faelmio | Yiwu Toy Sourcing Agent</title>
+    <link>http://localhost:1313/ja/tags/%E8%AA%8D%E8%A8%BC/</link>
+    <description>Recent content in 認証 on Faelmio | Yiwu Toy Sourcing Agent</description>
+    <image>
+      <title>Faelmio | Yiwu Toy Sourcing Agent</title>
+      <url>https://images.faelmio.com/social/faelmio-og.jpg</url>
+      <link>https://images.faelmio.com/social/faelmio-og.jpg</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/ja/tags/%E8%AA%8D%E8%A8%BC/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>おもちゃ安全認証：CE、EN71、ASTM F963、GPSR を解説</title>
+      <link>http://localhost:1313/ja/blog/toy-safety-certifications/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/ja/blog/toy-safety-certifications/</guid>
+      <description>B2Bおもちゃ購入者が知るべき世界のおもちゃ安全認証。必要なもの、取得方法、高コストな失敗の回避法。</description>
+    </item>
+  </channel>
+</rss>

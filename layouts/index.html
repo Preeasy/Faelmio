@@ -1,114 +1,153 @@
 {{- define "main" }}
-<!-- ============ HERO ============ -->
+{{- $img := "images/hero/showroom.jpg" | relURL }}
+<!-- ==================== HERO ==================== -->
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-copy">
-      <span class="hero-eyebrow"><span class="dot"></span>{{ i18n "hero_eyebrow" | default "Yiwu · China · Since 2008" }}</span>
-      <h1>{{ i18n "hero_title" | default "Your Trusted <span class=\"accent\">Toy Sourcing</span> Partner in Yiwu" | safeHTML }}</h1>
+      <span class="hero-eyebrow">{{ i18n "hero_eyebrow" | default "Yiwu · China · Since 2008" }}</span>
+      <h1>{{ i18n "hero_title" | default "Your Trusted <em>Toy Sourcing</em> Partner in Yiwu" | safeHTML }}</h1>
       <p class="hero-subtitle">{{ i18n "hero_subtitle" | default "One-stop OEM toy sourcing, AQL Level II quality control, warehouse consolidation and worldwide DDP shipping for B2B buyers." }}</p>
       <div class="hero-actions">
         <a href="{{ "/contact/" | absLangURL }}" class="btn btn-primary">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
           {{ i18n "get_quote" | default "Get a Free Quote" }}
         </a>
         <a href="{{ "/toys/" | absLangURL }}" class="btn btn-secondary">{{ i18n "view_categories" | default "Browse Categories" }}</a>
       </div>
+      <div class="hero-trustline">
+        <span><strong>17</strong> {{ i18n "trust_years" | default "years in Yiwu" }}</span>
+        <span class="dot"></span>
+        <span><strong>500+</strong> {{ i18n "trust_factories" | default "vetted factories" }}</span>
+        <span class="dot"></span>
+        <span><strong>50+</strong> {{ i18n "trust_countries" | default "countries shipped" }}</span>
+        <span class="dot"></span>
+        <span><strong>24h</strong> {{ i18n "trust_quote" | default "quote reply" }}</span>
+      </div>
     </div>
+
     <div class="hero-visual">
-      <img src="https://images.faelmio.com/hero/toy-factory.webp" alt="Toy manufacturing and sourcing in Yiwu" loading="eager">
-      <div class="badge"><strong>AQL Level II</strong> · Pre-shipment QC</div>
+      <div class="frame">
+        <img src="{{ $img }}" alt="Faelmio toy wholesale showroom in Yiwu" loading="eager" width="1500" height="1125">
+      </div>
+      <span class="sticker is-coral s1">AQL Level II QC</span>
+      <span class="sticker is-amber s2">CE · EN71 · ASTM · CPSIA</span>
     </div>
   </div>
 
-  <div class="hero-trust">
-    <div class="stat">
-      <span class="stat-num">17<span class="unit">yrs</span></span>
-      <span class="stat-label">{{ i18n "stat_yrs" | default "Yiwu trade experience" }}</span>
-    </div>
-    <div class="stat">
-      <span class="stat-num">500<span class="unit">+</span></span>
-      <span class="stat-label">{{ i18n "stat_suppliers" | default "Vetted toy suppliers" }}</span>
-    </div>
-    <div class="stat">
-      <span class="stat-num">50<span class="unit">+</span></span>
-      <span class="stat-label">{{ i18n "stat_countries" | default "Countries shipped to" }}</span>
-    </div>
-    <div class="stat">
-      <span class="stat-num">24<span class="unit">h</span></span>
-      <span class="stat-label">{{ i18n "stat_quote" | default "Free quote response" }}</span>
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      {{- $cats := slice "Plush Toys" "Educational & STEM" "Fidget & Sensory" "Dolls & Figures" "RC & Electronic" "Party & Promotional" "Outdoor & Water" "Custom OEM" -}}
+      {{- range seq 2 }}
+        {{- range $cats }}<span>{{ . }}</span><span class="sep">◆</span>{{- end }}
+      {{- end }}
     </div>
   </div>
 </section>
 
-<!-- ============ SERVICES ============ -->
+<!-- ==================== CATEGORIES ==================== -->
+<section class="home-section" id="categories">
+  <div class="container">
+    <div class="section-head">
+      <div class="head-copy">
+        <span class="section-eyebrow">{{ i18n "cat_eyebrow" | default "Product Categories" }}</span>
+        <h2>{{ i18n "product_categories" | default "What We Source" }}</h2>
+        <p class="section-sub">{{ i18n "cat_sub" | default "Seven core toy categories plus full custom OEM — all from vetted Yiwu factories." }}</p>
+      </div>
+      <a href="{{ "/toys/" | absLangURL }}" class="section-link">{{ i18n "view_all" | default "View all products" }} →</a>
+    </div>
+
+    <div class="cat-grid">
+      {{- $cats := slice
+        (dict "title" (i18n "cat_plush" | default "Plush Toys") "kicker" "01 · Soft goods" "img" "images/toys/plush-toys.jpg" "url" "/toys/plush-toys/")
+        (dict "title" (i18n "cat_educational" | default "Educational & STEM") "kicker" "02 · Learning" "img" "images/toys/educational-stem-toys.jpg" "url" "/toys/educational-stem-toys/")
+        (dict "title" (i18n "cat_fidget" | default "Fidget & Sensory") "kicker" "03 · Trending" "img" "images/toys/fidget-sensory-toys.jpg" "url" "/toys/fidget-sensory-toys/")
+        (dict "title" (i18n "cat_dolls" | default "Dolls & Figures") "kicker" "04 · Collectible" "img" "images/toys/dolls-action-figures.jpg" "url" "/toys/dolls-action-figures/")
+        (dict "title" (i18n "cat_rc" | default "RC & Electronic") "kicker" "05 · Tech toys" "img" "images/toys/rc-electronic-toys.jpg" "url" "/toys/rc-electronic-toys/")
+        (dict "title" (i18n "cat_party" | default "Party & Promotional") "kicker" "06 · Seasonal" "img" "images/toys/party-promotional-toys.jpg" "url" "/toys/party-promotional-toys/")
+        (dict "title" (i18n "cat_outdoor" | default "Outdoor & Water") "kicker" "07 · Summer" "img" "images/toys/outdoor-water-toys.jpg" "url" "/toys/outdoor-water-toys/")
+      -}}
+      {{- range $cats }}
+      <a class="cat-card" href="{{ .url | absLangURL }}">
+        <img src="{{ .img | relURL }}" alt="{{ .title }}" loading="lazy">
+        <span class="shade"></span>
+        <span class="cat-body">
+          <span class="cat-name"><span class="cat-kicker">{{ .kicker }}</span>{{ .title }}</span>
+          <span class="cat-arrow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </span>
+      </a>
+      {{- end }}
+
+      <a class="cat-card is-oem" href="{{ "/custom-toy-oem/" | absLangURL }}">
+        <img src="{{ "images/oem/oem-process.jpg" | relURL }}" alt="Custom toy OEM service" loading="lazy">
+        <span class="shade"></span>
+        <span class="cat-body">
+          <span class="cat-name"><span class="cat-kicker">08 · Your brand</span>{{ i18n "cat_oem" | default "Custom Toy OEM" }}</span>
+          <span class="cat-arrow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SERVICES ==================== -->
+<section class="home-section on-paper">
+  <div class="container">
+    <div class="section-head">
+      <div class="head-copy">
+        <span class="section-eyebrow">{{ i18n "services_eyebrow" | default "What We Do" }}</span>
+        <h2>{{ i18n "our_services" | default "From Factory Floor to Your Door" }}</h2>
+      </div>
+      <a href="{{ "/contact/" | absLangURL }}" class="section-link">{{ i18n "talk_to_us" | default "Talk to a sourcing agent" }} →</a>
+    </div>
+
+    <div class="svc-grid">
+      {{- $svc := slice
+        (dict "n" "01" "t" (i18n "service_supplier" | default "Supplier Verification & Negotiation") "d" (i18n "service_supplier_desc" | default "We audit factories, verify licenses and negotiate MOQ and price on your behalf."))
+        (dict "n" "02" "t" (i18n "service_aql" | default "AQL Level II Pre-shipment Inspection") "d" (i18n "service_aql_desc" | default "Random sampling inspections before every shipment to protect your brand."))
+        (dict "n" "03" "t" (i18n "service_onsite" | default "On-site Factory QC") "d" (i18n "service_onsite_desc" | default "Local inspectors in Zhejiang and Guangdong visit production lines and test samples against your specs."))
+        (dict "n" "04" "t" (i18n "service_warehouse" | default "15-Day Free Consolidation") "d" (i18n "service_warehouse_desc" | default "Combine orders from multiple suppliers into one cost-efficient shipment."))
+        (dict "n" "05" "t" (i18n "service_oem" | default "OEM Sampling & Molding") "d" (i18n "service_oem_desc" | default "From prototype tooling to mass production — we manage samples, revisions and compliance."))
+        (dict "n" "06" "t" (i18n "service_logistics" | default "Global DDP Logistics") "d" (i18n "service_logistics_desc" | default "Door-to-door delivery with customs clearance to the EU, USA, Latin America and Japan."))
+      -}}
+      {{- range $svc }}
+      <div class="svc-item">
+        <span class="num">{{ .n }}</span>
+        <div>
+          <h3>{{ .t }}</h3>
+          <p>{{ .d }}</p>
+        </div>
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PROCESS ==================== -->
 <section class="home-section">
   <div class="container">
     <div class="section-head">
-      <span class="section-eyebrow">{{ i18n "services_eyebrow" | default "Our Services" }}</span>
-      <h2>{{ i18n "our_services" | default "End-to-End Sourcing & Quality Control" }}</h2>
-      <p class="section-sub">{{ i18n "services_sub" | default "One partner for every stage — from factory negotiation to your warehouse door." }}</p>
-    </div>
-    <div class="card-grid">
-      <div class="card service-card">
-        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9c2.39 0 4.68.94 6.36 2.64"/></svg></div>
-        <h3>{{ i18n "service_supplier" | default "Supplier Verification & Negotiation" }}</h3>
-        <p>{{ i18n "service_supplier_desc" | default "We audit factories, verify licenses and negotiate MOQ and price on your behalf." }}</p>
-      </div>
-      <div class="card service-card">
-        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
-        <h3>{{ i18n "service_aql" | default "AQL Level II Pre-shipment Inspection" }}</h3>
-        <p>{{ i18n "service_aql_desc" | default "Random sampling inspections before every shipment to protect your brand." }}</p>
-      </div>
-      <div class="card service-card">
-        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg></div>
-        <h3>{{ i18n "service_onsite" | default "On-site Factory QC" }}</h3>
-        <p>{{ i18n "service_onsite_desc" | default "Local inspectors in Zhejiang and Guangdong visit production lines and test samples against your specs." }}</p>
-      </div>
-      <div class="card service-card">
-        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7l9-4 9 4"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 3v18"/></svg></div>
-        <h3>{{ i18n "service_warehouse" | default "15-Day Free Consolidation" }}</h3>
-        <p>{{ i18n "service_warehouse_desc" | default "Combine orders from multiple suppliers into one cost-efficient shipment." }}</p>
-      </div>
-      <div class="card service-card">
-        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg></div>
-        <h3>{{ i18n "service_oem" | default "OEM Sampling & Molding" }}</h3>
-        <p>{{ i18n "service_oem_desc" | default "From prototype tooling to mass production — we manage samples, revisions and compliance." }}</p>
-      </div>
-      <div class="card service-card">
-        <div class="icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M21 3l-7 7"/><path d="M21 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg></div>
-        <h3>{{ i18n "service_logistics" | default "Global DDP Logistics" }}</h3>
-        <p>{{ i18n "service_logistics_desc" | default "Door-to-door delivery with customs clearance to the EU, USA, Latin America and Japan." }}</p>
+      <div class="head-copy">
+        <span class="section-eyebrow">{{ i18n "process_eyebrow" | default "How It Works" }}</span>
+        <h2>{{ i18n "process_title" | default "Four Steps, Zero Guesswork" }}</h2>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- ============ PROCESS ============ -->
-<section class="home-section alt">
-  <div class="container">
-    <div class="section-head">
-      <span class="section-eyebrow">{{ i18n "process_eyebrow" | default "How It Works" }}</span>
-      <h2>{{ i18n "process_title" | default "4 Simple Steps to Your Shipment" }}</h2>
-      <p class="section-sub">{{ i18n "process_sub" | default "A transparent workflow — no hidden fees, no surprises." }}</p>
-    </div>
-    <div class="process-grid">
+    <div class="process-row">
       <div class="process-step">
-        <div class="step-num">01</div>
+        <div class="dot">01</div>
         <h3>{{ i18n "step1_title" | default "Send Inquiry" }}</h3>
         <p>{{ i18n "step1_desc" | default "Share specs, photos and target MOQ. Get a free quote within 24 hours." }}</p>
       </div>
       <div class="process-step">
-        <div class="step-num">02</div>
+        <div class="dot">02</div>
         <h3>{{ i18n "step2_title" | default "Source & Sample" }}</h3>
         <p>{{ i18n "step2_desc" | default "We shortlist factories, negotiate price and arrange samples for approval." }}</p>
       </div>
       <div class="process-step">
-        <div class="step-num">03</div>
+        <div class="dot">03</div>
         <h3>{{ i18n "step3_title" | default "QC & Production" }}</h3>
         <p>{{ i18n "step3_desc" | default "On-site checks during and after production, plus AQL Level II inspection." }}</p>
       </div>
       <div class="process-step">
-        <div class="step-num">04</div>
+        <div class="dot">04</div>
         <h3>{{ i18n "step4_title" | default "Consolidate & Ship" }}</h3>
         <p>{{ i18n "step4_desc" | default "We consolidate orders, clear customs and deliver DDP to your warehouse." }}</p>
       </div>
@@ -116,115 +155,92 @@
   </div>
 </section>
 
-<!-- ============ CATEGORIES ============ -->
-<section class="home-section">
-  <div class="container">
-    <div class="section-head">
-      <span class="section-eyebrow">{{ i18n "cat_eyebrow" | default "Product Categories" }}</span>
-      <h2>{{ i18n "product_categories" | default "Browse Our Toy Categories" }}</h2>
-      <p class="section-sub">{{ i18n "cat_sub" | default "From plush to RC — work with vetted Yiwu factories across seven categories." }}</p>
-    </div>
-    <div class="card-grid categories-grid">
-      <a href="{{ "/toys/plush-toys/" | absLangURL }}" class="card category-card">
-        <img src="https://images.faelmio.com/toys/plush-toys/plush-toys.webp" alt="Plush toys wholesale" loading="lazy">
-        <span class="cat-label">{{ i18n "cat_plush" | default "Plush Toys" }}<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-      </a>
-      <a href="{{ "/toys/educational-stem-toys/" | absLangURL }}" class="card category-card">
-        <img src="https://images.faelmio.com/toys/educational-stem-toys/educational-stem-toys.webp" alt="Educational and STEM toys" loading="lazy">
-        <span class="cat-label">{{ i18n "cat_educational" | default "Educational & STEM" }}<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-      </a>
-      <a href="{{ "/toys/fidget-sensory-toys/" | absLangURL }}" class="card category-card">
-        <img src="https://images.faelmio.com/toys/fidget-sensory-toys/fidget-sensory-toys.webp" alt="Fidget and sensory toys" loading="lazy">
-        <span class="cat-label">{{ i18n "cat_fidget" | default "Fidget & Sensory" }}<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-      </a>
-      <a href="{{ "/toys/dolls-action-figures/" | absLangURL }}" class="card category-card">
-        <img src="https://images.faelmio.com/toys/dolls-action-figures/dolls-action-figures.webp" alt="Dolls and action figures" loading="lazy">
-        <span class="cat-label">{{ i18n "cat_dolls" | default "Dolls & Figures" }}<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-      </a>
-      <a href="{{ "/toys/rc-electronic-toys/" | absLangURL }}" class="card category-card">
-        <img src="https://images.faelmio.com/toys/rc-electronic-toys/rc-electronic-toys.webp" alt="RC and electronic toys" loading="lazy">
-        <span class="cat-label">{{ i18n "cat_rc" | default "RC & Electronic" }}<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-      </a>
-      <a href="{{ "/toys/party-promotional-toys/" | absLangURL }}" class="card category-card">
-        <img src="https://images.faelmio.com/toys/party-promotional-toys/party-promotional-toys.webp" alt="Party and promotional toys" loading="lazy">
-        <span class="cat-label">{{ i18n "cat_party" | default "Party & Promotional" }}<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-      </a>
-      <a href="{{ "/toys/outdoor-water-toys/" | absLangURL }}" class="card category-card">
-        <img src="https://images.faelmio.com/toys/outdoor-water-toys/outdoor-water-toys.webp" alt="Outdoor and water toys" loading="lazy">
-        <span class="cat-label">{{ i18n "cat_outdoor" | default "Outdoor & Water" }}<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-      </a>
-      <a href="{{ "/custom-toy-oem/" | absLangURL }}" class="card category-card oem-card">
-        <img src="https://images.faelmio.com/custom-toy-oem/custom-toy-oem.webp" alt="Custom toy OEM service" loading="lazy">
-        <span class="cat-label">{{ i18n "cat_oem" | default "Custom OEM" }}<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ OEM BAND ============ -->
+<!-- ==================== OEM ==================== -->
 <section class="oem-section">
   <div class="oem-inner">
-    <div>
-      <span class="section-eyebrow">{{ i18n "oem_eyebrow" | default "Custom OEM Service" }}</span>
-      <h2>{{ i18n "oem_title" | default "Turn Your Toy Idea Into a Product" }}</h2>
-      <p>{{ i18n "oem_sub" | default "From sketch to mass production — we manage tooling, sampling, revisions and compliance so you can focus on selling." }}</p>
-      <div class="oem-features">
-        <div class="oem-feat"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>{{ i18n "oem_f1" | default "Custom mold & tooling" }}</div>
-        <div class="oem-feat"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>{{ i18n "oem_f2" | default "Sample revision rounds" }}</div>
-        <div class="oem-feat"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>{{ i18n "oem_f3" | default "CE / EN71 / ASTM / CPSIA" }}</div>
-        <div class="oem-feat"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>{{ i18n "oem_f4" | default "Low MOQ for startups" }}</div>
+    <div class="oem-media">
+      <div class="frame">
+        <img src="{{ "images/oem/oem-process.jpg" | relURL }}" alt="Toy OEM design, sculpting and prototyping" loading="lazy">
       </div>
-      <a href="{{ "/custom-toy-oem/" | absLangURL }}" class="btn btn-primary">{{ i18n "oem_cta" | default "Explore OEM Service" }} →</a>
     </div>
-    <img class="oem-img" src="https://images.faelmio.com/custom-toy-oem/oem-process.webp" alt="OEM toy manufacturing process" loading="lazy">
+    <div>
+      <span class="section-eyebrow">{{ i18n "oem_eyebrow" | default "Custom OEM" }}</span>
+      <h2>{{ i18n "oem_title" | default "Turn Your Toy Idea Into a Shelf-Ready Product" }}</h2>
+      <p>{{ i18n "oem_sub" | default "From first sketch to mass production, we manage tooling, sampling, revisions and compliance so you can focus on selling." }}</p>
+      <ul class="checklist">
+        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>{{ i18n "oem_f1" | default "Custom mold & tooling" }}</li>
+        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>{{ i18n "oem_f2" | default "Sample revision rounds" }}</li>
+        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>{{ i18n "oem_f3" | default "CE / EN71 / ASTM / CPSIA" }}</li>
+        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>{{ i18n "oem_f4" | default "Low MOQ for startups" }}</li>
+      </ul>
+      <a href="{{ "/custom-toy-oem/" | absLangURL }}" class="btn btn-secondary">{{ i18n "oem_cta" | default "Explore OEM Service" }}</a>
+    </div>
   </div>
 </section>
 
-<!-- ============ ADVANTAGES ============ -->
-<section class="home-section alt">
+<!-- ==================== ADVANTAGES ==================== -->
+<section class="home-section tight">
   <div class="container">
     <div class="section-head">
-      <span class="section-eyebrow">{{ i18n "adv_eyebrow" | default "Why Faelmio" }}</span>
-      <h2>{{ i18n "our_advantages" | default "Why Global Buyers Choose Us" }}</h2>
+      <div class="head-copy">
+        <span class="section-eyebrow">{{ i18n "adv_eyebrow" | default "Why Faelmio" }}</span>
+        <h2>{{ i18n "our_advantages" | default "Built for Buyers Who Can't Afford Mistakes" }}</h2>
+      </div>
     </div>
-    <ul class="advantage-list">
-      <li>
-        <div class="adv-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
-        <div><strong>{{ i18n "adv_experience" | default "17 Years of Yiwu Trade" }}</strong><span>{{ i18n "adv_experience_desc" | default "Deep knowledge of Yiwu toy markets and supply chains." }}</span></div>
-      </li>
-      <li>
-        <div class="adv-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
-        <div><strong>{{ i18n "adv_team" | default "Bilingual Team On-site in China" }}</strong><span>{{ i18n "adv_team_desc" | default "Local staff on the ground for direct negotiation and QC." }}</span></div>
-      </li>
-      <li>
-        <div class="adv-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
-        <div><strong>{{ i18n "adv_fees" | default "Transparent Fixed Service Fees" }}</strong><span>{{ i18n "adv_fees_desc" | default "A clear commission structure with no hidden charges." }}</span></div>
-      </li>
-      <li>
-        <div class="adv-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
-        <div><strong>{{ i18n "adv_qc" | default "Strict QC & Compliance" }}</strong><span>{{ i18n "adv_qc_desc" | default "CE, EN71, ASTM, CPSIA and GPSR compliance support." }}</span></div>
-      </li>
-      <li>
-        <div class="adv-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
-        <div><strong>{{ i18n "adv_moq" | default "Low MOQ for Amazon Sellers" }}</strong><span>{{ i18n "adv_moq_desc" | default "Flexible minimums for startups and small businesses." }}</span></div>
-      </li>
-      <li>
-        <div class="adv-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
-        <div><strong>{{ i18n "adv_delivery" | default "On-time Delivery" }}</strong><span>{{ i18n "adv_delivery_desc" | default "Production tracking and reliable consolidated shipping schedules." }}</span></div>
-      </li>
+    <div class="adv-grid">
+      <div class="adv-item">
+        <span class="adv-kicker">01 · Market knowledge</span>
+        <h3>{{ i18n "adv_experience" | default "17 Years of Yiwu Trade" }}</h3>
+        <p>{{ i18n "adv_experience_desc" | default "Deep knowledge of Yiwu toy markets and supply chains." }}</p>
+      </div>
+      <div class="adv-item">
+        <span class="adv-kicker">02 · On the ground</span>
+        <h3>{{ i18n "adv_team" | default "Bilingual Team On-site" }}</h3>
+        <p>{{ i18n "adv_team_desc" | default "Local staff on the ground for direct negotiation and QC." }}</p>
+      </div>
+      <div class="adv-item">
+        <span class="adv-kicker">03 · Pricing</span>
+        <h3>{{ i18n "adv_fees" | default "Transparent Service Fees" }}</h3>
+        <p>{{ i18n "adv_fees_desc" | default "A clear commission structure with no hidden charges." }}</p>
+      </div>
+      <div class="adv-item">
+        <span class="adv-kicker">04 · Compliance</span>
+        <h3>{{ i18n "adv_qc" | default "Strict QC & Compliance" }}</h3>
+        <p>{{ i18n "adv_qc_desc" | default "CE, EN71, ASTM, CPSIA and GPSR compliance support." }}</p>
+      </div>
+      <div class="adv-item">
+        <span class="adv-kicker">05 · Flexibility</span>
+        <h3>{{ i18n "adv_moq" | default "Low MOQ for Amazon Sellers" }}</h3>
+        <p>{{ i18n "adv_moq_desc" | default "Flexible minimums for startups and small businesses." }}</p>
+      </div>
+      <div class="adv-item">
+        <span class="adv-kicker">06 · Reliability</span>
+        <h3>{{ i18n "adv_delivery" | default "On-time Delivery" }}</h3>
+        <p>{{ i18n "adv_delivery_desc" | default "Production tracking and reliable consolidated shipping schedules." }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CERT STRIP ==================== -->
+<section class="cert-strip">
+  <div class="container">
+    <span class="cert-label">{{ i18n "cert_label" | default "Compliance support" }}</span>
+    <ul class="cert-list">
+      <li>CE</li><li>EN71</li><li>ASTM</li><li>CPSIA</li><li>GPSR</li><li>AQL II</li>
     </ul>
   </div>
 </section>
 
-<!-- ============ CTA ============ -->
+<!-- ==================== CTA ==================== -->
 <section class="cta-section">
   <div class="container">
-    <h2>{{ i18n "cta_title" | default "Ready to Source Toys from Yiwu?" }}</h2>
+    <h2>{{ i18n "cta_title_html" | default "Ready to source toys <em>from Yiwu?</em>" | safeHTML }}</h2>
     <p>{{ i18n "cta_subtitle" | default "Tell us what you need and get a free quote within 24 hours. No commitment required." }}</p>
     <div class="cta-actions">
       <a href="{{ "/contact/" | absLangURL }}" class="btn btn-primary">{{ i18n "get_quote" | default "Get a Free Quote" }}</a>
-      <a href="https://wa.me/8618257499725?text=Hello%20Faelmio%2C%20I%20am%20interested%20in%20your%20toy%20sourcing%20service." target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
+      <a href="https://wa.me/{{ site.Params.contact.whatsapp }}?text={{ i18n "whatsapp_message" | default "Hello Faelmio, I am interested in your toy sourcing service." | urlquery }}" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/></svg>
         {{ i18n "chat_whatsapp" | default "Chat on WhatsApp" }}
       </a>
     </div>

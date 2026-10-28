@@ -1,123 +1,80 @@
+{{- $c := site.Params.contact -}}
 <div class="footer custom-footer">
   <div class="footer-grid">
-    <div class="footer-col">
-      <strong>Faelmio | Yiwu Toy Sourcing Agent</strong>
-      <p>Yiwu toy sourcing agent for B2B buyers worldwide.</p>
+    <div class="footer-col footer-brand">
+      <div class="footer-logo">Faelmio</div>
+      <p>{{ i18n "footer_blurb" | default "Toy sourcing agent based in Yiwu, China — OEM development, AQL quality control, consolidation and DDP shipping for B2B buyers worldwide." }}</p>
+      <div class="footer-certs">
+        <span>CE</span><span>EN71</span><span>ASTM</span><span>CPSIA</span><span>GPSR</span>
+      </div>
     </div>
+
     <div class="footer-col">
-      <strong>Contact Us</strong>
+      <strong>{{ i18n "footer_products" | default "Products" }}</strong>
       <ul>
-        <li>Email: <a href="mailto:etruetrading@gmail.com">etruetrading@gmail.com</a></li>
-        <li>WhatsApp: <a href="https://wa.me/86xxxxxxxx" target="_blank" rel="noopener noreferrer">+86xxxxxxxx</a></li>
-        <li>Address: Yiwu International Trade City, Zhejiang, China</li>
+        <li><a href="{{ "/toys/plush-toys/" | absLangURL }}">{{ i18n "cat_plush" | default "Plush Toys" }}</a></li>
+        <li><a href="{{ "/toys/educational-stem-toys/" | absLangURL }}">{{ i18n "cat_educational" | default "Educational & STEM" }}</a></li>
+        <li><a href="{{ "/toys/fidget-sensory-toys/" | absLangURL }}">{{ i18n "cat_fidget" | default "Fidget & Sensory" }}</a></li>
+        <li><a href="{{ "/toys/" | absLangURL }}">{{ i18n "view_all" | default "All categories" }} →</a></li>
       </ul>
     </div>
+
     <div class="footer-col">
-      <strong>Quick Links</strong>
+      <strong>{{ i18n "footer_company" | default "Company" }}</strong>
       <ul>
-        <li><a href="{{ "/toys/" | absLangURL }}">Products</a></li>
-        <li><a href="{{ "/custom-toy-oem/" | absLangURL }}">Services</a></li>
-        <li><a href="{{ "/about/" | absLangURL }}">About</a></li>
-        <li><a href="https://yeatru.com" target="_blank" rel="noopener noreferrer">yeatru.com</a></li>
+        <li><a href="{{ "/custom-toy-oem/" | absLangURL }}">{{ i18n "cat_oem" | default "Custom Toy OEM" }}</a></li>
+        <li><a href="{{ "/about/" | absLangURL }}">{{ i18n "footer_about" | default "About us" }}</a></li>
+        <li><a href="{{ "/contact/" | absLangURL }}">{{ i18n "contact_us" | default "Contact" }}</a></li>
+        <li><a href="{{ "/blog/" | absLangURL }}">{{ i18n "footer_blog" | default "Sourcing guides" }}</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <strong>{{ i18n "footer_contact" | default "Get in touch" }}</strong>
+      <ul>
+        <li>WhatsApp: <a href="https://wa.me/{{ $c.whatsapp }}" target="_blank" rel="noopener noreferrer">{{ $c.phone_display }}</a></li>
+        <li>Email: <a href="mailto:{{ $c.email }}">{{ $c.email }}</a></li>
+        <li>{{ $c.address }}</li>
       </ul>
     </div>
   </div>
+
   <div class="footer-bottom">
-    <span>© {{ now.Year }} Faelmio. All rights reserved.</span>
-    <span class="footer-credit">Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo</a> & <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a></span>
+    <span>© {{ now.Year }} Faelmio. {{ i18n "footer_rights" | default "All rights reserved." }}</span>
+    <span class="footer-credit">Powered by <a href="https://gohugo.io/" rel="noopener" target="_blank">Hugo</a></span>
   </div>
 </div>
-
-<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
-        <polyline points="17 11 12 6 7 11"></polyline>
-        <polyline points="17 18 12 13 7 18"></polyline>
-    </svg>
-</a>
-
 <script>
-let menu = document.getElementById('menu');
-if (menu) {
-    const scrollPosition = localStorage.getItem("menu-scroll-position");
-    if (scrollPosition) {
-        menu.scrollLeft = parseInt(scrollPosition, 10);
-    }
-    let menuScrollTimeout;
-    menu.addEventListener("scroll", function () {
-        clearTimeout(menuScrollTimeout);
-        menuScrollTimeout = setTimeout(function () {
-            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
-        }, 150);
-    }, { passive: true });
-}
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-        var id = this.getAttribute("href").substr(1);
-        const target = document.querySelector(`[id='${decodeURIComponent(id)}']`);
-        if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-            target.scrollIntoView({ behavior: "smooth" });
-        } else {
-            target.scrollIntoView();
-        }
-        if (target.tabIndex < 0 && !target.hasAttribute("tabindex")) {
-            target.setAttribute("tabindex", "-1");
-        }
-        target.focus({ preventScroll: true });
+(function () {
+  var t = document.querySelector(".lang-toggle"), m = document.querySelector(".lang-menu");
+  if (t && m) {
+    t.addEventListener("click", function (e) {
+      e.stopPropagation();
+      m.classList.toggle("open");
+      t.setAttribute("aria-expanded", m.classList.contains("open") ? "true" : "false");
     });
-});
-</script>
-<script>
-var toplink = document.getElementById("top-link");
-var scrollTicking = false;
-window.addEventListener("scroll", function () {
-    if (scrollTicking) return;
-    scrollTicking = true;
-    requestAnimationFrame(function () {
-        const e = window.innerHeight;
-        const shown = document.body.scrollTop > e || document.documentElement.scrollTop > e;
-        toplink.classList.toggle("hidden", !shown);
-        scrollTicking = false;
+    document.addEventListener("click", function () {
+      m.classList.remove("open");
+      t.setAttribute("aria-expanded", "false");
     });
-}, { passive: true });
+  }
+})();
 </script>
 <script>
-document.getElementById("theme-toggle")?.addEventListener("click", () => {
-    const html = document.querySelector("html");
-    if (html.dataset.theme === "dark") {
-        html.dataset.theme = 'light';
-        localStorage.setItem("pref-theme", 'light');
-    } else {
-        html.dataset.theme = 'dark';
-        localStorage.setItem("pref-theme", 'dark');
-    }
-});
-</script>
-<script>
-const langToggle = document.querySelector(".lang-toggle");
-const langMenu = document.querySelector(".lang-menu");
-langToggle && langMenu && (
-  langToggle.addEventListener("click", function (e) {
-    e.stopPropagation();
-    const expanded = this.getAttribute("aria-expanded") === "true";
-    this.setAttribute("aria-expanded", String(!expanded));
-    langMenu.classList.toggle("open");
-  }),
-  document.addEventListener("click", function () {
-    langToggle.setAttribute("aria-expanded", "false");
-    langMenu.classList.remove("open");
-  })
-);
-</script>
-<script>
-/* Graceful fallback for images that are not yet uploaded to R2 */
-function markMissing(img) {
+/* Swap unavailable remote images for a local category fallback, else hide */
+function faelMarkMissing(img) {
+  var fb = img.getAttribute("data-fallback");
+  if (fb && img.src.indexOf(fb) === -1) {
+    img.removeAttribute("data-fallback");
+    img.src = fb;
+    return;
+  }
   img.classList.add("img-missing");
-  var card = img.closest(".category-card, .hero-visual, .post-cover");
+  var card = img.closest(".cat-card, .hero-visual, .post-cover, .product-card");
   if (card) card.classList.add("img-missing-parent");
 }
 document.querySelectorAll("img").forEach(function (img) {
-  if (img.complete && img.naturalWidth === 0) markMissing(img);
-  img.addEventListener("error", function () { markMissing(img); });
+  if (img.complete && img.naturalWidth === 0) faelMarkMissing(img);
+  img.addEventListener("error", function () { faelMarkMissing(img); });
 });
 </script>

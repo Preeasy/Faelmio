@@ -7,8 +7,8 @@
     "@id" (printf "%s/#business" site.Home.Permalink)
     "name" site.Title
     "url" site.Home.Permalink
-    "telephone" "+86xxxxxxxx"
-    "email" "etruetrading@gmail.com"
+    "telephone" (site.Params.contact.phone_display | default "+86 182 5749 9725")
+    "email" (site.Params.contact.email | default "etruetrading@gmail.com")
     "description" site.Params.description
     "logo" site.Params.assets.favicon
     "image" (index site.Params.images 0)
@@ -25,8 +25,8 @@
     "@id" (printf "%s/#business" site.Home.Permalink)
     "name" site.Title
     "url" site.Home.Permalink
-    "telephone" "+86xxxxxxxx"
-    "email" "etruetrading@gmail.com"
+    "telephone" (site.Params.contact.phone_display | default "+86 182 5749 9725")
+    "email" (site.Params.contact.email | default "etruetrading@gmail.com")
     "description" site.Params.description
     "logo" site.Params.assets.favicon
     "image" (index site.Params.images 0)

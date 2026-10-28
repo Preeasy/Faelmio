@@ -135,6 +135,12 @@ showtoc = true
 tocopen = false
 copyright = "© 2026 Faelmio. All rights reserved."
 
+[params.contact]
+whatsapp = "8618257499725"
+phone_display = "+86 182 5749 9725"
+email = "etruetrading@gmail.com"
+address = "Yiwu International Trade City, Zhejiang, China"
+
 [params.assets]
 disableFingerprinting = true
 favicon = "https://images.faelmio.com/favicon.ico"

@@ -1,1 +1,24 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>CE on Faelmio | Yiwu Toy Sourcing Agent</title><link>https://www.faelmio.com/es/tags/ce/</link><description>Recent content in CE on Faelmio | Yiwu Toy Sourcing Agent</description><image><title>Faelmio | Yiwu Toy Sourcing Agent</title><url>https://images.faelmio.com/social/faelmio-og.jpg</url><link>https://images.faelmio.com/social/faelmio-og.jpg</link></image><generator>Hugo</generator><language>es</language><lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://www.faelmio.com/es/tags/ce/index.xml" rel="self" type="application/rss+xml"/><item><title>Certificaciones de Seguridad en Juguetes: CE, EN71, ASTM F963, GPSR</title><link>https://www.faelmio.com/es/blog/toy-safety-certifications/</link><pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate><guid>https://www.faelmio.com/es/blog/toy-safety-certifications/</guid><description>Todo lo que los compradores B2B necesitan saber sobre certificaciones globales de seguridad de juguetes.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>CE on Faelmio | Yiwu Toy Sourcing Agent</title>
+    <link>http://localhost:1313/es/tags/ce/</link>
+    <description>Recent content in CE on Faelmio | Yiwu Toy Sourcing Agent</description>
+    <image>
+      <title>Faelmio | Yiwu Toy Sourcing Agent</title>
+      <url>https://images.faelmio.com/social/faelmio-og.jpg</url>
+      <link>https://images.faelmio.com/social/faelmio-og.jpg</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Tue, 10 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/es/tags/ce/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Certificaciones de Seguridad en Juguetes: CE, EN71, ASTM F963, GPSR</title>
+      <link>http://localhost:1313/es/blog/toy-safety-certifications/</link>
+      <pubDate>Tue, 10 Feb 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/es/blog/toy-safety-certifications/</guid>
+      <description>Todo lo que los compradores B2B necesitan saber sobre certificaciones globales de seguridad de juguetes.</description>
+    </item>
+  </channel>
+</rss>
