@@ -465,6 +465,51 @@ img { max-width: 100%; }
 .product-card p { color: var(--muted); font-size: 0.9rem; line-height: 1.6; margin: 0 0 12px; flex: 1; }
 .entry-link { position: absolute; inset: 0; }
 
+/* ===================== OEM CROSS-SELL CALLOUT (on /toys/) ===================== */
+.oem-callout {
+  width: 100%; max-width: var(--maxw); margin: 30px auto 0;
+  padding-inline: var(--gutter); box-sizing: border-box;
+}
+.oem-callout-link {
+  display: flex; align-items: center; justify-content: space-between; gap: 28px;
+  flex-wrap: wrap;
+  background: var(--ink); color: var(--cream);
+  border-radius: var(--r-lg); padding: 34px 38px;
+  text-decoration: none; position: relative; overflow: hidden;
+  transition: transform var(--dur) var(--ease), box-shadow var(--dur) var(--ease);
+}
+.oem-callout-link::after {
+  content: ""; position: absolute; right: -70px; top: -70px;
+  width: 240px; height: 240px; border-radius: 50%;
+  background: var(--coral); opacity: 0.16; pointer-events: none;
+  transition: transform 0.6s var(--ease);
+}
+.oem-callout-link:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.oem-callout-link:hover::after { transform: scale(1.25); }
+.oem-callout-copy { display: block; max-width: 640px; position: relative; z-index: 1; }
+.oem-callout-kicker {
+  display: block; font-size: 0.72rem; font-weight: 700;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--coral); margin-bottom: 9px;
+}
+.oem-callout-copy h2 {
+  font-family: 'Fraunces', serif; font-size: clamp(1.4rem, 2.4vw, 1.95rem);
+  margin: 0 0 8px; color: var(--cream); letter-spacing: -0.01em;
+}
+.oem-callout-copy p {
+  margin: 0; color: rgba(251, 247, 238, 0.72);
+  font-size: 0.94rem; line-height: 1.62;
+}
+.oem-callout-cta {
+  position: relative; z-index: 1; flex-shrink: 0;
+  display: inline-flex; align-items: center; gap: 9px;
+  background: var(--cream); color: var(--ink);
+  padding: 13px 22px; border-radius: var(--r-pill);
+  font-size: 0.9rem; font-weight: 600;
+  transition: background var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+.oem-callout-link:hover .oem-callout-cta { background: var(--coral); color: #fff; }
+
 /* ===================== BADGES / TAGS ===================== */
 .badge {
   display: inline-block; font-size: 0.72rem; font-weight: 700;

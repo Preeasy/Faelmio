@@ -46,6 +46,25 @@
 </div>
 {{- end }}
 
+{{- /* Custom Toy OEM lives in its own section (/custom-toy-oem/), so it never
+       appears in .Sections of /toys/. Surface it here as a cross-sell card. */}}
+{{- if and (eq .Section "toys") (eq .Parent.Kind "home") }}
+{{- with site.GetPage "/custom-toy-oem" }}
+<aside class="oem-callout">
+  <a class="oem-callout-link" href="{{ .Permalink }}">
+    <span class="oem-callout-copy">
+      <span class="oem-callout-kicker">{{ i18n "oem_kicker" | default "08 · Your brand" }}</span>
+      <h2>{{ i18n "cat_oem" | default "Custom Toy OEM" }}</h2>
+      <p>{{ i18n "cat_oem_desc" | default "From prototype and tooling to mass production — your own toy line, moulds, packaging and certifications, managed end to end in Yiwu." }}</p>
+    </span>
+    <span class="oem-callout-cta">{{ i18n "explore_oem" | default "Explore OEM Service" }}
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </span>
+  </a>
+</aside>
+{{- end }}
+{{- end }}
+
 {{- if gt $paginator.TotalPages 1 }}
 <footer class="page-footer"><nav class="pagination">
   {{- if $paginator.HasPrev }}<a class="prev" href="{{ $paginator.Prev.URL | absURL }}">« {{ i18n "prev_page" }}</a>{{- end }}
