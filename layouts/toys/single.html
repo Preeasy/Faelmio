@@ -1,0 +1,439 @@
+{{- define "main" }}
+{{- $c := site.Params.contact }}
+{{- $catSlug := path.Base .CurrentSection.Path }}
+{{- $catTitle := .CurrentSection.Title }}
+
+{{- /* ---- gallery: front-matter list, capped at 6, falls back to cover ---- */}}
+{{- $gal := slice }}
+{{- with .Params.gallery }}
+  {{- range . }}
+    {{- if reflect.IsMap . }}
+      {{- $gal = $gal | append (dict "src" .src "alt" (.alt | default $.Title)) }}
+    {{- else }}
+      {{- $gal = $gal | append (dict "src" . "alt" $.Title) }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+{{- if not $gal }}
+  {{- with .Params.cover.image }}
+    {{- $gal = $gal | append (dict "src" . "alt" ($.Params.cover.alt | default $.Title)) }}
+  {{- end }}
+{{- end }}
+{{- if not $gal }}
+  {{- $gal = $gal | append (dict "src" (printf "images/toys/%s.jpg" $catSlug) "alt" $.Title) }}
+{{- end }}
+{{- $gal = first 6 $gal }}
+{{- $hero := index $gal 0 }}
+
+<article class="pdp">
+  <div class="pdp-shell">
+    {{- partial "breadcrumbs.html" . }}
+
+    <div class="pdp-hero">
+      {{- /* -------- gallery -------- */}}
+      <div class="pdp-gallery" data-gallery>
+        <div class="pdp-stage">
+          <img id="pdp-main"
+               src="{{ $hero.src }}"
+               alt="{{ $hero.alt }}"
+               width="1000" height="1000"
+               fetchpriority="high" decoding="async"
+               data-fallback="{{ printf "images/toys/%s.jpg" $catSlug | relURL }}">
+          {{- if .Params.badge }}<span class="pdp-badge">{{ .Params.badge }}</span>{{ end }}
+        </div>
+        {{- if gt (len $gal) 1 }}
+        <div class="pdp-thumbs" role="tablist" aria-label="{{ i18n "pdp_gallery" | default "Product images" }}">
+          {{- range $i, $g := $gal }}
+          <button type="button"
+                  class="pdp-thumb{{ if eq $i 0 }} is-active{{ end }}"
+                  role="tab"
+                  aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}"
+                  aria-label="{{ printf "%s %d" (i18n "pdp_gallery" | default "Product image") (add $i 1) }}"
+                  data-src="{{ $g.src }}"
+                  data-alt="{{ $g.alt }}">
+            <img src="{{ $g.src }}" alt="{{ $g.alt }}" width="120" height="120" loading="lazy" decoding="async"
+                 data-fallback="{{ printf "images/toys/%s.jpg" $catSlug | relURL }}">
+          </button>
+          {{- end }}
+        </div>
+        {{- end }}
+      </div>
+
+      {{- /* -------- info panel -------- */}}
+      <div class="pdp-info">
+        <p class="pdp-kicker">
+          <a href="{{ .CurrentSection.Permalink }}">{{ $catTitle }}</a>
+          {{- with .Params.sku }}<span class="pdp-sku">{{ . }}</span>{{ end }}
+        </p>
+
+        <h1 class="pdp-title">{{ .Title }}</h1>
+
+        {{- with .Description }}<p class="pdp-lede">{{ . }}</p>{{ end }}
+
+        {{- /* answer-first block: what this is, who it's for — AEO friendly */}}
+        {{- with .Params.answer }}
+        <div class="pdp-answer">
+          <strong>{{ i18n "pdp_short_answer" | default "Short answer" }}</strong>
+          <p>{{ . }}</p>
+        </div>
+        {{- end }}
+
+        <div class="pdp-price">
+          <span class="pdp-price-label">{{ i18n "pdp_price_label" | default "FOB price" }}</span>
+          {{- with .Params.price_range }}<strong class="pdp-price-value">{{ . }}</strong>{{ end }}
+          {{- with .Params.price_note }}<span class="pdp-price-note">{{ . }}</span>{{ end }}
+        </div>
+
+        <dl class="pdp-facts">
+          {{- with .Params.moq }}
+          <div><dt>{{ i18n "moq" | default "MOQ" }}</dt><dd>{{ . }}</dd></div>{{ end }}
+          {{- with .Params.lead_time }}
+          <div><dt>{{ i18n "lead_time" | default "Lead time" }}</dt><dd>{{ . }}</dd></div>{{ end }}
+          {{- with .Params.fob_port }}
+          <div><dt>{{ i18n "fob_port" | default "FOB port" }}</dt><dd>{{ . }}</dd></div>{{ end }}
+          {{- if .Params.oem_support }}
+          <div><dt>{{ i18n "pdp_customizable" | default "Customizable" }}</dt><dd>{{ i18n "yes" | default "Yes" }} · logo, colour, packaging</dd></div>{{ end }}
+        </dl>
+
+        <div class="pdp-cta">
+          <a class="pdp-btn pdp-btn-primary" href="#inquiry">{{ i18n "pdp_get_quote" | default "Get a Quote" }}</a>
+          <a class="pdp-btn pdp-btn-ghost" href="https://wa.me/{{ $c.whatsapp }}?text={{ printf "Hello Faelmio, I'd like a quote for %s." .Title | urlquery }}" target="_blank" rel="noopener noreferrer">{{ i18n "whatsapp" | default "WhatsApp" }}</a>
+        </div>
+
+        {{- with .Params.certifications }}
+        <ul class="pdp-certs">
+          {{- range . }}<li>{{ . }}</li>{{ end }}
+        </ul>
+        {{- end }}
+
+        {{- /* -------- freight reference (compact) -------- */}}
+        {{- with .Params.carton }}
+        {{- if and .pcs .cbm }}
+        <section class="pdp-freight" id="freight" data-freight
+                 data-pcs="{{ .pcs }}" data-cbm="{{ .cbm }}" data-gw="{{ .gw | default 8 }}">
+          <div class="fr-head">
+            <h2>{{ i18n "pdp_freight_title" | default "Estimate shipping" }}</h2>
+            <span>{{ i18n "pdp_freight_tag" | default "Reference" }}</span>
+          </div>
+          <div class="fr-controls">
+            <label>
+              <span>{{ i18n "pdp_freight_dest" | default "Destination" }}</span>
+              <select data-fr-dest>
+                <option value="us_west" data-sea="82" data-air="5.8" data-exp="10.5" data-tsea="25–33 d" data-tair="6–9 d" data-texp="4–6 d">USA · West Coast</option>
+                <option value="us_east" data-sea="105" data-air="6.2" data-exp="11.0" data-tsea="30–40 d" data-tair="6–9 d" data-texp="4–6 d">USA · East Coast</option>
+                <option value="eu" data-sea="96" data-air="6.0" data-exp="11.2" data-tsea="28–36 d" data-tair="6–9 d" data-texp="4–7 d">Europe (DE / NL / FR)</option>
+                <option value="uk" data-sea="108" data-air="6.3" data-exp="11.5" data-tsea="30–38 d" data-tair="6–9 d" data-texp="4–7 d">United Kingdom</option>
+                <option value="jp" data-sea="48" data-air="4.6" data-exp="8.2" data-tsea="18–26 d" data-tair="4–6 d" data-texp="3–5 d">Japan / Korea</option>
+                <option value="au" data-sea="74" data-air="5.9" data-exp="12.0" data-tsea="20–28 d" data-tair="6–9 d" data-texp="5–7 d">Australia / NZ</option>
+                <option value="me" data-sea="62" data-air="5.2" data-exp="9.5" data-tsea="18–26 d" data-tair="5–8 d" data-texp="4–6 d">Middle East</option>
+                <option value="latam" data-sea="118" data-air="7.4" data-exp="13.5" data-tsea="35–45 d" data-tair="8–11 d" data-texp="6–9 d">Latin America</option>
+              </select>
+            </label>
+            <label>
+              <span>{{ i18n "pdp_freight_mode" | default "Shipping mode" }}</span>
+              <select data-fr-mode>
+                <option value="sea">{{ i18n "pdp_mode_sea" | default "Sea · LCL" }}</option>
+                <option value="air">{{ i18n "pdp_mode_air" | default "Air freight" }}</option>
+                <option value="exp">{{ i18n "pdp_mode_exp" | default "Express courier" }}</option>
+              </select>
+            </label>
+            <label>
+              <span>{{ i18n "pdp_freight_qty" | default "Quantity (pcs)" }}</span>
+              <input type="number" data-fr-qty value="500" min="100" step="100" inputmode="numeric">
+            </label>
+          </div>
+          <div class="fr-result" aria-live="polite">
+            <div><span>{{ i18n "pdp_freight_cost" | default "Est. freight" }}</span><strong data-fr-cost>—</strong></div>
+            <div><span>{{ i18n "pdp_freight_unit" | default "Per unit" }}</span><strong data-fr-unit>—</strong></div>
+            <div><span>{{ i18n "pdp_freight_transit" | default "Transit" }}</span><strong data-fr-transit>—</strong></div>
+          </div>
+          <p class="fr-meta" data-fr-meta></p>
+          <p class="fr-note">{{ i18n "pdp_freight_note" | default "Indicative only — duties, VAT and destination charges excluded. DDP door-to-door available on request." }}</p>
+        </section>
+        {{- end }}
+        {{- end }}
+      </div>
+    </div>
+
+    {{- /* -------- overview + specs -------- */}}
+    <div class="pdp-block">
+      <div class="pdp-prose md-content">
+        {{- partial "anchored_headings.html" .Content -}}
+      </div>
+      {{- with .Params.specs }}
+      <aside class="pdp-specs">
+        <h2>{{ i18n "pdp_specs" | default "Specifications" }}</h2>
+        <dl>
+          {{- range . }}
+          <div><dt>{{ .label }}</dt><dd>{{ .value }}</dd></div>
+          {{- end }}
+        </dl>
+      </aside>
+      {{- end }}
+    </div>
+
+    {{- /* -------- three customisation directions -------- */}}
+    <section class="pdp-modules" id="customize">
+      <header class="pdp-sec-head">
+        <p class="pdp-eyebrow">{{ i18n "pdp_custom_eyebrow" | default "Make it yours" }}</p>
+        <h2>{{ i18n "pdp_custom_title" | default "Three ways to make this product your own" }}</h2>
+      </header>
+      <div class="pdp-module-grid">
+        {{- $mods := slice
+          (dict "key" "product" "n" "01" "title" (i18n "pdp_custom_product" | default "Product customisation") "icon" "✎")
+          (dict "key" "packaging" "n" "02" "title" (i18n "pdp_custom_packaging" | default "Packaging customisation") "icon" "▣")
+          (dict "key" "bundle" "n" "03" "title" (i18n "pdp_custom_bundle" | default "Bundle with our catalogue") "icon" "⊞")
+        }}
+        {{- range $mods }}
+        {{- $cst := $.Params.customization }}
+        {{- $items := index ($cst | default (dict)) .key }}
+        <article class="pdp-module">
+          <span class="pdp-module-n">{{ .n }}</span>
+          <h3>{{ .title }}</h3>
+          {{- with $items }}
+          <ul class="pdp-list">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+          {{- else }}
+          {{- if eq .key "product" }}
+          <ul class="pdp-list">
+            <li>Size, colour and material changes</li>
+            <li>Logo embroidery, print or moulded mark</li>
+            <li>New prototype from sketch or sample</li>
+          </ul>
+          {{- else if eq .key "packaging" }}
+          <ul class="pdp-list">
+            <li>Printed gift box, hangtag or header card</li>
+            <li>Polybag, backing card or display carton</li>
+            <li>Amazon FBA labels and inner barcodes</li>
+          </ul>
+          {{- else }}
+          <ul class="pdp-list">
+            <li>Mix sizes and colours in one carton</li>
+            <li>Assortment sets built around your range</li>
+            <li>Consolidate several suppliers in our warehouse</li>
+          </ul>
+          {{- end }}
+          {{- end }}
+        </article>
+        {{- end }}
+      </div>
+    </section>
+
+    {{- /* -------- logistics -------- */}}
+    {{- with .Params.carton }}
+    <section class="pdp-logistics" id="logistics">
+      <header class="pdp-sec-head">
+        <p class="pdp-eyebrow">{{ i18n "pdp_logistics_eyebrow" | default "Packaging & freight" }}</p>
+        <h2>{{ i18n "pdp_logistics" | default "Packaging & logistics" }}</h2>
+      </header>
+      <div class="pdp-logi-grid">
+        {{- with .pcs }}<div><span>{{ i18n "pdp_carton_pcs" | default "Pcs per carton" }}</span><strong>{{ . }}</strong></div>{{ end }}
+        {{- with .size }}<div><span>{{ i18n "pdp_carton_size" | default "Carton size" }}</span><strong>{{ . }}</strong></div>{{ end }}
+        {{- with .cbm }}<div><span>{{ i18n "pdp_carton_cbm" | default "Carton volume" }}</span><strong>{{ . }} m³</strong></div>{{ end }}
+        {{- with .gw }}<div><span>{{ i18n "pdp_carton_gw" | default "Gross weight" }}</span><strong>{{ . }} kg</strong></div>{{ end }}
+        {{- with .container }}<div><span>1 × 40HQ</span><strong>{{ . }}</strong></div>{{ end }}
+      </div>
+    </section>
+    {{- end }}
+
+    {{- /* -------- FAQ (AEO) -------- */}}
+    {{- with .Params.faq }}
+    <section class="pdp-faq" id="faq">
+      <header class="pdp-sec-head">
+        <p class="pdp-eyebrow">{{ i18n "pdp_faq_eyebrow" | default "Before you order" }}</p>
+        <h2>{{ i18n "pdp_faq" | default "Buyer questions" }}</h2>
+      </header>
+      <div class="pdp-faq-list">
+        {{- range . }}
+        <details>
+          <summary><h3>{{ .q }}</h3><span aria-hidden="true">+</span></summary>
+          <p>{{ .a }}</p>
+        </details>
+        {{- end }}
+      </div>
+    </section>
+    {{- end }}
+
+    {{- /* -------- inquiry -------- */}}
+    <section class="pdp-inquiry" id="inquiry">
+      <div class="pdp-inquiry-copy">
+        <p class="pdp-eyebrow">{{ i18n "pdp_inquiry_eyebrow" | default "Next step" }}</p>
+        <h2>{{ i18n "inquiry_title" | default "Inquire about this product" }}</h2>
+        <p>{{ i18n "inquiry_lede" | default "Share your target quantity, destination and customisation notes. Our sourcing team replies within 24 hours." }}</p>
+        <ul class="pdp-inquiry-facts">
+          <li>{{ i18n "pdp_i1" | default "Quote within 24 hours, no commitment" }}</li>
+          <li>{{ i18n "pdp_i2" | default "Sample before mass production" }}</li>
+          <li>{{ i18n "pdp_i3" | default "AQL II inspection on every order" }}</li>
+        </ul>
+      </div>
+      <form class="contact-form" action="https://formsubmit.co/{{ $c.email }}" method="POST">
+        <input type="hidden" name="_subject" value="Product Inquiry | {{ .Title }} | Faelmio">
+        <input type="hidden" name="_next" value="https://www.faelmio.com/thanks/">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_honeypot" value="">
+        <input type="hidden" name="product" value="{{ .Title }}">
+        <input type="hidden" name="source_url" value="{{ .Permalink }}">
+        <div class="form-grid">
+          <label for="name">Full Name *<input type="text" id="name" name="name" required></label>
+          <label for="email">Business Email *<input type="email" id="email" name="email" required></label>
+          <label for="whatsapp">WhatsApp<input type="text" id="whatsapp" name="whatsapp"></label>
+          <label for="country">Country / Region<input type="text" id="country" name="country"></label>
+          <label for="quantity">Target Quantity<input type="text" id="quantity" name="quantity" placeholder="e.g. 5,000 pcs"></label>
+          <label for="specs">Customisation<input type="text" id="specs" name="specs" placeholder="Colour, logo, packaging..."></label>
+        </div>
+        <label for="message" class="block-label">Message *<textarea id="message" name="message" rows="4" required placeholder="Target MOQ, destination port, customisation, packaging..."></textarea></label>
+        <button type="submit">{{ i18n "send_inquiry" | default "Send Inquiry" }}</button>
+      </form>
+    </section>
+
+    {{- /* -------- related -------- */}}
+    {{- with .Params.related }}
+    <section class="pdp-related">
+      <header class="pdp-sec-head">
+        <p class="pdp-eyebrow">{{ i18n "pdp_related_eyebrow" | default "Bundle ideas" }}</p>
+        <h2>{{ i18n "pdp_related" | default "Pairs well with" }}</h2>
+      </header>
+      <div class="pdp-related-grid">
+        {{- range first 3 . }}
+        {{- with site.GetPage . }}
+        <a class="pdp-related-card" href="{{ .Permalink }}">
+          {{- $img := .Params.cover.image | default (printf "images/toys/%s.jpg" (path.Base .CurrentSection.Path) | relURL) }}
+          <img src="{{ $img }}" alt="{{ .Title }}" width="480" height="320" loading="lazy" decoding="async"
+               data-fallback="{{ printf "images/toys/%s.jpg" (path.Base .CurrentSection.Path) | relURL }}">
+          <div>
+            <h3>{{ .Title }}</h3>
+            {{- with .Params.price_range }}<span>{{ . }}</span>{{ end }}
+          </div>
+        </a>
+        {{- end }}
+        {{- end }}
+      </div>
+    </section>
+    {{- end }}
+  </div>
+
+  {{- /* -------- mobile sticky CTA -------- */}}
+  <div class="pdp-sticky">
+    <div>
+      <span>{{ i18n "pdp_price_label" | default "FOB price" }}</span>
+      <strong>{{ .Params.price_range | default .Title }}</strong>
+    </div>
+    <a href="#inquiry" class="pdp-btn pdp-btn-primary">{{ i18n "pdp_get_quote" | default "Get a Quote" }}</a>
+  </div>
+</article>
+
+{{- /* -------- structured data -------- */}}
+{{- $brand := site.Params.label.text | default site.Title }}
+{{- $img := $hero.src }}
+{{- if hasPrefix $img "/" }}{{ $img = $img | absURL }}{{ end }}
+{{- $product := dict
+  "@type" "Product"
+  "name" .Title
+  "description" (.Description | default .Title)
+  "image" (slice $img)
+  "category" $catTitle
+  "brand" (dict "@type" "Brand" "name" $brand)
+  "url" .Permalink
+}}
+{{- with .Params.sku }}{{ $product = merge $product (dict "sku" .) }}{{ end }}
+{{- if .Params.price_low }}
+{{- $offer := dict "@type" "AggregateOffer"
+      "priceCurrency" (.Params.currency | default "USD")
+      "lowPrice" (printf "%.2f" .Params.price_low)
+      "offerCount" 1
+      "availability" "https://schema.org/InStock"
+      "seller" (dict "@type" "Organization" "name" $brand)
+      "url" .Permalink }}
+{{- with .Params.price_high }}{{ $offer = merge $offer (dict "highPrice" (printf "%.2f" .)) }}{{ end }}
+{{- $product = merge $product (dict "offers" $offer) }}
+{{- end }}
+{{- $graph := slice $product }}
+{{- with .Params.faq }}
+{{- $qs := slice }}
+{{- range . }}{{ $qs = $qs | append (dict "@type" "Question" "name" .q "acceptedAnswer" (dict "@type" "Answer" "text" .a)) }}{{ end }}
+{{- $graph = $graph | append (dict "@type" "FAQPage" "mainEntity" $qs) }}
+{{- end }}
+{{- $crumbs := slice
+  (dict "@type" "ListItem" "position" 1 "name" (i18n "home" | default "Home") "item" site.Home.Permalink)
+  (dict "@type" "ListItem" "position" 2 "name" (i18n "products" | default "Products") "item" (printf "%s/toys/" site.Home.Permalink))
+  (dict "@type" "ListItem" "position" 3 "name" $catTitle "item" .CurrentSection.Permalink)
+  (dict "@type" "ListItem" "position" 4 "name" .Title "item" .Permalink)
+}}
+{{- $graph = $graph | append (dict "@type" "BreadcrumbList" "itemListElement" $crumbs) }}
+<script type="application/ld+json">
+{{ dict "@context" "https://schema.org" "@graph" $graph | jsonify | safeJS }}
+</script>
+
+{{- /* gallery + freight scripts */}}
+<script>
+(function () {
+  var main = document.getElementById("pdp-main");
+  var thumbs = document.querySelectorAll(".pdp-thumb");
+  thumbs.forEach(function (t) {
+    t.addEventListener("click", function () {
+      if (!main) return;
+      main.src = t.getAttribute("data-src");
+      main.alt = t.getAttribute("data-alt") || main.alt;
+      thumbs.forEach(function (x) {
+        x.classList.remove("is-active");
+        x.setAttribute("aria-selected", "false");
+      });
+      t.classList.add("is-active");
+      t.setAttribute("aria-selected", "true");
+    });
+  });
+})();
+
+(function () {
+  var box = document.querySelector("[data-freight]");
+  if (!box) return;
+  var pcs = parseFloat(box.dataset.pcs) || 0;
+  var cbm = parseFloat(box.dataset.cbm) || 0;
+  var gw = parseFloat(box.dataset.gw) || 0;
+  var dest = box.querySelector("[data-fr-dest]");
+  var mode = box.querySelector("[data-fr-mode]");
+  var qtyEl = box.querySelector("[data-fr-qty]");
+  var outCost = box.querySelector("[data-fr-cost]");
+  var outUnit = box.querySelector("[data-fr-unit]");
+  var outTransit = box.querySelector("[data-fr-transit]");
+  var outMeta = box.querySelector("[data-fr-meta]");
+  if (!pcs || !cbm || !dest || !mode || !qtyEl) return;
+
+  function money(n) {
+    if (n >= 1000) return "$" + Math.round(n / 10) * 10;
+    return "$" + Math.round(n);
+  }
+
+  function calc() {
+    var o = dest.options[dest.selectedIndex];
+    var qty = Math.max(parseInt(qtyEl.value, 10) || 0, 100);
+    var m = mode.value;
+    var cartons = Math.ceil(qty / pcs);
+    var volume = cartons * cbm;
+    var weight = cartons * gw;
+    var base, rate;
+    if (m === "sea") {
+      rate = parseFloat(o.dataset.sea);
+      base = Math.max(volume * rate, 180);
+    } else if (m === "air") {
+      rate = parseFloat(o.dataset.air);
+      base = Math.max(weight * rate, 60);
+    } else {
+      rate = parseFloat(o.dataset.exp);
+      base = Math.max(weight * rate, 30);
+    }
+    if (!rate) return;
+    var low = base * 0.9, high = base * 1.15;
+    outCost.textContent = money(low) + " – " + money(high);
+    outUnit.textContent = money(low / qty) + " – " + money(high / qty) + " / pc";
+    outTransit.textContent = m === "sea" ? o.dataset.tsea : (m === "air" ? o.dataset.tair : o.dataset.texp);
+    outMeta.textContent = "≈ " + cartons + " cartons · " + volume.toFixed(2) + " m³ · " + Math.round(weight) + " kg";
+  }
+
+  [dest, mode, qtyEl].forEach(function (el) {
+    el.addEventListener("change", calc);
+    el.addEventListener("input", calc);
+  });
+  calc();
+})();
+</script>
+{{- end }}
