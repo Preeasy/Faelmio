@@ -24,6 +24,49 @@
 <meta name="author" content="{{ site.Params.author }}">
 <link rel="canonical" href="{{ if .Params.canonicalURL -}} {{ trim .Params.canonicalURL " " }} {{- else -}} {{ .Permalink }} {{- end }}">
 
+{{- /* Fonts: preconnect + async stylesheet (avoids the CSS @import render-blocking chain) */}}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap"></noscript>
+
+{{- /* Open Graph / Twitter Card */}}
+{{- $brand := site.Params.label.text | default site.Title }}
+{{- $ogTitle := cond .IsHome site.Title (printf "%s | %s" .Title $brand) }}
+{{- $ogDesc := site.Params.description }}
+{{- with .Description }}{{ $ogDesc = . }}{{ end }}
+{{- if and (not .Description) (or .IsPage .IsSection) }}{{ with .Summary }}{{ $ogDesc = . | plainify | truncate 200 }}{{ end }}{{ end }}
+{{- $ogIsDefault := true }}
+{{- $ogImage := "images/brand/og-default.jpg" | absURL }}
+{{- with .Params.cover.image }}
+  {{- if not (hasPrefix . "/images/") }}
+    {{- $ogImage = . | absURL }}
+    {{- $ogIsDefault = false }}
+  {{- end }}
+{{- end }}
+{{- $locales := dict "en" "en_US" "es" "es_ES" "ja" "ja_JP" }}
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:site_name" content="{{ site.Title }}">
+<meta property="og:title" content="{{ $ogTitle }}">
+<meta property="og:description" content="{{ $ogDesc }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ $ogImage }}">
+{{- if $ogIsDefault }}
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+{{- end }}
+<meta property="og:image:alt" content="{{ $ogTitle }}">
+<meta property="og:locale" content="{{ index $locales .Lang | default "en_US" }}">
+{{- range .AllTranslations }}
+{{- if ne .Lang $.Lang }}
+<meta property="og:locale:alternate" content="{{ index $locales .Lang | default .Lang }}">
+{{- end }}
+{{- end }}
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ $ogTitle }}">
+<meta name="twitter:description" content="{{ $ogDesc }}">
+<meta name="twitter:image" content="{{ $ogImage }}">
+
 {{- /* Styles */}}
 {{- $theme_vars := (resources.Get "css/core/theme-vars.css") }}
 {{- $reset := (resources.Get "css/core/reset.css") }}

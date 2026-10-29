@@ -26,7 +26,7 @@
 
     <div class="hero-visual">
       <div class="frame">
-        <img src="{{ $img }}" alt="Faelmio toy wholesale showroom in Yiwu" loading="eager" width="1500" height="1125">
+        <img src="{{ $img }}" alt="Faelmio toy wholesale showroom in Yiwu" loading="eager" fetchpriority="high" width="1600" height="1200" decoding="async">
       </div>
       <span class="sticker is-coral s1">AQL Level II QC</span>
       <span class="sticker is-amber s2">CE · EN71 · ASTM · CPSIA</span>
@@ -68,7 +68,7 @@
       -}}
       {{- range $cats }}
       <a class="cat-card" href="{{ .url | absLangURL }}">
-        <img src="{{ .img | relURL }}" alt="{{ .title }}" loading="lazy">
+        <img src="{{ .img | relURL }}" alt="{{ .title }}" loading="lazy" width="900" height="1200" decoding="async">
         <span class="shade"></span>
         <span class="cat-body">
           <span class="cat-name"><span class="cat-kicker">{{ .kicker }}</span>{{ .title }}</span>
@@ -78,7 +78,7 @@
       {{- end }}
 
       <a class="cat-card is-oem" href="{{ "/custom-toy-oem/" | absLangURL }}">
-        <img src="{{ "images/oem/oem-process.jpg" | relURL }}" alt="Custom toy OEM service" loading="lazy">
+        <img src="{{ "images/oem/oem-process.jpg" | relURL }}" alt="Custom toy OEM service" loading="lazy" width="1600" height="1200" decoding="async">
         <span class="shade"></span>
         <span class="cat-body">
           <span class="cat-name"><span class="cat-kicker">09 · Your brand</span>{{ i18n "cat_oem" | default "Custom Toy OEM" }}</span>
@@ -188,7 +188,7 @@
   <div class="oem-inner">
     <div class="oem-media">
       <div class="frame">
-        <img src="{{ "images/oem/oem-process.jpg" | relURL }}" alt="Toy OEM design, sculpting and prototyping" loading="lazy">
+        <img src="{{ "images/oem/oem-process.jpg" | relURL }}" alt="Toy OEM design, sculpting and prototyping" loading="lazy" width="1600" height="1200" decoding="async">
       </div>
     </div>
     <div>

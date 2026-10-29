@@ -11,7 +11,7 @@
         <p class="about-lede">{{ $a.lede | default .Description }}</p>
       </div>
       <div class="about-hero-img">
-        <img src="{{ "images/about/about-team.jpg" | relURL }}" alt="Faelmio team in Yiwu" loading="eager">
+        <img src="{{ "images/about/about-team.jpg" | relURL }}" alt="Faelmio team in Yiwu" loading="eager" fetchpriority="high" width="1600" height="900" decoding="async">
       </div>
     </div>
     {{- with $a.stats }}

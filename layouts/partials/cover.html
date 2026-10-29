@@ -42,11 +42,11 @@
                 width="{{ $cover.Width }}" height="{{ $cover.Height }}"
                 alt="{{ $alt }}">
         {{- else }}{{/* Unprocessable image or responsive images disabled */}}
-            <img loading="{{ $loading }}" src="{{ $imgdl }}" alt="{{ $alt }}">
+            <img loading="{{ $loading }}" src="{{ $imgdl }}" alt="{{ $alt }}" decoding="async">
         {{- end }}
     {{- else }}
         {{- /* For absolute urls and external links, no img processing here */}}
-        <img loading="{{ $loading }}" src="{{ $imgdl }}" alt="{{ $alt }}"{{ with $fallback }} data-fallback="{{ . | relURL }}"{{ end }}>
+        <img loading="{{ $loading }}" src="{{ $imgdl }}" alt="{{ $alt }}" decoding="async"{{ with $fallback }} data-fallback="{{ . | relURL }}"{{ end }}>
     {{- end }}
 
     {{- if $addLink }}
@@ -62,8 +62,10 @@
 
 </figure>
 {{- else if $fallback }}
+{{- $fw := 900 }}{{ $fh := 1200 }}
+{{- if in $fallback "images/oem/" }}{{ $fw = 1600 }}{{ $fh = 1200 }}{{ end }}
 <figure class="entry-cover">
-    <img loading="{{ cond $.IsSingle "eager" "lazy" }}" src="{{ $fallback | relURL }}" alt="{{ .Title }}" />
+    <img loading="{{ cond $.IsSingle "eager" "lazy" }}" src="{{ $fallback | relURL }}" alt="{{ .Title }}" width="{{ $fw }}" height="{{ $fh }}" decoding="async" />
 </figure>
 {{- end }}{{/* End image */}}
 {{- end -}}{{/* End context */ -}}
