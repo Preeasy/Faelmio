@@ -50,7 +50,7 @@
       <div class="head-copy">
         <span class="section-eyebrow">{{ i18n "cat_eyebrow" | default "Product Categories" }}</span>
         <h2>{{ i18n "product_categories" | default "What We Source" }}</h2>
-        <p class="section-sub">{{ i18n "cat_sub" | default "Seven core toy categories plus full custom OEM — all from vetted Yiwu factories." }}</p>
+        <p class="section-sub">{{ i18n "cat_sub" | default "Eight core toy categories plus full custom OEM — all from vetted Yiwu factories." }}</p>
       </div>
       <a href="{{ "/toys/" | absLangURL }}" class="section-link">{{ i18n "view_all" | default "View all products" }} →</a>
     </div>
@@ -81,7 +81,11 @@
         <img src="{{ "images/oem/oem-process.jpg" | relURL }}" alt="Custom toy OEM service" loading="lazy" width="1600" height="1200" decoding="async">
         <span class="shade"></span>
         <span class="cat-body">
-          <span class="cat-name"><span class="cat-kicker">09 · Your brand</span>{{ i18n "cat_oem" | default "Custom Toy OEM" }}</span>
+          <span class="cat-copy">
+            <span class="cat-kicker">{{ i18n "oem_kicker" | default "09 · Your brand" }}</span>
+            <span class="cat-name">{{ i18n "cat_oem" | default "Custom Toy OEM" }}</span>
+            <span class="cat-tag">{{ i18n "cat_oem_tag" | default "Your own toy line — moulds, packaging and certifications, handled end to end." }}</span>
+          </span>
           <span class="cat-arrow"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
         </span>
       </a>

@@ -294,9 +294,31 @@ img { max-width: 100%; }
   color: #fff; transition: background var(--dur) var(--ease), border-color var(--dur) var(--ease);
 }
 .cat-card:hover .cat-arrow { background: var(--coral); border-color: var(--coral); }
-.cat-card.is-oem .shade {
-  background: linear-gradient(to top, rgba(217, 78, 40, 0.92) 0%, rgba(242, 100, 60, 0.55) 45%, rgba(242, 100, 60, 0.15) 100%);
+
+/* OEM — 9th card, full-width banner under the 4×2 grid */
+.cat-card.is-oem {
+  grid-column: 1 / -1;
+  aspect-ratio: 3.9 / 1;
 }
+.cat-card.is-oem .shade {
+  background: linear-gradient(90deg, rgba(20, 27, 45, 0.9) 0%, rgba(217, 78, 40, 0.88) 32%, rgba(242, 100, 60, 0.48) 62%, rgba(242, 100, 60, 0.06) 100%);
+}
+.cat-card.is-oem img { object-position: center 45%; }
+.cat-card.is-oem:hover img { transform: scale(1.03); }
+.cat-card.is-oem .cat-body {
+  left: clamp(24px, 3vw, 54px); right: clamp(24px, 3vw, 54px);
+  top: 50%; bottom: auto; transform: translateY(-50%);
+  align-items: center; gap: 28px;
+}
+.cat-copy { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; }
+.cat-card.is-oem .cat-kicker { margin-bottom: 9px; }
+.cat-card.is-oem .cat-name { font-size: clamp(1.5rem, 2.3vw, 2.1rem); }
+.cat-tag {
+  margin-top: 12px; max-width: 560px;
+  font-family: 'Inter', sans-serif; font-size: 0.92rem; line-height: 1.5;
+  color: rgba(255, 255, 255, 0.82);
+}
+.cat-card.is-oem .cat-arrow { width: 46px; height: 46px; }
 
 /* ===================== SERVICES (list style + icons) ===================== */
 .svc-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0 56px; }
@@ -929,6 +951,7 @@ img.img-missing { display: none !important; }
   .svc-grid { grid-template-columns: 1fr; }
   .oem-inner { grid-template-columns: 1fr; gap: 34px; }
   .cat-grid { grid-template-columns: repeat(2, 1fr); }
+  .cat-card.is-oem { aspect-ratio: 2.4 / 1; }
 }
 @media (max-width: 640px) {
   .header-nav { flex-wrap: wrap; padding: 10px var(--gutter); gap: 10px; }
@@ -945,6 +968,9 @@ img.img-missing { display: none !important; }
   .cat-body { left: 14px; right: 14px; bottom: 12px; }
   .cat-body .cat-name { font-size: 0.98rem; }
   .cat-arrow { width: 28px; height: 28px; }
+  .cat-card.is-oem { aspect-ratio: 2.1 / 1; }
+  .cat-card.is-oem .cat-arrow { width: 34px; height: 34px; }
+  .cat-tag { font-size: 0.85rem; margin-top: 9px; }
   .adv-grid { grid-template-columns: 1fr; }
   .process-row { grid-template-columns: 1fr; }
   .checklist { grid-template-columns: 1fr; }
