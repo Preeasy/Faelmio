@@ -311,6 +311,7 @@ img { max-width: 100%; }
   align-items: center; justify-content: flex-start; gap: 26px;
 }
 .cat-copy { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; }
+.cat-title-row { display: flex; align-items: center; gap: 16px; }
 .cat-card.is-oem .cat-kicker { margin-bottom: 9px; }
 .cat-card.is-oem .cat-name { font-size: clamp(1.5rem, 2.3vw, 2.1rem); }
 .cat-tag {
