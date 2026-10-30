@@ -1,12 +1,12 @@
 ---
-title: "About Faelmio — 17 Years Sourcing Toys from Yiwu"
-description: "Faelmio is a dedicated toy sourcing team based in Yiwu, China. 17 years of foreign trade and toy supply chain experience for B2B buyers, Amazon FBA sellers and independent toy brands."
+title: "About Yiwu Maxon — 13 Years Sourcing Toys from Yiwu"
+description: "Yiwu Maxon Imp.&Exp.Co.,Ltd. is a dedicated toy sourcing team based in Yiwu, China. Founded in 2012, 13 years of foreign trade and toy supply chain experience for B2B buyers, Amazon FBA sellers and independent toy brands."
 layout: about
 about:
-  eyebrow: "About Faelmio"
+  eyebrow: "About Yiwu Maxon"
   lede: "A small, senior team based full-time in Yiwu — building long-term supply chains for toy brands that care about quality, transparency and on-time delivery."
   stats:
-    - value: "17+"
+    - value: "13+"
       label: "Years sourcing in Yiwu"
     - value: "400+"
       label: "Factories vetted"
@@ -14,7 +14,7 @@ about:
       label: "Happy clients"
     - value: "24h"
       label: "Quote response"
-  story: "Faelmio was founded on a simple premise — toy sourcing from Yiwu should be personal, transparent and accountable. Our team lives and works here. We visit factories in person, negotiate in the local dialect and keep you posted at every step. No offshore call centres, no hidden fees, no missed shipments."
+  story: "Yiwu Maxon Imp.&Exp.Co.,Ltd. was founded in 2012 on a simple premise — toy sourcing from Yiwu should be personal, transparent and accountable. Our team lives and works here. We visit factories in person, negotiate in the local dialect and keep you posted at every step. No offshore call centres, no hidden fees, no missed shipments."
   mission: "To make it possible for toy brands of any size to source confidently from China — with the quality control, compliance paperwork and logistics normally reserved for the largest importers."
   values:
     - kicker: "Transparency"

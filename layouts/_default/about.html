@@ -6,12 +6,12 @@
   <div class="container">
     <div class="about-hero-grid">
       <div class="about-hero-copy">
-        <span class="section-eyebrow">{{ $a.eyebrow | default "About Faelmio" }}</span>
+        <span class="section-eyebrow">{{ $a.eyebrow | default "About Yiwu Maxon" }}</span>
         <h1>{{ .Title }}</h1>
         <p class="about-lede">{{ $a.lede | default .Description }}</p>
       </div>
       <div class="about-hero-img">
-        <img src="{{ "images/about/about-team.jpg" | relURL }}" alt="Faelmio team in Yiwu" loading="eager" fetchpriority="high" width="1600" height="900" decoding="async">
+        <img src="{{ "images/about/about-team.jpg" | relURL }}" alt="Yiwu Maxon team in Yiwu" loading="eager" fetchpriority="high" width="1600" height="900" decoding="async">
       </div>
     </div>
     {{- with $a.stats }}

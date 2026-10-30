@@ -4,8 +4,8 @@ description: "Send your toy sourcing inquiry, OEM quotation request to our Yiwu 
 ---
 Send your inquiry with product pictures, target MOQ and specifications. We reply within 24 hours.
 
-<form class="contact-form" action="https://formsubmit.co/etruetrading@gmail.com" method="POST">
-  <input type="hidden" name="_subject" value="New Toy Sourcing Inquiry | Faelmio.com">
+<form class="contact-form" action="https://formsubmit.co/maxon@maxoncn.com" method="POST">
+  <input type="hidden" name="_subject" value="New Toy Sourcing Inquiry | maxoncn.com">
   <input type="hidden" name="_next" value="https://www.faelmio.com/thanks/">
   <input type="hidden" name="_captcha" value="false">
   <input type="hidden" name="_honeypot" value="">
@@ -33,5 +33,5 @@ Send your inquiry with product pictures, target MOQ and specifications. We reply
 
 ## Contact Info
 - WhatsApp: [+86 182 5749 9725](https://wa.me/8618257499725)
-- Business Email: [etruetrading@gmail.com](mailto:etruetrading@gmail.com)
+- Business Email: [maxon@maxoncn.com](mailto:maxon@maxoncn.com)
 - Office Address: Yiwu, Zhejiang, China

@@ -4,8 +4,8 @@ description: "Envíe su consulta de abastecimiento de juguetes o solicitud de co
 ---
 Envíe su consulta con fotos de productos, MOQ objetivo y especificaciones. Respondemos en 24 horas.
 
-<form class="contact-form" action="https://formsubmit.co/etruetrading@gmail.com" method="POST">
-  <input type="hidden" name="_subject" value="Nueva Consulta de Abastecimiento de Juguetes | Faelmio.com">
+<form class="contact-form" action="https://formsubmit.co/maxon@maxoncn.com" method="POST">
+  <input type="hidden" name="_subject" value="Nueva Consulta de Abastecimiento de Juguetes | maxoncn.com">
   <input type="hidden" name="_next" value="https://www.faelmio.com/es/thanks/">
   <input type="hidden" name="_captcha" value="false">
   <input type="hidden" name="_honeypot" value="">
@@ -33,5 +33,5 @@ Envíe su consulta con fotos de productos, MOQ objetivo y especificaciones. Resp
 
 ## Información de Contacto
 - WhatsApp: [+86 182 5749 9725](https://wa.me/8618257499725)
-- Correo Empresarial: [etruetrading@gmail.com](mailto:etruetrading@gmail.com)
+- Correo Empresarial: [maxon@maxoncn.com](mailto:maxon@maxoncn.com)
 - Dirección de Oficina: Yiwu, Zhejiang, China

@@ -4,8 +4,8 @@ description: "おもちゃ調達のお問い合わせ、OEM見積もり依頼を
 ---
 製品の写真、目標MOQ、仕様と共にお問い合わせください。24時間以内に返信いたします。
 
-<form class="contact-form" action="https://formsubmit.co/etruetrading@gmail.com" method="POST">
-  <input type="hidden" name="_subject" value="新規おもちゃ調達お問い合わせ | Faelmio.com">
+<form class="contact-form" action="https://formsubmit.co/maxon@maxoncn.com" method="POST">
+  <input type="hidden" name="_subject" value="新規おもちゃ調達お問い合わせ | maxoncn.com">
   <input type="hidden" name="_next" value="https://www.faelmio.com/ja/thanks/">
   <input type="hidden" name="_captcha" value="false">
   <input type="hidden" name="_honeypot" value="">
@@ -33,5 +33,5 @@ description: "おもちゃ調達のお問い合わせ、OEM見積もり依頼を
 
 ## 連絡先情報
 - WhatsApp: [+86 182 5749 9725](https://wa.me/8618257499725)
-- ビジネスメール: [etruetrading@gmail.com](mailto:etruetrading@gmail.com)
+- ビジネスメール: [maxon@maxoncn.com](mailto:maxon@maxoncn.com)
 - 事務所住所：中国浙江省義烏市

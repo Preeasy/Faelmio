@@ -7,7 +7,7 @@ tags: ["OEM", "manufacturing", "China", "factory"]
 
 If you've ever designed a toy idea on paper and wondered how to turn it into a real, sellable product, OEM manufacturing in China is your answer. OEM (Original Equipment Manufacturer) toy production in Yiwu and surrounding regions has matured into a precise, efficient ecosystem that can take your concept from a sketch to container-loads of finished product in 3–6 months.
 
-This playbook walks through every stage, with real costs, timelines and pitfalls we've learned from 17 years managing OEM toy projects for B2B buyers worldwide.
+This playbook walks through every stage, with real costs, timelines and pitfalls we've learned from 13 years managing OEM toy projects for B2B buyers worldwide.
 
 ## What OEM Means
 In the toy industry, OEM means you design or specify a product, and a factory manufactures it exclusively for you. Unlike ODM (Original Design Manufacturer) where you modify an existing factory design, true OEM starts from zero — your drawing, your mold, your specifications. This is how successful private-label brands like Melissa & Doug, KidKraft and thousands of Amazon private-label sellers developed their products.
