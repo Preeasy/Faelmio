@@ -20,6 +20,10 @@ cover:
   alt: "Ivory cream custom plush bear with satin ribbon, studio product photo"
 
 gallery:
+  - src: "https://images.faelmio.com/toys/plush-toys/custom-plush-demo.mp4"
+    type: video
+    poster: "/images/products/custom-plush/01-front.jpg"
+    alt: "Custom plush bear 360° rotation video demo"
   - src: "/images/products/custom-plush/01-front.jpg"
     alt: "Custom plush bear, three-quarter front view on beige background"
   - src: "/images/products/custom-plush/02-detail.jpg"
@@ -28,10 +32,6 @@ gallery:
     alt: "Three sizes of the same plush bear shown side by side, 20 cm to 45 cm"
   - src: "/images/products/custom-plush/04-packaging.jpg"
     alt: "Plush bear next to a kraft gift box with blank hangtag packaging"
-  - src: "https://images.faelmio.com/toys/plush-toys/custom-plush-demo.mp4"
-    type: video
-    poster: "/images/products/custom-plush/01-front.jpg"
-    alt: "Custom plush bear 360° rotation video demo"
   - src: "/images/products/custom-plush/05-colours.jpg"
     alt: "Three colourways of the plush bear: cream, sage green and blush pink"
   - src: "/images/products/custom-plush/06-shelf.jpg"
