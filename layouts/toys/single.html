@@ -82,6 +82,26 @@
           {{- end }}
         </div>
         {{- end }}
+
+        {{- /* -------- trust badges (below gallery) -------- */}}
+        <div class="pdp-trust" aria-label="Buyer trust signals">
+          <div class="pdp-trust-item">
+            <span class="pdp-trust-icon" aria-hidden="true">✓</span>
+            <span><strong>{{ i18n "pdp_trust_cert" | default "Certified safe" }}</strong><br><small>{{ i18n "pdp_trust_cert_sub" | default "EN71 · ASTM · CE" }}</small></span>
+          </div>
+          <div class="pdp-trust-item">
+            <span class="pdp-trust-icon" aria-hidden="true">🔍</span>
+            <span><strong>{{ i18n "pdp_trust_qc" | default "Pre-shipment QC" }}</strong><br><small>{{ i18n "pdp_trust_qc_sub" | default "AQL II inspection" }}</small></span>
+          </div>
+          <div class="pdp-trust-item">
+            <span class="pdp-trust-icon" aria-hidden="true">⚡</span>
+            <span><strong>{{ i18n "pdp_trust_quote" | default "24h quote" }}</strong><br><small>{{ i18n "pdp_trust_quote_sub" | default "No commitment" }}</small></span>
+          </div>
+          <div class="pdp-trust-item">
+            <span class="pdp-trust-icon" aria-hidden="true">📦</span>
+            <span><strong>{{ i18n "pdp_trust_sample" | default "Sample first" }}</strong><br><small>{{ i18n "pdp_trust_sample_sub" | default "Before mass prod." }}</small></span>
+          </div>
+        </div>
       </div>
 
       {{- /* -------- info panel -------- */}}
@@ -130,26 +150,6 @@
           {{- range . }}<li>{{ . }}</li>{{ end }}
         </ul>
         {{- end }}
-
-        {{- /* -------- trust badges -------- */}}
-        <div class="pdp-trust" aria-label="Buyer trust signals">
-          <div class="pdp-trust-item">
-            <span class="pdp-trust-icon" aria-hidden="true">✓</span>
-            <span><strong>{{ i18n "pdp_trust_cert" | default "Certified safe" }}</strong><br><small>{{ i18n "pdp_trust_cert_sub" | default "EN71 · ASTM · CE" }}</small></span>
-          </div>
-          <div class="pdp-trust-item">
-            <span class="pdp-trust-icon" aria-hidden="true">🔍</span>
-            <span><strong>{{ i18n "pdp_trust_qc" | default "Pre-shipment QC" }}</strong><br><small>{{ i18n "pdp_trust_qc_sub" | default "AQL II inspection" }}</small></span>
-          </div>
-          <div class="pdp-trust-item">
-            <span class="pdp-trust-icon" aria-hidden="true">⚡</span>
-            <span><strong>{{ i18n "pdp_trust_quote" | default "24h quote" }}</strong><br><small>{{ i18n "pdp_trust_quote_sub" | default "No commitment" }}</small></span>
-          </div>
-          <div class="pdp-trust-item">
-            <span class="pdp-trust-icon" aria-hidden="true">📦</span>
-            <span><strong>{{ i18n "pdp_trust_sample" | default "Sample first" }}</strong><br><small>{{ i18n "pdp_trust_sample_sub" | default "Before mass prod." }}</small></span>
-          </div>
-        </div>
 
         {{- /* -------- freight reference (compact) -------- */}}
         {{- with .Params.carton }}
@@ -203,14 +203,9 @@
     {{- /* -------- overview + specs -------- */}}
     <div class="pdp-block">
       <div class="pdp-prose md-content">
-        {{- /* brand intro block (A+ position 1) */}}
-        <section class="pdp-brand-intro">
-          <h2>{{ i18n "brand_intro_title" | default "About Faelmio" }}</h2>
-          <p>{{ i18n "brand_intro_body" | default "Faelmio is a Yiwu-based toy sourcing team founded in 2012. For 13 years, we've helped importers, Amazon sellers and toy brands source quality products from vetted Chinese factories." }}</p>
-        </section>
         {{- partial "anchored_headings.html" .Content -}}
       </div>
-      {{- if or .Params.specs .Params.customization .Params.carton }}
+      {{- if or .Params.specs .Params.carton }}
       <aside class="pdp-specs">
         {{- with .Params.specs }}
         <h2>{{ i18n "pdp_specs" | default "Specifications" }}</h2>
@@ -219,40 +214,6 @@
           <div><dt>{{ .label }}</dt><dd>{{ .value }}</dd></div>
           {{- end }}
         </dl>
-        {{- end }}
-
-        {{- /* customization merged into specs */}}
-        {{- with .Params.customization }}
-        <h3 class="pdp-spec-sub">{{ i18n "pdp_custom_eyebrow" | default "Customization" }}</h3>
-        <div class="pdp-spec-cust">
-          {{- $mods := slice
-            (dict "key" "product" "title" (i18n "pdp_custom_product" | default "Product"))
-            (dict "key" "packaging" "title" (i18n "pdp_custom_packaging" | default "Packaging"))
-            (dict "key" "bundle" "title" (i18n "pdp_custom_bundle" | default "Bundle"))
-          }}
-          {{- range $mods }}
-          {{- $items := index ($.Params.customization | default (dict)) .key }}
-          <div class="pdp-spec-cust-item">
-            <strong>{{ .title }}</strong>
-            <ul class="pdp-list">
-              {{- with $items }}
-                {{- range . }}<li>{{ . }}</li>{{ end }}
-              {{- else }}
-                {{- if eq .key "product" }}
-                <li>Size, colour & material changes</li>
-                <li>Logo print or emboss</li>
-                {{- else if eq .key "packaging" }}
-                <li>Printed box, hangtag, polybag</li>
-                <li>FBA labels & barcodes</li>
-                {{- else }}
-                <li>Mix colours in one carton</li>
-                <li>Bundle with catalogue</li>
-                {{- end }}
-              {{- end }}
-            </ul>
-          </div>
-          {{- end }}
-        </div>
         {{- end }}
 
         {{- /* logistics merged into specs */}}
@@ -322,8 +283,61 @@
       </form>
     </section>
 
+    {{- /* -------- customization (Make it yours) -------- */}}
+    {{- with .Params.customization }}
+    <section class="pdp-modules" id="customize">
+      <header class="pdp-sec-head">
+        <p class="pdp-eyebrow">{{ i18n "pdp_custom_eyebrow" | default "Make it yours" }}</p>
+        <h2>{{ i18n "pdp_custom_title" | default "Three ways to make this product your own" }}</h2>
+      </header>
+      <div class="pdp-module-grid">
+        {{- $mods := slice
+          (dict "key" "product" "n" "01" "title" (i18n "pdp_custom_product" | default "Product customisation") "icon" "✎")
+          (dict "key" "packaging" "n" "02" "title" (i18n "pdp_custom_packaging" | default "Packaging customisation") "icon" "▣")
+          (dict "key" "bundle" "n" "03" "title" (i18n "pdp_custom_bundle" | default "Bundle with our catalogue") "icon" "⊞")
+        }}
+        {{- range $mods }}
+        {{- $items := index ($.Params.customization | default (dict)) .key }}
+        <article class="pdp-module">
+          <span class="pdp-module-n">{{ .n }}</span>
+          <h3>{{ .title }}</h3>
+          {{- with $items }}
+          <ul class="pdp-list">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+          {{- else }}
+          {{- if eq .key "product" }}
+          <ul class="pdp-list">
+            <li>Size, colour and material changes</li>
+            <li>Logo embroidery, print or moulded mark</li>
+            <li>New prototype from sketch or sample</li>
+          </ul>
+          {{- else if eq .key "packaging" }}
+          <ul class="pdp-list">
+            <li>Printed gift box, hangtag or header card</li>
+            <li>Polybag, backing card or display carton</li>
+            <li>Amazon FBA labels and inner barcodes</li>
+          </ul>
+          {{- else }}
+          <ul class="pdp-list">
+            <li>Mix sizes and colours in one carton</li>
+            <li>Assortment sets built around your range</li>
+            <li>Consolidate several suppliers in our warehouse</li>
+          </ul>
+          {{- end }}
+          {{- end }}
+        </article>
+        {{- end }}
+      </div>
+    </section>
+    {{- end }}
+
     {{- /* -------- brand story banner -------- */}}
     {{- partial "brand-story-banner.html" (dict "show_cta" true) }}
+
+    {{- /* -------- About Faelmio (A+ brand intro) -------- */}}
+    <section class="pdp-brand-intro">
+      <h2>{{ i18n "brand_intro_title" | default "About Faelmio" }}</h2>
+      <p>{{ i18n "brand_intro_body" | default "Faelmio is a Yiwu-based toy sourcing team founded in 2012. For 13 years, we've helped importers, Amazon sellers and toy brands source quality products from vetted Chinese factories." }}</p>
+    </section>
 
     {{- /* -------- related -------- */}}
     {{- with .Params.related }}

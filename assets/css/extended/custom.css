@@ -1289,9 +1289,10 @@ img.img-missing { display: none !important; }
 
 /* trust badges in info panel */
 .pdp-trust {
-  display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;
-  margin-top: 18px;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;
+  margin-top: 16px;
 }
+@media (max-width: 900px) { .pdp-trust { grid-template-columns: repeat(2, 1fr); } }
 .pdp-trust-item {
   display: flex; align-items: flex-start; gap: 10px;
   padding: 12px; background: var(--paper);
