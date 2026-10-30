@@ -1,0 +1,29 @@
+# Product URL migration: slug → SKU (301 permanent redirect)
+/toys/fidget-sensory-toys/push-pop-bubble/    /toys/fidget-sensory-toys/FM-FS-V8001A/    301
+/toys/plush-toys/custom-plush/               /toys/plush-toys/FM-PL-014/               301
+/toys/plush-toys/stock-plush/                /toys/plush-toys/FM-PL-V8002A/            301
+/toys/dolls-action-figures/posable-action-figure/  /toys/dolls-action-figures/FM-DA-V8003A/  301
+/toys/educational-stem-toys/building-blocks-set/   /toys/educational-stem-toys/FM-ES-V8004A/  301
+/toys/outdoor-water-toys/inflatable-pool-float/    /toys/outdoor-water-toys/FM-OW-V8005A/     301
+/toys/party-promotional-toys/novelty-party-pack/   /toys/party-promotional-toys/FM-PP-V8006A/  301
+/toys/rc-electronic-toys/remote-control-car/       /toys/rc-electronic-toys/FM-RC-V8007A/      301
+
+# Spanish
+/es/toys/fidget-sensory-toys/push-pop-bubble/    /es/toys/fidget-sensory-toys/FM-FS-V8001A/    301
+/es/toys/plush-toys/custom-plush/               /es/toys/plush-toys/FM-PL-014/               301
+/es/toys/plush-toys/stock-plush/                /es/toys/plush-toys/FM-PL-V8002A/            301
+/es/toys/dolls-action-figures/posable-action-figure/  /es/toys/dolls-action-figures/FM-DA-V8003A/  301
+/es/toys/educational-stem-toys/building-blocks-set/   /es/toys/educational-stem-toys/FM-ES-V8004A/  301
+/es/toys/outdoor-water-toys/inflatable-pool-float/    /es/toys/outdoor-water-toys/FM-OW-V8005A/     301
+/es/toys/party-promotional-toys/novelty-party-pack/   /es/toys/party-promotional-toys/FM-PP-V8006A/  301
+/es/toys/rc-electronic-toys/remote-control-car/       /es/toys/rc-electronic-toys/FM-RC-V8007A/      301
+
+# Japanese
+/ja/toys/fidget-sensory-toys/push-pop-bubble/    /ja/toys/fidget-sensory-toys/FM-FS-V8001A/    301
+/ja/toys/plush-toys/custom-plush/               /ja/toys/plush-toys/FM-PL-014/               301
+/ja/toys/plush-toys/stock-plush/                /ja/toys/plush-toys/FM-PL-V8002A/            301
+/ja/toys/dolls-action-figures/posable-action-figure/  /ja/toys/dolls-action-figures/FM-DA-V8003A/  301
+/ja/toys/educational-stem-toys/building-blocks-set/   /ja/toys/educational-stem-toys/FM-ES-V8004A/  301
+/ja/toys/outdoor-water-toys/inflatable-pool-float/    /ja/toys/outdoor-water-toys/FM-OW-V8005A/     301
+/ja/toys/party-promotional-toys/novelty-party-pack/   /ja/toys/party-promotional-toys/FM-PP-V8006A/  301
+/ja/toys/rc-electronic-toys/remote-control-car/       /ja/toys/rc-electronic-toys/FM-RC-V8007A/      301
