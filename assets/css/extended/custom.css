@@ -1067,6 +1067,7 @@ img.img-missing { display: none !important; }
   .contact-form { padding: 22px 18px; }
   .product-inquiry { padding: 28px 20px; }
   .product-inquiry .form-grid { grid-template-columns: 1fr; }
+  .pdp-inquiry .form-grid { grid-template-columns: 1fr; }
   .product-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
   .custom-footer { padding: 0 0 22px; }
@@ -1246,7 +1247,7 @@ img.img-missing { display: none !important; }
 .fr-note { margin: 5px 0 0; font-size: 0.72rem; line-height: 1.5; color: var(--muted); }
 
 /* shared section furniture */
-.pdp-sec-head { margin-bottom: 26px; }
+.pdp-sec-head { margin-bottom: 16px; }
 .pdp-eyebrow {
   margin: 0 0 10px; font-size: 0.72rem; font-weight: 700;
   letter-spacing: 0.18em; text-transform: uppercase; color: var(--coral);
@@ -1260,7 +1261,7 @@ img.img-missing { display: none !important; }
 .pdp-block {
   display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
   gap: clamp(26px, 4vw, 54px); align-items: start;
-  margin-top: clamp(44px, 6vw, 76px); padding-top: clamp(32px, 4vw, 50px);
+  margin-top: clamp(26px, 3.4vw, 42px); padding-top: clamp(20px, 2.6vw, 30px);
   border-top: 1px solid var(--line);
 }
 .pdp-prose { max-width: none !important; padding-inline: 0 !important; }
@@ -1336,7 +1337,7 @@ img.img-missing { display: none !important; }
 }
 
 /* customisation modules */
-.pdp-modules { margin-top: clamp(44px, 6vw, 76px); }
+.pdp-modules { margin-top: clamp(26px, 3.4vw, 42px); }
 .pdp-module-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .pdp-module {
   padding: 26px 24px; background: var(--paper);
@@ -1377,9 +1378,9 @@ img.img-missing { display: none !important; }
 }
 
 /* FAQ */
-.pdp-faq { margin-top: clamp(44px, 6vw, 76px); }
+.pdp-faq { margin-top: clamp(26px, 3.4vw, 42px); }
 .pdp-faq-list { border-top: 1px solid var(--line); }
-.pdp-faq details { border-bottom: 1px solid var(--line); padding: 17px 0; }
+.pdp-faq details { border-bottom: 1px solid var(--line); padding: 12px 0; }
 .pdp-faq summary {
   display: flex; align-items: center; justify-content: space-between; gap: 18px;
   list-style: none; cursor: pointer;
@@ -1399,9 +1400,16 @@ img.img-missing { display: none !important; }
 .pdp-inquiry {
   display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
   gap: clamp(26px, 4vw, 56px); align-items: start;
-  margin-top: clamp(44px, 6vw, 76px); padding: clamp(26px, 3.4vw, 46px);
+  margin-top: clamp(26px, 3.4vw, 42px); padding: clamp(22px, 2.8vw, 36px);
   background: var(--cream-2); border-radius: var(--r-lg);
 }
+.pdp-inquiry .form-grid {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 16px;
+}
+.pdp-inquiry .form-grid label { display: flex; flex-direction: column; min-width: 0; }
+.pdp-inquiry .contact-form input,
+.pdp-inquiry .contact-form textarea { margin-bottom: 12px; }
 .pdp-inquiry h2 { margin: 0 0 12px; font-size: clamp(1.5rem, 2.3vw, 2rem); line-height: 1.12; }
 .pdp-inquiry-copy p { margin: 0 0 16px; max-width: 46ch; }
 .pdp-inquiry-facts { list-style: none; margin: 0; padding: 0; }
@@ -1414,8 +1422,18 @@ img.img-missing { display: none !important; }
   color: var(--coral); font-weight: 700; font-size: 0.85rem;
 }
 
+/* about Faelmio (PDP A+ intro) */
+.pdp-brand-intro {
+  margin-top: clamp(26px, 3.4vw, 42px);
+  padding-top: clamp(18px, 2.2vw, 26px);
+  border-top: 1px solid var(--line);
+  max-width: 82ch;
+}
+.pdp-brand-intro h2 { margin: 0 0 10px; font-size: clamp(1.15rem, 1.7vw, 1.45rem); letter-spacing: -0.01em; }
+.pdp-brand-intro p { margin: 0; font-size: 0.94rem; line-height: 1.7; color: var(--text); }
+
 /* related */
-.pdp-related { margin: clamp(44px, 6vw, 76px) 0 clamp(36px, 5vw, 64px); }
+.pdp-related { margin: clamp(26px, 3.4vw, 42px) 0 clamp(20px, 2.6vw, 32px); }
 .pdp-related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
 .pdp-related-card {
   position: relative; display: block; overflow: hidden;
