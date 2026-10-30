@@ -106,6 +106,58 @@ name = "会社概要"
 url = "/ja/about/"
 weight = 4
 
+[Languages.fr]
+languageName = "Français"
+languageCode = "fr"
+weight = 4
+[Languages.fr.menu]
+[[Languages.fr.menu.main]]
+name = "Accueil"
+url = "/fr/"
+weight = 1
+[[Languages.fr.menu.main]]
+name = "Produits"
+url = "/fr/toys/"
+weight = 2
+[[Languages.fr.menu.main]]
+name = "Service OEM"
+url = "/fr/custom-toy-oem/"
+weight = 3
+[[Languages.fr.menu.main]]
+name = "À propos"
+url = "/fr/about/"
+weight = 4
+[[Languages.fr.menu.main]]
+name = "Contact"
+url = "/fr/contact/"
+weight = 5
+
+[Languages.ko]
+languageName = "한국어"
+languageCode = "ko"
+weight = 5
+[Languages.ko.menu]
+[[Languages.ko.menu.main]]
+name = "홈"
+url = "/ko/"
+weight = 1
+[[Languages.ko.menu.main]]
+name = "제품"
+url = "/ko/toys/"
+weight = 2
+[[Languages.ko.menu.main]]
+name = "OEM 서비스"
+url = "/ko/custom-toy-oem/"
+weight = 3
+[[Languages.ko.menu.main]]
+name = "회사 소개"
+url = "/ko/about/"
+weight = 4
+[[Languages.ko.menu.main]]
+name = "문의"
+url = "/ko/contact/"
+weight = 5
+
 [params]
 env = "production"
 title = "Faelmio | Toy Sourcing Agent"
