@@ -636,7 +636,7 @@ img { max-width: 100%; }
 .page-header .breadcrumbs { font-size: 0.78rem; color: var(--muted); margin-bottom: 16px; text-transform: uppercase; letter-spacing: 0.12em; }
 
 .product-grid {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(272px, 1fr)); gap: 22px;
+  display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 22px;
   width: 100%; max-width: var(--maxw); margin-inline: auto;
   padding-inline: var(--gutter); box-sizing: border-box;
 }
@@ -649,10 +649,18 @@ img { max-width: 100%; }
 .product-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-md); }
 .product-card .entry-cover { margin: 0; }
 .product-card .entry-cover img { width: 100%; height: 240px; object-fit: cover; display: block; }
-.product-card h2 { font-size: 1.1rem; margin: 0 0 8px; font-family: 'Fraunces', serif; }
+.product-card h2 { font-size: 1.1rem; margin: 0 0 8px; font-family: 'Fraunces', serif; line-height: 1.25; }
 .product-card h2 a { color: var(--ink); text-decoration: none; }
-.product-card .card-body { padding: 20px 20px 22px; flex: 1; display: flex; flex-direction: column; }
-.product-card p { color: var(--muted); font-size: 0.9rem; line-height: 1.6; margin: 0 0 12px; flex: 1; }
+.product-card .card-body {
+  padding: 20px 20px 22px; flex: 1; display: flex; flex-direction: column;
+  min-height: 0; overflow: hidden;
+}
+.product-card p {
+  color: var(--muted); font-size: 0.9rem; line-height: 1.6; margin: 0 0 12px;
+  flex: 1; min-height: 0;
+  display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical;
+  overflow: hidden;
+}
 .entry-link { position: absolute; inset: 0; }
 
 /* ===================== OEM CROSS-SELL CALLOUT (on /toys/) ===================== */
@@ -994,6 +1002,7 @@ img.img-missing { display: none !important; }
 /* ===================== RESPONSIVE ===================== */
 @media (max-width: 1100px) {
   .cat-grid { grid-template-columns: repeat(3, 1fr); }
+  .product-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .process-row { grid-template-columns: repeat(2, 1fr); gap: 32px 22px; }
   .process-row::before { display: none; }
   .adv-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1012,6 +1021,7 @@ img.img-missing { display: none !important; }
   .svc-grid { grid-template-columns: 1fr; }
   .oem-inner { grid-template-columns: 1fr; gap: 34px; }
   .cat-grid { grid-template-columns: repeat(2, 1fr); }
+  .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .cat-card.is-oem { aspect-ratio: 2.4 / 1; }
 }
 @media (max-width: 640px) {
@@ -1042,6 +1052,7 @@ img.img-missing { display: none !important; }
   .contact-form { padding: 22px 18px; }
   .product-inquiry { padding: 28px 20px; }
   .product-inquiry .form-grid { grid-template-columns: 1fr; }
+  .product-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; }
   .custom-footer { padding: 0 0 22px; }
   .whatsapp-float { width: 52px; height: 52px; right: 16px; bottom: 16px; }
