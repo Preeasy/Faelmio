@@ -32,7 +32,7 @@ oem:
 1. Supplier sourcing & factory verification
 2. Price negotiation & full order follow-up
 3. Pre-shipment inspection (AQL Level II)
-4. Factory on-site QC — $350/day Guangdong, $250/day Zhejiang
+4. QC inspection — $0 (simple QC check at warehouse); professional inspection charge: $350/day Guangdong, $250/day Zhejiang
 5. Goods consolidation with 15 days free warehouse storage
 6. OEM project management & sample tracking
 7. Global shipping & DDP door-to-door delivery
