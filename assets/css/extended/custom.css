@@ -954,12 +954,12 @@ img { max-width: 100%; }
   width: 100%; max-width: var(--maxw); margin: 0 auto; box-sizing: border-box;
   padding: 24px var(--gutter); border-top: 1px solid rgba(251, 247, 238, 0.12);
 }
-.footer-trust > div { display: flex; flex-direction: column; gap: 2px; }
+.footer-trust > div { display: flex; flex-direction: column; gap: 2px; align-items: center; text-align: center; }
 .footer-trust strong {
   font-family: 'Fraunces', Georgia, serif; font-weight: 600;
   font-size: 1.05rem; color: var(--cream); letter-spacing: 0.01em;
 }
-.footer-trust span { font-size: 0.78rem; color: rgba(251, 247, 238, 0.45); }
+.footer-trust span { font-size: 0.78rem; color: rgba(251, 247, 238, 0.45); text-align: center; }
 
 .footer-bottom {
   width: 100%; max-width: var(--maxw); margin: 0 auto;
