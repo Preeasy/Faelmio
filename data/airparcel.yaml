@@ -1,0 +1,722 @@
+# Air parcel (global small packet) rate card — source values in RMB, converted to USD at 6.4
+# fields: continent, name, code, min_kg, max_kg, kg_rmb (per kg), parcel_rmb (per parcel), transit
+- continent: north-america
+  name: "Canada"
+  code: CA
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 155
+  parcel_rmb: 48
+  transit: "8–12 days"
+- continent: north-america
+  name: "Costa Rica"
+  code: CR
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 200
+  parcel_rmb: 49
+  transit: "15–25 days"
+- continent: north-america
+  name: "Mexico"
+  code: MX
+  min_kg: 0.5
+  max_kg: 30.0
+  kg_rmb: 195
+  parcel_rmb: 55
+  transit: "9–15 days"
+- continent: north-america
+  name: "Puerto Rico"
+  code: PR
+  min_kg: 0.5
+  max_kg: 30.0
+  kg_rmb: 215
+  parcel_rmb: 65
+  transit: "12–18 days"
+- continent: north-america
+  name: "United States"
+  code: US
+  min_kg: 0.5
+  max_kg: 5.0
+  kg_rmb: 175
+  parcel_rmb: 45
+  transit: "8–12 days"
+- continent: europe
+  name: "Austria"
+  code: AT
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 155
+  parcel_rmb: 53
+  transit: "8–12 days"
+- continent: europe
+  name: "Belgium"
+  code: BE
+  min_kg: 0.5
+  max_kg: 5.0
+  kg_rmb: 150
+  parcel_rmb: 52
+  transit: "8–12 days"
+- continent: europe
+  name: "Bulgaria"
+  code: BG
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 155
+  parcel_rmb: 44
+  transit: "8–12 days"
+- continent: europe
+  name: "Croatia"
+  code: HR
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 155
+  parcel_rmb: 43
+  transit: "8–12 days"
+- continent: europe
+  name: "Cyprus"
+  code: CY
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 185
+  parcel_rmb: 44
+  transit: "8–15 days"
+- continent: europe
+  name: "Czechia"
+  code: CZ
+  min_kg: 0.5
+  max_kg: 10.0
+  kg_rmb: 155
+  parcel_rmb: 40
+  transit: "8–12 days"
+- continent: europe
+  name: "Denmark"
+  code: DK
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 160
+  parcel_rmb: 51
+  transit: "8–12 days"
+- continent: europe
+  name: "Estonia"
+  code: EE
+  min_kg: 0.5
+  max_kg: 10.0
+  kg_rmb: 155
+  parcel_rmb: 37
+  transit: "8–12 days"
+- continent: europe
+  name: "Finland"
+  code: FI
+  min_kg: 0.5
+  max_kg: 10.0
+  kg_rmb: 160
+  parcel_rmb: 48
+  transit: "8–12 days"
+- continent: europe
+  name: "France"
+  code: FR
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 145
+  parcel_rmb: 44
+  transit: "8–12 days"
+- continent: europe
+  name: "Germany"
+  code: DE
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 140
+  parcel_rmb: 48
+  transit: "8–12 days"
+- continent: europe
+  name: "Greece"
+  code: GR
+  min_kg: 0.5
+  max_kg: 10.0
+  kg_rmb: 155
+  parcel_rmb: 41
+  transit: "8–12 days"
+- continent: europe
+  name: "Guernsey"
+  code: GG
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 165
+  parcel_rmb: 58
+  transit: "15–25 days"
+- continent: europe
+  name: "Hungary"
+  code: HU
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 150
+  parcel_rmb: 43
+  transit: "8–12 days"
+- continent: europe
+  name: "Ireland"
+  code: IE
+  min_kg: 0.5
+  max_kg: 10.0
+  kg_rmb: 155
+  parcel_rmb: 49
+  transit: "8–12 days"
+- continent: europe
+  name: "Isle of Man"
+  code: IM
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 165
+  parcel_rmb: 58
+  transit: "15–25 days"
+- continent: europe
+  name: "Italy"
+  code: IT
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 140
+  parcel_rmb: 51
+  transit: "8–12 days"
+- continent: europe
+  name: "Jersey"
+  code: JE
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 165
+  parcel_rmb: 58
+  transit: "15–25 days"
+- continent: europe
+  name: "Latvia"
+  code: LV
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 155
+  parcel_rmb: 37
+  transit: "8–12 days"
+- continent: europe
+  name: "Lithuania"
+  code: LT
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 155
+  parcel_rmb: 37
+  transit: "8–12 days"
+- continent: europe
+  name: "Luxembourg"
+  code: LU
+  min_kg: 0.5
+  max_kg: 2.0
+  kg_rmb: 170
+  parcel_rmb: 52
+  transit: "8–12 days"
+- continent: europe
+  name: "Malta"
+  code: MT
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 190
+  parcel_rmb: 58
+  transit: "10–15 days"
+- continent: europe
+  name: "Netherlands"
+  code: NL
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 150
+  parcel_rmb: 50
+  transit: "8–12 days"
+- continent: europe
+  name: "Norway"
+  code: NO
+  min_kg: 0.5
+  max_kg: 5.0
+  kg_rmb: 150
+  parcel_rmb: 53
+  transit: "8–15 days"
+- continent: europe
+  name: "Poland"
+  code: PL
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 155
+  parcel_rmb: 42
+  transit: "8–12 days"
+- continent: europe
+  name: "Portugal"
+  code: PT
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 160
+  parcel_rmb: 47
+  transit: "8–12 days"
+- continent: europe
+  name: "Romania"
+  code: RO
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 155
+  parcel_rmb: 64
+  transit: "8–12 days"
+- continent: europe
+  name: "Serbia"
+  code: RS
+  min_kg: 0.5
+  max_kg: 5.0
+  kg_rmb: 165
+  parcel_rmb: 48
+  transit: "8–12 days"
+- continent: europe
+  name: "Slovakia"
+  code: SK
+  min_kg: 0.5
+  max_kg: 10.0
+  kg_rmb: 160
+  parcel_rmb: 48
+  transit: "8–12 days"
+- continent: europe
+  name: "Slovenia"
+  code: SI
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 155
+  parcel_rmb: 43
+  transit: "8–12 days"
+- continent: europe
+  name: "Spain"
+  code: ES
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 140
+  parcel_rmb: 43
+  transit: "8–12 days"
+- continent: europe
+  name: "Sweden"
+  code: SE
+  min_kg: 0.5
+  max_kg: 5.0
+  kg_rmb: 165
+  parcel_rmb: 42
+  transit: "8–12 days"
+- continent: europe
+  name: "Switzerland"
+  code: CH
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 155
+  parcel_rmb: 58
+  transit: "8–12 days"
+- continent: europe
+  name: "Ukraine"
+  code: UA
+  min_kg: 0.5
+  max_kg: 2.0
+  kg_rmb: 175
+  parcel_rmb: 36
+  transit: "10–15 days"
+- continent: europe
+  name: "United Kingdom"
+  code: GB
+  min_kg: 0.5
+  max_kg: 10.0
+  kg_rmb: 145
+  parcel_rmb: 39
+  transit: "8–12 days"
+- continent: south-america
+  name: "Argentina"
+  code: AR
+  min_kg: 0.5
+  max_kg: 2.0
+  kg_rmb: 290
+  parcel_rmb: 48
+  transit: "15–25 days"
+- continent: south-america
+  name: "Brazil"
+  code: BR
+  min_kg: 0.5
+  max_kg: 5.0
+  kg_rmb: 185
+  parcel_rmb: 81
+  transit: "15–25 days"
+- continent: south-america
+  name: "Chile"
+  code: CL
+  min_kg: 0.5
+  max_kg: 10.0
+  kg_rmb: 185
+  parcel_rmb: 65
+  transit: "15–25 days"
+- continent: south-america
+  name: "Colombia"
+  code: CO
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 210
+  parcel_rmb: 60
+  transit: "15–25 days"
+- continent: south-america
+  name: "Peru"
+  code: PE
+  min_kg: 0.5
+  max_kg: 5.0
+  kg_rmb: 210
+  parcel_rmb: 65
+  transit: "15–25 days"
+- continent: oceania
+  name: "Australia"
+  code: AU
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 151
+  parcel_rmb: 45
+  transit: "8–12 days"
+- continent: oceania
+  name: "New Zealand"
+  code: NZ
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 150
+  parcel_rmb: 52
+  transit: "8–12 days"
+- continent: asia
+  name: "Azerbaijan"
+  code: AZ
+  min_kg: 0.5
+  max_kg: 10.0
+  kg_rmb: 190
+  parcel_rmb: 47
+  transit: "8–12 days"
+- continent: asia
+  name: "Brunei"
+  code: BN
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 145
+  parcel_rmb: 40
+  transit: "8–12 days"
+- continent: asia
+  name: "Cambodia"
+  code: KH
+  min_kg: 0.5
+  max_kg: 2.0
+  kg_rmb: 120
+  parcel_rmb: 35
+  transit: "8–12 days"
+- continent: asia
+  name: "Hong Kong SAR"
+  code: HK
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 115
+  parcel_rmb: 40
+  transit: "8–12 days"
+- continent: asia
+  name: "Japan"
+  code: JP
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 120
+  parcel_rmb: 50
+  transit: "8–12 days"
+- continent: asia
+  name: "Kazakhstan"
+  code: KZ
+  min_kg: 0.5
+  max_kg: 2.0
+  kg_rmb: 150
+  parcel_rmb: 35
+  transit: "15–25 days"
+- continent: asia
+  name: "Laos"
+  code: LA
+  min_kg: 0.5
+  max_kg: 2.0
+  kg_rmb: 190
+  parcel_rmb: 38
+  transit: "15–25 days"
+- continent: asia
+  name: "Malaysia"
+  code: MY
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 130
+  parcel_rmb: 35
+  transit: "8–12 days"
+- continent: asia
+  name: "Maldives"
+  code: MV
+  min_kg: 0.5
+  max_kg: 2.0
+  kg_rmb: 140
+  parcel_rmb: 45
+  transit: "8–12 days"
+- continent: asia
+  name: "Mongolia"
+  code: MN
+  min_kg: 0.5
+  max_kg: 2.0
+  kg_rmb: 110
+  parcel_rmb: 45
+  transit: "15–25 days"
+- continent: asia
+  name: "Myanmar"
+  code: MM
+  min_kg: 0.5
+  max_kg: 2.0
+  kg_rmb: 170
+  parcel_rmb: 35
+  transit: "15–25 days"
+- continent: asia
+  name: "Pakistan"
+  code: PK
+  min_kg: 0.5
+  max_kg: 2.0
+  kg_rmb: 170
+  parcel_rmb: 35
+  transit: "15–25 days"
+- continent: asia
+  name: "Philippines"
+  code: PH
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 155
+  parcel_rmb: 35
+  transit: "8–12 days"
+- continent: asia
+  name: "Singapore"
+  code: SG
+  min_kg: 0.5
+  max_kg: 2.0
+  kg_rmb: 130
+  parcel_rmb: 38
+  transit: "8–12 days"
+- continent: asia
+  name: "South Korea"
+  code: KR
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 135
+  parcel_rmb: 45
+  transit: "8–12 days"
+- continent: asia
+  name: "Sri Lanka"
+  code: LK
+  min_kg: 0.5
+  max_kg: 2.0
+  kg_rmb: 180
+  parcel_rmb: 45
+  transit: "15–25 days"
+- continent: asia
+  name: "Taiwan, China"
+  code: TW
+  min_kg: 0.5
+  max_kg: 10.0
+  kg_rmb: 140
+  parcel_rmb: 45
+  transit: "8–12 days"
+- continent: asia
+  name: "Thailand"
+  code: TH
+  min_kg: 0.5
+  max_kg: 2.0
+  kg_rmb: 125
+  parcel_rmb: 36
+  transit: "8–12 days"
+- continent: asia
+  name: "Uzbekistan"
+  code: UZ
+  min_kg: 0.5
+  max_kg: 2.0
+  kg_rmb: 220
+  parcel_rmb: 41
+  transit: "15–25 days"
+- continent: asia
+  name: "Vietnam"
+  code: VN
+  min_kg: 0.5
+  max_kg: 2.0
+  kg_rmb: 110
+  parcel_rmb: 33
+  transit: "8–12 days"
+- continent: middle-east
+  name: "Bahrain"
+  code: BH
+  min_kg: 0.5
+  max_kg: 5.0
+  kg_rmb: 220
+  parcel_rmb: 53
+  transit: "8–12 days"
+- continent: middle-east
+  name: "Israel"
+  code: IL
+  min_kg: 0.5
+  max_kg: 5.0
+  kg_rmb: 170
+  parcel_rmb: 42
+  transit: "8–12 days"
+- continent: middle-east
+  name: "Jordan"
+  code: JO
+  min_kg: 0.5
+  max_kg: 2.0
+  kg_rmb: 200
+  parcel_rmb: 58
+  transit: "8–12 days"
+- continent: middle-east
+  name: "Kuwait"
+  code: KW
+  min_kg: 0.5
+  max_kg: 2.0
+  kg_rmb: 170
+  parcel_rmb: 95
+  transit: "8–12 days"
+- continent: middle-east
+  name: "Oman"
+  code: OM
+  min_kg: 0.5
+  max_kg: 2.0
+  kg_rmb: 180
+  parcel_rmb: 80
+  transit: "8–12 days"
+- continent: middle-east
+  name: "Qatar"
+  code: QA
+  min_kg: 0.5
+  max_kg: 2.0
+  kg_rmb: 200
+  parcel_rmb: 125
+  transit: "8–12 days"
+- continent: middle-east
+  name: "Saudi Arabia"
+  code: SA
+  min_kg: 0.5
+  max_kg: 10.0
+  kg_rmb: 180
+  parcel_rmb: 93
+  transit: "8–12 days"
+- continent: middle-east
+  name: "United Arab Emirates"
+  code: AE
+  min_kg: 0.5
+  max_kg: 30.0
+  kg_rmb: 160
+  parcel_rmb: 43
+  transit: "8–12 days"
+- continent: africa
+  name: "Angola"
+  code: AO
+  min_kg: 0.5
+  max_kg: 10.0
+  kg_rmb: 230
+  parcel_rmb: 45
+  transit: "10–18 days"
+- continent: africa
+  name: "Ghana"
+  code: GH
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 250
+  parcel_rmb: 45
+  transit: "15–25 days"
+- continent: africa
+  name: "Kenya"
+  code: KE
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 220
+  parcel_rmb: 45
+  transit: "15–25 days"
+- continent: africa
+  name: "Madagascar"
+  code: MG
+  min_kg: 0.5
+  max_kg: 2.0
+  kg_rmb: 195
+  parcel_rmb: 100
+  transit: "15–25 days"
+- continent: africa
+  name: "Mauritius"
+  code: MU
+  min_kg: 0.5
+  max_kg: 2.0
+  kg_rmb: 190
+  parcel_rmb: 45
+  transit: "8–12 days"
+- continent: africa
+  name: "Morocco"
+  code: MA
+  min_kg: 0.5
+  max_kg: 2.0
+  kg_rmb: 210
+  parcel_rmb: 100
+  transit: "15–25 days"
+- continent: africa
+  name: "Nigeria"
+  code: NG
+  min_kg: 0.5
+  max_kg: 20.0
+  kg_rmb: 205
+  parcel_rmb: 48
+  transit: "8–12 days"
+- continent: africa
+  name: "Rwanda"
+  code: RW
+  min_kg: 0.5
+  max_kg: 2.0
+  kg_rmb: 210
+  parcel_rmb: 41
+  transit: "15–25 days"
+- continent: africa
+  name: "Réunion"
+  code: RE
+  min_kg: 0.5
+  max_kg: 2.0
+  kg_rmb: 200
+  parcel_rmb: 95
+  transit: "15–25 days"
+- continent: africa
+  name: "Senegal"
+  code: SN
+  min_kg: 0.5
+  max_kg: 2.0
+  kg_rmb: 210
+  parcel_rmb: 125
+  transit: "8–12 days"
+- continent: africa
+  name: "Seychelles"
+  code: SC
+  min_kg: 0.5
+  max_kg: 2.0
+  kg_rmb: 200
+  parcel_rmb: 50
+  transit: "10–18 days"
+- continent: africa
+  name: "South Africa"
+  code: ZA
+  min_kg: 0.5
+  max_kg: 15.0
+  kg_rmb: 250
+  parcel_rmb: 60
+  transit: "15–25 days"
+- continent: africa
+  name: "Tanzania"
+  code: TZ
+  min_kg: 0.5
+  max_kg: 2.0
+  kg_rmb: 215
+  parcel_rmb: 43
+  transit: "15–25 days"
+- continent: africa
+  name: "Uganda"
+  code: UG
+  min_kg: 0.5
+  max_kg: 5.0
+  kg_rmb: 235
+  parcel_rmb: 45
+  transit: "15–25 days"
+- continent: africa
+  name: "Zambia"
+  code: ZM
+  min_kg: 0.5
+  max_kg: 2.0
+  kg_rmb: 200
+  parcel_rmb: 67
+  transit: "15–25 days"

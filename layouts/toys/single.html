@@ -164,22 +164,31 @@
             <label>
               <span>{{ i18n "pdp_freight_dest" | default "Destination" }}</span>
               <select data-fr-dest>
-                <option value="us_west" data-sea="82" data-air="5.8" data-exp="10.5" data-tsea="25–33 d" data-tair="6–9 d" data-texp="4–6 d">USA · West Coast</option>
-                <option value="us_east" data-sea="105" data-air="6.2" data-exp="11.0" data-tsea="30–40 d" data-tair="6–9 d" data-texp="4–6 d">USA · East Coast</option>
-                <option value="eu" data-sea="96" data-air="6.0" data-exp="11.2" data-tsea="28–36 d" data-tair="6–9 d" data-texp="4–7 d">Europe (DE / NL / FR)</option>
-                <option value="uk" data-sea="108" data-air="6.3" data-exp="11.5" data-tsea="30–38 d" data-tair="6–9 d" data-texp="4–7 d">United Kingdom</option>
-                <option value="jp" data-sea="48" data-air="4.6" data-exp="8.2" data-tsea="18–26 d" data-tair="4–6 d" data-texp="3–5 d">Japan / Korea</option>
-                <option value="au" data-sea="74" data-air="5.9" data-exp="12.0" data-tsea="20–28 d" data-tair="6–9 d" data-texp="5–7 d">Australia / NZ</option>
-                <option value="me" data-sea="62" data-air="5.2" data-exp="9.5" data-tsea="18–26 d" data-tair="5–8 d" data-texp="4–6 d">Middle East</option>
-                <option value="latam" data-sea="118" data-air="7.4" data-exp="13.5" data-tsea="35–45 d" data-tair="8–11 d" data-texp="6–9 d">Latin America</option>
+                {{- $groups := slice
+                  (dict "key" "north-america" "label" "North America")
+                  (dict "key" "europe" "label" "Europe")
+                  (dict "key" "asia" "label" "Asia")
+                  (dict "key" "middle-east" "label" "Middle East")
+                  (dict "key" "oceania" "label" "Oceania")
+                  (dict "key" "south-america" "label" "South America")
+                  (dict "key" "africa" "label" "Africa") }}
+                {{- range $groups }}
+                <optgroup label="{{ .label }}">
+                  {{- range where site.Data.airparcel "continent" .key }}
+                  <option value="{{ .code }}" data-region="{{ .continent }}"
+                          data-kg="{{ .kg_rmb }}" data-parcel="{{ .parcel_rmb }}"
+                          data-min="{{ .min_kg }}" data-max="{{ .max_kg }}"
+                          data-t="{{ .transit }}"{{ if eq .code "US" }} selected{{ end }}>{{ .name }}</option>
+                  {{- end }}
+                </optgroup>
+                {{- end }}
               </select>
             </label>
             <label>
               <span>{{ i18n "pdp_freight_mode" | default "Shipping mode" }}</span>
               <select data-fr-mode>
                 <option value="sea">{{ i18n "pdp_mode_sea" | default "Sea · LCL" }}</option>
-                <option value="air">{{ i18n "pdp_mode_air" | default "Air freight" }}</option>
-                <option value="exp">{{ i18n "pdp_mode_exp" | default "Express courier" }}</option>
+                <option value="air" selected>{{ i18n "pdp_mode_air" | default "Air parcel · door-to-door" }}</option>
               </select>
             </label>
             <label>
@@ -486,12 +495,24 @@
   var outMeta = box.querySelector("[data-fr-meta]");
   if (!pcs || !cbm || !dest || !mode || !qtyEl) return;
 
+  /* RMB → USD (rate card quoted in RMB, converted at 6.4) */
+  var FX = 6.4;
+  /* sea freight reference, USD per m³ and transit, by continent */
+  var SEA = {
+    "north-america": { rate: 88, t: "30–40 d" },
+    "europe": { rate: 96, t: "28–36 d" },
+    "asia": { rate: 55, t: "18–26 d" },
+    "middle-east": { rate: 62, t: "18–26 d" },
+    "oceania": { rate: 74, t: "20–28 d" },
+    "south-america": { rate: 118, t: "35–45 d" },
+    "africa": { rate: 120, t: "35–45 d" }
+  };
+
   function money(n) {
-    if (n >= 1000) return "$" + Math.round(n / 10) * 10;
-    return "$" + Math.round(n);
+    return "$" + (n >= 100 ? Math.round(n) : n.toFixed(1));
   }
   function moneyUnit(n) {
-    return "$" + n.toFixed(1);
+    return "$" + (n >= 10 ? Math.round(n) : n.toFixed(2));
   }
 
   function calc() {
@@ -499,25 +520,34 @@
     var qty = Math.max(parseInt(qtyEl.value, 10) || 0, 100);
     var m = mode.value;
     var cartons = Math.ceil(qty / pcs);
-    var volume = cartons * cbm;
-    var weight = cartons * gw;
-    var base, rate;
+    var volume = cartons * cbm;          /* m³ */
+    var weight = cartons * gw;           /* kg, actual */
+    var sea = SEA[o.dataset.region] || SEA["north-america"];
+    var low, high, transit, extra = "";
+
     if (m === "sea") {
-      rate = parseFloat(o.dataset.sea);
-      base = Math.max(volume * rate, 180);
-    } else if (m === "air") {
-      rate = parseFloat(o.dataset.air);
-      base = Math.max(weight * rate, 60);
+      var base = Math.max(volume * sea.rate, 180);
+      low = base * 0.9; high = base * 1.15;
+      transit = sea.t;
     } else {
-      rate = parseFloat(o.dataset.exp);
-      base = Math.max(weight * rate, 30);
+      /* air parcel: rate card = RMB per kg + RMB per parcel, 0.5 kg steps, 500 g minimum */
+      var usdKg = parseFloat(o.dataset.kg) / FX;
+      var usdParcel = parseFloat(o.dataset.parcel) / FX;
+      var maxKg = parseFloat(o.dataset.max) || 20;
+      var volKg = cartons * cbm * 166.667;          /* volumetric weight, 1 m³ = 166.67 kg */
+      var cw = Math.max(weight, volKg);             /* chargeable weight */
+      var parcels = Math.max(1, Math.ceil(cw / maxKg));
+      var billable = Math.max(0.5, Math.ceil(cw * 2) / 2);
+      var cost = billable * usdKg + parcels * usdParcel;
+      low = high = cost;
+      transit = o.dataset.t;
+      extra = " · " + parcels + (parcels > 1 ? " parcels" : " parcel");
     }
-    if (!rate) return;
-    var low = base * 0.9, high = base * 1.15;
-    outCost.textContent = money(low) + " – " + money(high);
-    outUnit.textContent = moneyUnit(low / qty) + " – " + moneyUnit(high / qty) + " / pc";
-    outTransit.textContent = m === "sea" ? o.dataset.tsea : (m === "air" ? o.dataset.tair : o.dataset.texp);
-    outMeta.textContent = "≈ " + cartons + " cartons · " + volume.toFixed(2) + " m³ · " + Math.round(weight) + " kg";
+
+    outCost.textContent = low === high ? money(low) : money(low) + " – " + money(high);
+    outUnit.textContent = moneyUnit(low / qty) + (high !== low ? " – " + moneyUnit(high / qty) : "") + " / pc";
+    outTransit.textContent = transit;
+    outMeta.textContent = "≈ " + cartons + " cartons · " + volume.toFixed(2) + " m³ · " + Math.round(weight) + " kg" + extra;
   }
 
   [dest, mode, qtyEl].forEach(function (el) {
