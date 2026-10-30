@@ -1,6 +1,7 @@
 baseURL = "https://www.faelmio.com"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
+disablePathToLower = true
 languageCode = "en-us"
 title = "Yiwu Maxon | Toy Sourcing Agent"
 theme = "PaperMod"
