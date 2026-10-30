@@ -3,7 +3,7 @@ defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
 disablePathToLower = true
 languageCode = "en-us"
-title = "Yiwu Maxon | Toy Sourcing Agent"
+title = "Faelmio | Toy Sourcing Agent"
 theme = "PaperMod"
 enableRobotsTXT = true
 enableEmoji = true
@@ -108,10 +108,10 @@ weight = 4
 
 [params]
 env = "production"
-title = "Yiwu Maxon | Toy Sourcing Agent"
+title = "Faelmio | Toy Sourcing Agent"
 description = "Professional Yiwu toy sourcing agent for B2B buyers. OEM custom toys, AQL QC, consolidation and DDP shipping to EU, USA, Latin America and Japan."
 keywords = ["Yiwu toy sourcing agent", "toy sourcing China", "OEM toy manufacturer", "wholesale toys Yiwu", "Amazon FBA toy supplier", "plush toys wholesale", "educational toys sourcing", "fidget toys supplier"]
-author = "Yiwu Maxon"
+author = "Faelmio"
 images = ["https://images.faelmio.com/social/faelmio-og.jpg"]
 DateFormat = "January 2, 2006"
 defaultTheme = "light"
@@ -139,7 +139,7 @@ email = "maxon@maxoncn.com"
 address = "Yiwu International Trade City, Zhejiang, China"
 
 [params.label]
-text = "Yiwu Maxon"
+text = "Faelmio"
 
 [params.assets]
 disableFingerprinting = false

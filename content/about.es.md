@@ -1,8 +1,8 @@
 ---
-title: "Sobre Yiwu Maxon — 13 Años Abasteciendo Juguetes desde Yiwu"
-description: "Yiwu Maxon Imp.&Exp.Co.,Ltd. es un equipo dedicado al abastecimiento de juguetes con base en Yiwu, China. Fundada en 2012, 13 años de comercio exterior y experiencia en cadenas de suministro de juguetes."
+title: "Sobre Faelmio — 13 Años Abasteciendo Juguetes desde Yiwu"
+description: "Faelmio es un equipo dedicado al abastecimiento de juguetes con base en Yiwu, China, operado por Yiwu Maxon Imp.&Exp.Co.,Ltd. Fundado en 2012, 13 años de comercio exterior y experiencia en cadenas de suministro de juguetes."
 about:
-  eyebrow: "Sobre Yiwu Maxon"
+  eyebrow: "Sobre Faelmio"
   lede: "Un equipo pequeño y senior con base permanente en Yiwu — construyendo cadenas de suministro a largo plazo para marcas de juguetes que valoran la calidad, la transparencia y la entrega a tiempo."
   stats:
     - value: "13+"
@@ -13,7 +13,7 @@ about:
       label: "Clientes satisfechos"
     - value: "24h"
       label: "Respuesta de cotización"
-  story: "Yiwu Maxon Imp.&Exp.Co.,Ltd. se fundó en 2012 sobre una premisa simple — el abastecimiento de juguetes desde Yiwu debe ser personal, transparente y responsable. Nuestro equipo vive y trabaja aquí. Visitamos fábricas en persona, negociamos en el dialecto local y te mantenemos informado en cada paso. Sin centros de atención en el extranjero, sin cargos ocultos, sin envíos perdidos."
+  story: "Faelmio se fundó en 2012 sobre una premisa simple — el abastecimiento de juguetes desde Yiwu debe ser personal, transparente y responsable. Operado por Yiwu Maxon Imp.&Exp.Co.,Ltd., nuestro equipo vive y trabaja aquí. Visitamos fábricas en persona, negociamos en el dialecto local y te mantenemos informado en cada paso. Sin centros de atención en el extranjero, sin cargos ocultos, sin envíos perdidos."
   mission: "Hacer posible que marcas de juguetes de cualquier tamaño se abastezcan con confianza desde China — con el control de calidad, el cumplimiento y la logística normalmente reservados a los importadores más grandes."
   values:
     - kicker: "Transparencia"

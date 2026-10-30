@@ -1,4 +1,4 @@
-{{- $msg := i18n "whatsapp_message" | default "Hello Yiwu Maxon, I am interested in your toy sourcing service." }}
+{{- $msg := i18n "whatsapp_message" | default "Hello Faelmio, I am interested in your toy sourcing service." }}
 {{- $phone := site.Params.contact.whatsapp | default "8618257499725" }}
 {{- $url := printf "https://wa.me/%s?text=%s" $phone ($msg | urlquery) }}
 <a href="{{ $url }}" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp">

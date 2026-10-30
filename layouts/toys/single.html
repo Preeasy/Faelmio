@@ -122,7 +122,7 @@
 
         <div class="pdp-cta">
           <a class="pdp-btn pdp-btn-primary" href="#inquiry">{{ i18n "pdp_get_quote" | default "Get a Quote" }}</a>
-          <a class="pdp-btn pdp-btn-ghost" href="https://wa.me/{{ $c.whatsapp }}?text={{ printf "Hello Yiwu Maxon, I'd like a quote for %s." .Title | urlquery }}" target="_blank" rel="noopener noreferrer">{{ i18n "whatsapp" | default "WhatsApp" }}</a>
+          <a class="pdp-btn pdp-btn-ghost" href="https://wa.me/{{ $c.whatsapp }}?text={{ printf "Hello Faelmio, I'd like a quote for %s." .Title | urlquery }}" target="_blank" rel="noopener noreferrer">{{ i18n "whatsapp" | default "WhatsApp" }}</a>
         </div>
 
         {{- with .Params.certifications }}
@@ -296,7 +296,7 @@
         </ul>
       </div>
       <form class="contact-form" action="https://formsubmit.co/{{ $c.email }}" method="POST">
-        <input type="hidden" name="_subject" value="Product Inquiry | {{ .Title }} | Yiwu Maxon">
+        <input type="hidden" name="_subject" value="Product Inquiry | {{ .Title }} | Faelmio">
         <input type="hidden" name="_next" value="https://www.faelmio.com/thanks/">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_honeypot" value="">
