@@ -131,6 +131,26 @@
         </ul>
         {{- end }}
 
+        {{- /* -------- trust badges -------- */}}
+        <div class="pdp-trust" aria-label="Buyer trust signals">
+          <div class="pdp-trust-item">
+            <span class="pdp-trust-icon" aria-hidden="true">✓</span>
+            <span><strong>{{ i18n "pdp_trust_cert" | default "Certified safe" }}</strong><br><small>{{ i18n "pdp_trust_cert_sub" | default "EN71 · ASTM · CE" }}</small></span>
+          </div>
+          <div class="pdp-trust-item">
+            <span class="pdp-trust-icon" aria-hidden="true">🔍</span>
+            <span><strong>{{ i18n "pdp_trust_qc" | default "Pre-shipment QC" }}</strong><br><small>{{ i18n "pdp_trust_qc_sub" | default "AQL II inspection" }}</small></span>
+          </div>
+          <div class="pdp-trust-item">
+            <span class="pdp-trust-icon" aria-hidden="true">⚡</span>
+            <span><strong>{{ i18n "pdp_trust_quote" | default "24h quote" }}</strong><br><small>{{ i18n "pdp_trust_quote_sub" | default "No commitment" }}</small></span>
+          </div>
+          <div class="pdp-trust-item">
+            <span class="pdp-trust-icon" aria-hidden="true">📦</span>
+            <span><strong>{{ i18n "pdp_trust_sample" | default "Sample first" }}</strong><br><small>{{ i18n "pdp_trust_sample_sub" | default "Before mass prod." }}</small></span>
+          </div>
+        </div>
+
         {{- /* -------- freight reference (compact) -------- */}}
         {{- with .Params.carton }}
         {{- if and .pcs .cbm }}
@@ -190,80 +210,67 @@
         </section>
         {{- partial "anchored_headings.html" .Content -}}
       </div>
-      {{- with .Params.specs }}
+      {{- if or .Params.specs .Params.customization .Params.carton }}
       <aside class="pdp-specs">
+        {{- with .Params.specs }}
         <h2>{{ i18n "pdp_specs" | default "Specifications" }}</h2>
         <dl>
           {{- range . }}
           <div><dt>{{ .label }}</dt><dd>{{ .value }}</dd></div>
           {{- end }}
         </dl>
+        {{- end }}
+
+        {{- /* customization merged into specs */}}
+        {{- with .Params.customization }}
+        <h3 class="pdp-spec-sub">{{ i18n "pdp_custom_eyebrow" | default "Customization" }}</h3>
+        <div class="pdp-spec-cust">
+          {{- $mods := slice
+            (dict "key" "product" "title" (i18n "pdp_custom_product" | default "Product"))
+            (dict "key" "packaging" "title" (i18n "pdp_custom_packaging" | default "Packaging"))
+            (dict "key" "bundle" "title" (i18n "pdp_custom_bundle" | default "Bundle"))
+          }}
+          {{- range $mods }}
+          {{- $items := index ($.Params.customization | default (dict)) .key }}
+          <div class="pdp-spec-cust-item">
+            <strong>{{ .title }}</strong>
+            <ul class="pdp-list">
+              {{- with $items }}
+                {{- range . }}<li>{{ . }}</li>{{ end }}
+              {{- else }}
+                {{- if eq .key "product" }}
+                <li>Size, colour & material changes</li>
+                <li>Logo print or emboss</li>
+                {{- else if eq .key "packaging" }}
+                <li>Printed box, hangtag, polybag</li>
+                <li>FBA labels & barcodes</li>
+                {{- else }}
+                <li>Mix colours in one carton</li>
+                <li>Bundle with catalogue</li>
+                {{- end }}
+              {{- end }}
+            </ul>
+          </div>
+          {{- end }}
+        </div>
+        {{- end }}
+
+        {{- /* logistics merged into specs */}}
+        {{- with .Params.carton }}
+        <h3 class="pdp-spec-sub">{{ i18n "pdp_logistics" | default "Packaging & logistics" }}</h3>
+        <dl class="pdp-spec-logi">
+          {{- with .pcs }}<div><dt>{{ i18n "pdp_carton_pcs" | default "Pcs / carton" }}</dt><dd>{{ . }}</dd></div>{{ end }}
+          {{- with .size }}<div><dt>{{ i18n "pdp_carton_size" | default "Carton size" }}</dt><dd>{{ . }}</dd></div>{{ end }}
+          {{- with .cbm }}<div><dt>{{ i18n "pdp_carton_cbm" | default "Volume" }}</dt><dd>{{ . }} m³</dd></div>{{ end }}
+          {{- with .gw }}<div><dt>{{ i18n "pdp_carton_gw" | default "Gross weight" }}</dt><dd>{{ . }} kg</dd></div>{{ end }}
+          {{- with .container }}<div><dt>1 × 40HQ</dt><dd>{{ . }}</dd></div>{{ end }}
+        </dl>
+        {{- end }}
       </aside>
       {{- end }}
     </div>
 
-    {{- /* -------- three customisation directions -------- */}}
-    <section class="pdp-modules" id="customize">
-      <header class="pdp-sec-head">
-        <p class="pdp-eyebrow">{{ i18n "pdp_custom_eyebrow" | default "Make it yours" }}</p>
-        <h2>{{ i18n "pdp_custom_title" | default "Three ways to make this product your own" }}</h2>
-      </header>
-      <div class="pdp-module-grid">
-        {{- $mods := slice
-          (dict "key" "product" "n" "01" "title" (i18n "pdp_custom_product" | default "Product customisation") "icon" "✎")
-          (dict "key" "packaging" "n" "02" "title" (i18n "pdp_custom_packaging" | default "Packaging customisation") "icon" "▣")
-          (dict "key" "bundle" "n" "03" "title" (i18n "pdp_custom_bundle" | default "Bundle with our catalogue") "icon" "⊞")
-        }}
-        {{- range $mods }}
-        {{- $cst := $.Params.customization }}
-        {{- $items := index ($cst | default (dict)) .key }}
-        <article class="pdp-module">
-          <span class="pdp-module-n">{{ .n }}</span>
-          <h3>{{ .title }}</h3>
-          {{- with $items }}
-          <ul class="pdp-list">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
-          {{- else }}
-          {{- if eq .key "product" }}
-          <ul class="pdp-list">
-            <li>Size, colour and material changes</li>
-            <li>Logo embroidery, print or moulded mark</li>
-            <li>New prototype from sketch or sample</li>
-          </ul>
-          {{- else if eq .key "packaging" }}
-          <ul class="pdp-list">
-            <li>Printed gift box, hangtag or header card</li>
-            <li>Polybag, backing card or display carton</li>
-            <li>Amazon FBA labels and inner barcodes</li>
-          </ul>
-          {{- else }}
-          <ul class="pdp-list">
-            <li>Mix sizes and colours in one carton</li>
-            <li>Assortment sets built around your range</li>
-            <li>Consolidate several suppliers in our warehouse</li>
-          </ul>
-          {{- end }}
-          {{- end }}
-        </article>
-        {{- end }}
-      </div>
-    </section>
-
-    {{- /* -------- logistics -------- */}}
-    {{- with .Params.carton }}
-    <section class="pdp-logistics" id="logistics">
-      <header class="pdp-sec-head">
-        <p class="pdp-eyebrow">{{ i18n "pdp_logistics_eyebrow" | default "Packaging & freight" }}</p>
-        <h2>{{ i18n "pdp_logistics" | default "Packaging & logistics" }}</h2>
-      </header>
-      <div class="pdp-logi-grid">
-        {{- with .pcs }}<div><span>{{ i18n "pdp_carton_pcs" | default "Pcs per carton" }}</span><strong>{{ . }}</strong></div>{{ end }}
-        {{- with .size }}<div><span>{{ i18n "pdp_carton_size" | default "Carton size" }}</span><strong>{{ . }}</strong></div>{{ end }}
-        {{- with .cbm }}<div><span>{{ i18n "pdp_carton_cbm" | default "Carton volume" }}</span><strong>{{ . }} m³</strong></div>{{ end }}
-        {{- with .gw }}<div><span>{{ i18n "pdp_carton_gw" | default "Gross weight" }}</span><strong>{{ . }} kg</strong></div>{{ end }}
-        {{- with .container }}<div><span>1 × 40HQ</span><strong>{{ . }}</strong></div>{{ end }}
-      </div>
-    </section>
-    {{- end }}
+    {{- /* customization & logistics now merged into specs aside above */}}
 
     {{- /* -------- FAQ (AEO) -------- */}}
     {{- with .Params.faq }}
@@ -469,6 +476,9 @@
     if (n >= 1000) return "$" + Math.round(n / 10) * 10;
     return "$" + Math.round(n);
   }
+  function moneyUnit(n) {
+    return "$" + n.toFixed(1);
+  }
 
   function calc() {
     var o = dest.options[dest.selectedIndex];
@@ -491,7 +501,7 @@
     if (!rate) return;
     var low = base * 0.9, high = base * 1.15;
     outCost.textContent = money(low) + " – " + money(high);
-    outUnit.textContent = money(low / qty) + " – " + money(high / qty) + " / pc";
+    outUnit.textContent = moneyUnit(low / qty) + " – " + moneyUnit(high / qty) + " / pc";
     outTransit.textContent = m === "sea" ? o.dataset.tsea : (m === "air" ? o.dataset.tair : o.dataset.texp);
     outMeta.textContent = "≈ " + cartons + " cartons · " + volume.toFixed(2) + " m³ · " + Math.round(weight) + " kg";
   }
