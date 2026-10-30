@@ -14,7 +14,7 @@ about:
       label: "Happy clients"
     - value: "24h"
       label: "Quote response"
-  story: "Faelmio was founded in 2012 on a simple premise — toy sourcing from Yiwu should be personal, transparent and accountable. Operated by Yiwu Maxon Imp.&Exp.Co.,Ltd., our team lives and works here. We visit factories in person, negotiate in the local dialect and keep you posted at every step. No offshore call centres, no hidden fees, no missed shipments."
+  story: "Faelmio began in 2012 with a belief that toy sourcing from Yiwu should feel nothing like the cold, transactional experience most buyers expect. Operated by Yiwu Maxon Imp.&Exp.Co.,Ltd., we built our team on the ground in Yiwu — not behind a desk overseas. We walk the wholesale markets at dawn, sit across factory owners in their own language, and inspect every shipment before it leaves. For 13 years, importers, Amazon sellers and independent toy brands have trusted us to be their eyes, ears and voice in China. No middlemen, no markup games, no surprises — just a partner who treats your supply chain like it's our own."
   mission: "To make it possible for toy brands of any size to source confidently from China — with the quality control, compliance paperwork and logistics normally reserved for the largest importers."
   values:
     - kicker: "Transparency"

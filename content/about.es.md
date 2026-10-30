@@ -13,7 +13,7 @@ about:
       label: "Clientes satisfechos"
     - value: "24h"
       label: "Respuesta de cotización"
-  story: "Faelmio se fundó en 2012 sobre una premisa simple — el abastecimiento de juguetes desde Yiwu debe ser personal, transparente y responsable. Operado por Yiwu Maxon Imp.&Exp.Co.,Ltd., nuestro equipo vive y trabaja aquí. Visitamos fábricas en persona, negociamos en el dialecto local y te mantenemos informado en cada paso. Sin centros de atención en el extranjero, sin cargos ocultos, sin envíos perdidos."
+  story: "Faelmio nació en 2012 con la convicción de que el abastecimiento de juguetes desde Yiwu no debería ser la experiencia fría y transaccional que la mayoría de los compradores esperan. Operado por Yiwu Maxon Imp.&Exp.Co.,Ltd., construimos nuestro equipo sobre el terreno en Yiwu — no detrás de un escritorio en el extranjero. Recorremos los mercados mayoristas de madrugada, nos sentamos frente a los dueños de fábrica en su propio idioma e inspeccionamos cada envío antes de que parta. Durante 13 años, importadores, vendedores de Amazon y marcas de juguetes independientes han confiado en nosotros para ser sus ojos, oídos y voz en China. Sin intermediarios, sin juegos de márgenes, sin sorpresas — solo un socio que trata tu cadena de suministro como si fuera la nuestra."
   mission: "Hacer posible que marcas de juguetes de cualquier tamaño se abastezcan con confianza desde China — con el control de calidad, el cumplimiento y la logística normalmente reservados a los importadores más grandes."
   values:
     - kicker: "Transparencia"
