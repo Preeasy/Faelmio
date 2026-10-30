@@ -200,6 +200,56 @@
       </div>
     </div>
 
+    {{- /* -------- customization (Make it yours) -------- */}}
+    {{- with .Params.customization }}
+    <section class="pdp-modules" id="customize">
+      <header class="pdp-sec-head">
+        <p class="pdp-eyebrow">{{ i18n "pdp_custom_eyebrow" | default "Make it yours" }}</p>
+        <h2>{{ i18n "pdp_custom_title" | default "Three ways to make this product your own" }}</h2>
+      </header>
+      <div class="pdp-module-grid">
+        {{- $mods := slice
+          (dict "key" "product" "n" "01" "title" (i18n "pdp_custom_product" | default "Product customisation") "icon" "✎")
+          (dict "key" "packaging" "n" "02" "title" (i18n "pdp_custom_packaging" | default "Packaging customisation") "icon" "▣")
+          (dict "key" "bundle" "n" "03" "title" (i18n "pdp_custom_bundle" | default "Bundle with our catalogue") "icon" "⊞")
+        }}
+        {{- range $mods }}
+        {{- $items := index ($.Params.customization | default (dict)) .key }}
+        <article class="pdp-module">
+          <span class="pdp-module-n">{{ .n }}</span>
+          <h3>{{ .title }}</h3>
+          {{- with $items }}
+          <ul class="pdp-list">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+          {{- else }}
+          {{- if eq .key "product" }}
+          <ul class="pdp-list">
+            <li>Size, colour and material changes</li>
+            <li>Logo embroidery, print or moulded mark</li>
+            <li>New prototype from sketch or sample</li>
+          </ul>
+          {{- else if eq .key "packaging" }}
+          <ul class="pdp-list">
+            <li>Printed gift box, hangtag or header card</li>
+            <li>Polybag, backing card or display carton</li>
+            <li>Amazon FBA labels and inner barcodes</li>
+          </ul>
+          {{- else }}
+          <ul class="pdp-list">
+            <li>Mix sizes and colours in one carton</li>
+            <li>Assortment sets built around your range</li>
+            <li>Consolidate several suppliers in our warehouse</li>
+          </ul>
+          {{- end }}
+          {{- end }}
+        </article>
+        {{- end }}
+      </div>
+    </section>
+    {{- end }}
+
+    {{- /* -------- brand story banner -------- */}}
+    {{- partial "brand-story-banner.html" (dict "show_cta" true) }}
+
     {{- /* -------- overview + specs -------- */}}
     <div class="pdp-block">
       <div class="pdp-prose md-content">
@@ -282,56 +332,6 @@
         <button type="submit">{{ i18n "send_inquiry" | default "Send Inquiry" }}</button>
       </form>
     </section>
-
-    {{- /* -------- customization (Make it yours) -------- */}}
-    {{- with .Params.customization }}
-    <section class="pdp-modules" id="customize">
-      <header class="pdp-sec-head">
-        <p class="pdp-eyebrow">{{ i18n "pdp_custom_eyebrow" | default "Make it yours" }}</p>
-        <h2>{{ i18n "pdp_custom_title" | default "Three ways to make this product your own" }}</h2>
-      </header>
-      <div class="pdp-module-grid">
-        {{- $mods := slice
-          (dict "key" "product" "n" "01" "title" (i18n "pdp_custom_product" | default "Product customisation") "icon" "✎")
-          (dict "key" "packaging" "n" "02" "title" (i18n "pdp_custom_packaging" | default "Packaging customisation") "icon" "▣")
-          (dict "key" "bundle" "n" "03" "title" (i18n "pdp_custom_bundle" | default "Bundle with our catalogue") "icon" "⊞")
-        }}
-        {{- range $mods }}
-        {{- $items := index ($.Params.customization | default (dict)) .key }}
-        <article class="pdp-module">
-          <span class="pdp-module-n">{{ .n }}</span>
-          <h3>{{ .title }}</h3>
-          {{- with $items }}
-          <ul class="pdp-list">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
-          {{- else }}
-          {{- if eq .key "product" }}
-          <ul class="pdp-list">
-            <li>Size, colour and material changes</li>
-            <li>Logo embroidery, print or moulded mark</li>
-            <li>New prototype from sketch or sample</li>
-          </ul>
-          {{- else if eq .key "packaging" }}
-          <ul class="pdp-list">
-            <li>Printed gift box, hangtag or header card</li>
-            <li>Polybag, backing card or display carton</li>
-            <li>Amazon FBA labels and inner barcodes</li>
-          </ul>
-          {{- else }}
-          <ul class="pdp-list">
-            <li>Mix sizes and colours in one carton</li>
-            <li>Assortment sets built around your range</li>
-            <li>Consolidate several suppliers in our warehouse</li>
-          </ul>
-          {{- end }}
-          {{- end }}
-        </article>
-        {{- end }}
-      </div>
-    </section>
-    {{- end }}
-
-    {{- /* -------- brand story banner -------- */}}
-    {{- partial "brand-story-banner.html" (dict "show_cta" true) }}
 
     {{- /* -------- About Faelmio (A+ brand intro) -------- */}}
     <section class="pdp-brand-intro">
