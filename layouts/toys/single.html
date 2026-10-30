@@ -3,26 +3,31 @@
 {{- $catSlug := path.Base .CurrentSection.Path }}
 {{- $catTitle := .CurrentSection.Title }}
 
-{{- /* ---- gallery: front-matter list, capped at 6, falls back to cover ---- */}}
+{{- /* ---- gallery: front-matter list, capped at 7 (6 images + 1 video), falls back to cover ---- */}}
 {{- $gal := slice }}
 {{- with .Params.gallery }}
   {{- range . }}
     {{- if reflect.IsMap . }}
-      {{- $gal = $gal | append (dict "src" .src "alt" (.alt | default $.Title)) }}
+      {{- $t := .type | default "image" }}
+      {{- $item := dict "src" .src "alt" (.alt | default $.Title) "type" $t }}
+      {{- if and (eq $t "video") .poster }}
+        {{- $item = merge $item (dict "poster" .poster) }}
+      {{- end }}
+      {{- $gal = $gal | append $item }}
     {{- else }}
-      {{- $gal = $gal | append (dict "src" . "alt" $.Title) }}
+      {{- $gal = $gal | append (dict "src" . "alt" $.Title "type" "image") }}
     {{- end }}
   {{- end }}
 {{- end }}
 {{- if not $gal }}
   {{- with .Params.cover.image }}
-    {{- $gal = $gal | append (dict "src" . "alt" ($.Params.cover.alt | default $.Title)) }}
+    {{- $gal = $gal | append (dict "src" . "alt" ($.Params.cover.alt | default $.Title) "type" "image") }}
   {{- end }}
 {{- end }}
 {{- if not $gal }}
-  {{- $gal = $gal | append (dict "src" (printf "images/toys/%s.jpg" $catSlug) "alt" $.Title) }}
+  {{- $gal = $gal | append (dict "src" (printf "images/toys/%s.jpg" $catSlug) "alt" $.Title "type" "image") }}
 {{- end }}
-{{- $gal = first 6 $gal }}
+{{- $gal = first 7 $gal }}
 {{- $hero := index $gal 0 }}
 
 <article class="pdp">
@@ -33,26 +38,46 @@
       {{- /* -------- gallery -------- */}}
       <div class="pdp-gallery" data-gallery>
         <div class="pdp-stage">
-          <img id="pdp-main"
+          {{- if eq $hero.type "video" }}
+          <video id="pdp-main-video" class="pdp-main-media{{ if not (eq $hero.type "video") }} is-hidden{{ end }}"
+                 src="{{ $hero.src }}"{{ with $hero.poster }} poster="{{ . }}"{{ end }}
+                 controls autoplay muted loop playsinline preload="metadata"
+                 width="1000" height="1000"></video>
+          <img id="pdp-main-image" class="pdp-main-media{{ if eq $hero.type "video" }} is-hidden{{ end }}"
+               src="{{ with $hero.poster }}{{ . }}{{ else }}{{ $hero.src }}{{ end }}"
+               alt="{{ $hero.alt }}"
+               width="1000" height="1000"
+               fetchpriority="high" decoding="async"
+               data-fallback="{{ printf "images/toys/%s.jpg" $catSlug | relURL }}">
+          {{- else }}
+          <video id="pdp-main-video" class="pdp-main-media is-hidden"
+                 src="" controls autoplay muted loop playsinline preload="metadata"
+                 width="1000" height="1000"></video>
+          <img id="pdp-main-image" class="pdp-main-media"
                src="{{ $hero.src }}"
                alt="{{ $hero.alt }}"
                width="1000" height="1000"
                fetchpriority="high" decoding="async"
                data-fallback="{{ printf "images/toys/%s.jpg" $catSlug | relURL }}">
+          {{- end }}
           {{- if .Params.badge }}<span class="pdp-badge">{{ .Params.badge }}</span>{{ end }}
         </div>
         {{- if gt (len $gal) 1 }}
         <div class="pdp-thumbs" role="tablist" aria-label="{{ i18n "pdp_gallery" | default "Product images" }}">
           {{- range $i, $g := $gal }}
+          {{- $thumbSrc := cond (eq $g.type "video") (default $g.src $g.poster) $g.src }}
           <button type="button"
-                  class="pdp-thumb{{ if eq $i 0 }} is-active{{ end }}"
+                  class="pdp-thumb{{ if eq $g.type "video" }} is-video{{ end }}{{ if eq $i 0 }} is-active{{ end }}"
                   role="tab"
                   aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}"
                   aria-label="{{ printf "%s %d" (i18n "pdp_gallery" | default "Product image") (add $i 1) }}"
+                  data-type="{{ $g.type }}"
                   data-src="{{ $g.src }}"
-                  data-alt="{{ $g.alt }}">
-            <img src="{{ $g.src }}" alt="{{ $g.alt }}" width="120" height="120" loading="lazy" decoding="async"
+                  data-alt="{{ $g.alt }}"
+                  data-poster="{{ with $g.poster }}{{ . }}{{ end }}">
+            <img src="{{ $thumbSrc }}" alt="{{ $g.alt }}" width="120" height="120" loading="lazy" decoding="async"
                  data-fallback="{{ printf "images/toys/%s.jpg" $catSlug | relURL }}">
+            {{- if eq $g.type "video" }}<span class="pdp-thumb-play" aria-hidden="true">&#9658;</span>{{ end }}
           </button>
           {{- end }}
         </div>
@@ -366,13 +391,47 @@
 {{- /* gallery + freight scripts */}}
 <script>
 (function () {
-  var main = document.getElementById("pdp-main");
+  var img = document.getElementById("pdp-main-image");
+  var vid = document.getElementById("pdp-main-video");
   var thumbs = document.querySelectorAll(".pdp-thumb");
+  if (!img && !vid) return;
+
+  function showImage(src, alt) {
+    if (vid) {
+      vid.classList.add("is-hidden");
+      try { vid.pause(); } catch (e) {}
+    }
+    if (img) {
+      img.classList.remove("is-hidden");
+      if (src) img.src = src;
+      if (alt) img.alt = alt;
+    }
+  }
+  function showVideo(src, poster, alt) {
+    if (img) img.classList.add("is-hidden");
+    if (vid) {
+      vid.classList.remove("is-hidden");
+      if (src && vid.getAttribute("src") !== src) {
+        vid.setAttribute("src", src);
+      }
+      if (poster) vid.setAttribute("poster", poster);
+      try { vid.load(); vid.play(); } catch (e) {}
+    }
+  }
+
   thumbs.forEach(function (t) {
     t.addEventListener("click", function () {
-      if (!main) return;
-      main.src = t.getAttribute("data-src");
-      main.alt = t.getAttribute("data-alt") || main.alt;
+      var type = t.getAttribute("data-type") || "image";
+      var src = t.getAttribute("data-src");
+      var alt = t.getAttribute("data-alt");
+      var poster = t.getAttribute("data-poster") || "";
+
+      if (type === "video") {
+        showVideo(src, poster, alt);
+      } else {
+        showImage(src, alt);
+      }
+
       thumbs.forEach(function (x) {
         x.classList.remove("is-active");
         x.setAttribute("aria-selected", "false");
