@@ -315,6 +315,9 @@
       </form>
     </section>
 
+    {{- /* -------- brand story banner -------- */}}
+    {{- partial "brand-story-banner.html" (dict "show_cta" true) }}
+
     {{- /* -------- related -------- */}}
     {{- with .Params.related }}
     <section class="pdp-related">

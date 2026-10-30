@@ -46,6 +46,11 @@
 </div>
 {{- end }}
 
+{{- /* brand story banner — only on toy section pages */}}
+{{- if eq .Section "toys" }}
+{{- partial "brand-story-banner.html" (dict "show_cta" true) }}
+{{- end }}
+
 {{- /* Custom Toy OEM lives in its own section (/custom-toy-oem/), so it never
        appears in .Sections of /toys/. Surface it here as a cross-sell card. */}}
 {{- if and (eq .Section "toys") (eq .Parent.Kind "home") }}

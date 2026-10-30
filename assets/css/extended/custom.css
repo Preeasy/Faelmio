@@ -1413,3 +1413,103 @@ img.img-missing { display: none !important; }
   .pdp-sticky .pdp-btn { padding: 11px 20px; flex: 0 0 auto; }
   .whatsapp-float { bottom: 78px; }
 }
+
+/* ===== Faelmio brand story banner ===== */
+.brand-banner {
+  margin: 48px 0;
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  background:
+    radial-gradient(120% 140% at 100% 0%, rgba(242, 100, 60, 0.18) 0%, transparent 55%),
+    linear-gradient(135deg, #141B2D 0%, #1e2840 100%);
+  box-shadow: var(--shadow-lg);
+}
+.brand-banner-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  gap: 40px;
+  align-items: center;
+  padding: clamp(32px, 4.5vw, 56px);
+}
+.brand-banner-eyebrow {
+  margin: 0 0 14px;
+  font-size: 0.74rem; font-weight: 700;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--coral);
+}
+.brand-banner-title {
+  margin: 0 0 16px;
+  font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+  line-height: 1.15; letter-spacing: -0.02em;
+  color: #fff;
+}
+.brand-banner-body {
+  margin: 0; max-width: 56ch;
+  font-size: 1rem; line-height: 1.7;
+  color: rgba(255, 255, 255, 0.78);
+}
+.brand-banner-actions {
+  display: flex; flex-wrap: wrap; gap: 12px;
+  margin-top: 24px;
+}
+.brand-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 12px 24px; border-radius: var(--r-pill);
+  font-size: 0.92rem; font-weight: 600;
+  text-decoration: none; transition: all var(--dur) var(--ease);
+  cursor: pointer;
+}
+.brand-btn-primary {
+  background: var(--coral); color: #fff;
+  box-shadow: 0 6px 18px rgba(242, 100, 60, 0.35);
+}
+.brand-btn-primary:hover {
+  background: var(--coral-dark); color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 22px rgba(242, 100, 60, 0.45);
+}
+.brand-btn-ghost {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(6px);
+}
+.brand-btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.14); color: #fff;
+  transform: translateY(-1px);
+}
+.brand-banner-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.brand-stat {
+  display: flex; flex-direction: column; gap: 4px;
+  padding: 20px 18px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--r-md);
+  backdrop-filter: blur(6px);
+}
+.brand-stat-num {
+  font-size: clamp(1.6rem, 2.4vw, 2rem);
+  font-weight: 800; letter-spacing: -0.02em;
+  color: var(--coral);
+  line-height: 1;
+}
+.brand-stat-label {
+  font-size: 0.78rem; font-weight: 500;
+  color: rgba(255, 255, 255, 0.62);
+  line-height: 1.4;
+}
+
+@media (max-width: 760px) {
+  .brand-banner-inner {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 30px 24px;
+  }
+  .brand-banner-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

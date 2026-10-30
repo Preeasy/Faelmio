@@ -1,0 +1,39 @@
+{{- /* Reusable Faelmio brand story banner — accepts .show_cta (bool) */}}
+{{- $cta := .show_cta | default true }}
+{{- $c := site.Params.contact }}
+<section class="brand-banner">
+  <div class="brand-banner-inner">
+    <div class="brand-banner-text">
+      <p class="brand-banner-eyebrow">Faelmio · Yiwu · Since 2012</p>
+      <h2 class="brand-banner-title">{{ i18n "brand_intro_title" | default "About Faelmio" }}</h2>
+      <p class="brand-banner-body">{{ i18n "brand_intro_body" | default "Faelmio is a Yiwu-based toy sourcing team founded in 2012." }}</p>
+      {{- if $cta }}
+      <div class="brand-banner-actions">
+        <a class="brand-btn brand-btn-primary" href="https://wa.me/{{ $c.whatsapp }}?text={{ i18n "whatsapp_message" | default "Hello Faelmio, I am interested in your toy sourcing service." | urlquery }}" target="_blank" rel="noopener noreferrer">
+          {{ i18n "whatsapp" | default "WhatsApp" }}
+        </a>
+        <a class="brand-btn brand-btn-ghost" href="{{ "about/" | relLangURL }}">{{ i18n "about" | default "About" }}</a>
+      </div>
+      {{- end }}
+    </div>
+
+    <div class="brand-banner-stats" aria-label="Faelmio key figures">
+      <div class="brand-stat">
+        <span class="brand-stat-num">13+</span>
+        <span class="brand-stat-label">{{ i18n "brand_stat_years" | default "Years in Yiwu" }}</span>
+      </div>
+      <div class="brand-stat">
+        <span class="brand-stat-num">400+</span>
+        <span class="brand-stat-label">{{ i18n "brand_stat_factories" | default "Vetted factories" }}</span>
+      </div>
+      <div class="brand-stat">
+        <span class="brand-stat-num">300+</span>
+        <span class="brand-stat-label">{{ i18n "brand_stat_clients" | default "Happy clients" }}</span>
+      </div>
+      <div class="brand-stat">
+        <span class="brand-stat-num">24h</span>
+        <span class="brand-stat-label">{{ i18n "brand_stat_quote" | default "Quote response" }}</span>
+      </div>
+    </div>
+  </div>
+</section>
