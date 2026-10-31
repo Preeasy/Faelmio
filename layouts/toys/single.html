@@ -508,11 +508,20 @@
     "africa": { rate: 120, t: "35–45 d" }
   };
 
+  var L = {
+    carton: "{{ i18n "fr_unit_carton" | default "carton" }}",
+    cartons: "{{ i18n "fr_unit_cartons" | default "cartons" }}",
+    parcel: "{{ i18n "fr_unit_parcel" | default "parcel" }}",
+    parcels: "{{ i18n "fr_unit_parcels" | default "parcels" }}",
+    billable: "{{ i18n "fr_meta_billable" | default "{w} kg billable" }}",
+    perPc: "{{ i18n "fr_per_pc" | default "/ pc" }}"
+  };
+
   function money(n) {
-    return "$" + (n >= 100 ? Math.round(n) : n.toFixed(1));
+    return "$" + (n >= 100 ? Math.round(n).toLocaleString("en-US") : n.toFixed(1));
   }
   function moneyUnit(n) {
-    return "$" + (n >= 10 ? Math.round(n) : n.toFixed(2));
+    return "$" + (n >= 10 ? Math.round(n).toLocaleString("en-US") : n.toFixed(2));
   }
 
   function calc() {
@@ -523,12 +532,14 @@
     var volume = cartons * cbm;          /* m³ */
     var weight = cartons * gw;           /* kg, actual */
     var sea = SEA[o.dataset.region] || SEA["north-america"];
-    var low, high, transit, extra = "";
+    var low, high, transit, meta;
 
     if (m === "sea") {
       var base = Math.max(volume * sea.rate, 180);
       low = base * 0.9; high = base * 1.15;
       transit = sea.t;
+      meta = "≈ " + cartons + " " + (cartons > 1 ? L.cartons : L.carton)
+           + " · " + volume.toFixed(2) + " m³ · " + Math.round(weight) + " kg";
     } else {
       /* air parcel: rate card = RMB per kg + RMB per parcel, 0.5 kg steps, 500 g minimum */
       var usdKg = parseFloat(o.dataset.kg) / FX;
@@ -541,13 +552,15 @@
       var cost = billable * usdKg + parcels * usdParcel;
       low = high = cost;
       transit = o.dataset.t;
-      extra = " · " + parcels + (parcels > 1 ? " parcels" : " parcel");
+      meta = "≈ " + cartons + " " + (cartons > 1 ? L.cartons : L.carton)
+           + " · " + volume.toFixed(2) + " m³ · " + L.billable.replace("{w}", billable)
+           + " · " + parcels + " " + (parcels > 1 ? L.parcels : L.parcel);
     }
 
     outCost.textContent = low === high ? money(low) : money(low) + " – " + money(high);
-    outUnit.textContent = moneyUnit(low / qty) + (high !== low ? " – " + moneyUnit(high / qty) : "") + " / pc";
+    outUnit.textContent = moneyUnit(low / qty) + (high !== low ? " – " + moneyUnit(high / qty) : "") + " " + L.perPc;
     outTransit.textContent = transit;
-    outMeta.textContent = "≈ " + cartons + " cartons · " + volume.toFixed(2) + " m³ · " + Math.round(weight) + " kg" + extra;
+    outMeta.textContent = meta;
   }
 
   [dest, mode, qtyEl].forEach(function (el) {

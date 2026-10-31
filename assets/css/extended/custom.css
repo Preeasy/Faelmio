@@ -1222,8 +1222,9 @@ img.img-missing { display: none !important; }
   padding: 2px 9px; border: 1px solid rgba(242, 100, 60, 0.32); border-radius: var(--r-pill);
   font-size: 0.62rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--coral);
 }
-.fr-controls { display: grid; grid-template-columns: 1.3fr 1fr 0.9fr; gap: 9px; }
+.fr-controls { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; }
 .fr-controls label { display: block; min-width: 0; }
+.fr-controls label:first-child { grid-column: 1 / -1; }
 .fr-controls span {
   display: block; margin-bottom: 4px; font-size: 0.64rem; font-weight: 700;
   letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted);
@@ -1476,7 +1477,7 @@ img.img-missing { display: none !important; }
   .pdp-cta { flex-direction: column; }
   .pdp-btn-ghost { width: 100%; }
   .fr-controls { grid-template-columns: 1fr 1fr; }
-  .fr-controls label:last-child { grid-column: 1 / -1; }
+  .fr-controls label:last-child { grid-column: auto; }
   .fr-result { grid-template-columns: 1fr 1fr; }
   .pdp-module-grid { grid-template-columns: 1fr; }
   .pdp-logi-grid { grid-template-columns: repeat(2, 1fr); }
