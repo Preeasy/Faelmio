@@ -1,6 +1,6 @@
 ---
 aliases:
-  - /toys/plush-toys/stock-plush/
+  - /fr/toys/plush-toys/stock-plush/
 title: "Peluches en stock"
 description: "Modèles de peluches populaires prêts à expédier depuis Yiwu — délais rapides, MOQ réduit, qualité constante."
 cover:

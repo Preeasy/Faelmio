@@ -1,6 +1,6 @@
 ---
 aliases:
-  - /toys/party-promotional-toys/novelty-party-pack/
+  - /fr/toys/party-promotional-toys/novelty-party-pack/
 title: "Pack de fête fantaisie"
 description: "Jouets fantaisie et cadeaux de fête assortis — ballons, bulles, sifflets, articles lumineux."
 cover:

@@ -1,6 +1,6 @@
 ---
 aliases:
-  - /toys/fidget-sensory-toys/crispy-fidget-toy/
+  - /ko/toys/fidget-sensory-toys/crispy-fidget-toy/
 title: "크리스피 피젯 토이 스퀴시 에그 — 부드러운 PU 폼 스트레스 해소"
 description: "완툭한 왁스 코팅과 찢김 방지 PU 폼 코어를 갖춘 크리스피 피젯 토이 스퀴시 에그입니다. 어린이와 성인을 위한 감각 스트레스 해소 완구로, 혼합 색상 대량 판매, EN71 및 ASTM F963 인증."
 sku: "FM-CST-V8001A"

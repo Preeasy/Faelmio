@@ -1,6 +1,6 @@
 ---
 aliases:
-  - /toys/dolls-action-figures/posable-action-figure/
+  - /ko/toys/dolls-action-figures/posable-action-figure/
 title: "가동 액션 피겨"
 description: "30개 이상의 관절 포인트와 다양한 액세서리를 갖춘 고가동 액션 피겨."
 cover:

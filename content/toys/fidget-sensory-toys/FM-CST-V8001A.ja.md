@@ -1,6 +1,6 @@
 ---
 aliases:
-  - /toys/fidget-sensory-toys/crispy-fidget-toy/
+  - /ja/toys/fidget-sensory-toys/crispy-fidget-toy/
 title: "クリスピー・フィジェットトイ スクイーズエッグ — 柔らかなPUフォームでストレス解消"
 description: "しっとりとしたワックスコーティングと耐引裂性PUフォームコアを備えたクリスピー・フィジェットトイ スクイーズエッグ。子どもから大人まで使える感覚ストレス解消玩具で、アソートカラーを卸売販売、EN71およびASTM F963認証。"
 sku: "FM-CST-V8001A"

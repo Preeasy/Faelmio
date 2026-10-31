@@ -1,6 +1,6 @@
 ---
 aliases:
-  - /toys/plush-toys/custom-plush/
+  - /ja/toys/plush-toys/custom-plush/
 title: "カスタムぬいぐるみベア — OEM ソフトトイ製造"
 description: "義烏で製造する完全カスタムのぬいぐるみベア。生地、色、サイズ、刺繍ロゴまでお客様仕様に対応。MOQ 500個、CE/EN71/ASTM試験済み、小売向け包装。"
 answer: "サイズ、生地、色、刺繍ブランディングまでお客様の仕様どおりに製作するカスタムぬいぐるみベアです。検証済みの義烏ぬいぐるみ工場で500個から生産し、CE/EN71およびASTMの試験報告書と、小売やAmazon FBAにそのまま使える包装をご用意します。"

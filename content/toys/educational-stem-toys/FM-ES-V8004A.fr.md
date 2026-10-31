@@ -1,6 +1,6 @@
 ---
 aliases:
-  - /toys/educational-stem-toys/building-blocks-set/
+  - /fr/toys/educational-stem-toys/building-blocks-set/
 title: "Jeu de blocs de construction"
 description: "Blocs de construction emboîtables et colorés — plastique ABS sûr, idéal pour l'éveil STEM en maternelle."
 cover:

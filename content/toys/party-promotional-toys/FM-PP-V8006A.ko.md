@@ -1,6 +1,6 @@
 ---
 aliases:
-  - /toys/party-promotional-toys/novelty-party-pack/
+  - /ko/toys/party-promotional-toys/novelty-party-pack/
 title: "노벨티 파티 팩"
 description: "다양한 노벨티 완구와 파티 선물 — 풍선, 버블, 호루라기, 발광 아이템."
 cover:

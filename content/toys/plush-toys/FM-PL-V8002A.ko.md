@@ -1,6 +1,6 @@
 ---
 aliases:
-  - /toys/plush-toys/stock-plush/
+  - /ko/toys/plush-toys/stock-plush/
 title: "재고 봉제 인형"
 description: "이위우에서 바로 출고 가능한 인기 봉제 인형 — 빠른 납기, 낮은 MOQ, 일관된 품질."
 cover:

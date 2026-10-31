@@ -1,6 +1,6 @@
 ---
 aliases:
-  - /toys/plush-toys/custom-plush/
+  - /fr/toys/plush-toys/custom-plush/
 title: "Ours en peluche personnalisé — fabrication OEM de peluches"
 description: "Ours en peluche entièrement personnalisé fabriqué à Yiwu : votre tissu, votre couleur, votre taille et votre logo brodé. MOQ 500 pièces, tests CE/EN71/ASTM, emballage prêt pour la vente."
 answer: "Un ours en peluche personnalisé réalisé selon votre propre cahier des charges — taille, tissu, couleur et marquage brodé — produit par des usines de peluches certifiées de Yiwu à partir de 500 pièces, avec des rapports de test CE/EN71 et ASTM et un emballage prêt pour la vente au détail ou Amazon FBA."

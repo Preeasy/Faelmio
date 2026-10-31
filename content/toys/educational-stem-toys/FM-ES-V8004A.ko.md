@@ -1,6 +1,6 @@
 ---
 aliases:
-  - /toys/educational-stem-toys/building-blocks-set/
+  - /ko/toys/educational-stem-toys/building-blocks-set/
 title: "조립 블록 세트"
 description: "알록달록한 상호 연결 조립 블록 — 안전한 ABS 플라스틱, 유치원 STEM 교육에 최적."
 cover:

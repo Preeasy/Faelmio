@@ -1,6 +1,6 @@
 ---
 aliases:
-  - /toys/outdoor-water-toys/inflatable-pool-float/
+  - /fr/toys/outdoor-water-toys/inflatable-pool-float/
 title: "Bouée gonflable de piscine"
 description: "Bouée de piscine gonflable en vinyle renforcé — tailles géantes, formes multiples, résistante aux UV."
 cover:

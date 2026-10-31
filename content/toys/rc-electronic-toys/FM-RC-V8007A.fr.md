@@ -1,6 +1,6 @@
 ---
 aliases:
-  - /toys/rc-electronic-toys/remote-control-car/
+  - /fr/toys/rc-electronic-toys/remote-control-car/
 title: "Voiture télécommandée"
 description: "Voiture télécommandée 2.4 GHz à construction durable, longue autonomie, plusieurs styles disponibles."
 cover:

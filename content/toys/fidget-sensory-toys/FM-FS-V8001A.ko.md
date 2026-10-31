@@ -1,6 +1,6 @@
 ---
 aliases:
-  - /toys/fidget-sensory-toys/push-pop-bubble/
+  - /ko/toys/fidget-sensory-toys/push-pop-bubble/
 title: "푸시팝 버블"
 description: "실리콘 푸시팝 감각 완구 — 스트레스 해소, ADHD 집중력 향상, 다양한 형태와 색상."
 cover:

@@ -1,4 +1,5 @@
 # Product URL migration: slug → SKU (301 permanent redirect)
+/toys/fidget-sensory-toys/crispy-fidget-toy/  /toys/fidget-sensory-toys/FM-CST-V8001A/   301
 /toys/fidget-sensory-toys/push-pop-bubble/    /toys/fidget-sensory-toys/FM-FS-V8001A/    301
 /toys/plush-toys/custom-plush/               /toys/plush-toys/FM-PL-014/               301
 /toys/plush-toys/stock-plush/                /toys/plush-toys/FM-PL-V8002A/            301
@@ -9,6 +10,7 @@
 /toys/rc-electronic-toys/remote-control-car/       /toys/rc-electronic-toys/FM-RC-V8007A/      301
 
 # Spanish
+/es/toys/fidget-sensory-toys/crispy-fidget-toy/  /es/toys/fidget-sensory-toys/FM-CST-V8001A/   301
 /es/toys/fidget-sensory-toys/push-pop-bubble/    /es/toys/fidget-sensory-toys/FM-FS-V8001A/    301
 /es/toys/plush-toys/custom-plush/               /es/toys/plush-toys/FM-PL-014/               301
 /es/toys/plush-toys/stock-plush/                /es/toys/plush-toys/FM-PL-V8002A/            301
@@ -19,6 +21,7 @@
 /es/toys/rc-electronic-toys/remote-control-car/       /es/toys/rc-electronic-toys/FM-RC-V8007A/      301
 
 # Japanese
+/ja/toys/fidget-sensory-toys/crispy-fidget-toy/  /ja/toys/fidget-sensory-toys/FM-CST-V8001A/   301
 /ja/toys/fidget-sensory-toys/push-pop-bubble/    /ja/toys/fidget-sensory-toys/FM-FS-V8001A/    301
 /ja/toys/plush-toys/custom-plush/               /ja/toys/plush-toys/FM-PL-014/               301
 /ja/toys/plush-toys/stock-plush/                /ja/toys/plush-toys/FM-PL-V8002A/            301
@@ -27,3 +30,25 @@
 /ja/toys/outdoor-water-toys/inflatable-pool-float/    /ja/toys/outdoor-water-toys/FM-OW-V8005A/     301
 /ja/toys/party-promotional-toys/novelty-party-pack/   /ja/toys/party-promotional-toys/FM-PP-V8006A/  301
 /ja/toys/rc-electronic-toys/remote-control-car/       /ja/toys/rc-electronic-toys/FM-RC-V8007A/      301
+
+# French
+/fr/toys/fidget-sensory-toys/crispy-fidget-toy/  /fr/toys/fidget-sensory-toys/FM-CST-V8001A/   301
+/fr/toys/fidget-sensory-toys/push-pop-bubble/    /fr/toys/fidget-sensory-toys/FM-FS-V8001A/    301
+/fr/toys/plush-toys/custom-plush/               /fr/toys/plush-toys/FM-PL-014/               301
+/fr/toys/plush-toys/stock-plush/                /fr/toys/plush-toys/FM-PL-V8002A/            301
+/fr/toys/dolls-action-figures/posable-action-figure/  /fr/toys/dolls-action-figures/FM-DA-V8003A/  301
+/fr/toys/educational-stem-toys/building-blocks-set/   /fr/toys/educational-stem-toys/FM-ES-V8004A/  301
+/fr/toys/outdoor-water-toys/inflatable-pool-float/    /fr/toys/outdoor-water-toys/FM-OW-V8005A/     301
+/fr/toys/party-promotional-toys/novelty-party-pack/   /fr/toys/party-promotional-toys/FM-PP-V8006A/  301
+/fr/toys/rc-electronic-toys/remote-control-car/       /fr/toys/rc-electronic-toys/FM-RC-V8007A/      301
+
+# Korean
+/ko/toys/fidget-sensory-toys/crispy-fidget-toy/  /ko/toys/fidget-sensory-toys/FM-CST-V8001A/   301
+/ko/toys/fidget-sensory-toys/push-pop-bubble/    /ko/toys/fidget-sensory-toys/FM-FS-V8001A/    301
+/ko/toys/plush-toys/custom-plush/               /ko/toys/plush-toys/FM-PL-014/               301
+/ko/toys/plush-toys/stock-plush/                /ko/toys/plush-toys/FM-PL-V8002A/            301
+/ko/toys/dolls-action-figures/posable-action-figure/  /ko/toys/dolls-action-figures/FM-DA-V8003A/  301
+/ko/toys/educational-stem-toys/building-blocks-set/   /ko/toys/educational-stem-toys/FM-ES-V8004A/  301
+/ko/toys/outdoor-water-toys/inflatable-pool-float/    /ko/toys/outdoor-water-toys/FM-OW-V8005A/     301
+/ko/toys/party-promotional-toys/novelty-party-pack/   /ko/toys/party-promotional-toys/FM-PP-V8006A/  301
+/ko/toys/rc-electronic-toys/remote-control-car/       /ko/toys/rc-electronic-toys/FM-RC-V8007A/      301

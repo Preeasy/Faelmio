@@ -1,6 +1,6 @@
 ---
 aliases:
-  - /toys/dolls-action-figures/posable-action-figure/
+  - /fr/toys/dolls-action-figures/posable-action-figure/
 title: "Figurine articulée"
 description: "Figurine hautement articulée avec plus de 30 points d'articulation et de multiples accessoires."
 cover:

@@ -1,6 +1,6 @@
 ---
 aliases:
-  - /toys/plush-toys/custom-plush/
+  - /ko/toys/plush-toys/custom-plush/
 title: "커스텀 봉제 인형 베어 — OEM 소프트 토이 제조"
 description: "이위우에서 제작하는 완전 커스텀 봉제 인형 베어: 원하는 원단, 색상, 사이즈, 자수 로고까지. MOQ 500개, CE/EN71/ASTM 시험 완료, 소매 판매용 포장."
 answer: "사이즈, 원단, 색상, 자수 브랜딩까지 원하는 사양대로 제작하는 커스텀 봉제 인형 베어입니다. 검증된 이위우 봉제 공장에서 500개부터 생산하며, CE/EN71 및 ASTM 시험 성적서와 소매 또는 Amazon FBA 판매에 바로 사용할 수 있는 포장을 제공합니다."

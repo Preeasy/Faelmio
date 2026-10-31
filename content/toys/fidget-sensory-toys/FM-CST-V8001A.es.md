@@ -1,6 +1,6 @@
 ---
 aliases:
-  - /toys/fidget-sensory-toys/crispy-fidget-toy/
+  - /es/toys/fidget-sensory-toys/crispy-fidget-toy/
 title: "Huevo squishy crispy antiestrés — espuma PU suave para aliviar el estrés"
 description: "Huevo squishy crispy con recubrimiento de cera crujiente y núcleo de espuma PU resistente al desgarro. Juguete sensorial antiestrés para niños y adultos, colores surtidos al por mayor, certificado EN71 y ASTM F963."
 sku: "FM-CST-V8001A"

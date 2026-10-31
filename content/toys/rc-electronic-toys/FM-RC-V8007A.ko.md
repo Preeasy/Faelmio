@@ -1,6 +1,6 @@
 ---
 aliases:
-  - /toys/rc-electronic-toys/remote-control-car/
+  - /ko/toys/rc-electronic-toys/remote-control-car/
 title: "무선 조종 자동차"
 description: "내구성 있는 구조와 긴 배터리 수명을 갖춘 2.4GHz 무선 조종 자동차, 다양한 스타일 제공."
 cover:

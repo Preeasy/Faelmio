@@ -1,6 +1,6 @@
 ---
 aliases:
-  - /toys/fidget-sensory-toys/crispy-fidget-toy/
+  - /fr/toys/fidget-sensory-toys/crispy-fidget-toy/
 title: "Œuf squishy crispy anti-stress — mousse PU souple pour soulager le stress"
 description: "Œuf squishy crispy à enrobage de cire croustillante et cœur en mousse PU résistant à la déchirure. Jouet sensoriel anti-stress pour enfants et adultes, couleurs assorties en gros, certifié EN71 et ASTM F963."
 sku: "FM-CST-V8001A"

@@ -1,6 +1,6 @@
 ---
 aliases:
-  - /toys/outdoor-water-toys/inflatable-pool-float/
+  - /ko/toys/outdoor-water-toys/inflatable-pool-float/
 title: "인플레이터블 수영 튜브"
 description: "고강도 비닐 인플레이터블 수영 튜브 — 대형 사이즈, 다양한 형태, UV 방지."
 cover:
