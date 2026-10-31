@@ -154,8 +154,11 @@
         {{- /* -------- freight reference (compact) -------- */}}
         {{- with .Params.carton }}
         {{- if and .pcs .cbm }}
+        {{- $setPcs := $.Params.set_pcs | default 1 }}
+        {{- $isSet := gt (int $setPcs) 1 }}
         <section class="pdp-freight" id="freight" data-freight
-                 data-pcs="{{ .pcs }}" data-cbm="{{ .cbm }}" data-gw="{{ .gw | default 8 }}">
+                 data-pcs="{{ .pcs }}" data-cbm="{{ .cbm }}" data-gw="{{ .gw | default 8 }}"
+                 data-setpcs="{{ $setPcs }}" data-fx="{{ site.Params.freight.fx_rmb_usd | default 6.4 }}">
           <div class="fr-head">
             <h2>{{ i18n "pdp_freight_title" | default "Estimate shipping" }}</h2>
             <span>{{ i18n "pdp_freight_tag" | default "Reference" }}</span>
@@ -175,10 +178,14 @@
                 {{- range $groups }}
                 <optgroup label="{{ .label }}">
                   {{- range where site.Data.airparcel "continent" .key }}
+                  {{- $tax := .tax | default "standard" }}
+                  {{- $taxKey := dict "ddp" "fr_tax_ddp" "recipient" "fr_tax_recipient" "shipper" "fr_tax_shipper" }}
                   <option value="{{ .code }}" data-region="{{ .continent }}"
                           data-kg="{{ .kg_rmb }}" data-parcel="{{ .parcel_rmb }}"
                           data-min="{{ .min_kg }}" data-max="{{ .max_kg }}"
-                          data-t="{{ .transit }}"{{ if eq .code "US" }} selected{{ end }}>{{ .name }}</option>
+                          data-t="{{ .transit }}" data-tax="{{ $tax }}" data-notice="{{ .notice }}"
+                          data-taxlabel="{{ with index $taxKey $tax }}{{ i18n . }}{{ end }}"
+                          {{- if eq .code "US" }} selected{{ end }}>{{ .name }}</option>
                   {{- end }}
                 </optgroup>
                 {{- end }}
@@ -188,21 +195,27 @@
               <span>{{ i18n "pdp_freight_mode" | default "Shipping mode" }}</span>
               <select data-fr-mode>
                 <option value="sea">{{ i18n "pdp_mode_sea" | default "Sea · LCL" }}</option>
-                <option value="air" selected>{{ i18n "pdp_mode_air" | default "Air parcel · door-to-door" }}</option>
+                <option value="bulk">{{ i18n "pdp_mode_bulk" | default "Bulk air · per kg" }}</option>
+                <option value="parcel" selected>{{ i18n "pdp_mode_air" | default "Air parcel · door-to-door" }}</option>
               </select>
             </label>
             <label>
-              <span>{{ i18n "pdp_freight_qty" | default "Quantity (pcs)" }}</span>
-              <input type="number" data-fr-qty value="500" min="100" step="100" inputmode="numeric">
+              <span>{{ if $isSet }}{{ i18n "pdp_freight_qty_sets" | default "Quantity (sets)" }}{{ else }}{{ i18n "pdp_freight_qty" | default "Quantity (pcs)" }}{{ end }}</span>
+              <input type="number" data-fr-qty value="{{ if $isSet }}100{{ else }}500{{ end }}"
+                     min="{{ if $isSet }}1{{ else }}100{{ end }}" step="{{ if $isSet }}1{{ else }}100{{ end }}" inputmode="numeric">
             </label>
           </div>
           <div class="fr-result" aria-live="polite">
             <div><span>{{ i18n "pdp_freight_cost" | default "Est. freight" }}</span><strong data-fr-cost>—</strong></div>
-            <div><span>{{ i18n "pdp_freight_unit" | default "Per unit" }}</span><strong data-fr-unit>—</strong></div>
+            <div><span>{{ if $isSet }}{{ i18n "pdp_freight_unit_set" | default "Per set" }}{{ else }}{{ i18n "pdp_freight_unit" | default "Per unit" }}{{ end }}</span><strong data-fr-unit>—</strong></div>
             <div><span>{{ i18n "pdp_freight_transit" | default "Transit" }}</span><strong data-fr-transit>—</strong></div>
           </div>
           <p class="fr-meta" data-fr-meta></p>
-          <p class="fr-note">{{ i18n "pdp_freight_note" | default "Indicative only — duties, VAT and destination charges excluded. DDP door-to-door available on request." }}</p>
+          <p class="fr-break" data-fr-break></p>
+          <p class="fr-country" data-fr-country hidden></p>
+          <p class="fr-alt" data-fr-alt></p>
+          <p class="fr-note">{{ i18n "pdp_freight_note" | default "Indicative only — duties, VAT and destination charges excluded. DDP door-to-door available on request." }}
+            {{- with site.Params.freight.validity_days }} · {{ i18n "fr_valid" (dict "days" .) }}{{ end }}</p>
         </section>
         {{- end }}
         {{- end }}
@@ -257,7 +270,7 @@
     {{- end }}
 
     {{- /* -------- brand story banner -------- */}}
-    {{- partial "brand-story-banner.html" (dict "show_cta" true) }}
+    {{- partial "brand-story-banner.html" (dict "show_cta" true "compact" true) }}
 
     {{- /* -------- overview + specs -------- */}}
     <div class="pdp-block">
@@ -349,7 +362,17 @@
     </section>
 
     {{- /* -------- related -------- */}}
-    {{- with .Params.related }}
+    {{- $self := . }}
+    {{- $rel := slice }}
+    {{- range .Params.related }}
+      {{- with site.GetPage . }}{{ $rel = $rel | append . }}{{ end }}
+    {{- end }}
+    {{- if lt (len $rel) 3 }}
+      {{- range $p := where (where site.RegularPages "Section" "toys") "Permalink" "ne" $self.Permalink }}
+        {{- if and (lt (len $rel) 3) (not (in $rel $p)) }}{{ $rel = $rel | append $p }}{{ end }}
+      {{- end }}
+    {{- end }}
+    {{- with $rel }}
     <section class="pdp-related">
       <header class="pdp-sec-head">
         <p class="pdp-eyebrow">{{ i18n "pdp_related_eyebrow" | default "Bundle ideas" }}</p>
@@ -357,7 +380,6 @@
       </header>
       <div class="pdp-related-grid">
         {{- range first 3 . }}
-        {{- with site.GetPage . }}
         <a class="pdp-related-card" href="{{ .Permalink }}">
           {{- $img := .Params.cover.image | default (printf "images/toys/%s.jpg" (path.Base .CurrentSection.Path) | relURL) }}
           <img src="{{ $img }}" alt="{{ .Title }}" width="480" height="320" loading="lazy" decoding="async"
@@ -367,7 +389,6 @@
             {{- with .Params.price_range }}<span>{{ . }}</span>{{ end }}
           </div>
         </a>
-        {{- end }}
         {{- end }}
       </div>
     </section>
@@ -483,9 +504,11 @@
 (function () {
   var box = document.querySelector("[data-freight]");
   if (!box) return;
-  var pcs = parseFloat(box.dataset.pcs) || 0;
+  var pcsPerCarton = parseFloat(box.dataset.pcs) || 0;
   var cbm = parseFloat(box.dataset.cbm) || 0;
   var gw = parseFloat(box.dataset.gw) || 0;
+  var setPcs = parseFloat(box.dataset.setpcs) || 1;
+  var FX = parseFloat(box.dataset.fx) || 6.4;
   var dest = box.querySelector("[data-fr-dest]");
   var mode = box.querySelector("[data-fr-mode]");
   var qtyEl = box.querySelector("[data-fr-qty]");
@@ -493,10 +516,11 @@
   var outUnit = box.querySelector("[data-fr-unit]");
   var outTransit = box.querySelector("[data-fr-transit]");
   var outMeta = box.querySelector("[data-fr-meta]");
-  if (!pcs || !cbm || !dest || !mode || !qtyEl) return;
+  var outBreak = box.querySelector("[data-fr-break]");
+  var outCountry = box.querySelector("[data-fr-country]");
+  var outAlt = box.querySelector("[data-fr-alt]");
+  if (!pcsPerCarton || !cbm || !dest || !mode || !qtyEl) return;
 
-  /* RMB → USD (rate card quoted in RMB, converted at 6.4) */
-  var FX = 6.4;
   /* sea freight reference, USD per m³ and transit, by continent */
   var SEA = {
     "north-america": { rate: 88, t: "30–40 d" },
@@ -514,7 +538,16 @@
     parcel: "{{ i18n "fr_unit_parcel" | default "parcel" }}",
     parcels: "{{ i18n "fr_unit_parcels" | default "parcels" }}",
     billable: "{{ i18n "fr_meta_billable" | default "{w} kg billable" }}",
-    perPc: "{{ i18n "fr_per_pc" | default "/ pc" }}"
+    perPc: "{{ i18n "fr_per_pc" | default "/ pc" }}",
+    perSet: "{{ i18n "fr_per_set" | default "/ set" }}",
+    freight: "{{ i18n "fr_word_freight" | default "freight" }}",
+    delivery: "{{ i18n "fr_word_delivery" | default "delivery" }}",
+    altPrefix: "{{ i18n "fr_alt_prefix" | default "Compare:" }}",
+    seaName: "{{ i18n "pdp_mode_sea" | default "Sea · LCL" }}",
+    bulkName: "{{ i18n "pdp_mode_bulk" | default "Bulk air" }}",
+    parcelName: "{{ i18n "pdp_mode_air" | default "Air parcel" }}",
+    warnParcels: "{{ i18n "fr_warn_parcels" | default "Order exceeds the single-parcel limit ({max} kg) — split into {n} parcels." }}",
+    setsWord: "{{ i18n "fr_word_sets" | default "sets" }}"
   };
 
   function money(n) {
@@ -523,44 +556,78 @@
   function moneyUnit(n) {
     return "$" + (n >= 10 ? Math.round(n).toLocaleString("en-US") : n.toFixed(2));
   }
+  function kg(n) {
+    return (n % 1 === 0) ? String(Math.round(n)) : n.toFixed(1);
+  }
 
   function calc() {
     var o = dest.options[dest.selectedIndex];
-    var qty = Math.max(parseInt(qtyEl.value, 10) || 0, 100);
     var m = mode.value;
-    var cartons = Math.ceil(qty / pcs);
-    var volume = cartons * cbm;          /* m³ */
-    var weight = cartons * gw;           /* kg, actual */
+    var minQty = setPcs > 1 ? 1 : 100;
+    var units = Math.max(parseInt(qtyEl.value, 10) || 0, minQty);
+    var totalPcs = Math.round(units * setPcs);
+    var cartons = Math.max(1, Math.ceil(totalPcs / pcsPerCarton));
+    var volume = cartons * cbm;                  /* m³ */
+    var weight = cartons * gw;                   /* kg, actual */
+    var volKg = cartons * cbm * 166.667;         /* volumetric weight, 1 m³ = 166.67 kg */
+    var cw = Math.max(weight, volKg);            /* chargeable weight */
+    var billable = Math.max(0.5, Math.ceil(cw * 2) / 2);
+    var usdKg = parseFloat(o.dataset.kg) / FX;
+    var usdParcel = parseFloat(o.dataset.parcel) / FX;
+    var maxKg = parseFloat(o.dataset.max) || 20;
+    var parcels = Math.max(1, Math.ceil(cw / maxKg));
+    var delivery = parcels * usdParcel;
     var sea = SEA[o.dataset.region] || SEA["north-america"];
-    var low, high, transit, meta;
+    var seaBase = Math.max(volume * sea.rate, 180);
+    var bulkCost = Math.max(billable * usdKg, 50);
+    var parcelCost = billable * usdKg + delivery;
 
+    var cargo = "≈ " + cartons + " " + (cartons > 1 ? L.cartons : L.carton)
+              + " · " + volume.toFixed(2) + " m³";
+    if (setPcs > 1) cargo += " · " + units + " " + L.setsWord + " = " + totalPcs + " pcs";
+
+    var low, high, transit, meta, brk;
     if (m === "sea") {
-      var base = Math.max(volume * sea.rate, 180);
-      low = base * 0.9; high = base * 1.15;
+      low = seaBase * 0.9; high = seaBase * 1.15;
       transit = sea.t;
-      meta = "≈ " + cartons + " " + (cartons > 1 ? L.cartons : L.carton)
-           + " · " + volume.toFixed(2) + " m³ · " + Math.round(weight) + " kg";
-    } else {
-      /* air parcel: rate card = RMB per kg + RMB per parcel, 0.5 kg steps, 500 g minimum */
-      var usdKg = parseFloat(o.dataset.kg) / FX;
-      var usdParcel = parseFloat(o.dataset.parcel) / FX;
-      var maxKg = parseFloat(o.dataset.max) || 20;
-      var volKg = cartons * cbm * 166.667;          /* volumetric weight, 1 m³ = 166.67 kg */
-      var cw = Math.max(weight, volKg);             /* chargeable weight */
-      var parcels = Math.max(1, Math.ceil(cw / maxKg));
-      var billable = Math.max(0.5, Math.ceil(cw * 2) / 2);
-      var cost = billable * usdKg + parcels * usdParcel;
-      low = high = cost;
+      meta = cargo + " · " + kg(weight) + " kg";
+      brk = volume.toFixed(2) + " m³ × $" + sea.rate + "/m³ · min $180";
+    } else if (m === "bulk") {
+      low = high = bulkCost;
       transit = o.dataset.t;
-      meta = "≈ " + cartons + " " + (cartons > 1 ? L.cartons : L.carton)
-           + " · " + volume.toFixed(2) + " m³ · " + L.billable.replace("{w}", billable)
+      meta = cargo + " · " + L.billable.replace("{w}", kg(billable));
+      brk = kg(billable) + " kg × " + moneyUnit(usdKg) + "/kg";
+    } else {
+      low = high = parcelCost;
+      transit = o.dataset.t;
+      meta = cargo + " · " + L.billable.replace("{w}", kg(billable))
            + " · " + parcels + " " + (parcels > 1 ? L.parcels : L.parcel);
+      brk = money(billable * usdKg) + " " + L.freight + " + " + money(delivery) + " "
+          + L.delivery + " (" + parcels + " × " + money(usdParcel) + ")";
+    }
+    if (m === "parcel" && parcels > 1) {
+      brk += " · " + L.warnParcels.replace("{max}", kg(maxKg)).replace("{n}", parcels);
     }
 
     outCost.textContent = low === high ? money(low) : money(low) + " – " + money(high);
-    outUnit.textContent = moneyUnit(low / qty) + (high !== low ? " – " + moneyUnit(high / qty) : "") + " " + L.perPc;
+    outUnit.textContent = moneyUnit(low / units) + (high !== low ? " – " + moneyUnit(high / units) : "") + " " + (setPcs > 1 ? L.perSet : L.perPc);
     outTransit.textContent = transit;
     outMeta.textContent = meta;
+    outBreak.textContent = brk;
+
+    var tax = o.dataset.tax || "standard";
+    var notice = (o.dataset.notice || "").trim();
+    var taxLabel = (o.dataset.taxlabel || "").trim();
+    var country = tax !== "standard" ? taxLabel : "";
+    if (notice) country = country ? country + " · " + notice : notice;
+    outCountry.textContent = country;
+    outCountry.hidden = !country;
+
+    var alts = [];
+    if (m !== "bulk") alts.push(L.bulkName + " " + money(bulkCost));
+    if (m !== "parcel") alts.push(L.parcelName + " " + money(parcelCost));
+    if (m !== "sea") alts.push(L.seaName + " " + money(seaBase));
+    outAlt.textContent = alts.length ? L.altPrefix + " " + alts.join(" · ") : "";
   }
 
   [dest, mode, qtyEl].forEach(function (el) {

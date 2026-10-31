@@ -197,6 +197,11 @@ text = "Faelmio"
 disableFingerprinting = false
 favicon = "/images/brand/favicon.ico"
 
+[params.freight]
+# Air-parcel rate card is quoted in RMB; converted to USD at this rate.
+fx_rmb_usd = 6.4
+validity_days = 30
+
 [params.schema]
 publisherType = "WholesaleStore"
 

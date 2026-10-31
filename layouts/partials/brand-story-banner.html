@@ -1,7 +1,7 @@
 {{- /* Reusable Faelmio brand story banner — accepts .show_cta (bool) */}}
 {{- $cta := .show_cta | default true }}
 {{- $c := site.Params.contact }}
-<section class="brand-banner">
+<section class="brand-banner{{ if .compact }} is-compact{{ end }}">
   <div class="brand-banner-inner">
     <div class="brand-banner-text">
       <p class="brand-banner-eyebrow">Faelmio · Yiwu · Since 2012</p>

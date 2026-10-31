@@ -28,6 +28,7 @@ price_high: 56
 price_note: "FOB Yiwu · 12 pcs per set · 500+ sets: $52"
 currency: "USD"
 moq: "1 set (12 pcs)"
+set_pcs: 12
 lead_time: "Within 7 days (stock)"
 fob_port: "Yiwu / Ningbo"
 oem_support: true

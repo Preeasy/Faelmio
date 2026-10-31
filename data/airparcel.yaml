@@ -8,6 +8,8 @@
   kg_rmb: 155
   parcel_rmb: 48
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: north-america
   name: "Costa Rica"
   code: CR
@@ -16,6 +18,8 @@
   kg_rmb: 200
   parcel_rmb: 49
   transit: "15–25 days"
+  tax: recipient
+  notice: ""
 - continent: north-america
   name: "Mexico"
   code: MX
@@ -24,6 +28,8 @@
   kg_rmb: 195
   parcel_rmb: 55
   transit: "9–15 days"
+  tax: ddp
+  notice: "DDP · duties included"
 - continent: north-america
   name: "Puerto Rico"
   code: PR
@@ -32,6 +38,8 @@
   kg_rmb: 215
   parcel_rmb: 65
   transit: "12–18 days"
+  tax: recipient
+  notice: ""
 - continent: north-america
   name: "United States"
   code: US
@@ -40,6 +48,8 @@
   kg_rmb: 175
   parcel_rmb: 45
   transit: "8–12 days"
+  tax: ddp
+  notice: "DDP · duties included"
 - continent: europe
   name: "Austria"
   code: AT
@@ -48,6 +58,8 @@
   kg_rmb: 155
   parcel_rmb: 53
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "Belgium"
   code: BE
@@ -56,6 +68,8 @@
   kg_rmb: 150
   parcel_rmb: 52
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "Bulgaria"
   code: BG
@@ -64,6 +78,8 @@
   kg_rmb: 155
   parcel_rmb: 44
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "Croatia"
   code: HR
@@ -72,6 +88,8 @@
   kg_rmb: 155
   parcel_rmb: 43
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "Cyprus"
   code: CY
@@ -80,6 +98,8 @@
   kg_rmb: 185
   parcel_rmb: 44
   transit: "8–15 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "Czechia"
   code: CZ
@@ -88,6 +108,8 @@
   kg_rmb: 155
   parcel_rmb: 40
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "Denmark"
   code: DK
@@ -96,6 +118,8 @@
   kg_rmb: 160
   parcel_rmb: 51
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "Estonia"
   code: EE
@@ -104,6 +128,8 @@
   kg_rmb: 155
   parcel_rmb: 37
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "Finland"
   code: FI
@@ -112,6 +138,8 @@
   kg_rmb: 160
   parcel_rmb: 48
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "France"
   code: FR
@@ -120,6 +148,8 @@
   kg_rmb: 145
   parcel_rmb: 44
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "Germany"
   code: DE
@@ -128,6 +158,8 @@
   kg_rmb: 140
   parcel_rmb: 48
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "Greece"
   code: GR
@@ -136,6 +168,8 @@
   kg_rmb: 155
   parcel_rmb: 41
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "Guernsey"
   code: GG
@@ -144,6 +178,8 @@
   kg_rmb: 165
   parcel_rmb: 58
   transit: "15–25 days"
+  tax: recipient
+  notice: ""
 - continent: europe
   name: "Hungary"
   code: HU
@@ -152,6 +188,8 @@
   kg_rmb: 150
   parcel_rmb: 43
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "Ireland"
   code: IE
@@ -160,6 +198,8 @@
   kg_rmb: 155
   parcel_rmb: 49
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "Isle of Man"
   code: IM
@@ -168,6 +208,8 @@
   kg_rmb: 165
   parcel_rmb: 58
   transit: "15–25 days"
+  tax: recipient
+  notice: ""
 - continent: europe
   name: "Italy"
   code: IT
@@ -176,6 +218,8 @@
   kg_rmb: 140
   parcel_rmb: 51
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "Jersey"
   code: JE
@@ -184,6 +228,8 @@
   kg_rmb: 165
   parcel_rmb: 58
   transit: "15–25 days"
+  tax: recipient
+  notice: ""
 - continent: europe
   name: "Latvia"
   code: LV
@@ -192,6 +238,8 @@
   kg_rmb: 155
   parcel_rmb: 37
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "Lithuania"
   code: LT
@@ -200,6 +248,8 @@
   kg_rmb: 155
   parcel_rmb: 37
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "Luxembourg"
   code: LU
@@ -208,6 +258,8 @@
   kg_rmb: 170
   parcel_rmb: 52
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "Malta"
   code: MT
@@ -216,6 +268,8 @@
   kg_rmb: 190
   parcel_rmb: 58
   transit: "10–15 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "Netherlands"
   code: NL
@@ -224,6 +278,8 @@
   kg_rmb: 150
   parcel_rmb: 50
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "Norway"
   code: NO
@@ -232,6 +288,8 @@
   kg_rmb: 150
   parcel_rmb: 53
   transit: "8–15 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "Poland"
   code: PL
@@ -240,6 +298,8 @@
   kg_rmb: 155
   parcel_rmb: 42
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "Portugal"
   code: PT
@@ -248,6 +308,8 @@
   kg_rmb: 160
   parcel_rmb: 47
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "Romania"
   code: RO
@@ -256,6 +318,8 @@
   kg_rmb: 155
   parcel_rmb: 64
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "Serbia"
   code: RS
@@ -264,6 +328,8 @@
   kg_rmb: 165
   parcel_rmb: 48
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "Slovakia"
   code: SK
@@ -272,6 +338,8 @@
   kg_rmb: 160
   parcel_rmb: 48
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "Slovenia"
   code: SI
@@ -280,6 +348,8 @@
   kg_rmb: 155
   parcel_rmb: 43
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "Spain"
   code: ES
@@ -288,6 +358,8 @@
   kg_rmb: 140
   parcel_rmb: 43
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "Sweden"
   code: SE
@@ -296,6 +368,8 @@
   kg_rmb: 165
   parcel_rmb: 42
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "Switzerland"
   code: CH
@@ -304,6 +378,8 @@
   kg_rmb: 155
   parcel_rmb: 58
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "Ukraine"
   code: UA
@@ -312,6 +388,8 @@
   kg_rmb: 175
   parcel_rmb: 36
   transit: "10–15 days"
+  tax: standard
+  notice: ""
 - continent: europe
   name: "United Kingdom"
   code: GB
@@ -320,6 +398,8 @@
   kg_rmb: 145
   parcel_rmb: 39
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: south-america
   name: "Argentina"
   code: AR
@@ -328,6 +408,8 @@
   kg_rmb: 290
   parcel_rmb: 48
   transit: "15–25 days"
+  tax: recipient
+  notice: ""
 - continent: south-america
   name: "Brazil"
   code: BR
@@ -336,6 +418,8 @@
   kg_rmb: 185
   parcel_rmb: 81
   transit: "15–25 days"
+  tax: standard
+  notice: "Tax ID required · recipient pays duties"
 - continent: south-america
   name: "Chile"
   code: CL
@@ -344,6 +428,8 @@
   kg_rmb: 185
   parcel_rmb: 65
   transit: "15–25 days"
+  tax: shipper
+  notice: ""
 - continent: south-america
   name: "Colombia"
   code: CO
@@ -352,6 +438,8 @@
   kg_rmb: 210
   parcel_rmb: 60
   transit: "15–25 days"
+  tax: standard
+  notice: ""
 - continent: south-america
   name: "Peru"
   code: PE
@@ -360,6 +448,8 @@
   kg_rmb: 210
   parcel_rmb: 65
   transit: "15–25 days"
+  tax: standard
+  notice: ""
 - continent: oceania
   name: "Australia"
   code: AU
@@ -368,6 +458,8 @@
   kg_rmb: 151
   parcel_rmb: 45
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: oceania
   name: "New Zealand"
   code: NZ
@@ -376,6 +468,8 @@
   kg_rmb: 150
   parcel_rmb: 52
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: asia
   name: "Azerbaijan"
   code: AZ
@@ -384,6 +478,8 @@
   kg_rmb: 190
   parcel_rmb: 47
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: asia
   name: "Brunei"
   code: BN
@@ -392,6 +488,8 @@
   kg_rmb: 145
   parcel_rmb: 40
   transit: "8–12 days"
+  tax: recipient
+  notice: ""
 - continent: asia
   name: "Cambodia"
   code: KH
@@ -400,6 +498,8 @@
   kg_rmb: 120
   parcel_rmb: 35
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: asia
   name: "Hong Kong SAR"
   code: HK
@@ -408,6 +508,8 @@
   kg_rmb: 115
   parcel_rmb: 40
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: asia
   name: "Japan"
   code: JP
@@ -416,6 +518,8 @@
   kg_rmb: 120
   parcel_rmb: 50
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: asia
   name: "Kazakhstan"
   code: KZ
@@ -424,6 +528,8 @@
   kg_rmb: 150
   parcel_rmb: 35
   transit: "15–25 days"
+  tax: standard
+  notice: ""
 - continent: asia
   name: "Laos"
   code: LA
@@ -432,6 +538,8 @@
   kg_rmb: 190
   parcel_rmb: 38
   transit: "15–25 days"
+  tax: standard
+  notice: ""
 - continent: asia
   name: "Malaysia"
   code: MY
@@ -440,6 +548,8 @@
   kg_rmb: 130
   parcel_rmb: 35
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: asia
   name: "Maldives"
   code: MV
@@ -448,6 +558,8 @@
   kg_rmb: 140
   parcel_rmb: 45
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: asia
   name: "Mongolia"
   code: MN
@@ -456,6 +568,8 @@
   kg_rmb: 110
   parcel_rmb: 45
   transit: "15–25 days"
+  tax: standard
+  notice: ""
 - continent: asia
   name: "Myanmar"
   code: MM
@@ -464,6 +578,8 @@
   kg_rmb: 170
   parcel_rmb: 35
   transit: "15–25 days"
+  tax: standard
+  notice: ""
 - continent: asia
   name: "Pakistan"
   code: PK
@@ -472,6 +588,8 @@
   kg_rmb: 170
   parcel_rmb: 35
   transit: "15–25 days"
+  tax: recipient
+  notice: ""
 - continent: asia
   name: "Philippines"
   code: PH
@@ -480,6 +598,8 @@
   kg_rmb: 155
   parcel_rmb: 35
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: asia
   name: "Singapore"
   code: SG
@@ -488,6 +608,8 @@
   kg_rmb: 130
   parcel_rmb: 38
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: asia
   name: "South Korea"
   code: KR
@@ -496,6 +618,8 @@
   kg_rmb: 135
   parcel_rmb: 45
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: asia
   name: "Sri Lanka"
   code: LK
@@ -504,6 +628,8 @@
   kg_rmb: 180
   parcel_rmb: 45
   transit: "15–25 days"
+  tax: recipient
+  notice: ""
 - continent: asia
   name: "Taiwan, China"
   code: TW
@@ -512,6 +638,8 @@
   kg_rmb: 140
   parcel_rmb: 45
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: asia
   name: "Thailand"
   code: TH
@@ -520,6 +648,8 @@
   kg_rmb: 125
   parcel_rmb: 36
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: asia
   name: "Uzbekistan"
   code: UZ
@@ -528,6 +658,8 @@
   kg_rmb: 220
   parcel_rmb: 41
   transit: "15–25 days"
+  tax: recipient
+  notice: ""
 - continent: asia
   name: "Vietnam"
   code: VN
@@ -536,6 +668,8 @@
   kg_rmb: 110
   parcel_rmb: 33
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: middle-east
   name: "Bahrain"
   code: BH
@@ -544,6 +678,8 @@
   kg_rmb: 220
   parcel_rmb: 53
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: middle-east
   name: "Israel"
   code: IL
@@ -552,6 +688,8 @@
   kg_rmb: 170
   parcel_rmb: 42
   transit: "8–12 days"
+  tax: standard
+  notice: "Self-pickup only · max side 40 cm"
 - continent: middle-east
   name: "Jordan"
   code: JO
@@ -560,6 +698,8 @@
   kg_rmb: 200
   parcel_rmb: 58
   transit: "8–12 days"
+  tax: recipient
+  notice: ""
 - continent: middle-east
   name: "Kuwait"
   code: KW
@@ -568,6 +708,8 @@
   kg_rmb: 170
   parcel_rmb: 95
   transit: "8–12 days"
+  tax: standard
+  notice: "5% of declared value charged"
 - continent: middle-east
   name: "Oman"
   code: OM
@@ -576,6 +718,8 @@
   kg_rmb: 180
   parcel_rmb: 80
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: middle-east
   name: "Qatar"
   code: QA
@@ -584,6 +728,8 @@
   kg_rmb: 200
   parcel_rmb: 125
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: middle-east
   name: "Saudi Arabia"
   code: SA
@@ -592,6 +738,8 @@
   kg_rmb: 180
   parcel_rmb: 93
   transit: "8–12 days"
+  tax: ddp
+  notice: "15% VAT on declared value · duties included"
 - continent: middle-east
   name: "United Arab Emirates"
   code: AE
@@ -600,6 +748,8 @@
   kg_rmb: 160
   parcel_rmb: 43
   transit: "8–12 days"
+  tax: standard
+  notice: ""
 - continent: africa
   name: "Angola"
   code: AO
@@ -608,6 +758,8 @@
   kg_rmb: 230
   parcel_rmb: 45
   transit: "10–18 days"
+  tax: recipient
+  notice: ""
 - continent: africa
   name: "Ghana"
   code: GH
@@ -616,6 +768,8 @@
   kg_rmb: 250
   parcel_rmb: 45
   transit: "15–25 days"
+  tax: recipient
+  notice: ""
 - continent: africa
   name: "Kenya"
   code: KE
@@ -624,6 +778,8 @@
   kg_rmb: 220
   parcel_rmb: 45
   transit: "15–25 days"
+  tax: recipient
+  notice: ""
 - continent: africa
   name: "Madagascar"
   code: MG
@@ -632,6 +788,8 @@
   kg_rmb: 195
   parcel_rmb: 100
   transit: "15–25 days"
+  tax: recipient
+  notice: ""
 - continent: africa
   name: "Mauritius"
   code: MU
@@ -640,6 +798,8 @@
   kg_rmb: 190
   parcel_rmb: 45
   transit: "8–12 days"
+  tax: recipient
+  notice: ""
 - continent: africa
   name: "Morocco"
   code: MA
@@ -648,6 +808,8 @@
   kg_rmb: 210
   parcel_rmb: 100
   transit: "15–25 days"
+  tax: recipient
+  notice: ""
 - continent: africa
   name: "Nigeria"
   code: NG
@@ -656,6 +818,8 @@
   kg_rmb: 205
   parcel_rmb: 48
   transit: "8–12 days"
+  tax: recipient
+  notice: ""
 - continent: africa
   name: "Rwanda"
   code: RW
@@ -664,6 +828,8 @@
   kg_rmb: 210
   parcel_rmb: 41
   transit: "15–25 days"
+  tax: recipient
+  notice: ""
 - continent: africa
   name: "Réunion"
   code: RE
@@ -672,6 +838,8 @@
   kg_rmb: 200
   parcel_rmb: 95
   transit: "15–25 days"
+  tax: recipient
+  notice: ""
 - continent: africa
   name: "Senegal"
   code: SN
@@ -680,6 +848,8 @@
   kg_rmb: 210
   parcel_rmb: 125
   transit: "8–12 days"
+  tax: recipient
+  notice: ""
 - continent: africa
   name: "Seychelles"
   code: SC
@@ -688,6 +858,8 @@
   kg_rmb: 200
   parcel_rmb: 50
   transit: "10–18 days"
+  tax: recipient
+  notice: ""
 - continent: africa
   name: "South Africa"
   code: ZA
@@ -696,6 +868,8 @@
   kg_rmb: 250
   parcel_rmb: 60
   transit: "15–25 days"
+  tax: recipient
+  notice: ""
 - continent: africa
   name: "Tanzania"
   code: TZ
@@ -704,6 +878,8 @@
   kg_rmb: 215
   parcel_rmb: 43
   transit: "15–25 days"
+  tax: recipient
+  notice: ""
 - continent: africa
   name: "Uganda"
   code: UG
@@ -712,6 +888,8 @@
   kg_rmb: 235
   parcel_rmb: 45
   transit: "15–25 days"
+  tax: recipient
+  notice: ""
 - continent: africa
   name: "Zambia"
   code: ZM
@@ -720,3 +898,5 @@
   kg_rmb: 200
   parcel_rmb: 67
   transit: "15–25 days"
+  tax: recipient
+  notice: ""
