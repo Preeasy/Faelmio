@@ -1,5 +1,5 @@
 ---
-title: "Tomate squishy crispy anti-stress — coque de cire, PU lent"
+title: "Tomate Squishy Crispy Anti-Stress"
 description: "Tomate squishy crispy à coque de cire craquante et cœur PU à retour lent. Soulagement sensoriel pour enfants de 3+ et adultes. Lots de 12, EN71/ASTM/CE/CPC."
 sku: "FM-CST-V8002A"
 badge: "Nouveau"
@@ -53,7 +53,7 @@ specs:
   - label: "Poids brut carton"
     value: "15.6 kg"
   - label: "Chargement conteneur"
-    value: "20GP : 28,800 pièces · 40HQ : 69,120 pièces"
+    value: "20GP : 28 800 pièces · 40HQ : 69 120 pièces"
   - label: "Âge recommandé"
     value: "3 ans et plus"
   - label: "Sécurité"
@@ -63,18 +63,18 @@ carton:
   size: "70.5 × 43.5 × 45.5 cm"
   cbm: 0.140
   gw: 15.6
-  container: "69,120 pcs / 40HQ"
+  container: "69 120 pcs / 40HQ"
 customization:
   product:
     - "Couleurs et parfum personnalisés (mousse PU + cire)"
     - "Logo imprimé ou embossé sur la tomate"
     - "Nouvelles expressions faciales"
-    - "Frais de moule : USD 2,500 · MOQ 1,000 pièces"
+    - "Frais de moule : USD 2 500 · MOQ 1 000 pièces"
   packaging:
     - "Boîte couleur imprimée personnalisée"
     - "Étiquette suspendue, carte de tête ou sachet polybag"
     - "Codes-barres et étiquettes Amazon FBA"
-    - "Frais de moule : USD 500 · MOQ 3,000 pièces"
+    - "Frais de moule : USD 500 · MOQ 3 000 pièces"
   bundle:
     - "Mélange de visages rose et vert dans un même carton"
     - "Association avec la série d'œufs crispy et les push-pop bubbles"
@@ -87,9 +87,9 @@ faq:
   - q: "Quel est le prix par lot ?"
     a: "Le prix EXW est de USD 12.39 par lot pour 1 à 100 lots, USD 12.29 pour 100 à 500 lots et USD 12.19 pour 500 lots et plus. Chaque lot contient 12 pièces."
   - q: "Quelle est la quantité minimale de commande ?"
-    a: "Le MOQ est de 1 lot (12 pièces) pour les articles en stock. Les couleurs, parfums ou visages personnalisés démarrent à 1,000 pièces ; l'emballage personnalisé à 3,000 pièces."
+    a: "Le MOQ est de 1 lot (12 pièces) pour les articles en stock. Les couleurs, parfums ou visages personnalisés démarrent à 1 000 pièces ; l'emballage personnalisé à 3 000 pièces."
   - q: "Combien de pièces tiennent dans un carton ?"
-    a: "Un carton maître contient 12 boîtes couleur × 12 pièces = 144 pièces, mesure 70.5 × 43.5 × 45.5 cm, pèse 15.6 kg et occupe 0.14 m³. Un conteneur 40HQ charge environ 69,120 pièces."
+    a: "Un carton maître contient 12 boîtes couleur × 12 pièces = 144 pièces, mesure 70.5 × 43.5 × 45.5 cm, pèse 15.6 kg et occupe 0.14 m³. Un conteneur 40HQ charge environ 69 120 pièces."
   - q: "Sous quel délai pouvez-vous expédier ?"
     a: "Les articles en stock sont expédiés sous 7 jours. Les commandes personnalisées prennent 15–20 jours. Nous proposons les conditions EXW, FOB, CIF et DDP et pouvons regrouper avec d'autres jouets fidget dans une même expédition."
 related:
@@ -125,11 +125,11 @@ Avec ses 8 × 8 cm, la tomate tient dans une poche, une trousse ou un tiroir de 
 
 ## Lots prêts pour la vente et emballage en gros
 
-Chaque lot contient 12 tomates squishy assorties dans une boîte couleur imprimée avec mousse de calage. Un carton maître contient 12 boîtes (144 pièces), mesure 70.5 × 43.5 × 45.5 cm, pèse 15.6 kg et occupe 0.14 m³ — environ 69,120 pièces par conteneur 40HQ. Le mélange de visages rose et vert dans un même carton est disponible pour les commandes OEM.
+Chaque lot contient 12 tomates squishy assorties dans une boîte couleur imprimée avec mousse de calage. Un carton maître contient 12 boîtes (144 pièces), mesure 70.5 × 43.5 × 45.5 cm, pèse 15.6 kg et occupe 0.14 m³ — environ 69 120 pièces par conteneur 40HQ. Le mélange de visages rose et vert dans un même carton est disponible pour les commandes OEM.
 
 ## Options OEM personnalisées
 
-Couleurs, parfums, logo embossé et nouvelles expressions faciales personnalisés sont disponibles à partir de 1,000 pièces avec des frais de moule de USD 2,500. Les boîtes couleur imprimées, étiquettes suspendues, cartes de tête, polybags et étiquettes Amazon FBA personnalisés démarrent à 3,000 pièces avec des frais de moule d'emballage de USD 500. La propriété du design reste au client et un NDA est disponible.
+Couleurs, parfums, logo embossé et nouvelles expressions faciales personnalisés sont disponibles à partir de 1 000 pièces avec des frais de moule de USD 2 500. Les boîtes couleur imprimées, étiquettes suspendues, cartes de tête, polybags et étiquettes Amazon FBA personnalisés démarrent à 3 000 pièces avec des frais de moule d'emballage de USD 500. La propriété du design reste au client et un NDA est disponible.
 
 Associez cette tomate à notre [série d'œufs squishy crispy](/toys/fidget-sensory-toys/FM-CST-V8001A/) et à nos [jouets push-pop bubbles](/toys/fidget-sensory-toys/FM-FS-V8001A/) pour une gamme fidget complète, ou renseignez-vous sur notre [service OEM de jouets](/custom-toy-oem/).
 

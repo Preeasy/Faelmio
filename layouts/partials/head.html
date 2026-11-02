@@ -40,10 +40,8 @@
 {{- $ogIsDefault := true }}
 {{- $ogImage := "images/brand/og-default.jpg" | absURL }}
 {{- with .Params.cover.image }}
-  {{- if not (hasPrefix . "/images/") }}
-    {{- $ogImage = . | absURL }}
-    {{- $ogIsDefault = false }}
-  {{- end }}
+  {{- $ogImage = cond (hasPrefix . "http") . (. | absURL) }}
+  {{- $ogIsDefault = false }}
 {{- end }}
 {{- $locales := dict "en" "en_US" "es" "es_ES" "ja" "ja_JP" }}
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
