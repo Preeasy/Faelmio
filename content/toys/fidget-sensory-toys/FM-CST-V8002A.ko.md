@@ -7,6 +7,10 @@ cover:
   image: "/images/toys/fidget-sensory-toys/FM-CST-V8002A-01-main.webp"
   alt: "깔끔한 스튜디오 배경에 웃는 얼굴의 토마토형 크리스피 스퀴시 피젯 토이"
 gallery:
+  - src: "/images/toys/fidget-sensory-toys/FM-CST-V8002A-demo.mp4"
+    type: video
+    poster: "/images/toys/fidget-sensory-toys/FM-CST-V8002A-01-main.webp"
+    alt: "크리스피 토마토 스퀴시 360° 데모 영상"
   - src: "/images/toys/fidget-sensory-toys/FM-CST-V8002A-01-main.webp"
     alt: "핑크와 그린 왁스 셸에 귀여운 얼굴을 담은 크리스피 토마토 스퀴시"
   - src: "/images/toys/fidget-sensory-toys/FM-CST-V8002A-02-closeup.webp"

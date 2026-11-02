@@ -7,6 +7,10 @@ cover:
   image: "/images/toys/fidget-sensory-toys/FM-CST-V8002A-01-main.webp"
   alt: "Tomate squishy crispy au visage souriant sur un fond de studio épuré"
 gallery:
+  - src: "/images/toys/fidget-sensory-toys/FM-CST-V8002A-demo.mp4"
+    type: video
+    poster: "/images/toys/fidget-sensory-toys/FM-CST-V8002A-01-main.webp"
+    alt: "Vidéo démo 360° de la tomate squishy crispy"
   - src: "/images/toys/fidget-sensory-toys/FM-CST-V8002A-01-main.webp"
     alt: "Tomate squishy crispy à coque de cire rose et verte avec un visage adorable"
   - src: "/images/toys/fidget-sensory-toys/FM-CST-V8002A-02-closeup.webp"

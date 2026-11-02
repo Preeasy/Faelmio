@@ -7,6 +7,10 @@ cover:
   image: "/images/toys/fidget-sensory-toys/FM-CST-V8002A-01-main.webp"
   alt: "清潔なスタジオ背景に笑顔のトマト型クリスピー・スクイーズ"
 gallery:
+  - src: "/images/toys/fidget-sensory-toys/FM-CST-V8002A-demo.mp4"
+    type: video
+    poster: "/images/toys/fidget-sensory-toys/FM-CST-V8002A-01-main.webp"
+    alt: "クリスピー・トマトスクイーズの360°デモ動画"
   - src: "/images/toys/fidget-sensory-toys/FM-CST-V8002A-01-main.webp"
     alt: "ピンクとグリーンのワックスシェルにかわいい表情をあしらったクリスピー・トマト スクイーズ"
   - src: "/images/toys/fidget-sensory-toys/FM-CST-V8002A-02-closeup.webp"

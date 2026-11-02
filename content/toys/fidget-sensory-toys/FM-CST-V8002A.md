@@ -7,6 +7,10 @@ cover:
   image: "/images/toys/fidget-sensory-toys/FM-CST-V8002A-01-main.webp"
   alt: "Crispy squishy tomato fidget toy with smiling face on a clean studio background"
 gallery:
+  - src: "/images/toys/fidget-sensory-toys/FM-CST-V8002A-demo.mp4"
+    type: video
+    poster: "/images/toys/fidget-sensory-toys/FM-CST-V8002A-01-main.webp"
+    alt: "Crispy tomato squishy fidget toy 360° demo video"
   - src: "/images/toys/fidget-sensory-toys/FM-CST-V8002A-01-main.webp"
     alt: "Crispy squishy tomato fidget toy, pink and green wax shell with cute face"
   - src: "/images/toys/fidget-sensory-toys/FM-CST-V8002A-02-closeup.webp"
