@@ -9,5 +9,10 @@ moq: "100 pcs"
 certifications: ["CE", "EN71", "ASTM"]
 oem_support: false
 tags: ["ぬいぐるみ", "ストック", "卸売"]
+carton:
+  pcs: 100
+  size: "60 × 45 × 45 cm"
+  cbm: 0.122
+  gw: 17
 ---
 ストックぬいぐるみは、短納期が必要なAmazonセラー、小規模小売業者、プロモーションプロジェクトに最適です。数百種類の実績あるデザインから選べます。

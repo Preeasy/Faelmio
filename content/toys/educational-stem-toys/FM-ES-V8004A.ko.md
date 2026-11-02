@@ -9,6 +9,11 @@ moq: "300세트"
 certifications: ["CE", "EN71", "ASTM", "CPSIA"]
 oem_support: true
 tags: ["교육", "STEM", "블록", "유치원"]
+carton:
+  pcs: 60
+  size: "58 × 42 × 48 cm"
+  cbm: 0.117
+  gw: 19
 ---
 상호 연결 조립 블록은 아이들의 소근육 운동 능력, 공간 추론 능력, 창의력을 키워 줍니다. 다양한 사이즈, 부품 수, 색상 조합으로 제공됩니다.
 

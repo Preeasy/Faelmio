@@ -9,6 +9,11 @@ moq: "100개"
 certifications: ["CE", "EN71", "ASTM"]
 oem_support: false
 tags: ["봉제 인형", "재고", "도매"]
+carton:
+  pcs: 100
+  size: "60 × 45 × 45 cm"
+  cbm: 0.122
+  gw: 17
 ---
 재고 봉제 인형은 빠른 납기가 필요한 Amazon 셀러, 소규모 소매점, 프로모션 프로젝트에 적합합니다. 검증된 수백 가지 디자인 중에서 선택하실 수 있으며 7–10일 이내에 출고됩니다.
 

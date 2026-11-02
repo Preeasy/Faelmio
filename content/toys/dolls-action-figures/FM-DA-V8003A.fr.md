@@ -9,6 +9,11 @@ moq: "200 pièces"
 certifications: ["CE", "EN71", "ASTM", "CPSIA"]
 oem_support: true
 tags: ["figurine", "collection", "articulée"]
+carton:
+  pcs: 144
+  size: "55 × 40 × 45 cm"
+  cbm: 0.099
+  gw: 16
 ---
 Figurines entièrement articulées en die-cast ou en plastique, avec accessoires interchangeables et packaging dynamique. OEM disponible pour des personnages originaux.
 

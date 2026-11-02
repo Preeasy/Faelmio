@@ -9,6 +9,11 @@ moq: "300 sets"
 certifications: ["CE", "EN71", "ASTM", "CPSIA"]
 oem_support: true
 tags: ["educational", "STEM", "blocks", "preschool"]
+carton:
+  pcs: 60
+  size: "58 × 42 × 48 cm"
+  cbm: 0.117
+  gw: 19
 ---
 Interlocking building blocks help children develop fine motor skills, spatial reasoning and creativity. Available in multiple sizes, piece counts and color combinations.
 

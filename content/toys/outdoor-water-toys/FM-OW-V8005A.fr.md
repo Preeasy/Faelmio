@@ -9,6 +9,11 @@ moq: "200 pièces"
 certifications: ["CE", "EN71", "ASTM", "PAHS"]
 oem_support: true
 tags: ["gonflable", "piscine", "extérieur", "été"]
+carton:
+  pcs: 50
+  size: "70 × 50 × 40 cm"
+  cbm: 0.14
+  gw: 13
 ---
 Nos bouées de piscine gonflables utilisent un vinyle d'une épaisseur de 0.3 mm+ pour une grande durabilité. Disponibles en dizaines de formes — licornes, parts de pizza, donuts, flamingos et designs personnalisés.
 

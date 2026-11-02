@@ -9,6 +9,11 @@ moq: "100 pcs"
 certifications: ["CE", "EN71", "ASTM"]
 oem_support: false
 tags: ["plush", "stock", "wholesale"]
+carton:
+  pcs: 100
+  size: "60 × 45 × 45 cm"
+  cbm: 0.122
+  gw: 17
 ---
 Stock plush designs are perfect for Amazon sellers, small retailers and promotional projects that need fast turnaround. Choose from hundreds of proven designs — ships in 7–10 days.
 

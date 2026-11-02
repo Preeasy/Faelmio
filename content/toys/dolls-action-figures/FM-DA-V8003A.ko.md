@@ -9,6 +9,11 @@ moq: "200개"
 certifications: ["CE", "EN71", "ASTM", "CPSIA"]
 oem_support: true
 tags: ["액션 피겨", "컬렉터블", "가동"]
+carton:
+  pcs: 144
+  size: "55 × 40 × 45 cm"
+  cbm: 0.099
+  gw: 16
 ---
 다이캐스트 또는 플라스틱 소재의 완전 가동 액션 피겨로, 교체 가능한 액세서리와 역동적인 포장을 제공합니다. 오리지널 캐릭터에 대한 OEM도 가능합니다.
 

@@ -9,5 +9,10 @@ moq: "200 pcs"
 certifications: ["CE", "EN71", "ASTM", "CPSIA"]
 oem_support: true
 tags: ["figura de acción", "coleccionable"]
+carton:
+  pcs: 144
+  size: "55 × 40 × 45 cm"
+  cbm: 0.099
+  gw: 16
 ---
 Figuras de acción totalmente articuladas con construcción de plástico premium, accesorios intercambiables y empaque dinámico.

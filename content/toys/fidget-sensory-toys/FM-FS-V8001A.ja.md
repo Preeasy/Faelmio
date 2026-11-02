@@ -9,5 +9,10 @@ moq: "500 pcs"
 certifications: ["CE", "EN71", "ASTM", "BPA Free"]
 oem_support: true
 tags: ["フィジェット", "感覚", "ストレス解消"]
+carton:
+  pcs: 200
+  size: "52 × 38 × 40 cm"
+  cbm: 0.079
+  gw: 12
 ---
 プッシュポップバブル（ポップイット）は、世界で最も人気のあるフィジェット玩具の1つです。

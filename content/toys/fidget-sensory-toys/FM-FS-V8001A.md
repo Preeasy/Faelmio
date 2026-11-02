@@ -9,6 +9,11 @@ moq: "500 pcs"
 certifications: ["CE", "EN71", "ASTM", "BPA Free"]
 oem_support: true
 tags: ["fidget", "sensory", "stress relief", "silicone"]
+carton:
+  pcs: 200
+  size: "52 × 38 × 40 cm"
+  cbm: 0.079
+  gw: 12
 ---
 The iconic push-pop bubble (Pop It) remains one of the most popular fidget toys worldwide. Safe silicone construction, satisfying click action, and customizable shapes.
 

@@ -9,6 +9,11 @@ moq: "100개"
 certifications: ["CE", "EN71", "ASTM", "FCC"]
 oem_support: true
 tags: ["RC", "자동차", "전자", "무선 조종"]
+carton:
+  pcs: 36
+  size: "62 × 45 × 50 cm"
+  cbm: 0.14
+  gw: 18
 ---
 당사의 RC 카는 저가형 1:24 스케일부터 고성능 1:12 오프로드 몬스터 트럭까지 다양합니다. 모든 제품에 간섭 없는 2.4GHz 송신기와 오래가는 충전 배터리를 적용했습니다.
 

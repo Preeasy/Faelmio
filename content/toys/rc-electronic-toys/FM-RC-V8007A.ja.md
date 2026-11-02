@@ -9,5 +9,10 @@ moq: "100 pcs"
 certifications: ["CE", "EN71", "ASTM", "FCC"]
 oem_support: true
 tags: ["RC", "車", "電子玩具"]
+carton:
+  pcs: 36
+  size: "62 × 45 × 50 cm"
+  cbm: 0.14
+  gw: 18
 ---
 ラジコンカーは、格安1:24スケールから高性能1:12オフロードまで幅広く取り揃えています。

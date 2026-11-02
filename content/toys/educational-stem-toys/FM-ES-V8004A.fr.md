@@ -9,6 +9,11 @@ moq: "300 ensembles"
 certifications: ["CE", "EN71", "ASTM", "CPSIA"]
 oem_support: true
 tags: ["éducatif", "STEM", "blocs", "maternelle"]
+carton:
+  pcs: 60
+  size: "58 × 42 × 48 cm"
+  cbm: 0.117
+  gw: 19
 ---
 Les blocs de construction emboîtables aident les enfants à développer leur motricité fine, leur raisonnement spatial et leur créativité. Disponibles en plusieurs tailles, nombres de pièces et combinaisons de couleurs.
 

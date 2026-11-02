@@ -9,6 +9,11 @@ moq: "200 pcs"
 certifications: ["CE", "EN71", "ASTM", "CPSIA"]
 oem_support: true
 tags: ["action figure", "collectible", "articulated"]
+carton:
+  pcs: 144
+  size: "55 × 40 × 45 cm"
+  cbm: 0.099
+  gw: 16
 ---
 Fully posable action figures with die-cast or plastic construction, interchangeable accessories and dynamic packaging. OEM available for original characters.
 

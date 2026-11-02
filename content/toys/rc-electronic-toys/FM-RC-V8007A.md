@@ -9,6 +9,11 @@ moq: "100 pcs"
 certifications: ["CE", "EN71", "ASTM", "FCC"]
 oem_support: true
 tags: ["RC", "car", "electronic", "remote control"]
+carton:
+  pcs: 36
+  size: "62 × 45 × 50 cm"
+  cbm: 0.14
+  gw: 18
 ---
 Our RC cars range from budget 1:24 scale to high-performance 1:12 off-road monsters. All use 2.4GHz interference-free transmitters and long-lasting rechargeable batteries.
 

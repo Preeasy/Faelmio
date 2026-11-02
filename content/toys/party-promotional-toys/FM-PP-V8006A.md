@@ -9,6 +9,11 @@ moq: "1000 packs"
 certifications: ["CE", "EN71"]
 oem_support: true
 tags: ["party", "promotional", "giveaway", "novelty"]
+carton:
+  pcs: 100
+  size: "55 × 40 × 45 cm"
+  cbm: 0.099
+  gw: 17
 ---
 Our novelty party packs contain 8–15 assorted items suitable for birthdays, corporate events and brand promotions. Fully customizable with your logo, colors and item selection.
 

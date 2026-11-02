@@ -9,5 +9,10 @@ moq: "200 pcs"
 certifications: ["CE", "EN71", "ASTM", "PAHS"]
 oem_support: true
 tags: ["inflable", "piscina", "exterior"]
+carton:
+  pcs: 50
+  size: "70 × 50 × 40 cm"
+  cbm: 0.14
+  gw: 13
 ---
 Nuestros flotadores de piscina inflables usan vinilo de más de 0.3mm de espesor para mayor durabilidad.

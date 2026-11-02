@@ -9,5 +9,10 @@ moq: "300 sets"
 certifications: ["CE", "EN71", "ASTM", "CPSIA"]
 oem_support: true
 tags: ["教育", "STEM", "ブロック"]
+carton:
+  pcs: 60
+  size: "58 × 42 × 48 cm"
+  cbm: 0.117
+  gw: 19
 ---
 組み立てブロックは、子どもたちの微細運動能力、空間認識、創造性を育みます。

@@ -9,5 +9,10 @@ moq: "300 juegos"
 certifications: ["CE", "EN71", "ASTM", "CPSIA"]
 oem_support: true
 tags: ["educativo", "STEM", "bloques"]
+carton:
+  pcs: 60
+  size: "58 × 42 × 48 cm"
+  cbm: 0.117
+  gw: 19
 ---
 Los bloques de construcción entrelazados ayudan a los niños a desarrollar habilidades motoras finas, razonamiento espacial y creatividad.

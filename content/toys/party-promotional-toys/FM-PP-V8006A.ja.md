@@ -9,5 +9,10 @@ moq: "1000 packs"
 certifications: ["CE", "EN71"]
 oem_support: true
 tags: ["パーティー", "販促"]
+carton:
+  pcs: 100
+  size: "55 × 40 × 45 cm"
+  cbm: 0.099
+  gw: 17
 ---
 パーティーパックは8〜15種類のアイテム入り。誕生日、企業イベント、ブランドプロモーションに。

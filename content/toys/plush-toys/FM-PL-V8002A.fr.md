@@ -9,6 +9,11 @@ moq: "100 pièces"
 certifications: ["CE", "EN71", "ASTM"]
 oem_support: false
 tags: ["peluche", "stock", "gros"]
+carton:
+  pcs: 100
+  size: "60 × 45 × 45 cm"
+  cbm: 0.122
+  gw: 17
 ---
 Les modèles de peluches en stock sont parfaits pour les vendeurs Amazon, les petits détaillants et les projets promotionnels qui exigent des délais rapides. Choisissez parmi des centaines de modèles éprouvés — expédition sous 7–10 jours.
 

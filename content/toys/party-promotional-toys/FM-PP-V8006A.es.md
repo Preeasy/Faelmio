@@ -9,5 +9,10 @@ moq: "1000 paquetes"
 certifications: ["CE", "EN71"]
 oem_support: true
 tags: ["fiesta", "promocional"]
+carton:
+  pcs: 100
+  size: "55 × 40 × 45 cm"
+  cbm: 0.099
+  gw: 17
 ---
 Nuestros paquetes de fiesta contienen entre 8 y 15 artículos variados para cumpleaños, eventos corporativos y promociones de marca.
