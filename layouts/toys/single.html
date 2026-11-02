@@ -422,12 +422,12 @@
 {{- if .Params.price_low }}
 {{- $offer := dict "@type" "AggregateOffer"
       "priceCurrency" (.Params.currency | default "USD")
-      "lowPrice" (printf "%.2f" .Params.price_low)
+      "lowPrice" (printf "%.2f" (mul .Params.price_low 1.0))
       "offerCount" 1
       "availability" "https://schema.org/InStock"
       "seller" (dict "@type" "Organization" "name" $brand)
       "url" .Permalink }}
-{{- with .Params.price_high }}{{ $offer = merge $offer (dict "highPrice" (printf "%.2f" .)) }}{{ end }}
+{{- with .Params.price_high }}{{ $offer = merge $offer (dict "highPrice" (printf "%.2f" (mul . 1.0))) }}{{ end }}
 {{- $product = merge $product (dict "offers" $offer) }}
 {{- end }}
 {{- $graph := slice $product }}
