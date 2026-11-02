@@ -1006,13 +1006,16 @@ img.img-missing { display: none !important; }
 /* ===================== PAPERMOD SHELL ===================== */
 .main { max-width: 100%; margin: 0; padding: 0; }
 .post-single, .page-header, .post-content.md-content { display: block; }
-/* prose keeps a readable measure but starts on the same left edge as the grids */
+/* prose keeps a readable measure but starts on the same left edge as the grids
+   (the left offset must follow the centred container on wide screens) */
 .post-content.md-content {
   width: 100%; max-width: calc(880px + 2 * var(--gutter));
-  margin: 0; padding-inline: var(--gutter); box-sizing: border-box;
+  margin-left: calc(var(--gutter) + max(0px, (100% - var(--maxw)) / 2));
+  margin-right: 0; padding-inline: 0;
+  box-sizing: border-box;
 }
 .post-single .post-content.md-content,
-.post-single .post-footer { max-width: 880px; padding-inline: 0; }
+.post-single .post-footer { max-width: 880px; padding-inline: 0; margin-left: 0; }
 
 /* ===================== RESPONSIVE ===================== */
 @media (max-width: 1100px) {
