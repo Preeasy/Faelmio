@@ -154,6 +154,7 @@ pdp_inquiry_eyebrow: "Prochaine étape"
 pdp_i1: "Devis sous 24 h, sans engagement"
 pdp_i2: "Échantillon avant production"
 pdp_i3: "Inspection AQL II sur chaque commande"
+pdp_inquiry_direct: "Vous préférez discuter ?"
 pdp_related_eyebrow: "Idées d'assortiment"
 pdp_related: "Se marie bien avec"
 

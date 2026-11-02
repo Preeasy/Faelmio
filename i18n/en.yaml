@@ -154,6 +154,7 @@ pdp_inquiry_eyebrow: "Next step"
 pdp_i1: "Quote within 24 hours, no commitment"
 pdp_i2: "Sample before mass production"
 pdp_i3: "AQL II inspection on every order"
+pdp_inquiry_direct: "Prefer to talk?"
 pdp_related_eyebrow: "Bundle ideas"
 pdp_related: "Pairs well with"
 

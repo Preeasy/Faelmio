@@ -154,6 +154,7 @@ pdp_inquiry_eyebrow: "다음 단계"
 pdp_i1: "24시간 내 견적, 약정 없음"
 pdp_i2: "양산 전 샘플 확인"
 pdp_i3: "모든 주문 AQL II 검사"
+pdp_inquiry_direct: "직접 상담하시겠어요?"
 pdp_related_eyebrow: "번들 아이디어"
 pdp_related: "함께하면 좋은 제품"
 

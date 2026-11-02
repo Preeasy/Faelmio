@@ -334,6 +334,11 @@
           <li>{{ i18n "pdp_i2" | default "Sample before mass production" }}</li>
           <li>{{ i18n "pdp_i3" | default "AQL II inspection on every order" }}</li>
         </ul>
+        <div class="pdp-inquiry-contact">
+          <span>{{ i18n "pdp_inquiry_direct" | default "Prefer to talk?" }}</span>
+          <a href="https://wa.me/{{ $c.whatsapp }}?text={{ printf "Hello Faelmio, I'd like a quote for %s." .Title | urlquery }}" target="_blank" rel="noopener noreferrer">{{ i18n "whatsapp" | default "WhatsApp" }} · {{ $c.phone_display }}</a>
+          <a href="mailto:{{ $c.email }}">{{ $c.email }}</a>
+        </div>
       </div>
       <form class="contact-form" action="https://formsubmit.co/{{ $c.email }}" method="POST">
         <input type="hidden" name="_subject" value="Product Inquiry | {{ .Title }} | Faelmio">
