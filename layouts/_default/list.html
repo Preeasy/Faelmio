@@ -46,6 +46,17 @@
 </div>
 {{- end }}
 
+{{- /* ItemList structured data for toy category + product listing pages */}}
+{{- if and (eq .Section "toys") (gt (len $paginator.Pages) 0) }}
+{{- $items := slice }}
+{{- range $i, $p := $paginator.Pages }}
+  {{- $items = $items | append (dict "@type" "ListItem" "position" (add $i 1) "url" $p.Permalink "name" $p.Title) }}
+{{- end }}
+<script type="application/ld+json">
+{{ dict "@context" "https://schema.org" "@type" "ItemList" "name" .Title "itemListElement" $items | jsonify | safeJS }}
+</script>
+{{- end }}
+
 {{- /* brand story banner — only on toy section pages */}}
 {{- if eq .Section "toys" }}
 {{- partial "brand-story-banner.html" (dict "show_cta" true) }}

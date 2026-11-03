@@ -412,25 +412,40 @@
 
 {{- /* -------- structured data -------- */}}
 {{- $brand := site.Params.label.text | default site.Title }}
-{{- $img := $hero.src }}
-{{- if hasPrefix $img "/" }}{{ $img = $img | absURL }}{{ end }}
+{{- $imgs := slice }}
+{{- range $gal }}{{ if eq .type "image" }}
+  {{- $src := .src }}{{ if hasPrefix $src "/" }}{{ $src = $src | absURL }}{{ end }}
+  {{- $imgs = $imgs | append $src }}
+{{- end }}{{ end }}
 {{- $product := dict
   "@type" "Product"
   "name" .Title
   "description" (.Description | default .Title)
-  "image" (slice $img)
+  "image" $imgs
   "category" $catTitle
   "brand" (dict "@type" "Brand" "name" $brand)
   "url" .Permalink
+  "countryOfOrigin" "CN"
 }}
-{{- with .Params.sku }}{{ $product = merge $product (dict "sku" .) }}{{ end }}
+{{- with .Params.sku }}{{ $product = merge $product (dict "sku" . "mpn" .) }}{{ end }}
+{{- with .Params.material }}{{ $product = merge $product (dict "material" .) }}{{ end }}
+{{- with .Params.min_age }}{{ $product = merge $product (dict "audience" (dict "@type" "PeopleAudience" "suggestedMinAge" .)) }}{{ end }}
+{{- with .Params.net_weight_g }}{{ $product = merge $product (dict "weight" (dict "@type" "QuantitativeValue" "value" . "unitCode" "GRM")) }}{{ end }}
+{{- if .Params.specs }}
+{{- $props := slice }}
+{{- range .Params.specs }}{{ $props = $props | append (dict "@type" "PropertyValue" "name" .label "value" .value) }}{{ end }}
+{{- $product = merge $product (dict "additionalProperty" $props) }}
+{{- end }}
 {{- if .Params.price_low }}
+{{- $validUntil := (now.AddDate 1 0 0).Format "2006-01-02" }}
 {{- $offer := dict "@type" "AggregateOffer"
       "priceCurrency" (.Params.currency | default "USD")
       "lowPrice" (printf "%.2f" (mul .Params.price_low 1.0))
-      "offerCount" 1
+      "offerCount" (cond (and .Params.price_high (ne .Params.price_high .Params.price_low)) 3 1)
       "availability" "https://schema.org/InStock"
-      "seller" (dict "@type" "Organization" "name" $brand)
+      "itemCondition" "https://schema.org/NewCondition"
+      "priceValidUntil" $validUntil
+      "seller" (dict "@type" "Organization" "@id" (printf "%s#business" site.Home.Permalink) "name" $brand "url" site.Home.Permalink)
       "url" .Permalink }}
 {{- with .Params.price_high }}{{ $offer = merge $offer (dict "highPrice" (printf "%.2f" (mul . 1.0))) }}{{ end }}
 {{- $product = merge $product (dict "offers" $offer) }}

@@ -1,47 +1,49 @@
-{{- $isHome := .IsHome }}
-<script type="application/ld+json">
-{{- if $isHome }}
-{{ dict "@context" "https://schema.org" "@graph" (slice
-  (dict
-    "@type" (slice "LocalBusiness" "WholesaleStore")
-    "@id" (printf "%s/#business" site.Home.Permalink)
+{{- $home := site.Home.Permalink }}
+{{- $fav := site.Params.assets.favicon | default "/favicon.ico" | absURL }}
+{{- $orgImage := index site.Params.images 0 }}
+{{- $org := dict
+  "@type" (slice "LocalBusiness" "WholesaleStore")
+  "@id" (printf "%s#business" $home)
+  "name" site.Title
+  "url" $home
+  "telephone" (site.Params.contact.phone_display | default "+86 182 5749 9725")
+  "email" (site.Params.contact.email | default "maxon@maxoncn.com")
+  "description" site.Params.description
+  "foundingDate" "2012"
+  "logo" (dict "@type" "ImageObject" "url" $fav)
+  "image" $orgImage
+  "address" (dict "@type" "PostalAddress" "streetAddress" "Yiwu International Trade City" "addressLocality" "Yiwu" "addressRegion" "Zhejiang" "addressCountry" "CN")
+  "contactPoint" (dict "@type" "ContactPoint" "telephone" (site.Params.contact.phone_display | default "+86 182 5749 9725") "email" (site.Params.contact.email | default "maxon@maxoncn.com") "contactType" "sales" "areaServed" "Worldwide" "availableLanguage" (slice "en" "es" "ja" "fr" "ko"))
+  "sameAs" (slice "https://yeatru.com")
+  "knowsAbout" (slice "Yiwu toy sourcing" "OEM toy manufacturing" "AQL quality inspection" "Toy consolidation" "DDP shipping")
+  "priceRange" "$"
+  "areaServed" "Worldwide"
+}}
+{{- $graph := slice $org }}
+{{- if .IsHome }}
+  {{- $graph = $graph | append (dict
+    "@type" "WebSite"
+    "@id" (printf "%s#website" $home)
+    "url" $home
     "name" site.Title
-    "url" site.Home.Permalink
-    "telephone" (site.Params.contact.phone_display | default "+86 182 5749 9725")
-    "email" (site.Params.contact.email | default "maxon@maxoncn.com")
     "description" site.Params.description
-    "logo" site.Params.assets.favicon
-    "image" (index site.Params.images 0)
-    "address" (dict "@type" "PostalAddress" "streetAddress" "Yiwu International Trade City" "addressLocality" "Yiwu" "addressRegion" "Zhejiang" "addressCountry" "CN")
-    "sameAs" (slice site.Home.Permalink "https://yeatru.com")
-    "priceRange" "$"
-    "areaServed" "Worldwide"
-  )
-) | jsonify | safeJS }}
+    "inLanguage" "en"
+    "publisher" (dict "@id" (printf "%s#business" $home))
+  ) }}
 {{- else }}
-{{ dict "@context" "https://schema.org" "@graph" (slice
-  (dict
-    "@type" (slice "LocalBusiness" "WholesaleStore")
-    "@id" (printf "%s/#business" site.Home.Permalink)
-    "name" site.Title
-    "url" site.Home.Permalink
-    "telephone" (site.Params.contact.phone_display | default "+86 182 5749 9725")
-    "email" (site.Params.contact.email | default "maxon@maxoncn.com")
-    "description" site.Params.description
-    "logo" site.Params.assets.favicon
-    "image" (index site.Params.images 0)
-    "address" (dict "@type" "PostalAddress" "streetAddress" "Yiwu International Trade City" "addressLocality" "Yiwu" "addressRegion" "Zhejiang" "addressCountry" "CN")
-    "sameAs" (slice site.Home.Permalink "https://yeatru.com")
-    "priceRange" "$"
-    "areaServed" "Worldwide"
-  )
-  (dict
-    "@type" "BreadcrumbList"
-    "itemListElement" (slice
-      (dict "@type" "ListItem" "position" 1 "name" (site.Title) "item" site.Home.Permalink)
-      (dict "@type" "ListItem" "position" 2 "name" .Title "item" .Permalink)
-    )
-  )
-) | jsonify | safeJS }}
+  {{- if not (and .IsPage (eq .Section "toys")) }}
+  {{- $crumbs := slice
+    (dict "@type" "ListItem" "position" 1 "name" (site.Title) "item" $home)
+  }}
+  {{- if and .Parent (eq .Parent.Kind "section") }}
+    {{- $crumbs = $crumbs | append (dict "@type" "ListItem" "position" 2 "name" (i18n "products" | default "Products") "item" (printf "%s/toys/" $home)) }}
+    {{- $crumbs = $crumbs | append (dict "@type" "ListItem" "position" 3 "name" .Title "item" .Permalink) }}
+  {{- else }}
+    {{- $crumbs = $crumbs | append (dict "@type" "ListItem" "position" 2 "name" .Title "item" .Permalink) }}
+  {{- end }}
+  {{- $graph = $graph | append (dict "@type" "BreadcrumbList" "itemListElement" $crumbs) }}
+  {{- end }}
 {{- end }}
+<script type="application/ld+json">
+{{ dict "@context" "https://schema.org" "@graph" $graph | jsonify | safeJS }}
 </script>

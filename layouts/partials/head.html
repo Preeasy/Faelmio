@@ -8,7 +8,7 @@
 {{- end }}
 
 {{- /* Title */}}
-<title>{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ site.Title }}</title>
+<title>{{ if .IsHome }}{{ site.Title }}{{ else if and .IsPage (eq .Section "toys") }}{{ .Title }} | {{ site.Params.label.text }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ site.Title }}{{ end }}</title>
 
 {{- /* Meta */}}
 {{- if .IsHome }}
@@ -43,7 +43,7 @@
   {{- $ogImage = cond (hasPrefix . "http") . (. | absURL) }}
   {{- $ogIsDefault = false }}
 {{- end }}
-{{- $locales := dict "en" "en_US" "es" "es_ES" "ja" "ja_JP" }}
+{{- $locales := dict "en" "en_US" "es" "es_ES" "ja" "ja_JP" "fr" "fr_FR" "ko" "ko_KR" }}
 <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:site_name" content="{{ site.Title }}">
 <meta property="og:title" content="{{ $ogTitle }}">
@@ -93,9 +93,12 @@
 <meta name="theme-color" content="{{ site.Params.assets.theme_color | default "#0F3460" }}">
 
 {{- /* hreflang */}}
+{{- $xdefault := .Permalink }}
+{{- range .AllTranslations }}{{ if eq .Lang "en" }}{{ $xdefault = .Permalink }}{{ end }}{{ end }}
 {{- range .AllTranslations }}
 <link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
 {{- end }}
+<link rel="alternate" hreflang="x-default" href="{{ $xdefault }}">
 
 <noscript>
     <style>

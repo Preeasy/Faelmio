@@ -27,8 +27,11 @@ answer: "Une tomate squishy crispy dont la coque de cire fragile craque sous la 
 price_range: "$12.19 – $12.39 / set"
 price_low: 12.19
 price_high: 12.39
-price_note: "EXW Yiwu · 12 pièces par lot · 500+ lots : $12.19"
+price_note: "FOB Yiwu · 12 pièces par lot · 500+ lots : $12.19"
 currency: "USD"
+material: "PU foam core + wax coating"
+min_age: 3
+net_weight_g: 53
 moq: "1 lot (12 pièces)"
 set_pcs: 12
 lead_time: "Sous 7 jours (stock) · 15–20 jours (personnalisé)"
@@ -96,6 +99,10 @@ faq:
     a: "Un carton maître contient 12 boîtes couleur × 12 pièces = 144 pièces, mesure 70.5 × 43.5 × 45.5 cm, pèse 15.6 kg et occupe 0.14 m³. Un conteneur 40HQ charge environ 69 120 pièces."
   - q: "Sous quel délai pouvez-vous expédier ?"
     a: "Les articles en stock sont expédiés sous 7 jours. Les commandes personnalisées prennent 15–20 jours. Nous proposons les conditions EXW, FOB, CIF et DDP et pouvons regrouper avec d'autres jouets fidget dans une même expédition."
+  - q: "Qu'est-ce qu'un squishy crispy ?"
+    a: "Un squishy crispy est un fidget sensoriel composé d'une fine couche de cire sur un cœur en mousse PU à rebond lent. La coque de cire craque et éclate sous la pression, puis la mousse reprend lentement sa forme : un retour sonore et tactile à la fois."
+  - q: "Puis-je commander un échantillon avant la production en série ?"
+    a: "Oui. Les couleurs en stock sont expédiées en échantillon d'un set (12 pièces) sous 7 jours ; les couleurs ou visages personnalisés nécessitent une production de 1 000 pièces."
 related:
   - "/toys/fidget-sensory-toys/FM-CST-V8001A/"
   - "/toys/fidget-sensory-toys/FM-FS-V8001A/"

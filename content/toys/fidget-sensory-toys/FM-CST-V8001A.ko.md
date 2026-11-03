@@ -84,6 +84,7 @@ faq:
   - q: "로고와 포장을 커스터마이징할 수 있나요?"
     a: "네. 달걀에 로고 인쇄 또는 엠보싱, 완전히 커스텀화된 컬러 박스, 행택 및 FBA 라벨을 제공합니다. 요청 시 NDA도 체결해 드립니다."
 related:
+  - "/toys/fidget-sensory-toys/FM-CST-V8002A/"
   - "/toys/fidget-sensory-toys/FM-FS-V8001A/"
 ---
 

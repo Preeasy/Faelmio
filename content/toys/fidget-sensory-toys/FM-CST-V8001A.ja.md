@@ -84,6 +84,7 @@ faq:
   - q: "ロゴと包装をカスタマイズできますか？"
     a: "はい。卵へのロゴ印刷またはエンボス加工、完全カスタムのカラーボックス、ハングタグ、FBAラベルに対応しています。ご要望に応じてNDAも締結できます。"
 related:
+  - "/toys/fidget-sensory-toys/FM-CST-V8002A/"
   - "/toys/fidget-sensory-toys/FM-FS-V8001A/"
 ---
 

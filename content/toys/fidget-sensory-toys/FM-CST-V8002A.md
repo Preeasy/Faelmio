@@ -27,8 +27,11 @@ answer: "A crispy squishy tomato fidget toy with a brittle wax shell that crackl
 price_range: "$12.19 – $12.39 / set"
 price_low: 12.19
 price_high: 12.39
-price_note: "EXW Yiwu · 12 pcs per set · 500+ sets: $12.19"
+price_note: "FOB Yiwu · 12 pcs per set · 500+ sets: $12.19"
 currency: "USD"
+material: "PU foam core + wax coating"
+min_age: 3
+net_weight_g: 53
 moq: "1 set (12 pcs)"
 set_pcs: 12
 lead_time: "Within 7 days (stock) · 15–20 days (custom)"
@@ -96,6 +99,10 @@ faq:
     a: "One master carton holds 12 color boxes × 12 pcs = 144 pcs, measures 70.5 × 43.5 × 45.5 cm, weighs 15.6 kg and occupies 0.14 m³. A 40HQ container loads about 69,120 pcs."
   - q: "How fast can you ship?"
     a: "Stock items ship within 7 days. Custom orders take 15–20 days. We quote EXW, FOB, CIF and DDP terms, and can consolidate with other fidget toys in one shipment."
+  - q: "What is a crispy squishy toy?"
+    a: "A crispy squishy is a sensory fidget made of a thin wax coating over a slow-rebound PU foam core. The wax shell crackles and pops when squeezed, then the foam slowly springs back — giving both sound and touch feedback."
+  - q: "Can I order a sample before bulk production?"
+    a: "Yes. Stock colours ship as single-set samples (12 pcs) within 7 days; custom colours or faces require a 1,000 pcs production run."
 related:
   - "/toys/fidget-sensory-toys/FM-CST-V8001A/"
   - "/toys/fidget-sensory-toys/FM-FS-V8001A/"

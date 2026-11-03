@@ -84,6 +84,7 @@ faq:
   - q: "Can I customize the logo and packaging?"
     a: "Yes. Logo print or emboss on the egg, fully custom color box, hang tags and FBA labels available. NDA available on request."
 related:
+  - "/toys/fidget-sensory-toys/FM-CST-V8002A/"
   - "/toys/fidget-sensory-toys/FM-FS-V8001A/"
 ---
 
