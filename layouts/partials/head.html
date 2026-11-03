@@ -44,7 +44,7 @@
   {{- $ogIsDefault = false }}
 {{- end }}
 {{- $locales := dict "en" "en_US" "es" "es_ES" "ja" "ja_JP" "fr" "fr_FR" "ko" "ko_KR" }}
-<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:type" content="{{ if and .IsPage (eq .Section "toys") }}product{{ else if .IsPage }}article{{ else }}website{{ end }}">
 <meta property="og:site_name" content="{{ site.Title }}">
 <meta property="og:title" content="{{ $ogTitle }}">
 <meta property="og:description" content="{{ $ogDesc }}">
