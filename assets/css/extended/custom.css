@@ -1688,3 +1688,42 @@ img.img-missing { display: none !important; }
   .ff-grid::-webkit-scrollbar { display: none; }
   .ff-card { flex: 0 0 70%; scroll-snap-align: start; }
 }
+
+/* ===== PDP variant selector ===== */
+.pdp-variants {
+  margin: 16px 0 4px;
+}
+.pdp-variants-label {
+  display: flex; align-items: baseline; gap: 10px;
+  font-size: 0.86rem; margin-bottom: 10px;
+}
+.pdp-variants-label strong { font-weight: 700; color: var(--ink); }
+.pdp-variants-label span { color: var(--coral); font-weight: 600; }
+.pdp-variant-list {
+  display: flex; flex-wrap: wrap; gap: 10px;
+}
+.pdp-variant {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 8px 14px;
+  background: var(--paper);
+  border: 1.5px solid var(--line);
+  border-radius: var(--r-pill);
+  font-family: 'Inter', sans-serif; font-size: 0.84rem; font-weight: 500;
+  color: var(--ink-2);
+  cursor: pointer;
+  transition: border-color var(--dur) var(--ease), background var(--dur) var(--ease), transform var(--dur) var(--ease);
+}
+.pdp-variant:hover { border-color: var(--coral); color: var(--ink); }
+.pdp-variant.is-active {
+  border-color: var(--coral);
+  background: rgba(242, 100, 60, 0.08);
+  color: var(--coral-dark);
+  font-weight: 600;
+}
+.pdp-variant-swatch {
+  display: inline-block; width: 14px; height: 14px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.12);
+  flex-shrink: 0;
+}
+.pdp-variant-name { line-height: 1; }

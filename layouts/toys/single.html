@@ -36,7 +36,7 @@
 
     <div class="pdp-hero">
       {{- /* -------- gallery -------- */}}
-      <div class="pdp-gallery" data-gallery>
+      <div class="pdp-gallery" data-gallery{{ with .Params.variants }} data-variants="{{ . | jsonify }}"{{ end }}>
         <div class="pdp-stage">
           {{- if eq $hero.type "video" }}
           <video id="pdp-main-video" class="pdp-main-media{{ if not (eq $hero.type "video") }} is-hidden{{ end }}"
@@ -108,7 +108,7 @@
       <div class="pdp-info">
         <p class="pdp-kicker">
           <a href="{{ .CurrentSection.Permalink }}">{{ $catTitle }}</a>
-          {{- with .Params.sku }}<span class="pdp-sku">{{ . }}</span>{{ end }}
+          {{- with .Params.sku }}<span class="pdp-sku" data-sku-base="{{ . }}">{{ . }}</span>{{ end }}
         </p>
 
         <h1 class="pdp-title">{{ .Title }}</h1>
@@ -128,6 +128,26 @@
           {{- with .Params.price_range }}<strong class="pdp-price-value">{{ . }}</strong>{{ end }}
           {{- with .Params.price_note }}<span class="pdp-price-note">{{ . }}</span>{{ end }}
         </div>
+
+        {{- /* -------- variant selector (opt-in) -------- */}}
+        {{- with .Params.variants }}
+        <div class="pdp-variants" data-variants-ui>
+          <div class="pdp-variants-label">
+            <strong>{{ i18n "pdp_variant" | default "Style" }}</strong>
+            <span data-variant-active>{{ (index . 0).name }}</span>
+          </div>
+          <div class="pdp-variant-list" role="tablist" aria-label="{{ i18n "pdp_variant" | default "Style" }}">
+            {{- range $i, $v := . }}
+            <button type="button" class="pdp-variant{{ if eq $i 0 }} is-active{{ end }}"
+                    role="tab" aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}"
+                    data-variant-index="{{ $i }}">
+              {{- with .color }}<span class="pdp-variant-swatch" style="background:{{ . }}" aria-hidden="true"></span>{{ end }}
+              <span class="pdp-variant-name">{{ .name }}</span>
+            </button>
+            {{- end }}
+          </div>
+        </div>
+        {{- end }}
 
         <dl class="pdp-facts">
           {{- with .Params.moq }}
@@ -484,59 +504,99 @@
 {{ dict "@context" "https://schema.org" "@graph" $graph | jsonify | safeJS }}
 </script>
 
-{{- /* gallery + freight scripts */}}
+{{- /* gallery + variant scripts */}}
 <script>
 (function () {
   var img = document.getElementById("pdp-main-image");
   var vid = document.getElementById("pdp-main-video");
-  var thumbs = document.querySelectorAll(".pdp-thumb");
+  var gallery = document.querySelector("[data-gallery]");
   if (!img && !vid) return;
 
   function showImage(src, alt) {
-    if (vid) {
-      vid.classList.add("is-hidden");
-      try { vid.pause(); } catch (e) {}
-    }
-    if (img) {
-      img.classList.remove("is-hidden");
-      if (src) img.src = src;
-      if (alt) img.alt = alt;
-    }
+    if (vid) { vid.classList.add("is-hidden"); try { vid.pause(); } catch (e) {} }
+    if (img) { img.classList.remove("is-hidden"); if (src) img.src = src; if (alt) img.alt = alt; }
   }
   function showVideo(src, poster, alt) {
     if (img) img.classList.add("is-hidden");
     if (vid) {
       vid.classList.remove("is-hidden");
-      if (src && vid.getAttribute("src") !== src) {
-        vid.setAttribute("src", src);
-      }
+      if (src && vid.getAttribute("src") !== src) vid.setAttribute("src", src);
       if (poster) vid.setAttribute("poster", poster);
       try { vid.load(); vid.play(); } catch (e) {}
     }
   }
 
-  thumbs.forEach(function (t) {
-    t.addEventListener("click", function () {
-      var type = t.getAttribute("data-type") || "image";
-      var src = t.getAttribute("data-src");
-      var alt = t.getAttribute("data-alt");
-      var poster = t.getAttribute("data-poster") || "";
-
-      if (type === "video") {
-        showVideo(src, poster, alt);
-      } else {
-        showImage(src, alt);
-      }
-
-      thumbs.forEach(function (x) {
-        x.classList.remove("is-active");
-        x.setAttribute("aria-selected", "false");
+  function bindThumbs() {
+    var thumbs = document.querySelectorAll(".pdp-thumb");
+    thumbs.forEach(function (t) {
+      t.addEventListener("click", function () {
+        var type = t.getAttribute("data-type") || "image";
+        var src = t.getAttribute("data-src");
+        var alt = t.getAttribute("data-alt");
+        var poster = t.getAttribute("data-poster") || "";
+        if (type === "video") showVideo(src, poster, alt); else showImage(src, alt);
+        thumbs.forEach(function (x) { x.classList.remove("is-active"); x.setAttribute("aria-selected", "false"); });
+        t.classList.add("is-active");
+        t.setAttribute("aria-selected", "true");
       });
-      t.classList.add("is-active");
-      t.setAttribute("aria-selected", "true");
     });
-  });
+  }
+  bindThumbs();
+
+  /* ---- variant switching ---- */
+  var variantsRaw = gallery ? gallery.getAttribute("data-variants") : "";
+  if (variantsRaw) {
+    var variants = JSON.parse(variantsRaw);
+    var thumbsWrap = document.querySelector(".pdp-thumbs");
+    var variantBtns = document.querySelectorAll("[data-variant-index]");
+    var activeLabel = document.querySelector("[data-variant-active]");
+    var skuEl = document.querySelector("[data-sku-base]");
+
+    function buildThumbs(items) {
+      if (!thumbsWrap) return;
+      thumbsWrap.innerHTML = "";
+      items.forEach(function (g, i) {
+        var type = g.type || "image";
+        var thumbSrc = type === "video" ? (g.poster || g.src) : g.src;
+        var btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "pdp-thumb" + (type === "video" ? " is-video" : "") + (i === 0 ? " is-active" : "");
+        btn.setAttribute("role", "tab");
+        btn.setAttribute("aria-selected", i === 0 ? "true" : "false");
+        btn.setAttribute("data-type", type);
+        btn.setAttribute("data-src", g.src || "");
+        btn.setAttribute("data-alt", g.alt || "");
+        btn.setAttribute("data-poster", g.poster || "");
+        btn.innerHTML = '<img src="' + thumbSrc + '" alt="' + (g.alt || "") + '" width="120" height="120" loading="lazy" decoding="async">' +
+          (type === "video" ? '<span class="pdp-thumb-play" aria-hidden="true">&#9658;</span>' : '');
+        thumbsWrap.appendChild(btn);
+      });
+      bindThumbs();
+      var first = items[0];
+      if (first) {
+        if ((first.type || "image") === "video") showVideo(first.src, first.poster, first.alt);
+        else showImage(first.src, first.alt);
+      }
+    }
+
+    variantBtns.forEach(function (b) {
+      b.addEventListener("click", function () {
+        var idx = parseInt(b.getAttribute("data-variant-index"), 10);
+        var v = variants[idx];
+        if (!v) return;
+        variantBtns.forEach(function (x) { x.classList.remove("is-active"); x.setAttribute("aria-selected", "false"); });
+        b.classList.add("is-active");
+        b.setAttribute("aria-selected", "true");
+        if (activeLabel) activeLabel.textContent = v.name || "";
+        if (skuEl && skuEl.getAttribute("data-sku-base")) {
+          skuEl.textContent = v.sku ? v.sku : skuEl.getAttribute("data-sku-base");
+        }
+        if (v.gallery && v.gallery.length) buildThumbs(v.gallery);
+      });
+    });
+  }
 })();
+
 
 (function () {
   var box = document.querySelector("[data-freight]");
