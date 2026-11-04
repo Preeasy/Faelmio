@@ -612,7 +612,7 @@ img { max-width: 100%; }
 /* ===================== CTA ===================== */
 .cta-section {
   position: relative; background: var(--ink); color: var(--cream);
-  padding: 90px 0; overflow: hidden;
+  padding: 90px 0 140px; overflow: hidden;
 }
 .cta-section::before {
   content: ""; position: absolute; inset: 0;
@@ -1527,7 +1527,9 @@ img.img-missing { display: none !important; }
 
 /* ===== Faelmio brand story banner ===== */
 .brand-banner {
-  margin: 48px 0;
+  margin: 48px auto;
+  width: 100%; max-width: var(--maxw);
+  padding-inline: var(--gutter); box-sizing: border-box;
   border-radius: var(--r-xl);
   overflow: hidden;
   background:
