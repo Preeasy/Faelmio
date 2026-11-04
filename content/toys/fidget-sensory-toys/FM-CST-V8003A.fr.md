@@ -2,6 +2,7 @@
 title: "Patate Squishy Crispy Anti-Stress"
 description: "Patate squishy crispy à coque de cire craquante et cœur PU à retour lent. Soulagement sensoriel pour enfants de 3+ et adultes. Lots de 12, EN71/ASTM/CE/CPC."
 sku: "FM-CST-V8003A"
+factory_footage: true
 badge: "New"
 cover:
   image: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-01-main.webp"

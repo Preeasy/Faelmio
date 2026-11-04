@@ -272,8 +272,10 @@
     {{- /* -------- brand story banner -------- */}}
     {{- partial "brand-story-banner.html" (dict "show_cta" true "compact" true) }}
 
-    {{- /* -------- factory footage (real clips) -------- */}}
+    {{- /* -------- factory footage (real clips) — opt-in per product -------- */}}
+    {{- if .Params.factory_footage }}
     {{- partial "factory-footage.html" . }}
+    {{- end }}
 
     {{- /* -------- overview + specs -------- */}}
     <div class="pdp-block">
