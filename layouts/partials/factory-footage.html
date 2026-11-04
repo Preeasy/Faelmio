@@ -1,0 +1,25 @@
+{{- /* Factory footage strip — real warehouse / packing-floor clips, portrait 9:16 */ -}}
+{{- $items := slice
+  (dict "src" "images/factory/factory-warehouse.mp4" "poster" "images/factory/factory-warehouse-poster.jpg" "cap" "factory_cap1" "n" 1)
+  (dict "src" "images/factory/factory-packing.mp4"   "poster" "images/factory/factory-packing-poster.jpg"   "cap" "factory_cap2" "n" 2)
+  (dict "src" "images/factory/factory-floor.mp4"     "poster" "images/factory/factory-floor-poster.jpg"     "cap" "factory_cap3" "n" 3)
+}}
+<section class="factory-footage" aria-label="{{ i18n "factory_title" | default "Factory footage" }}">
+  <div class="ff-head">
+    <p class="ff-eyebrow">{{ i18n "factory_eyebrow" | default "Real footage" }}</p>
+    <h2>{{ i18n "factory_title" | default "Inside our Yiwu operation" }}</h2>
+    <p class="ff-sub">{{ i18n "factory_sub" | default "Filmed in our warehouse and packing floor — no stock photos, no renders." }}</p>
+  </div>
+  <div class="ff-grid">
+    {{- range $items }}
+    <figure class="ff-card">
+      <video class="ff-video" preload="none" muted loop playsinline controls
+             poster="{{ .poster | relURL }}" width="540" height="960"
+             aria-label="{{ i18n .cap | default "Factory footage" }}">
+        <source src="{{ .src | relURL }}" type="video/mp4">
+      </video>
+      <figcaption><span class="ff-n">{{ printf "%02d" .n }}</span>{{ i18n .cap | default "Factory footage" }}</figcaption>
+    </figure>
+    {{- end }}
+  </div>
+</section>

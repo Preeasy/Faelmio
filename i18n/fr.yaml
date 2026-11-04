@@ -182,3 +182,11 @@ pdp_trust_quote: "Devis 24 h"
 pdp_trust_quote_sub: "Sans engagement"
 pdp_trust_sample: "Échantillon d'abord"
 pdp_trust_sample_sub: "Avant production"
+
+# factory footage strip
+factory_eyebrow: 'Images réelles'
+factory_title: 'Au cœur de notre activité à Yiwu'
+factory_sub: "Filmé dans notre entrepôt et notre atelier d'emballage — sans photos de stock ni rendus."
+factory_cap1: "Stock d'entrepôt — plus de 40 catégories de jouets à Yiwu"
+factory_cap2: "Cartons d'export — emballage prêt pour la vente"
+factory_cap3: "Atelier d'emballage — contrôle qualité et groupage"

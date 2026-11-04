@@ -182,3 +182,11 @@ pdp_trust_quote: "24h quote"
 pdp_trust_quote_sub: "No commitment"
 pdp_trust_sample: "Sample first"
 pdp_trust_sample_sub: "Before mass prod."
+
+# factory footage strip
+factory_eyebrow: 'Real footage'
+factory_title: 'Inside our Yiwu operation'
+factory_sub: 'Filmed in our warehouse and packing floor — no stock photos, no renders.'
+factory_cap1: 'Warehouse stock — 40+ toy categories held in Yiwu'
+factory_cap2: 'Export cartons — retail-ready packaging'
+factory_cap3: 'Packing floor — QC and consolidation'

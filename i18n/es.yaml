@@ -182,3 +182,11 @@ pdp_trust_quote: "Cotización 24h"
 pdp_trust_quote_sub: "Sin compromiso"
 pdp_trust_sample: "Muestra primero"
 pdp_trust_sample_sub: "Antes de producción"
+
+# factory footage strip
+factory_eyebrow: 'Grabación real'
+factory_title: 'Dentro de nuestra operación en Yiwu'
+factory_sub: 'Grabado en nuestro almacén y línea de embalaje — sin fotos de stock ni renders.'
+factory_cap1: 'Stock en almacén — más de 40 categorías de juguetes en Yiwu'
+factory_cap2: 'Cajas de exportación — embalaje listo para retail'
+factory_cap3: 'Línea de embalaje — control de calidad y consolidación'

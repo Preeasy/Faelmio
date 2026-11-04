@@ -182,3 +182,11 @@ pdp_trust_quote: "24時間見積り"
 pdp_trust_quote_sub: "ノーコミット"
 pdp_trust_sample: "サンプル先行"
 pdp_trust_sample_sub: "量産前に確認"
+
+# factory footage strip
+factory_eyebrow: '現場映像'
+factory_title: '義烏拠点の内部'
+factory_sub: '当社の倉庫と梱包現場で撮影 — ストック写真やCGはありません。'
+factory_cap1: '倉庫在庫 — 義烏に40以上の玩具カテゴリーを保有'
+factory_cap2: '輸出カートン — 小売対応の梱包'
+factory_cap3: '梱包ライン — 品質検査と混載'
