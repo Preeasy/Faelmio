@@ -7,10 +7,10 @@ cover:
   image: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-01-main.webp"
   alt: "크림색 받침 위에 귀여운 얼굴의 포테이토형 크리스피 스퀴시 피젯 토이"
 gallery:
-  - src: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-demo.mp4"
+  - src: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-demo-15s.mp4"
     type: video
-    poster: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-01-main.webp"
-    alt: "크리스피 포테이토 스퀴시 360° 데모 영상"
+    poster: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-demo-poster.jpg"
+    alt: "크리스피 포테이토 스퀴시 제품 데모 영상"
   - src: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-01-main.webp"
     alt: "포테이토형 크리스피 스퀴시, 왁스 코팅 저속 반발 PU 스퀴시"
   - src: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-02-closeup.webp"

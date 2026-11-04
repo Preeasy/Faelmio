@@ -7,9 +7,9 @@ cover:
   image: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-01-main.webp"
   alt: "クリーム色の台座にかわいい表情のポテト型クリスピー・スクイーズ"
 gallery:
-  - src: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-demo.mp4"
+  - src: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-demo-15s.mp4"
     type: video
-    poster: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-01-main.webp"
+    poster: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-demo-poster.jpg"
     alt: "クリスピー・ポテトスクイーズの360°デモ動画"
   - src: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-01-main.webp"
     alt: "ポテト型クリスピー・スクイーズ、ワックスコーティング低速反発PUスクイーズ"

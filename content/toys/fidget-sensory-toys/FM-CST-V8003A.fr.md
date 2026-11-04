@@ -7,10 +7,10 @@ cover:
   image: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-01-main.webp"
   alt: "Patate squishy crispy au visage souriant sur un présentoir crème"
 gallery:
-  - src: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-demo.mp4"
+  - src: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-demo-15s.mp4"
     type: video
-    poster: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-01-main.webp"
-    alt: "Vidéo démo 360° de la patate squishy crispy"
+    poster: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-demo-poster.jpg"
+    alt: "Vidéo de démonstration de la patate squishy crispy"
   - src: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-01-main.webp"
     alt: "Patate squishy crispy, squishy PU à retour lent avec enrobage de cire"
   - src: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-02-closeup.webp"

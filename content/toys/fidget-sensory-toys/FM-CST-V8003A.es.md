@@ -7,10 +7,10 @@ cover:
   image: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-01-main.webp"
   alt: "Patata squishy crispy con cara adorable sobre un pedestal de crema"
 gallery:
-  - src: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-demo.mp4"
+  - src: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-demo-15s.mp4"
     type: video
-    poster: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-01-main.webp"
-    alt: "Vídeo demo 360° del patata squishy crispy"
+    poster: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-demo-poster.jpg"
+    alt: "Vídeo de demostración de la patata squishy crispy"
   - src: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-01-main.webp"
     alt: "Patata squishy crispy, squishy PU de rebote lento con recubrimiento de cera"
   - src: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-02-closeup.webp"

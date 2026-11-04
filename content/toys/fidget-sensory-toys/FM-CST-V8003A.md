@@ -7,10 +7,10 @@ cover:
   image: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-01-main.webp"
   alt: "Crispy squishy potato fidget toy on a cream pedestal with a cute face"
 gallery:
-  - src: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-demo.mp4"
+  - src: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-demo-15s.mp4"
     type: video
-    poster: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-01-main.webp"
-    alt: "Crispy potato squishy fidget toy 360° demo video"
+    poster: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-demo-poster.jpg"
+    alt: "Crispy potato squishy fidget toy product demo video"
   - src: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-01-main.webp"
     alt: "Crispy squishy potato fidget toy, wax-coated PU slow-rebound squishy"
   - src: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-02-closeup.webp"
