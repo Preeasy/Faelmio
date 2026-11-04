@@ -108,7 +108,11 @@
       <div class="pdp-info">
         <p class="pdp-kicker">
           <a href="{{ .CurrentSection.Permalink }}">{{ $catTitle }}</a>
-          {{- with .Params.sku }}<span class="pdp-sku" data-sku-base="{{ . }}">{{ . }}</span>{{ end }}
+          {{- with .Params.sku }}
+          {{- $displaySku := . }}
+          {{- with $.Params.variants }}{{ with (index . 0) }}{{ with .sku }}{{ $displaySku = . }}{{ end }}{{ end }}{{ end }}
+          <span class="pdp-sku" data-sku-base="{{ . }}">{{ $displaySku }}</span>
+          {{- end }}
         </p>
 
         <h1 class="pdp-title">{{ .Title }}</h1>
