@@ -104,6 +104,7 @@ faq:
   - q: "Puis-je commander un échantillon avant la production en série ?"
     a: "Oui. Les couleurs en stock sont expédiées en échantillon d'un set (12 pièces) sous 7 jours ; les couleurs ou visages personnalisés nécessitent une production de 1 000 pièces."
 related:
+  - "/toys/fidget-sensory-toys/FM-CST-V8003A/"
   - "/toys/fidget-sensory-toys/FM-CST-V8001A/"
   - "/toys/fidget-sensory-toys/FM-FS-V8001A/"
   - "/toys/plush-toys/FM-PL-V8002A/"

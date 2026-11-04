@@ -104,6 +104,7 @@ faq:
   - q: "Can I order a sample before bulk production?"
     a: "Yes. Stock colours ship as single-set samples (12 pcs) within 7 days; custom colours or faces require a 1,000 pcs production run."
 related:
+  - "/toys/fidget-sensory-toys/FM-CST-V8003A/"
   - "/toys/fidget-sensory-toys/FM-CST-V8001A/"
   - "/toys/fidget-sensory-toys/FM-FS-V8001A/"
   - "/toys/plush-toys/FM-PL-V8002A/"

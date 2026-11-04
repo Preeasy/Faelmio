@@ -84,6 +84,7 @@ faq:
   - q: "Puis-je personnaliser le logo et l'emballage ?"
     a: "Oui. Impression ou embossage du logo sur l'œuf, boîte couleur entièrement personnalisée, étiquettes suspendues et étiquettes FBA sont disponibles. NDA disponible sur demande."
 related:
+  - "/toys/fidget-sensory-toys/FM-CST-V8003A/"
   - "/toys/fidget-sensory-toys/FM-CST-V8002A/"
   - "/toys/fidget-sensory-toys/FM-FS-V8001A/"
 ---

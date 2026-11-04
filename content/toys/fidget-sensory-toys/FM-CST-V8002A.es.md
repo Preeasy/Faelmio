@@ -104,6 +104,7 @@ faq:
   - q: "¿Puedo pedir una muestra antes de producir en masa?"
     a: "Sí. Los colores de stock se envían como muestra de un set (12 uds.) en 7 días; los colores o caras personalizados requieren una producción mínima de 1.000 uds."
 related:
+  - "/toys/fidget-sensory-toys/FM-CST-V8003A/"
   - "/toys/fidget-sensory-toys/FM-CST-V8001A/"
   - "/toys/fidget-sensory-toys/FM-FS-V8001A/"
   - "/toys/plush-toys/FM-PL-V8002A/"

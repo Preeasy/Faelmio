@@ -104,6 +104,7 @@ faq:
   - q: "大量生産前にサンプルを注文できますか？"
     a: "はい。在庫カラーは1セット（12個）単位で7日以内にサンプル出荷できます。カスタムカラーや表情は1,000個からの生産となります。"
 related:
+  - "/toys/fidget-sensory-toys/FM-CST-V8003A/"
   - "/toys/fidget-sensory-toys/FM-CST-V8001A/"
   - "/toys/fidget-sensory-toys/FM-FS-V8001A/"
   - "/toys/plush-toys/FM-PL-V8002A/"

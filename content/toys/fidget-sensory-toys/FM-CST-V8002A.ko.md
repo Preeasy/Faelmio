@@ -104,6 +104,7 @@ faq:
   - q: "대량 생산 전에 샘플을 주문할 수 있나요?"
     a: "네. 재고 색상은 1세트(12개) 단위로 7일 내 샘플 출고되며, 맞춤 색상이나 표정은 1,000개부터 생산됩니다."
 related:
+  - "/toys/fidget-sensory-toys/FM-CST-V8003A/"
   - "/toys/fidget-sensory-toys/FM-CST-V8001A/"
   - "/toys/fidget-sensory-toys/FM-FS-V8001A/"
   - "/toys/plush-toys/FM-PL-V8002A/"

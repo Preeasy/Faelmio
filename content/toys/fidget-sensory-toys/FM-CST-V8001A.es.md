@@ -84,6 +84,7 @@ faq:
   - q: "¿Puedo personalizar el logotipo y el embalaje?"
     a: "Sí. Impresión o relieve del logotipo en el huevo, caja de color totalmente personalizada, etiquetas colgantes y etiquetas FBA. NDA disponible bajo petición."
 related:
+  - "/toys/fidget-sensory-toys/FM-CST-V8003A/"
   - "/toys/fidget-sensory-toys/FM-CST-V8002A/"
   - "/toys/fidget-sensory-toys/FM-FS-V8001A/"
 ---
