@@ -142,6 +142,7 @@ carton:
   pcs: 50
   cbm: 0.09
   gw: 7
+  size: 47 × 47 × 41 cm
 oem:
   product: true
   product_mold_fee: USD 300
@@ -191,12 +192,90 @@ product_description: 'Este juguete de peluche con sonido para perro de felpa de 
   jugar de forma interactiva, limpia los dientes suavemente, tiene costura reforzada resistente a las mordeduras, alivia el
   aburrimiento de la mascota y es adecuado para cachorros y perros de todos los tamaños. Disponible en tres diseños de animales:
   elefante, conejo y loro.'
-faqs:
-- q: ¿Es seguro este juguete para cachorros?
-  a: Sí, está hecho de felpa de maíz suave con material seguro y no tóxico, respetuoso con las encías y dientes de los cachorros.
-- q: ¿Seguirá funcionando el sonido después de morder mucho?
-  a: Lleva costura reforzada para mayor durabilidad, pero recomendamos juego supervisado para perros muy mordedores.
 related:
 - /toys/plush-toys/
 - /toys/educational-stem-toys/
+customization:
+  product:
+  - Colores y formas personalizadas (variantes de felpa de maíz)
+  - Logo impreso o grabado en el juguete
+  - Nuevos diseños de expresiones faciales
+  - 'Tarifa de molde: USD 300 · MOQ 1,000 pcs'
+  packaging:
+  - Caja impresa personalizada
+  - Etiqueta colgante, tarjeta de encabezado o polybag
+  - Códigos de barras y etiquetas Amazon FBA
+  - 'Tarifa de molde: USD 200 · MOQ 3,000 pcs'
+  bundle:
+  - Mezcla elefante / conejo / loro en un cartón
+  - Sets surtidos según tu gama de venta al por menor
+  - Combina con peluches de nuestro catálogo
+faq:
+- q: ¿Este juguete para perros es seguro para los cachorros?
+  a: Sí. Hecho con felpa de maíz suave y materiales no tóxicos, es gentil con las encías doloridas de los cachorros en dentición.
+    Probado según EN 71-1/-2/-3, ASTM F963-23, CE y CPC.
+- q: ¿El chirriador seguirá funcionando después de mordeduras fuertes?
+  a: Las costuras reforzadas resisten bien a la mayoría de los masticadores. El chirriador es duradero y está diseñado para
+    juegos interactivos a largo plazo. Recomendamos supervisar el juego con perros muy agresivos.
+- q: ¿Cuáles son las dimensiones exactas de cada juguete?
+  a: Las tres variantes miden aproximadamente 260 × 340 mm y pesan unos 75 g. Las ligeras diferencias de forma le dan a cada
+    variante una sensación distinta.
+- q: ¿Puedo pedir un diseño personalizado con mi logo de marca?
+  a: 'Absolutamente. Ofrecemos logos personalizados (impresos o grabados), colores, formas y nuevas expresiones faciales.
+    Tarifa de molde de producto: USD 300 con MOQ de 1,000 pcs; molde de embalaje: USD 200 con MOQ de 3,000 pcs.'
+- q: ¿Cuánto tarda la producción para pedidos stock vs personalizados?
+  a: Los diseños stock se envían en 7 días. Los pedidos personalizados tardan 15–20 días desde el depósito.
+- q: ¿Puedo mezclar elefante, conejo y loro en un mismo cartón?
+  a: Sí. Cartones mixtos disponibles — 50 pcs por cartón sin importar la mezcla de variantes.
 ---
+Juguete de peluche para perro de felpa de maíz suave con chirriador incorporado — limpia los dientes suavemente, alivia el aburrimiento y la ansiedad, y es adecuado para cachorros y perros de todos los tamaños. Disponible en tres diseños de animales lindos: elefante, conejo y loro.
+
+## Por qué los dueños de mascotas aman este juguete chirriante para masticar
+
+- **Material de felpa de maíz** — suave pero duradero, suave para las encías del perro y no daña los dientes de los cachorros durante la dentición
+- **Chirriador incorporado** — atrae la atención de tu perro al instante, convirtiendo el masticar en juego interactivo
+- **Acción de limpieza dental** — la superficie de felpa con bultos raspa la placa y masajea las encías mientras tu perro mastica
+- **Costuras reforzadas** — costuras resistentes a las mordeduras que aguantan a perros masticadores agresivos
+- **Alivio del aburrimiento y la ansiedad** — perfecto para cachorros que se quedan solos, entrenamiento en jaula o perros que necesitan un compañero de masticado tranquilo
+
+## Felpa de maíz vs felpa común — qué hace diferente a este juguete
+
+La mayoría de los juguetes de peluche para perros usan tela de felpa común que se siente plana y se desgasta rápido. La felpa de maíz tiene una superficie texturizada tipo gofre que proporciona una acción de masaje suave en las encías de tu perro mientras mastica, además de ser más resistente que la felpa estándar.
+
+## Tres diseños de animales para cada personalidad de perro
+
+Elige el estilo que coincida con el ambiente de tu mascota:
+
+- **Elefante** — felpa de maíz gris, orejas flojas grandes, vibra de gigante amable — ideal para perros tranquilos que gustan de sesiones de masticado largas
+- **Conejo** — felpa de maíz rosa, orejas largas, personalidad juguetona — perfecto para cachorros activos y razas enérgicas
+- **Loro** — felpa de maíz colorida rojo/azul/amarillo, detalle de pico — destaca en cualquier caja de juguetes, ideal para premios de entrenamiento
+
+Los tres modelos comparten la misma construcción duradera y mecanismo chirriador.
+
+## Limpieza dental y alivio del aburrimiento — para cachorros y perros adultos
+
+Con 260 × 340 mm, este juguete tiene el tamaño adecuado para perros pequeños, medianos y grandes. La textura suave de felpa de maíz es lo suficientemente gentil para cachorros en dentición (4–6 meses) que necesitan aliviar las encías doloridas, mientras que las costuras reforzadas aguantan a perros adultos con mandíbulas más fuertes.
+
+Deja uno en la jaula de tu cachorro para tiempos tranquilos solo, o lánzalo durante la búsqueda — el chirriador incorporado hace que cada sesión de juego se sienta nueva.
+
+## Embalaje listo para venta al por menor y logística mayorista
+
+Cada pieza viene con etiqueta de cartón de envío lista para reventa. Un cartón de exportación maestro contiene **50 pcs**, mide **47 × 47 × 41 cm**, pesa **7 kg** y ocupa **0.09 m³** — unos 37,700 pcs caben en un contenedor 40HQ. Los cartones usan corrugado de exportación de 5 capas con marcas de envío y etiquetas de contenido según lo solicitado.
+
+Códigos de barras FBA de Amazon, polybags y tarjetas de encabezado están disponibles para pedidos de marca privada.
+
+## Opciones OEM personalizadas
+
+| Opción | Detalles |
+|---|---|
+| Colores y formas personalizados | Tarifa de molde USD 300 · MOQ 1,000 pcs |
+| Impresión o grabado de logo | Incluido con formas personalizadas · MOQ 1,000 pcs |
+| Nuevas expresiones faciales | Servicio de diseño personalizado disponible |
+| Embalaje personalizado | Caja impresa, etiqueta colgante, tarjeta de encabezado · Tarifa de molde USD 200 · MOQ 3,000 pcs |
+| Etiquetas FBA de Amazon | Incluido con embalaje personalizado |
+
+Pago: T/T 50% depósito, 50% saldo antes del envío. NDA disponible para diseños personalizados.
+
+## Cumplimiento y seguridad
+
+Probado según **EN 71-1/-2/-3** y **ASTM F963-23** por laboratorios acreditados terceros, conforme a **CE** y **CPC**. Hecho con materiales no tóxicos — seguro incluso si tu perro lame o muerde la superficie. Se recomienda supervisar el juego para perros que muerden agresivamente.
