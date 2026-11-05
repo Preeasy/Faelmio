@@ -1,113 +1,131 @@
 ---
-title: "クリスピー・スクイーズ ポテト型フィジェットトイ"
-description: "パリッとしたワックスシェルと低速反発PUコアを備えたポテト型クリスピー・スクイーズ。3歳以上の子どもから大人まで使える感覚ストレス解消玩具。12個セット、EN71/ASTM/CE/CPC。"
-sku: "FM-CST-V8003A"
+title: クリスピー・スクイーズ ポテト型フィジェットトイ
+description: パリッとしたワックスシェルと低速反発PUコアを備えたポテト型クリスピー・スクイーズ。3歳以上の子どもから大人まで使える感覚ストレス解消玩具。12個セット、EN71/ASTM/CE/CPC。
+sku: FM-CST-V8003A
 factory_footage: true
-badge: "New"
+badge: New
 cover:
-  image: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-01-main.webp"
-  alt: "クリーム色の台座にかわいい表情のポテト型クリスピー・スクイーズ"
+  image: /images/toys/fidget-sensory-toys/FM-CST-V8003A-04-display.webp
+  alt: クリーム色の台座にかわいい表情のポテト型クリスピー・スクイーズ
 gallery:
-  - src: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-demo-15s.mp4"
-    type: video
-    poster: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-demo-poster.jpg"
-    alt: "クリスピー・ポテトスクイーズの360°デモ動画"
-  - src: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-01-main.webp"
-    alt: "ポテト型クリスピー・スクイーズ、ワックスコーティング低速反発PUスクイーズ"
-  - src: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-02-closeup.webp"
-    alt: "チョコレートドリップのワックスコーティングが施されたクリスピー・ポテト スクイーズの顔のクローズアップ"
-  - src: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-03-dimensions.webp"
-    alt: "クリスピー・ポテト スクイーズの寸法: 75 × 100 mm"
-  - src: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-04-display.webp"
-    alt: "12個のクリスピー・ポテト スクイーズ フィジェットトイが入った小売ディスプレイボックス"
-  - src: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-05-carton.webp"
-    alt: "クリスピー・ポテト スクイーズの輸出カートン"
-  - src: "/images/toys/fidget-sensory-toys/FM-CST-V8003A-06-face.webp"
-    alt: "クリスピー・ポテト スクイーズの代替フェイスデザイン"
-answer: "握るとパリッと割れる脆いワックスシェルが、ゆっくり元に戻る耐引裂性PUフォームコアを包み込むポテト型クリスピー・スクイーズです。12個アソートセット販売、MOQ 1セット。フィジェット収集家、3歳以上の子ども、10代、大人の感覚玩具ファン向けに設計しています。"
-price_range: "$13.39 – $13.59 / set"
+- src: /images/toys/fidget-sensory-toys/FM-CST-V8003A-04-display.webp
+  alt: 12個のクリスピー・ポテト スクイーズ フィジェットトイが入った小売ディスプレイボックス
+- src: /images/toys/fidget-sensory-toys/FM-CST-V8003A-01-main.webp
+  alt: ポテト型クリスピー・スクイーズ、ワックスコーティング低速反発PUスクイーズ
+- src: /images/toys/fidget-sensory-toys/FM-CST-V8003A-02-closeup.webp
+  alt: チョコレートドリップのワックスコーティングが施されたクリスピー・ポテト スクイーズの顔のクローズアップ
+- src: /images/toys/fidget-sensory-toys/FM-CST-V8003A-03-dimensions.webp
+  alt: 'クリスピー・ポテト スクイーズの寸法: 75 × 100 mm'
+- src: /images/toys/fidget-sensory-toys/FM-CST-V8003A-05-carton.webp
+  alt: クリスピー・ポテト スクイーズの輸出カートン
+- src: /images/toys/fidget-sensory-toys/FM-CST-V8003A-06-face.webp
+  alt: クリスピー・ポテト スクイーズの代替フェイスデザイン
+- src: /images/toys/fidget-sensory-toys/FM-CST-V8003A-demo-15s.mp4
+  type: video
+  poster: /images/toys/fidget-sensory-toys/FM-CST-V8003A-04-display.webp
+  alt: クリスピー・ポテトスクイーズの360°デモ動画
+answer: 握るとパリッと割れる脆いワックスシェルが、ゆっくり元に戻る耐引裂性PUフォームコアを包み込むポテト型クリスピー・スクイーズです。12個アソートセット販売、MOQ 1セット。フィジェット収集家、3歳以上の子ども、10代、大人の感覚玩具ファン向けに設計しています。
+price_range: $13.39 – $13.59 / set
 price_low: 13.39
 price_high: 13.59
-price_note: "FOB 義烏 · 1セット12個 · 500セット以上: $13.39"
-currency: "USD"
-moq: "1セット（12個）"
+price_note: 'FOB 義烏 · 1セット12個 · 500セット以上: $13.39'
+currency: USD
+moq: 1セット（12個）
 set_pcs: 12
-lead_time: "7日以内（在庫）· 15–20日（カスタム）"
-fob_port: "Yiwu / Ningbo"
+lead_time: 7日以内（在庫）· 15–20日（カスタム）
+fob_port: Yiwu / Ningbo
 oem_support: true
-material: "PU foam core + wax coating"
+material: PU foam core + wax coating
 min_age: 3
 net_weight_g: 60
-certifications: ["EN71", "ASTM F963-23", "CE", "CPC"]
-tags: ["クリスピー・フィジェットトイ", "ポテト型スクイーズ", "ワックスシェル スクイーズ", "低速反発PU", "感覚玩具", "ストレス解消", "フィジェットトイ 卸売"]
-keywords: ["ワックスシェル スクイーズ", "wax coated potato fidget toy", "crack pop squishy", "低速反発PU スクイーズ", "感覚フィジェットトイ", "フィジェットトイ 卸売", "ストレス解消 スクイーズ", "ポテト型スクイーズ玩具"]
+certifications:
+- EN71
+- ASTM F963-23
+- CE
+- CPC
+tags:
+- クリスピー・フィジェットトイ
+- ポテト型スクイーズ
+- ワックスシェル スクイーズ
+- 低速反発PU
+- 感覚玩具
+- ストレス解消
+- フィジェットトイ 卸売
+keywords:
+- ワックスシェル スクイーズ
+- wax coated potato fidget toy
+- crack pop squishy
+- 低速反発PU スクイーズ
+- 感覚フィジェットトイ
+- フィジェットトイ 卸売
+- ストレス解消 スクイーズ
+- ポテト型スクイーズ玩具
 specs:
-  - label: "サイズ"
-    value: "95 × 50 × 60 mm"
-  - label: "正味重量"
-    value: "60 g / pc"
-  - label: "総重量"
-    value: "92 g / pc (incl. packaging)"
-  - label: "素材"
-    value: "PU foam core + wax coating"
-  - label: "表面"
-    value: "Brittle wax shell, matte finish"
-  - label: "カラー"
-    value: "Assorted chocolate-drip faces"
-  - label: "内箱"
-    value: "12 pcs / color box, insert foam"
-  - label: "マスターカートン"
-    value: "12 boxes / ctn · 82 × 56.5 × 41 cm"
-  - label: "カートン総重量"
-    value: "19 kg"
-  - label: "コンテナ積載量"
-    value: "20GP: 21,168 pcs · 40HQ: 51,552 pcs"
-  - label: "推奨年齢"
-    value: "3+ years"
-  - label: "安全"
-    value: "Choking hazard — small parts. EN71 / ASTM F963 / CE / CPC"
+- label: サイズ
+  value: 95 × 50 × 60 mm
+- label: 正味重量
+  value: 60 g / pc
+- label: 総重量
+  value: 92 g / pc (incl. packaging)
+- label: 素材
+  value: PU foam core + wax coating
+- label: 表面
+  value: Brittle wax shell, matte finish
+- label: カラー
+  value: Assorted chocolate-drip faces
+- label: 内箱
+  value: 12 pcs / color box, insert foam
+- label: マスターカートン
+  value: 12 boxes / ctn · 82 × 56.5 × 41 cm
+- label: カートン総重量
+  value: 19 kg
+- label: コンテナ積載量
+  value: '20GP: 21,168 pcs · 40HQ: 51,552 pcs'
+- label: 推奨年齢
+  value: 3+ years
+- label: 安全
+  value: Choking hazard — small parts. EN71 / ASTM F963 / CE / CPC
 carton:
   pcs: 144
-  size: "82 × 56.5 × 41 cm"
+  size: 82 × 56.5 × 41 cm
   cbm: 0.19
   gw: 19
-  container: "51,552 pcs / 40HQ"
+  container: 51,552 pcs / 40HQ
 customization:
   product:
-    - "Custom colors and scent (PU foam + wax)"
-    - "ポテトへのロゴ印刷またはエンボス加工"
-    - "新しい表情デザイン"
-    - "Mould fee: USD 2500 · MOQ 1000 pcs"
+  - Custom colors and scent (PU foam + wax)
+  - ポテトへのロゴ印刷またはエンボス加工
+  - 新しい表情デザイン
+  - 'Mould fee: USD 2500 · MOQ 1000 pcs'
   packaging:
-    - "オリジナル印刷カラーボックス"
-    - "ハングタグ、ヘッダーカード、ポリ袋"
-    - "Amazon FBAバーコードおよびラベル"
-    - "Mould fee: USD 500 · MOQ 3000 pcs"
+  - オリジナル印刷カラーボックス
+  - ハングタグ、ヘッダーカード、ポリ袋
+  - Amazon FBAバーコードおよびラベル
+  - 'Mould fee: USD 500 · MOQ 3000 pcs'
   bundle:
-    - "1カートン内で表情デザインをミックス"
-    - "クリスピートマトシリーズやエッグシリーズと組み合わせ"
-    - "パーティーギフトや衝動買い向けのアソートセット"
+  - 1カートン内で表情デザインをミックス
+  - クリスピートマトシリーズやエッグシリーズと組み合わせ
+  - パーティーギフトや衝動買い向けのアソートセット
 faq:
-  - q: "クリスピー・ポテト スクイーズは子どもに安全ですか？"
-    a: "はい。公認の第三者検査機関（DTI / NBTS）によりEN71-1/-2/-3およびASTM F963-23の試験を受け、CEおよびCPCに準拠しています。小さな部品が含まれるため推奨年齢は3+です。"
-  - q: "「クリスピー」な感触はどのようなものですか？"
-    a: "外側のワックスコーティングはやや脆く、握るとパリッと音を立てて割れ、内側のPUフォームコアがゆっくりと元の形に戻ります。ワックスの外皮は繰り返し握ると徐々に摩耗することがあります — これは正常な現象で感覚体験の一部です。"
-  - q: "1セットあたりの価格はいくらですか？"
-    a: "FOB価格は1〜100セットが1セットUSD 13.59、100〜500セットがUSD 13.49、500セット以上がUSD 13.39です。1セットに12個入りです。"
-  - q: "最小注文数量（MOQ）はいくらですか？"
-    a: "在庫品のMOQは1セット（12個）です。カスタムカラー、香り、表情は1000 pcsから、カスタム包装は3000 pcsから承ります。"
-  - q: "1カートンに何個入りますか？"
-    a: "マスターカートン1箱にカラーボックス12箱×12 pcs＝144 pcsが入り、サイズは82 × 56.5 × 41 cm、重量19 kg、容積0.19 m³です。40HQコンテナには約51552 pcs積載できます。"
-  - q: "どのくらいの速さで出荷できますか？"
-    a: "在庫品は7日以内に出荷します。カスタム注文は15〜20日かかります。FOB、CIF、DDPの条件でお見積り可能で、他のフィジェットトイと同便で混載することもできます。"
-  - q: "クリスピー・スクイーズとは何ですか？"
-    a: "クリスピー・スクイーズは、低速反発PUフォームの芯に薄いワックス層をコーティングした感覚系フィジェットトイです。押すとワックスシェルがパキパキと割れ、その後フォームがゆっくり戻るため、音と触感の両方のフィードバックが得られます。"
-  - q: "大量生産前にサンプルを注文できますか？"
-    a: "はい。在庫カラーは1セット（12 pcs）単位で7日以内にサンプル出荷できます。カスタムカラーや表情は1000 pcsからの生産となります。"
+- q: クリスピー・ポテト スクイーズは子どもに安全ですか？
+  a: はい。公認の第三者検査機関（DTI / NBTS）によりEN71-1/-2/-3およびASTM F963-23の試験を受け、CEおよびCPCに準拠しています。小さな部品が含まれるため推奨年齢は3+です。
+- q: 「クリスピー」な感触はどのようなものですか？
+  a: 外側のワックスコーティングはやや脆く、握るとパリッと音を立てて割れ、内側のPUフォームコアがゆっくりと元の形に戻ります。ワックスの外皮は繰り返し握ると徐々に摩耗することがあります — これは正常な現象で感覚体験の一部です。
+- q: 1セットあたりの価格はいくらですか？
+  a: FOB価格は1〜100セットが1セットUSD 13.59、100〜500セットがUSD 13.49、500セット以上がUSD 13.39です。1セットに12個入りです。
+- q: 最小注文数量（MOQ）はいくらですか？
+  a: 在庫品のMOQは1セット（12個）です。カスタムカラー、香り、表情は1000 pcsから、カスタム包装は3000 pcsから承ります。
+- q: 1カートンに何個入りますか？
+  a: マスターカートン1箱にカラーボックス12箱×12 pcs＝144 pcsが入り、サイズは82 × 56.5 × 41 cm、重量19 kg、容積0.19 m³です。40HQコンテナには約51552 pcs積載できます。
+- q: どのくらいの速さで出荷できますか？
+  a: 在庫品は7日以内に出荷します。カスタム注文は15〜20日かかります。FOB、CIF、DDPの条件でお見積り可能で、他のフィジェットトイと同便で混載することもできます。
+- q: クリスピー・スクイーズとは何ですか？
+  a: クリスピー・スクイーズは、低速反発PUフォームの芯に薄いワックス層をコーティングした感覚系フィジェットトイです。押すとワックスシェルがパキパキと割れ、その後フォームがゆっくり戻るため、音と触感の両方のフィードバックが得られます。
+- q: 大量生産前にサンプルを注文できますか？
+  a: はい。在庫カラーは1セット（12 pcs）単位で7日以内にサンプル出荷できます。カスタムカラーや表情は1000 pcsからの生産となります。
 related:
-  - "/toys/fidget-sensory-toys/FM-CST-V8001A/"
-  - "/toys/fidget-sensory-toys/FM-CST-V8002A/"
-  - "/toys/plush-toys/FM-PL-014/"
+- /toys/fidget-sensory-toys/FM-CST-V8002A/
+- /toys/plush-toys/FM-PL-014/
 ---
 
 ポテト型のクリスピーなスクイーズ・フィジェットトイです。押すとパリッと割れるワックスコーティングの外殻と、押すたびにゆっくりと元の形に戻る耐引裂性PUフォームのコアが組み合わさり、唯一無二の感覚体験を提供します。静かなストレス解消、集中力のサポート、あるいはデスクの楽しい相棒を求めるフィジェット収集家、3歳以上の子ども、10代、大人向けに設計されています。
@@ -143,7 +161,7 @@ related:
 
 カスタムカラー、香り、ロゴエンボス、新しい表情デザインは1000 pcsから、Mould fee USD 2500で承ります。オリジナル印刷カラーボックス、ハングタグ、ヘッダーカード、ポリ袋、Amazon FBAラベルは3000 pcsから、包装Mould fee USD 500で対応します。デザインの所有権はお客様に帰属し、NDAも締結できます。
 
-このポテトは、[クリスピー・スクイーズトマトシリーズ](/toys/fidget-sensory-toys/FM-CST-V8002A/)や[クリスピー・スクイーズエッグシリーズ](/toys/fidget-sensory-toys/FM-CST-V8001A/)と組み合わせて、フィジェットのラインナップを完成させられます。当社の[OEM玩具サービス](/custom-toy-oem/)についてもお問い合わせください。
+このポテトは、[クリスピー・スクイーズトマトシリーズ](/toys/fidget-sensory-toys/FM-CST-V8002A/)や[クリスピー・スクイーズエッグシリーズ](/toys/fidget-sensory-toys/)と組み合わせて、フィジェットのラインナップを完成させられます。当社の[OEM玩具サービス](/custom-toy-oem/)についてもお問い合わせください。
 
 ## コンプライアンスと試験
 
