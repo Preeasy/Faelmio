@@ -1,81 +1,85 @@
 ---
-title: Jouet pour chien en peluche sonore, jouet à mâcher en molleton de maïs doux
-  en forme d'animal
-description: Jouet pour chien en peluche sonore en molleton de maïs doux, pour le
-  nettoyage dentaire et le brossage des dents. Jouet interactif pour chiot, anti-ennui,
-  sûr pour petits, moyens et grands chiens. Variants éléphant, lapin et perroquet.
+title: Jouet pour chien en peluche sonore, jouet à mâcher en molleton de maïs doux en forme d'animal
+description: Jouet pour chien en peluche sonore en molleton de maïs doux, pour le nettoyage dentaire et le brossage des dents.
+  Jouet interactif pour chiot, anti-ennui, sûr pour petits, moyens et grands chiens. Variants éléphant, lapin et perroquet.
 sku: FM-PST-P6001A
 badge: New
 cover:
-  image: /images/toys/pet-toys/FM-PST-P6001A-elephant-01.webp
-  alt: Jouet pour chien en peluche sonore en forme d'éléphant en molleton de maïs
-    doux
+  image: /images/toys/pet-toys/FM-PST-P6001A-rabbit-hero.webp
+  alt: Shiba Inu jouant dehors avec un jouet lapin en peluche pour chien
 gallery:
+- src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-hero.webp
+  alt: Shiba Inu jouant dehors avec un jouet lapin en peluche pour chien
+- src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-01.webp
+  alt: rabbit-01
+- src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-02.webp
+  alt: rabbit-02
+- src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-03.webp
+  alt: rabbit-03
+- src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-04.webp
+  alt: rabbit-04
+- src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-05.webp
+  alt: rabbit-05
 - type: video
   src: /images/toys/pet-toys/FM-PST-P6001A-demo-12s.mp4
-  poster: /images/toys/pet-toys/FM-PST-P6001A-elephant-01.webp
-- src: /images/toys/pet-toys/FM-PST-P6001A-elephant-01.webp
-  alt: Jouet pour chien en peluche sonore en forme d'éléphant en molleton de maïs
-    doux
-- src: /images/toys/pet-toys/FM-PST-P6001A-elephant-02.webp
-  alt: Jouet éléphant avec couineur intégré
+  poster: /images/toys/pet-toys/FM-PST-P6001A-rabbit-hero.webp
 variants:
+- name: Lapin
+  sku: FM-PST-P6001A-RB
+  color: Rose
+  gallery:
+  - src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-hero.webp
+    alt: Shiba Inu jouant dehors avec un jouet lapin en peluche pour chien
+  - src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-01.webp
+    alt: Lapin squeaky dog toy 01
+  - src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-02.webp
+    alt: Lapin squeaky dog toy 02
+  - src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-03.webp
+    alt: Lapin squeaky dog toy 03
+  - src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-04.webp
+    alt: Lapin squeaky dog toy 04
+  - src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-05.webp
+    alt: Lapin squeaky dog toy 05
+  - type: video
+    src: /images/toys/pet-toys/FM-PST-P6001A-demo-12s.mp4
+    poster: /images/toys/pet-toys/FM-PST-P6001A-rabbit-hero.webp
 - name: Éléphant
   sku: FM-PST-P6001A-EL
   color: Gris
   gallery:
   - type: video
     src: /images/toys/pet-toys/FM-PST-P6001A-demo-12s.mp4
-    poster: /images/toys/pet-toys/FM-PST-P6001A-elephant-01.webp
-  - src: /images/toys/pet-toys/FM-PST-P6001A-éléphant-01.webp
+    poster: /images/toys/pet-toys/FM-PST-P6001A-rabbit-hero.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-elephant-01.webp
     alt: Éléphant squeaky dog toy 01
-  - src: /images/toys/pet-toys/FM-PST-P6001A-éléphant-02.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-elephant-02.webp
     alt: Éléphant squeaky dog toy 02
-  - src: /images/toys/pet-toys/FM-PST-P6001A-éléphant-03.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-elephant-03.webp
     alt: Éléphant squeaky dog toy 03
-  - src: /images/toys/pet-toys/FM-PST-P6001A-éléphant-04.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-elephant-04.webp
     alt: Éléphant squeaky dog toy 04
-  - src: /images/toys/pet-toys/FM-PST-P6001A-éléphant-05.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-elephant-05.webp
     alt: Éléphant squeaky dog toy 05
-- name: Lapin
-  sku: FM-PST-P6001A-RB
-  color: Rose
-  gallery:
-  - type: video
-    src: /images/toys/pet-toys/FM-PST-P6001A-demo-12s.mp4
-    poster: /images/toys/pet-toys/FM-PST-P6001A-elephant-01.webp
-  - src: /images/toys/pet-toys/FM-PST-P6001A-lapin-01.webp
-    alt: Lapin squeaky dog toy 01
-  - src: /images/toys/pet-toys/FM-PST-P6001A-lapin-02.webp
-    alt: Lapin squeaky dog toy 02
-  - src: /images/toys/pet-toys/FM-PST-P6001A-lapin-03.webp
-    alt: Lapin squeaky dog toy 03
-  - src: /images/toys/pet-toys/FM-PST-P6001A-lapin-04.webp
-    alt: Lapin squeaky dog toy 04
-  - src: /images/toys/pet-toys/FM-PST-P6001A-lapin-05.webp
-    alt: Lapin squeaky dog toy 05
 - name: Perroquet
   sku: FM-PST-P6001A-PR
   color: Vert
   gallery:
   - type: video
     src: /images/toys/pet-toys/FM-PST-P6001A-demo-12s.mp4
-    poster: /images/toys/pet-toys/FM-PST-P6001A-elephant-01.webp
-  - src: /images/toys/pet-toys/FM-PST-P6001A-perroquet-01.webp
+    poster: /images/toys/pet-toys/FM-PST-P6001A-rabbit-hero.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-parrot-01.webp
     alt: Perroquet squeaky dog toy 01
-  - src: /images/toys/pet-toys/FM-PST-P6001A-perroquet-02.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-parrot-02.webp
     alt: Perroquet squeaky dog toy 02
-  - src: /images/toys/pet-toys/FM-PST-P6001A-perroquet-03.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-parrot-03.webp
     alt: Perroquet squeaky dog toy 03
-  - src: /images/toys/pet-toys/FM-PST-P6001A-perroquet-04.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-parrot-04.webp
     alt: Perroquet squeaky dog toy 04
-  - src: /images/toys/pet-toys/FM-PST-P6001A-perroquet-05.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-parrot-05.webp
     alt: Perroquet squeaky dog toy 05
-answer: 'Un jouet pour chien en peluche sonore en molleton de maïs doux, conçu pour
-  le brossage et le nettoyage des dents. Il soulage l''ennui et l''anxiété des chiens,
-  est sûr pour les chiots ainsi que pour les petits, moyens et grands chiens, et est
-  équipé d''un couineur intégré qui attire le chien pour jouer. Disponible en trois
-  motifs : éléphant, lapin et perroquet.'
+answer: 'Un jouet pour chien en peluche sonore en molleton de maïs doux, conçu pour le brossage et le nettoyage des dents.
+  Il soulage l''ennui et l''anxiété des chiens, est sûr pour les chiots ainsi que pour les petits, moyens et grands chiens,
+  et est équipé d''un couineur intégré qui attire le chien pour jouer. Disponible en trois motifs : éléphant, lapin et perroquet.'
 price_range: $3.69 – $3.85 / pièce
 price_low: 3.69
 price_high: 3.85
@@ -131,8 +135,7 @@ specs:
 - label: Chargement 40HQ
   value: 37 700 pcs
 - label: Performance
-  value: Couineur intégré, molleton de maïs doux, couture renforcée, rembourrage coton
-    PP, nettoyage dentaire, anti-ennui
+  value: Couineur intégré, molleton de maïs doux, couture renforcée, rembourrage coton PP, nettoyage dentaire, anti-ennui
 carton:
   pcs: 50
   cbm: 0.09
@@ -182,18 +185,17 @@ bullet_points:
 - Aide à nettoyer les dents et à éliminer la plaque pendant la mastication
 - Couture renforcée, durable et résistant aux morsures
 - Soulage l'ennui et l'anxiété, pour chiots et chiens de toutes tailles
-product_description: 'Ce jouet pour chien en peluche sonore en molleton de maïs doux
-  est doté d''un couineur intégré pour un jeu interactif, nettoie les dents en douceur,
-  présente une couture renforcée résistante aux morsures, soulage l''ennui de l''animal
-  et convient aux chiots et aux chiens de toutes tailles. Disponible en trois motifs
-  animaux : éléphant, lapin et perroquet.'
+product_description: 'Ce jouet pour chien en peluche sonore en molleton de maïs doux est doté d''un couineur intégré pour
+  un jeu interactif, nettoie les dents en douceur, présente une couture renforcée résistante aux morsures, soulage l''ennui
+  de l''animal et convient aux chiots et aux chiens de toutes tailles. Disponible en trois motifs animaux : éléphant, lapin
+  et perroquet.'
 faqs:
 - q: Ce jouet pour chien est-il sûr pour les chiots ?
-  a: Oui, il est fabriqué en molleton de maïs doux avec un matériau sûr et non toxique,
-    doux pour les gencives et les dents des chiots.
+  a: Oui, il est fabriqué en molleton de maïs doux avec un matériau sûr et non toxique, doux pour les gencives et les dents
+    des chiots.
 - q: Le couineur continue-t-il de fonctionner après des morsures répétées ?
-  a: Il adopte une couture renforcée pour une meilleure durabilité, mais nous recommandons
-    une supervision pour les chiens très mordeurs.
+  a: Il adopte une couture renforcée pour une meilleure durabilité, mais nous recommandons une supervision pour les chiens
+    très mordeurs.
 related:
 - /toys/plush-toys/
 - /toys/educational-stem-toys/

@@ -4,67 +4,77 @@ description: コーンフリースのやわらかいスキーキーぬいぐる�
 sku: FM-PST-P6001A
 badge: New
 cover:
-  image: /images/toys/pet-toys/FM-PST-P6001A-elephant-01.webp
-  alt: コーンフリースのやわらかいゾウのスキーキー犬用ぬいぐるみ
+  image: /images/toys/pet-toys/FM-PST-P6001A-rabbit-hero.webp
+  alt: 芝犬が屋外でぬいぐるみウサギの犬用おもちゃと遊ぶ様子
 gallery:
+- src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-hero.webp
+  alt: 芝犬が屋外でぬいぐるみウサギの犬用おもちゃと遊ぶ様子
+- src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-01.webp
+  alt: rabbit-01
+- src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-02.webp
+  alt: rabbit-02
+- src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-03.webp
+  alt: rabbit-03
+- src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-04.webp
+  alt: rabbit-04
+- src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-05.webp
+  alt: rabbit-05
 - type: video
   src: /images/toys/pet-toys/FM-PST-P6001A-demo-12s.mp4
-  poster: /images/toys/pet-toys/FM-PST-P6001A-elephant-01.webp
-- src: /images/toys/pet-toys/FM-PST-P6001A-elephant-01.webp
-  alt: コーンフリースのやわらかいゾウのスキーキー犬用ぬいぐるみ
-- src: /images/toys/pet-toys/FM-PST-P6001A-elephant-02.webp
-  alt: 内蔵スキーキー付きゾウの犬用おもちゃ
+  poster: /images/toys/pet-toys/FM-PST-P6001A-rabbit-hero.webp
 variants:
+- name: ウサギ
+  sku: FM-PST-P6001A-RB
+  color: ピンク
+  gallery:
+  - src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-hero.webp
+    alt: 芝犬が屋外でぬいぐるみウサギの犬用おもちゃと遊ぶ様子
+  - src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-01.webp
+    alt: ウサギ squeaky dog toy 01
+  - src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-02.webp
+    alt: ウサギ squeaky dog toy 02
+  - src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-03.webp
+    alt: ウサギ squeaky dog toy 03
+  - src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-04.webp
+    alt: ウサギ squeaky dog toy 04
+  - src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-05.webp
+    alt: ウサギ squeaky dog toy 05
+  - type: video
+    src: /images/toys/pet-toys/FM-PST-P6001A-demo-12s.mp4
+    poster: /images/toys/pet-toys/FM-PST-P6001A-rabbit-hero.webp
 - name: ゾウ
   sku: FM-PST-P6001A-EL
   color: グレー
   gallery:
   - type: video
     src: /images/toys/pet-toys/FM-PST-P6001A-demo-12s.mp4
-    poster: /images/toys/pet-toys/FM-PST-P6001A-elephant-01.webp
-  - src: /images/toys/pet-toys/FM-PST-P6001A-ゾウ-01.webp
+    poster: /images/toys/pet-toys/FM-PST-P6001A-rabbit-hero.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-elephant-01.webp
     alt: ゾウ squeaky dog toy 01
-  - src: /images/toys/pet-toys/FM-PST-P6001A-ゾウ-02.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-elephant-02.webp
     alt: ゾウ squeaky dog toy 02
-  - src: /images/toys/pet-toys/FM-PST-P6001A-ゾウ-03.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-elephant-03.webp
     alt: ゾウ squeaky dog toy 03
-  - src: /images/toys/pet-toys/FM-PST-P6001A-ゾウ-04.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-elephant-04.webp
     alt: ゾウ squeaky dog toy 04
-  - src: /images/toys/pet-toys/FM-PST-P6001A-ゾウ-05.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-elephant-05.webp
     alt: ゾウ squeaky dog toy 05
-- name: ウサギ
-  sku: FM-PST-P6001A-RB
-  color: ピンク
-  gallery:
-  - type: video
-    src: /images/toys/pet-toys/FM-PST-P6001A-demo-12s.mp4
-    poster: /images/toys/pet-toys/FM-PST-P6001A-elephant-01.webp
-  - src: /images/toys/pet-toys/FM-PST-P6001A-ウサギ-01.webp
-    alt: ウサギ squeaky dog toy 01
-  - src: /images/toys/pet-toys/FM-PST-P6001A-ウサギ-02.webp
-    alt: ウサギ squeaky dog toy 02
-  - src: /images/toys/pet-toys/FM-PST-P6001A-ウサギ-03.webp
-    alt: ウサギ squeaky dog toy 03
-  - src: /images/toys/pet-toys/FM-PST-P6001A-ウサギ-04.webp
-    alt: ウサギ squeaky dog toy 04
-  - src: /images/toys/pet-toys/FM-PST-P6001A-ウサギ-05.webp
-    alt: ウサギ squeaky dog toy 05
 - name: オウム
   sku: FM-PST-P6001A-PR
   color: グリーン
   gallery:
   - type: video
     src: /images/toys/pet-toys/FM-PST-P6001A-demo-12s.mp4
-    poster: /images/toys/pet-toys/FM-PST-P6001A-elephant-01.webp
-  - src: /images/toys/pet-toys/FM-PST-P6001A-オウム-01.webp
+    poster: /images/toys/pet-toys/FM-PST-P6001A-rabbit-hero.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-parrot-01.webp
     alt: オウム squeaky dog toy 01
-  - src: /images/toys/pet-toys/FM-PST-P6001A-オウム-02.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-parrot-02.webp
     alt: オウム squeaky dog toy 02
-  - src: /images/toys/pet-toys/FM-PST-P6001A-オウム-03.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-parrot-03.webp
     alt: オウム squeaky dog toy 03
-  - src: /images/toys/pet-toys/FM-PST-P6001A-オウム-04.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-parrot-04.webp
     alt: オウム squeaky dog toy 04
-  - src: /images/toys/pet-toys/FM-PST-P6001A-オウム-05.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-parrot-05.webp
     alt: オウム squeaky dog toy 05
 answer: コーンフリースのやわらかいスキーキーぬいぐるみ犬用噛むおもちゃで、歯磨きとデンタルケア用に設計されています。犬の退屈と不安を和らげ、子犬から小型・中型・大型犬まで安全です。内蔵スキーキーがペットの注意を引き、インタラクティブな遊びを促します。ゾウ、ウサギ、オウムの3種類から選べます。
 price_range: $3.69 – $3.85 / 個

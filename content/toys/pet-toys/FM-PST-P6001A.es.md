@@ -1,82 +1,86 @@
 ---
-title: Juguete de peluche con sonido para perro, juguete de masticar de felpa de maíz
-  suave
-description: Juguete de peluche con sonido para perro de felpa de maíz suave, para
-  limpieza dental y cuidado de dientes. Juguete interactivo para cachorros, alivia
-  el aburrimiento, seguro para perros pequeños, medianos y grandes. Variantes elefante,
+title: Juguete de peluche con sonido para perro, juguete de masticar de felpa de maíz suave
+description: Juguete de peluche con sonido para perro de felpa de maíz suave, para limpieza dental y cuidado de dientes. Juguete
+  interactivo para cachorros, alivia el aburrimiento, seguro para perros pequeños, medianos y grandes. Variantes elefante,
   conejo y loro.
 sku: FM-PST-P6001A
 badge: New
 cover:
-  image: /images/toys/pet-toys/FM-PST-P6001A-elephant-01.webp
-  alt: Juguete de peluche con sonido para perro en forma de elefante, felpa de maíz
-    suave
+  image: /images/toys/pet-toys/FM-PST-P6001A-rabbit-hero.webp
+  alt: Shiba Inu jugando al aire libre con juguete de conejo de peluche para perro
 gallery:
+- src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-hero.webp
+  alt: Shiba Inu jugando al aire libre con juguete de conejo de peluche para perro
+- src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-01.webp
+  alt: rabbit-01
+- src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-02.webp
+  alt: rabbit-02
+- src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-03.webp
+  alt: rabbit-03
+- src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-04.webp
+  alt: rabbit-04
+- src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-05.webp
+  alt: rabbit-05
 - type: video
   src: /images/toys/pet-toys/FM-PST-P6001A-demo-12s.mp4
-  poster: /images/toys/pet-toys/FM-PST-P6001A-elephant-01.webp
-- src: /images/toys/pet-toys/FM-PST-P6001A-elephant-01.webp
-  alt: Juguete de peluche con sonido para perro en forma de elefante, felpa de maíz
-    suave
-- src: /images/toys/pet-toys/FM-PST-P6001A-elephant-02.webp
-  alt: Juguete de elefante con sonido incorporado para perro
+  poster: /images/toys/pet-toys/FM-PST-P6001A-rabbit-hero.webp
 variants:
+- name: Conejo
+  sku: FM-PST-P6001A-RB
+  color: Rosa
+  gallery:
+  - src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-hero.webp
+    alt: Shiba Inu jugando al aire libre con juguete de conejo de peluche para perro
+  - src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-01.webp
+    alt: Conejo squeaky dog toy 01
+  - src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-02.webp
+    alt: Conejo squeaky dog toy 02
+  - src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-03.webp
+    alt: Conejo squeaky dog toy 03
+  - src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-04.webp
+    alt: Conejo squeaky dog toy 04
+  - src: /images/toys/pet-toys/FM-PST-P6001A-rabbit-05.webp
+    alt: Conejo squeaky dog toy 05
+  - type: video
+    src: /images/toys/pet-toys/FM-PST-P6001A-demo-12s.mp4
+    poster: /images/toys/pet-toys/FM-PST-P6001A-rabbit-hero.webp
 - name: Elefante
   sku: FM-PST-P6001A-EL
   color: Gris
   gallery:
   - type: video
     src: /images/toys/pet-toys/FM-PST-P6001A-demo-12s.mp4
-    poster: /images/toys/pet-toys/FM-PST-P6001A-elephant-01.webp
-  - src: /images/toys/pet-toys/FM-PST-P6001A-elefante-01.webp
+    poster: /images/toys/pet-toys/FM-PST-P6001A-rabbit-hero.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-elephant-01.webp
     alt: Elefante squeaky dog toy 01
-  - src: /images/toys/pet-toys/FM-PST-P6001A-elefante-02.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-elephant-02.webp
     alt: Elefante squeaky dog toy 02
-  - src: /images/toys/pet-toys/FM-PST-P6001A-elefante-03.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-elephant-03.webp
     alt: Elefante squeaky dog toy 03
-  - src: /images/toys/pet-toys/FM-PST-P6001A-elefante-04.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-elephant-04.webp
     alt: Elefante squeaky dog toy 04
-  - src: /images/toys/pet-toys/FM-PST-P6001A-elefante-05.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-elephant-05.webp
     alt: Elefante squeaky dog toy 05
-- name: Conejo
-  sku: FM-PST-P6001A-RB
-  color: Rosa
-  gallery:
-  - type: video
-    src: /images/toys/pet-toys/FM-PST-P6001A-demo-12s.mp4
-    poster: /images/toys/pet-toys/FM-PST-P6001A-elephant-01.webp
-  - src: /images/toys/pet-toys/FM-PST-P6001A-conejo-01.webp
-    alt: Conejo squeaky dog toy 01
-  - src: /images/toys/pet-toys/FM-PST-P6001A-conejo-02.webp
-    alt: Conejo squeaky dog toy 02
-  - src: /images/toys/pet-toys/FM-PST-P6001A-conejo-03.webp
-    alt: Conejo squeaky dog toy 03
-  - src: /images/toys/pet-toys/FM-PST-P6001A-conejo-04.webp
-    alt: Conejo squeaky dog toy 04
-  - src: /images/toys/pet-toys/FM-PST-P6001A-conejo-05.webp
-    alt: Conejo squeaky dog toy 05
 - name: Loro
   sku: FM-PST-P6001A-PR
   color: Verde
   gallery:
   - type: video
     src: /images/toys/pet-toys/FM-PST-P6001A-demo-12s.mp4
-    poster: /images/toys/pet-toys/FM-PST-P6001A-elephant-01.webp
-  - src: /images/toys/pet-toys/FM-PST-P6001A-loro-01.webp
+    poster: /images/toys/pet-toys/FM-PST-P6001A-rabbit-hero.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-parrot-01.webp
     alt: Loro squeaky dog toy 01
-  - src: /images/toys/pet-toys/FM-PST-P6001A-loro-02.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-parrot-02.webp
     alt: Loro squeaky dog toy 02
-  - src: /images/toys/pet-toys/FM-PST-P6001A-loro-03.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-parrot-03.webp
     alt: Loro squeaky dog toy 03
-  - src: /images/toys/pet-toys/FM-PST-P6001A-loro-04.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-parrot-04.webp
     alt: Loro squeaky dog toy 04
-  - src: /images/toys/pet-toys/FM-PST-P6001A-loro-05.webp
+  - src: /images/toys/pet-toys/FM-PST-P6001A-parrot-05.webp
     alt: Loro squeaky dog toy 05
-answer: 'Un juguete de peluche con sonido para perro de felpa de maíz suave, diseñado
-  para limpiar y cuidar los dientes. Alivia el aburrimiento y la ansiedad de los perros,
-  es seguro para cachorros y perros de tamaño pequeño, mediano y grande, y lleva un
-  sonido incorporado que atrae a las mascotas para jugar. Disponible en tres diseños:
-  elefante, conejo y loro.'
+answer: 'Un juguete de peluche con sonido para perro de felpa de maíz suave, diseñado para limpiar y cuidar los dientes. Alivia
+  el aburrimiento y la ansiedad de los perros, es seguro para cachorros y perros de tamaño pequeño, mediano y grande, y lleva
+  un sonido incorporado que atrae a las mascotas para jugar. Disponible en tres diseños: elefante, conejo y loro.'
 price_range: $3.69 – $3.85 / ud
 price_low: 3.69
 price_high: 3.85
@@ -133,8 +137,7 @@ specs:
 - label: Carga 40HQ
   value: 37.700 ud
 - label: Rendimiento
-  value: Sonido incorporado, felpa de maíz suave, costura reforzada, relleno de algodón
-    PP, limpieza dental, alivio del aburrimiento
+  value: Sonido incorporado, felpa de maíz suave, costura reforzada, relleno de algodón PP, limpieza dental, alivio del aburrimiento
 carton:
   pcs: 50
   cbm: 0.09
@@ -184,18 +187,15 @@ bullet_points:
 - Ayuda a limpiar los dientes y eliminar la placa durante la masticación
 - Costura reforzada, duradero y resistente a las mordeduras
 - Alivia el aburrimiento y la ansiedad, para cachorros y perros de todos los tamaños
-product_description: 'Este juguete de peluche con sonido para perro de felpa de maíz
-  suave lleva un sonido incorporado para jugar de forma interactiva, limpia los dientes
-  suavemente, tiene costura reforzada resistente a las mordeduras, alivia el aburrimiento
-  de la mascota y es adecuado para cachorros y perros de todos los tamaños. Disponible
-  en tres diseños de animales: elefante, conejo y loro.'
+product_description: 'Este juguete de peluche con sonido para perro de felpa de maíz suave lleva un sonido incorporado para
+  jugar de forma interactiva, limpia los dientes suavemente, tiene costura reforzada resistente a las mordeduras, alivia el
+  aburrimiento de la mascota y es adecuado para cachorros y perros de todos los tamaños. Disponible en tres diseños de animales:
+  elefante, conejo y loro.'
 faqs:
 - q: ¿Es seguro este juguete para cachorros?
-  a: Sí, está hecho de felpa de maíz suave con material seguro y no tóxico, respetuoso
-    con las encías y dientes de los cachorros.
+  a: Sí, está hecho de felpa de maíz suave con material seguro y no tóxico, respetuoso con las encías y dientes de los cachorros.
 - q: ¿Seguirá funcionando el sonido después de morder mucho?
-  a: Lleva costura reforzada para mayor durabilidad, pero recomendamos juego supervisado
-    para perros muy mordedores.
+  a: Lleva costura reforzada para mayor durabilidad, pero recomendamos juego supervisado para perros muy mordedores.
 related:
 - /toys/plush-toys/
 - /toys/educational-stem-toys/
