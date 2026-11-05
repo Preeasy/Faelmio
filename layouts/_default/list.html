@@ -16,8 +16,6 @@
 {{- /* brand story banner — first block on toy list pages */}}
 {{- if eq .Section "toys" }}
 {{- partial "brand-story-banner.html" (dict "show_cta" true) }}
-{{- /* factory footage — category-wide trust signal (opt-in per category via front matter) */}}
-{{- with .Params.factory_footage }}{{ partial "factory-footage.html" $.Page }}{{ end }}
 {{- end }}
 
 {{- $pages := union .RegularPages .Sections }}
@@ -51,6 +49,12 @@
 </article>
 {{- end }}
 </div>
+{{- end }}
+
+{{- /* factory footage — category-wide trust signal, below the product grid
+       (opt-in per category via front matter); compact mode matches card size */}}
+{{- if eq .Section "toys" }}
+{{- with .Params.factory_footage }}<div class="ff-compact">{{ partial "factory-footage.html" $.Page }}</div>{{ end }}
 {{- end }}
 
 {{- /* ItemList structured data for toy category + product listing pages */}}

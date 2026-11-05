@@ -1689,6 +1689,27 @@ img.img-missing { display: none !important; }
   .ff-card { flex: 0 0 70%; scroll-snap-align: start; }
 }
 
+/* ===== Compact factory footage — category list pages =====
+   Same container rhythm as .product-grid; videos capped to the
+   280px card-image height so the strip matches the grid visually. */
+.ff-compact {
+  width: 100%; max-width: var(--maxw);
+  margin: 28px auto 48px; padding-inline: var(--gutter);
+  box-sizing: border-box;
+}
+.ff-compact .factory-footage { margin: 0; }
+.ff-compact .ff-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.ff-compact .ff-video { aspect-ratio: auto; height: 280px; }
+@media (max-width: 1024px) {
+  .ff-compact .ff-grid { gap: 14px; }
+  .ff-compact .ff-video { height: 240px; }
+}
+@media (max-width: 640px) {
+  .ff-compact .ff-grid { gap: 10px; }
+  .ff-compact .ff-card { flex: 0 0 62%; }
+  .ff-compact .ff-video { height: 260px; }
+}
+
 /* ===== PDP variant selector ===== */
 .pdp-variants {
   margin: 16px 0 4px;
