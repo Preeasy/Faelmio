@@ -2,6 +2,7 @@
 title: クリスピー・スクイーズ トマト型フィジェットトイ
 description: パリッとしたワックスシェルと低速反発PUコアを備えたトマト型クリスピー・スクイーズ。3歳以上の子どもから大人まで使える感覚ストレス解消玩具。12個セット、EN71/ASTM/CE/CPC。
 sku: FM-CST-V8002A
+factory_footage: true
 badge: 新商品
 cover:
   image: /images/toys/fidget-sensory-toys/FM-CST-V8002A-05-display.webp

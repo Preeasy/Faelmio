@@ -2,6 +2,7 @@
 aliases:
   - /fr/toys/fidget-sensory-toys/push-pop-bubble/
 title: "Push Pop Bubble"
+factory_footage: true
 description: "Jouet sensoriel en silicone push-pop — soulagement du stress, concentration (TDAH), formes et couleurs multiples."
 cover:
   image: "https://images.faelmio.com/toys/fidget-sensory-toys/push-pop-bubble.webp"

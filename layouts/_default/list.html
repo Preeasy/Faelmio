@@ -16,6 +16,8 @@
 {{- /* brand story banner — first block on toy list pages */}}
 {{- if eq .Section "toys" }}
 {{- partial "brand-story-banner.html" (dict "show_cta" true) }}
+{{- /* factory footage — category-wide trust signal (opt-in per category via front matter) */}}
+{{- with .Params.factory_footage }}{{ partial "factory-footage.html" $.Page }}{{ end }}
 {{- end }}
 
 {{- $pages := union .RegularPages .Sections }}

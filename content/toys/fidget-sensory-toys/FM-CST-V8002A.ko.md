@@ -2,6 +2,7 @@
 title: 크리스피 스퀴시 토마토 피젯 토이
 description: 파삭파삭한 왁스 셸과 저속 반발 PU 코어를 갖춘 토마토형 크리스피 스퀴시 피젯 토이입니다. 3세 이상 어린이부터 청소년, 성인까지 즐기는 감각 스트레스 해소 완구. 12개 세트, EN71/ASTM/CE/CPC.
 sku: FM-CST-V8002A
+factory_footage: true
 badge: 신제품
 cover:
   image: /images/toys/fidget-sensory-toys/FM-CST-V8002A-05-display.webp

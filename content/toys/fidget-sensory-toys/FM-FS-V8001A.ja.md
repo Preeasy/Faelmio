@@ -2,6 +2,7 @@
 aliases:
   - /ja/toys/fidget-sensory-toys/push-pop-bubble/
 title: "プッシュポップバブル"
+factory_footage: true
 description: "シリコーン製プッシュポップ感覚玩具 — ストレス解消、ADHD集中、多彩な形状と色。"
 cover:
   image: "https://images.faelmio.com/toys/fidget-sensory-toys/push-pop-bubble.webp"

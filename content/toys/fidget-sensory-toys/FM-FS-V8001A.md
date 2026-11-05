@@ -2,6 +2,7 @@
 aliases:
   - /toys/fidget-sensory-toys/push-pop-bubble/
 title: "Push Pop Bubble"
+factory_footage: true
 description: "Silicone push-pop sensory toy — stress relief, ADHD focus, multiple shapes and colors."
 cover:
   image: "https://images.faelmio.com/toys/fidget-sensory-toys/push-pop-bubble.webp"
