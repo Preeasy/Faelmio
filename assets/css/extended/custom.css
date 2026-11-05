@@ -1700,6 +1700,9 @@ img.img-missing { display: none !important; }
 .ff-compact .factory-footage { margin: 0; }
 .ff-compact .ff-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
 .ff-compact .ff-video { aspect-ratio: auto; height: 280px; }
+/* nested use (PDP sits inside .pdp-shell which already provides
+   max-width + gutter) — strip the container rhythm, keep the caps */
+.ff-compact.ff-plain { max-width: none; margin: 24px 0; padding-inline: 0; }
 @media (max-width: 1024px) {
   .ff-compact .ff-grid { gap: 14px; }
   .ff-compact .ff-video { height: 240px; }

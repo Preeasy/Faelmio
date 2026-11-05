@@ -298,7 +298,7 @@
 
     {{- /* -------- factory footage (real clips) — opt-in per product -------- */}}
     {{- if .Params.factory_footage }}
-    {{- partial "factory-footage.html" . }}
+    <div class="ff-compact ff-plain">{{ partial "factory-footage.html" . }}</div>
     {{- end }}
 
     {{- /* -------- overview + specs -------- */}}
