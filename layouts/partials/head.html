@@ -22,10 +22,6 @@
     {{- .Summary | default (printf "%s - %s" .Title site.Title) }}{{- else }}
     {{- with site.Params.description }}{{ . }}{{- end }}{{- end }}{{- end -}}">
 <meta name="author" content="{{ site.Params.author }}">
-
-{{- /* 搜索引擎站长验证 */}}
-<meta name="msvalidate.01" content="B5D0726E150DA8C040602CB7CB9DD86A">
-
 <link rel="canonical" href="{{ if .Params.canonicalURL -}} {{ trim .Params.canonicalURL " " }} {{- else -}} {{ .Permalink }} {{- end }}">
 
 {{- /* Fonts: preconnect + async stylesheet (avoids the CSS @import render-blocking chain) */}}
