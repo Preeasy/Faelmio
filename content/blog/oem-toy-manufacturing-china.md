@@ -1,5 +1,6 @@
 ---
 title: "OEM Toy Manufacturing in China: A B2B Buyer's Playbook"
+seo_title: "OEM Toy Manufacturing in China: B2B Playbook"
 description: "Step-by-step guide to OEM toy development in China — from initial concept through tooling, production, QC and shipping. Real timelines, costs and pitfalls."
 date: "2026-03-05"
 tags: ["OEM", "manufacturing", "China", "factory"]

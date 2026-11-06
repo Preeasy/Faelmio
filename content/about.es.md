@@ -1,6 +1,7 @@
 ---
 title: "Sobre Faelmio — 13 Años Abasteciendo Juguetes desde Yiwu"
-description: "Faelmio es un equipo dedicado al abastecimiento de juguetes con base en Yiwu, China, operado por Yiwu Maxon Imp.&Exp.Co.,Ltd. Fundado en 2012, 13 años de comercio exterior y experiencia en cadenas de suministro de juguetes."
+seo_title: "Sobre Faelmio — Sourcing de Juguetes en Yiwu"
+description: "Faelmio es un equipo de sourcing de juguetes en Yiwu, China, de Yiwu Maxon Imp.&Exp.Co.,Ltd. Desde 2012 — 13 años de experiencia para compradores B2B y marcas de juguetes."
 about:
   eyebrow: "Sobre Faelmio"
   lede: "Un equipo pequeño y senior con base permanente en Yiwu — construyendo cadenas de suministro a largo plazo para marcas de juguetes que valoran la calidad, la transparencia y la entrega a tiempo."

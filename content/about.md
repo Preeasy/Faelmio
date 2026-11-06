@@ -1,6 +1,7 @@
 ---
 title: "About Faelmio — 13 Years Sourcing Toys from Yiwu"
-description: "Faelmio is a dedicated toy sourcing team based in Yiwu, China, operated by Yiwu Maxon Imp.&Exp.Co.,Ltd. Founded in 2012, 13 years of foreign trade and toy supply chain experience for B2B buyers, Amazon FBA sellers and independent toy brands."
+seo_title: "About Faelmio — Toy Sourcing Team in Yiwu"
+description: "Faelmio is a toy sourcing team in Yiwu, China, operated by Yiwu Maxon Imp.&Exp.Co.,Ltd. Since 2012 — 13 years of supply-chain experience for B2B buyers and toy brands."
 layout: about
 about:
   eyebrow: "About Faelmio"

@@ -1,5 +1,6 @@
 ---
 title: "Toy Safety Certifications Explained: CE, EN71, ASTM F963, GPSR"
+seo_title: "Toy Safety Certifications: CE, EN71, ASTM, GPSR"
 description: "Everything B2B toy buyers need to know about global toy safety certifications. Which ones you need, how to get them, and avoiding costly compliance mistakes."
 date: "2026-02-10"
 tags: ["certifications", "compliance", "CE", "EN71", "ASTM", "GPSR"]

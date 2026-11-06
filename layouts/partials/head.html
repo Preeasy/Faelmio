@@ -8,7 +8,7 @@
 {{- end }}
 
 {{- /* Title */}}
-<title>{{ if .IsHome }}{{ site.Title }}{{ else if and .IsPage (eq .Section "toys") }}{{ .Params.seo_title | default .Title }} | {{ site.Params.label.text }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ site.Title }}{{ end }}</title>
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Params.seo_title | default .Title }} | {{ site.Params.label.text }}{{ end }}</title>
 
 {{- /* Meta */}}
 {{- if .IsHome }}

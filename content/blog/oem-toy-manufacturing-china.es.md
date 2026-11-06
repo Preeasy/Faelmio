@@ -1,5 +1,6 @@
 ---
 title: "Fabricación OEM de Juguetes en China: Guía para Compradores B2B"
+seo_title: "Fabricación OEM de Juguetes en China: Guía B2B"
 description: "Guía paso a paso para el desarrollo de juguetes OEM en China — desde el concepto inicial hasta herramientas, producción y envío."
 date: "2026-03-05"
 tags: ["OEM", "fabricación", "China", "fábrica"]

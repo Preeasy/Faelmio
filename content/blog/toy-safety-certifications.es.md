@@ -1,5 +1,6 @@
 ---
 title: "Certificaciones de Seguridad en Juguetes: CE, EN71, ASTM F963, GPSR"
+seo_title: "Certificaciones de Juguetes: CE, EN71, ASTM, GPSR"
 description: "Todo lo que los compradores B2B necesitan saber sobre certificaciones globales de seguridad de juguetes."
 date: "2026-02-10"
 tags: ["certificaciones", "cumplimiento", "CE", "EN71"]
