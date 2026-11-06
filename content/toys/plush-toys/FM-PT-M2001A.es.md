@@ -1,8 +1,8 @@
 ---
 title: Peluche N de Mandela Catalogue, muñeco de peluche suave de personaje de terror, muñeco de peluche coleccionable
-description: Peluche N de The Mandela Catalogue, muñeco de peluche suave para fans del horror analógico. Diseño
-  clásico del personaje N con máscara bordada y cabello puntiagudo, felpa esponjosa + algodón PP, ideal para
-  colección, exhibición y regalo.
+seo_title: Peluche N de Mandela Catalogue, coleccionable
+lastmod: 2026-11-06
+description: Peluche N de The Mandela Catalogue, muñeco para fans del horror analógico. Diseño con máscara bordada, felpa + algodón PP, ideal para colección y regalo.
 sku: FM-PT-M2001A
 badge: New
 cover:

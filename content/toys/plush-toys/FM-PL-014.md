@@ -2,6 +2,7 @@
 aliases:
   - /toys/plush-toys/custom-plush/
 title: "Custom Plush Bear — OEM Soft Toy Manufacturing"
+lastmod: 2026-11-06
 description: "Fully custom plush bear manufactured in Yiwu: your fabric, colour, size and embroidered logo. MOQ 500 pcs, CE/EN71/ASTM tested, retail-ready packaging."
 answer: "A custom plush bear made to your own specification — size, fabric, colour and embroidered branding — produced by vetted Yiwu plush factories from 500 pcs, with CE/EN71 and ASTM test reports and packaging ready for retail or Amazon FBA."
 sku: "FM-PL-014"

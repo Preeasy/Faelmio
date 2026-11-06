@@ -160,9 +160,24 @@
           <div><dt>{{ i18n "lead_time" | default "Lead time" }}</dt><dd>{{ . }}</dd></div>{{ end }}
           {{- with .Params.fob_port }}
           <div><dt>{{ i18n "fob_port" | default "FOB port" }}</dt><dd>{{ . }}</dd></div>{{ end }}
+          {{- with .Params.material }}
+          <div><dt>{{ i18n "pdp_material" | default "Material" }}</dt><dd>{{ . }}</dd></div>{{ end }}
+          {{- with .Params.net_weight_g }}
+          <div><dt>{{ i18n "pdp_net_weight" | default "Net weight" }}</dt><dd>{{ . }} g</dd></div>{{ end }}
+          {{- with .Params.carton }}
+          {{- if and .pcs .size }}
+          <div><dt>{{ i18n "pdp_carton_pcs" | default "Pcs per carton" }}</dt><dd>{{ .pcs }} pcs · {{ .size }}</dd></div>{{ end }}
+          {{- end }}
           {{- if .Params.oem_support }}
           <div><dt>{{ i18n "pdp_customizable" | default "Customizable" }}</dt><dd>{{ i18n "yes" | default "Yes" }} · logo, colour, packaging</dd></div>{{ end }}
         </dl>
+
+        {{- if not .Lastmod.IsZero }}
+        <p class="pdp-updated">
+          {{ i18n "pdp_updated" | default "Specs & pricing last updated" }}
+          <time datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ .Lastmod.Format "2 Jan 2006" }}</time>
+        </p>
+        {{- end }}
 
         <div class="pdp-cta">
           <a class="pdp-btn pdp-btn-primary" href="#inquiry">{{ i18n "pdp_get_quote" | default "Get a Quote" }}</a>
@@ -448,6 +463,7 @@
 {{- end }}{{ end }}
 {{- $product := dict
   "@type" "Product"
+  "@id" (printf "%s#product" .Permalink)
   "name" .Title
   "description" (.Description | default .Title)
   "image" $imgs
@@ -455,7 +471,13 @@
   "brand" (dict "@type" "Brand" "name" $brand)
   "url" .Permalink
   "countryOfOrigin" "CN"
+  "isFamilyFriendly" true
 }}
+{{- with .Date }}{{ $product = merge $product (dict "datePublished" (.Format "2006-01-02")) }}{{ end }}
+{{- with .Lastmod }}{{ $product = merge $product (dict "dateModified" (.Format "2006-01-02")) }}{{ end }}
+{{- with .Params.keywords }}
+{{- $product = merge $product (dict "keywords" (delimit . ", ")) }}
+{{- else }}{{ with .Params.tags }}{{ $product = merge $product (dict "keywords" (delimit . ", ")) }}{{ end }}{{ end }}
 {{- with .Params.sku }}{{ $product = merge $product (dict "sku" . "mpn" .) }}{{ end }}
 {{- with .Params.material }}{{ $product = merge $product (dict "material" .) }}{{ end }}
 {{- with .Params.min_age }}{{ $product = merge $product (dict "audience" (dict "@type" "PeopleAudience" "suggestedMinAge" .)) }}{{ end }}
@@ -480,6 +502,19 @@
 {{- $product = merge $product (dict "offers" $offer) }}
 {{- end }}
 {{- $graph := slice $product }}
+{{- $webpage := dict
+  "@type" "WebPage"
+  "@id" (printf "%s#webpage" .Permalink)
+  "url" .Permalink
+  "name" .Title
+  "inLanguage" .Lang
+  "isPartOf" (dict "@id" (printf "%s#website" site.Home.Permalink))
+  "about" (dict "@id" (printf "%s#product" .Permalink))
+}}
+{{- with .Params.answer }}
+{{- $webpage = merge $webpage (dict "speakable" (dict "@type" "SpeakableSpecification" "cssSelector" (slice ".pdp-answer" ".pdp-title")) "abstract" .) }}
+{{- end }}
+{{- $graph = $graph | append $webpage }}
 {{- with .Params.faq }}
 {{- $qs := slice }}
 {{- range . }}{{ $qs = $qs | append (dict "@type" "Question" "name" .q "acceptedAnswer" (dict "@type" "Answer" "text" .a)) }}{{ end }}

@@ -1187,6 +1187,14 @@ img.img-missing { display: none !important; }
 }
 .pdp-facts dd { margin: 0; font-size: 0.92rem; font-weight: 600; color: var(--ink); }
 
+.pdp-updated {
+  margin: -8px 0 18px;
+  font-size: 0.78rem;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+}
+.pdp-updated time { color: var(--ink); font-weight: 600; }
+
 .pdp-cta { display: flex; gap: 10px; }
 .pdp-btn {
   display: inline-flex; align-items: center; justify-content: center;

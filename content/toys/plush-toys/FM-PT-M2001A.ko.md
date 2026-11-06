@@ -1,5 +1,7 @@
 ---
 title: Mandela Catalogue N 플러시 인형, 소프트 호러 캐릭터 봉제 인형, 컬렉터블 플러시 돌
+seo_title: 만델라 카탈로그 N 플러시, 컬렉션
+lastmod: 2026-11-06
 description: The Mandela Catalogue N 플러시, 아날로그 호러 팬을 위한 소프트 봉제 인형. 자수 마스크와 뾰족한 머리의 클래식 N 캐릭터 디자인, 폭신한 플러시 + PP면, 컬렉션, 디스플레이 및 선물용으로 적합.
 sku: FM-PT-M2001A
 badge: New

@@ -1,5 +1,7 @@
 ---
 title: Mandela Catalogue N ぬいぐるみ、ソフトホラーキャラクターぬいぐるみ、コレクタブルぬいぐるみドール
+seo_title: Mandela Catalogue N ぬいぐるみ コレクション
+lastmod: 2026-11-06
 description: The Mandela Catalogue N ぬいぐるみ、アナログホラーファンのためのソフトぬいぐるみドール。刺繍のマスクとスパイキーヘアを備えたクラシックなNキャラクターデザイン、ふわふわのプラッシュ + PP綿、コレクション、ディスプレイ、ギフトに最適。
 sku: FM-PT-M2001A
 badge: New

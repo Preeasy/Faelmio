@@ -1,7 +1,8 @@
 ---
 title: Mandela Catalogue N Plushie, Soft Horror Character Stuffed Toy, Collectible Plush Doll
-description: The Mandela Catalogue N plush, soft stuffed doll for analog horror fans. Classic N character design with
-  embroidered mask and spiky hair, fluffy plush + PP cotton, great for collection, display and gift giving.
+seo_title: Mandela Catalogue N Plushie, Horror Collectible Doll
+lastmod: 2026-11-06
+description: Mandela Catalogue N plushie, soft horror character stuffed toy for analog horror fans. Embroidered mask, spiky hair, fluffy plush + PP cotton, collectible doll.
 sku: FM-PT-M2001A
 badge: New
 cover:

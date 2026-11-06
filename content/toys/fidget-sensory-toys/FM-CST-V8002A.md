@@ -1,5 +1,6 @@
 ---
 title: Crispy Squishy Tomato Fidget Toy
+lastmod: 2026-11-06
 description: Crispy squishy tomato fidget toy with a crackling wax shell and slow-rebound PU core. Sensory stress relief for
   kids 3+, teens and adults. 12-pc sets, EN71/ASTM/CE/CPC.
 sku: FM-CST-V8002A

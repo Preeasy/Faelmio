@@ -2,7 +2,8 @@
 aliases:
   - /es/toys/plush-toys/custom-plush/
 title: "Oso de peluche personalizado — fabricación OEM de peluches"
-description: "Oso de peluche totalmente personalizado fabricado en Yiwu: su tela, color, tamaño y logotipo bordado. MOQ 500 piezas, probado CE/EN71/ASTM, embalaje listo para la venta."
+lastmod: 2026-11-06
+description: "Oso de peluche personalizado fabricado en Yiwu con tela, color, tamaño y logo bordado. MOQ 500 piezas, probado CE/EN71/ASTM, embalaje listo para la venta."
 answer: "Un oso de peluche personalizado fabricado según sus especificaciones: tamaño, tela, color y branding bordado, producido por fábricas de peluches certificadas de Yiwu desde 500 piezas, con informes de prueba CE/EN71 y ASTM y embalaje listo para la venta minorista o Amazon FBA."
 sku: "FM-PL-014"
 badge: "Probado CE · EN71 · ASTM"

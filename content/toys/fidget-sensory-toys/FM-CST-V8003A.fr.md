@@ -1,5 +1,6 @@
 ---
 title: Patate Squishy Crispy Anti-Stress
+lastmod: 2026-11-06
 description: Patate squishy crispy à coque de cire craquante et cœur PU à retour lent. Soulagement sensoriel pour enfants
   de 3+ et adultes. Lots de 12, EN71/ASTM/CE/CPC.
 sku: FM-CST-V8003A

@@ -1,7 +1,7 @@
 ---
 title: Squeaky Plush Dog Toy, Soft Corn Fleece Animal Chew Toy
-description: Soft corn fleece squeaky plush dog chew toy for teeth grinding & dental cleaning. Interactive puppy teething
-  toy for boredom relief, safe for small, medium & large dogs. Elephant, rabbit & parrot variants.
+lastmod: 2026-11-06
+description: Squeaky plush dog toy in soft corn fleece for teeth grinding & dental cleaning. Puppy teething toy, boredom relief, safe for small, medium & large dogs.
 sku: FM-PST-P6001A
 badge: New
 cover:

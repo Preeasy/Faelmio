@@ -1,5 +1,6 @@
 ---
 title: Tomate Squishy Crispy Antiestrés
+lastmod: 2026-11-06
 description: Tomate squishy crispy con cáscara de cera crujiente y núcleo PU. Alivio sensorial para niños de 3+, adolescentes
   y adultos. Lotes de 12, EN71/ASTM/CE/CPC.
 sku: FM-CST-V8002A

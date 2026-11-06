@@ -1,8 +1,8 @@
 ---
 title: Peluche N de Mandela Catalogue, douce peluche de personnage d'horreur, poupée en peluche de collection
-description: Peluche N de The Mandela Catalogue, douce poupée en peluche pour les fans d'horreur analogique. Design
-  classique du personnage N avec masque brodé et cheveux hérissés, peluche duveteuse + coton PP, idéale pour la
-  collection, l'exposition et le cadeau.
+seo_title: Peluche N Mandela Catalogue, collection
+lastmod: 2026-11-06
+description: Peluche N de The Mandela Catalogue, douce peluche pour fans d'horreur analogique. Masque brodé et cheveux hérissés, peluche duveteuse + coton PP, de collection.
 sku: FM-PT-M2001A
 badge: New
 cover:

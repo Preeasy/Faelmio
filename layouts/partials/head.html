@@ -2,13 +2,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 {{- if hugo.IsProduction | or (eq site.Params.env "production") | and (ne .Params.robotsNoIndex true) }}
-<meta name="robots" content="index, follow">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 {{- else }}
 <meta name="robots" content="noindex, nofollow">
 {{- end }}
 
 {{- /* Title */}}
-<title>{{ if .IsHome }}{{ site.Title }}{{ else if and .IsPage (eq .Section "toys") }}{{ .Title }} | {{ site.Params.label.text }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ site.Title }}{{ end }}</title>
+<title>{{ if .IsHome }}{{ site.Title }}{{ else if and .IsPage (eq .Section "toys") }}{{ .Params.seo_title | default .Title }} | {{ site.Params.label.text }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ site.Title }}{{ end }}</title>
 
 {{- /* Meta */}}
 {{- if .IsHome }}
@@ -33,7 +33,7 @@
 
 {{- /* Open Graph / Twitter Card */}}
 {{- $brand := site.Params.label.text | default site.Title }}
-{{- $ogTitle := cond .IsHome site.Title (printf "%s | %s" .Title $brand) }}
+{{- $ogTitle := cond .IsHome site.Title (printf "%s | %s" (.Params.seo_title | default .Title) $brand) }}
 {{- $ogDesc := site.Params.description }}
 {{- with .Description }}{{ $ogDesc = . }}{{ end }}
 {{- if and (not .Description) (or .IsPage .IsSection) }}{{ with .Summary }}{{ $ogDesc = . | plainify | truncate 200 }}{{ end }}{{ end }}
@@ -45,6 +45,14 @@
 {{- end }}
 {{- $locales := dict "en" "en_US" "es" "es_ES" "ja" "ja_JP" "fr" "fr_FR" "ko" "ko_KR" }}
 <meta property="og:type" content="{{ if and .IsPage (eq .Section "toys") }}product{{ else if .IsPage }}article{{ else }}website{{ end }}">
+{{- if and .IsPage (eq .Section "toys") }}
+{{- with .Params.price_low }}
+<meta property="product:price:amount" content="{{ printf "%.2f" (mul . 1.0) }}">
+<meta property="product:price:currency" content="{{ $.Params.currency | default "USD" }}">
+<meta property="product:availability" content="in stock">
+{{- end }}
+{{- with .Params.sku }}<meta property="product:retailer_item_id" content="{{ . }}">{{ end }}
+{{- end }}
 <meta property="og:site_name" content="{{ site.Title }}">
 <meta property="og:title" content="{{ $ogTitle }}">
 <meta property="og:description" content="{{ $ogDesc }}">

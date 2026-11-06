@@ -1,5 +1,6 @@
 ---
 title: クリスピー・スクイーズ ポテト型フィジェットトイ
+lastmod: 2026-11-06
 description: パリッとしたワックスシェルと低速反発PUコアを備えたポテト型クリスピー・スクイーズ。3歳以上の子どもから大人まで使える感覚ストレス解消玩具。12個セット、EN71/ASTM/CE/CPC。
 sku: FM-CST-V8003A
 factory_footage: true
