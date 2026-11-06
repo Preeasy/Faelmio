@@ -113,7 +113,6 @@ oem:
   - Custom printed color box
   - Hang tag, header card, polybag
   - Amazon FBA barcodes & labels
-  ip: true
   payment: 'T/T: 50% deposit, 50% balance before shipment'
 certifications_full:
 - name: EN 71-1/-2/-3
@@ -138,7 +137,7 @@ logistics:
   manual: As per requested
   barcode: As per requested
 bullet_points:
-- Official-style N character plush — faithfully restores the iconic look of N from The Mandela Catalogue analog horror series
+- Character-accurate design — faithfully restores the iconic look of N from The Mandela Catalogue analog horror series
 - Premium soft plush material — high-quality short plush filled with PP cotton, fluffy, skin-friendly and comfortable
 - Exquisite craft & detailed design — sewn mask pattern and spiky hair, stable sitting posture for display
 - Perfect gift choice — ideal present for Mandela Catalogue fans and horror lovers, for birthdays, holidays and fan meetups
@@ -176,9 +175,6 @@ faq:
 - q: What age is this plush suitable for?
   a: Recommended for ages 3 and up. It carries a small-parts choking-hazard warning, so it is not intended for
     children under 3 years.
-- q: Is this official licensed merchandise?
-  a: This is an inspired-by fan-style design produced by our partner factory. If you hold an IP license or your own
-    character artwork, our OEM service can produce your licensed design with NDA protection — design IP stays with you.
 - q: How is each doll packed?
   a: Each plush is individually sealed in a polybag, then packed in a 5-ply export carton of 12 pcs. Retail-ready
     packaging, custom color boxes and Amazon FBA labels are available on request.
@@ -242,7 +238,6 @@ Each doll ships in an individual polybag, 12 pcs per 5-ply export carton (40 × 
 |---|---|---|---|
 | Product customization | Custom colors and scented filling, logo printed or embroidered, new facial expression designs | 1,000 pcs | Mould fee USD 500 |
 | Packaging customization | Custom printed color box, hang tag, header card, polybag, Amazon FBA barcodes & labels | 3,000 pcs | Mould fee USD 300 |
-| IP / copyright | Your licensed character artwork produced under NDA — design IP stays with you | — | — |
 | Payment (custom) | T/T: 50% deposit, 50% balance before shipment | — | — |
 
 ## Compliance and safety

@@ -115,7 +115,6 @@ oem:
   - Boîte couleur imprimée personnalisée
   - Étiquette suspendue, carte-header, sachet polyéthylène
   - Codes-barres et étiquettes Amazon FBA
-  ip: true
   payment: 'T/T : 50 % d''acompte, 50 % du solde avant expédition'
 certifications_full:
 - name: EN 71-1/-2/-3
@@ -140,7 +139,7 @@ logistics:
   manual: Sur demande
   barcode: Sur demande
 bullet_points:
-- Peluche du personnage N de style officiel — restitue fidèlement le look iconique de N de la série d'horreur analogique The Mandela Catalogue
+- Design fidèle au personnage — restitue fidèlement le look iconique de N de la série d'horreur analogique The Mandela Catalogue
 - Matière en peluche douce premium — peluche courte de haute qualité remplie de coton PP, duveteuse, douce pour la peau et confortable
 - Artisanat exquis et design détaillé — motif de masque cousu et cheveux hérissés, posture assise stable pour l'exposition
 - Choix de cadeau parfait — présent idéal pour les fans de Mandela Catalogue et les amateurs d'horreur, pour les anniversaires, les fêtes et les rencontres de fans
@@ -181,10 +180,6 @@ faq:
 - q: Pour quel âge cette peluche convient-elle ?
   a: Recommandée pour les 3 ans et plus. Elle porte un avertissement de risque d'étouffement par petites pièces,
     elle n'est donc pas destinée aux enfants de moins de 3 ans.
-- q: Est-ce un produit officiel sous licence ?
-  a: Il s'agit d'un design de style fan inspiré, produit par notre usine partenaire. Si vous détenez une licence IP
-    ou votre propre artwork de personnage, notre service OEM peut produire votre design sous licence avec protection
-    NDA — l'IP du design reste chez vous.
 - q: Comment chaque poupée est-elle emballée ?
   a: Chaque peluche est scellée individuellement dans un polybag, puis emballée dans un carton d'export à 5 plis de
     12 pcs. Emballage prêt pour le retail, boîtes couleur personnalisées et étiquettes Amazon FBA disponibles sur
@@ -249,7 +244,6 @@ Chaque poupée est expédiée dans un polybag individuel, 12 pcs par carton d'ex
 |---|---|---|---|
 | Personnalisation du produit | Couleurs personnalisées et rembourrage parfumé, logo imprimé ou brodé, nouveaux designs d'expression faciale | 1 000 pcs | Frais de moule USD 500 |
 | Personnalisation de l'emballage | Boîte couleur imprimée personnalisée, étiquette suspendue, carte d'en-tête, polybag, codes-barres et étiquettes Amazon FBA | 3 000 pcs | Frais de moule USD 300 |
-| IP / droit d'auteur | Votre artwork de personnage sous licence produit sous NDA — l'IP du design reste chez vous | — | — |
 | Paiement (personnalisé) | T/T : 50 % d'acompte, 50 % du solde avant expédition | — | — |
 
 ## Conformité et sécurité
