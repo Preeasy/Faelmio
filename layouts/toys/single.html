@@ -349,6 +349,36 @@
 
     {{- /* customization & logistics now merged into specs aside above */}}
 
+    {{- /* -------- verified buyer reviews (renders only when real reviews exist) -------- */}}
+    {{- with .Params.reviews }}
+    {{- $sum := 0 }}
+    {{- range . }}{{ $sum = add $sum (int .rating) }}{{ end }}
+    {{- $avg := div (float $sum) (float (len .)) }}
+    <section class="pdp-reviews" id="reviews">
+      <header class="pdp-sec-head">
+        <p class="pdp-eyebrow">{{ i18n "pdp_reviews_eyebrow" | default "Verified buyer feedback" }}</p>
+        <h2>{{ i18n "pdp_reviews" | default "What buyers say" }}</h2>
+        <p class="pdp-review-summary">
+          <strong>{{ printf "%.1f" $avg }}</strong> / 5
+          <span>{{ i18n "pdp_reviews_count" | default "from" }} {{ len . }} {{ i18n "pdp_reviews_orders" | default "verified orders" }}</span>
+        </p>
+      </header>
+      <div class="pdp-review-grid">
+        {{- range . }}
+        <article class="pdp-review">
+          <div class="pdp-review-stars" aria-label="{{ .rating }} / 5">★★★★★<span class="pdp-review-fill" style="width: {{ mul (div (float .rating) 5.0) 100 }}%">★★★★★</span></div>
+          <p class="pdp-review-body">{{ .body }}</p>
+          <footer class="pdp-review-meta">
+            <strong>{{ .author }}</strong>
+            {{- with .context }}<span>{{ . }}</span>{{- end }}
+            {{- with .date }}<time datetime="{{ . }}">{{ . }}</time>{{- end }}
+          </footer>
+        </article>
+        {{- end }}
+      </div>
+    </section>
+    {{- end }}
+
     {{- /* -------- FAQ (AEO) -------- */}}
     {{- with .Params.faq }}
     <section class="pdp-faq" id="faq">
@@ -500,6 +530,24 @@
       "url" .Permalink }}
 {{- with .Params.price_high }}{{ $offer = merge $offer (dict "highPrice" (printf "%.2f" (mul . 1.0))) }}{{ end }}
 {{- $product = merge $product (dict "offers" $offer) }}
+{{- end }}
+{{- /* aggregateRating / review are emitted ONLY when real, on-page buyer reviews exist.
+       Never populate these fields with invented data. */}}
+{{- with .Params.reviews }}
+{{- $sum := 0 }}{{ $reviews := slice }}
+{{- range . }}
+  {{- $sum = add $sum (int .rating) }}
+  {{- $reviews = $reviews | append (dict
+        "@type" "Review"
+        "reviewRating" (dict "@type" "Rating" "ratingValue" (int .rating) "bestRating" 5 "worstRating" 1)
+        "author" (dict "@type" "Person" "name" .author)
+        "reviewBody" .body
+        "datePublished" .date) }}
+{{- end }}
+{{- $avg := div (float $sum) (float (len .)) }}
+{{- $product = merge $product (dict
+      "aggregateRating" (dict "@type" "AggregateRating" "ratingValue" (printf "%.1f" $avg) "reviewCount" (len .) "bestRating" 5 "worstRating" 1)
+      "review" $reviews) }}
 {{- end }}
 {{- $graph := slice $product }}
 {{- $webpage := dict

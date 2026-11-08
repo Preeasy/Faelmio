@@ -204,3 +204,8 @@ footer_terms: "利用規約"
 last_updated: "最終更新"
 static_cta_title: "コンプライアンス・配送・お支払いについてご質問は？"
 static_cta_sub: "評価中のSKUまたは製品をお知らせください。必要書類・費用・納期を24時間以内にご返信します。"
+
+pdp_reviews_eyebrow: "購入者様の評価"
+pdp_reviews: "バイヤーの声"
+pdp_reviews_count: "全"
+pdp_reviews_orders: "件の検証済み注文"

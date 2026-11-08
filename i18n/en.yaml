@@ -204,3 +204,8 @@ footer_terms: "Terms of service"
 last_updated: "Last updated"
 static_cta_title: "Questions about compliance, shipping or payment?"
 static_cta_sub: "Send us the SKU or product you're evaluating and we'll reply with the exact documents, costs and lead times within 24 hours."
+
+pdp_reviews_eyebrow: "Verified buyer feedback"
+pdp_reviews: "What buyers say"
+pdp_reviews_count: "from"
+pdp_reviews_orders: "verified orders"

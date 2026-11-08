@@ -204,3 +204,8 @@ footer_terms: "Términos del servicio"
 last_updated: "Última actualización"
 static_cta_title: "¿Dudas sobre cumplimiento, envío o pago?"
 static_cta_sub: "Envíenos el SKU o producto que está evaluando y le responderemos con los documentos exactos, costes y plazos en 24 horas."
+
+pdp_reviews_eyebrow: "Opiniones verificadas"
+pdp_reviews: "Lo que dicen los compradores"
+pdp_reviews_count: "de"
+pdp_reviews_orders: "pedidos verificados"

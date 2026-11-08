@@ -204,3 +204,8 @@ footer_terms: "서비스 약관"
 last_updated: "최종 업데이트"
 static_cta_title: "규정 준수, 배송 또는 결제에 대해 궁금하신가요?"
 static_cta_sub: "평가 중인 SKU 또는 제품을 알려주시면 필요한 서류, 비용, 리드타임을 24시간 이내에 회신해 드립니다."
+
+pdp_reviews_eyebrow: "구매자 검증 리뷰"
+pdp_reviews: "바이어 후기"
+pdp_reviews_count: "총"
+pdp_reviews_orders: "건 검증된 주문"
