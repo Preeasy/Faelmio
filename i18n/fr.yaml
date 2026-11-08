@@ -194,3 +194,13 @@ factory_cap1: "Stock d'entrepôt — plus de 40 catégories de jouets à Yiwu"
 factory_cap2: "Cartons d'export — emballage prêt pour la vente"
 factory_cap3: "Atelier d'emballage — contrôle qualité et groupage"
 pdp_variant: 'Modèle'
+
+footer_resources: "Ressources acheteurs"
+footer_quality: "Qualité et conformité"
+footer_shipping: "Expédition et logistique"
+footer_order: "Comment commander"
+footer_privacy: "Politique de confidentialité"
+footer_terms: "Conditions de service"
+last_updated: "Dernière mise à jour"
+static_cta_title: "Des questions sur la conformité, l'expédition ou le paiement ?"
+static_cta_sub: "Envoyez-nous le SKU ou le produit que vous évaluez et nous vous répondrons avec les documents exacts, les coûts et les délais sous 24 heures."

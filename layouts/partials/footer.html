@@ -45,6 +45,29 @@
       </ul>
     </div>
 
+    {{- $res := slice }}
+    {{- range (slice "/quality-compliance/" "/shipping-logistics/" "/how-to-order/" "/privacy/" "/terms/") }}
+      {{- with site.GetPage . }}
+        {{- $res = $res | append (dict "p" . "key" $.RelPermalink) }}
+      {{- end }}
+    {{- end }}
+    {{- if $res }}
+    <div class="footer-col">
+      <strong>{{ i18n "footer_resources" | default "Buyer resources" }}</strong>
+      <ul>
+        {{- range $res }}
+        {{- $label := "" }}
+        {{- if in .p.RelPermalink "quality-compliance" }}{{ $label = i18n "footer_quality" | default "Quality & compliance" }}
+        {{- else if in .p.RelPermalink "shipping-logistics" }}{{ $label = i18n "footer_shipping" | default "Shipping & logistics" }}
+        {{- else if in .p.RelPermalink "how-to-order" }}{{ $label = i18n "footer_order" | default "How to order" }}
+        {{- else if in .p.RelPermalink "privacy" }}{{ $label = i18n "footer_privacy" | default "Privacy policy" }}
+        {{- else }}{{ $label = i18n "footer_terms" | default "Terms of service" }}{{ end }}
+        <li><a href="{{ .p.RelPermalink }}">{{ $label }}</a></li>
+        {{- end }}
+      </ul>
+    </div>
+    {{- end }}
+
     <div class="footer-col footer-contact">
       <strong>{{ i18n "footer_contact" | default "Get in touch" }}</strong>
       <ul>

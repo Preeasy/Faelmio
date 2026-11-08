@@ -194,3 +194,13 @@ factory_cap1: '倉庫在庫 — 義烏に40以上の玩具カテゴリーを保�
 factory_cap2: '輸出カートン — 小売対応の梱包'
 factory_cap3: '梱包ライン — 品質検査と混載'
 pdp_variant: 'スタイル'
+
+footer_resources: "バイヤー向け情報"
+footer_quality: "品質・コンプライアンス"
+footer_shipping: "配送・物流"
+footer_order: "ご注文の流れ"
+footer_privacy: "プライバシーポリシー"
+footer_terms: "利用規約"
+last_updated: "最終更新"
+static_cta_title: "コンプライアンス・配送・お支払いについてご質問は？"
+static_cta_sub: "評価中のSKUまたは製品をお知らせください。必要書類・費用・納期を24時間以内にご返信します。"

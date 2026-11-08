@@ -194,3 +194,13 @@ factory_cap1: 'Warehouse stock — 40+ toy categories held in Yiwu'
 factory_cap2: 'Export cartons — retail-ready packaging'
 factory_cap3: 'Packing floor — QC and consolidation'
 pdp_variant: 'Style'
+
+footer_resources: "Buyer resources"
+footer_quality: "Quality & compliance"
+footer_shipping: "Shipping & logistics"
+footer_order: "How to order"
+footer_privacy: "Privacy policy"
+footer_terms: "Terms of service"
+last_updated: "Last updated"
+static_cta_title: "Questions about compliance, shipping or payment?"
+static_cta_sub: "Send us the SKU or product you're evaluating and we'll reply with the exact documents, costs and lead times within 24 hours."

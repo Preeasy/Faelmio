@@ -194,3 +194,13 @@ factory_cap1: 'Stock en almacén — más de 40 categorías de juguetes en Yiwu'
 factory_cap2: 'Cajas de exportación — embalaje listo para retail'
 factory_cap3: 'Línea de embalaje — control de calidad y consolidación'
 pdp_variant: 'Diseño'
+
+footer_resources: "Recursos para compradores"
+footer_quality: "Calidad y cumplimiento"
+footer_shipping: "Envío y logística"
+footer_order: "Cómo comprar"
+footer_privacy: "Política de privacidad"
+footer_terms: "Términos del servicio"
+last_updated: "Última actualización"
+static_cta_title: "¿Dudas sobre cumplimiento, envío o pago?"
+static_cta_sub: "Envíenos el SKU o producto que está evaluando y le responderemos con los documentos exactos, costes y plazos en 24 horas."

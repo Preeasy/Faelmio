@@ -194,3 +194,13 @@ factory_cap1: '창고 재고 — 이우에 40개 이상의 완구 카테고리 �
 factory_cap2: '수출 카톤 — 리테일용 포장'
 factory_cap3: '포장 라인 — 품질 검사 및 통합'
 pdp_variant: '스타일'
+
+footer_resources: "바이어 자료실"
+footer_quality: "품질 및 규정 준수"
+footer_shipping: "배송 및 물류"
+footer_order: "주문 방법"
+footer_privacy: "개인정보 처리방침"
+footer_terms: "서비스 약관"
+last_updated: "최종 업데이트"
+static_cta_title: "규정 준수, 배송 또는 결제에 대해 궁금하신가요?"
+static_cta_sub: "평가 중인 SKU 또는 제품을 알려주시면 필요한 서류, 비용, 리드타임을 24시간 이내에 회신해 드립니다."

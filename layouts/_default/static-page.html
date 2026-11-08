@@ -1,0 +1,49 @@
+{{- define "main" }}
+<article class="static-page">
+  <header class="static-hero">
+    <div class="container">
+      {{- partial "breadcrumbs.html" . }}
+      {{- with .Params.eyebrow }}<span class="section-eyebrow">{{ . }}</span>{{- end }}
+      <h1 class="static-title">{{ .Title }}</h1>
+      {{- with .Description }}<p class="static-lede">{{ . }}</p>{{- end }}
+      {{- with .Params.updated }}<p class="static-updated">{{ i18n "last_updated" | default "Last updated" }}: {{ . }}</p>{{- end }}
+      {{- with .Params.hero_cta }}
+      <div class="static-hero-actions">
+        {{- range . }}
+        <a class="btn {{ .style | default "btn-primary" }}" href="{{ .url | absLangURL }}">{{ .label }}</a>
+        {{- end }}
+      </div>
+      {{- end }}
+    </div>
+  </header>
+
+  {{- with .Params.facts }}
+  <section class="static-facts">
+    <div class="container">
+      <div class="about-stats">
+        {{- range . }}
+        <div class="about-stat"><strong>{{ .value }}</strong><span>{{ .label }}</span></div>
+        {{- end }}
+      </div>
+    </div>
+  </section>
+  {{- end }}
+
+  <div class="container static-body">
+    <div class="post-content md-content static-prose">
+      {{- partial "anchored_headings.html" .Content -}}
+    </div>
+  </div>
+
+  <section class="cta-section static-cta">
+    <div class="container">
+      <h2>{{ with .Params.cta_title }}{{ . }}{{ else }}{{ i18n "static_cta_title" | default "Questions about compliance, shipping or payment?" }}{{ end }}</h2>
+      <p>{{ with .Params.cta_sub }}{{ . }}{{ else }}{{ i18n "static_cta_sub" | default "Send us the SKU or product you're evaluating and we'll reply with the exact documents, costs and lead times within 24 hours." }}{{ end }}</p>
+      <div class="cta-actions">
+        <a class="btn btn-primary" href="{{ "/contact/" | absLangURL }}">{{ i18n "nav_cta" | default "Get a Quote" }}</a>
+        <a class="btn btn-secondary" href="https://wa.me/{{ site.Params.contact.whatsapp | default "8618257499725" }}" target="_blank" rel="noopener">{{ i18n "chat_whatsapp" | default "Chat on WhatsApp" }}</a>
+      </div>
+    </div>
+  </section>
+</article>
+{{- end }}
