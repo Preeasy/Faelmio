@@ -139,7 +139,7 @@ Send carton count, gross weight, destination and — for Amazon — the warehous
   <input type="hidden" name="_subject" value="Shipping Quote Request | Faelmio">
   <input type="hidden" name="_next" value="https://www.faelmio.com/thanks/">
   <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_honeypot" value="">
+  <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
   <label for="sh_name">Full Name *</label>
   <input type="text" id="sh_name" name="name" required>
   <label for="sh_email">Business Email *</label>

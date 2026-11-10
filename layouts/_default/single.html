@@ -43,9 +43,9 @@
     {{- $product := .Title }}
     <form class="contact-form compact" action="https://formsubmit.co/maxon@maxoncn.com" method="POST">
       <input type="hidden" name="_subject" value="Product Inquiry | {{ .Title }} | Faelmio">
-      <input type="hidden" name="_next" value="https://www.faelmio.com/thanks/">
+      <input type="hidden" name="_next" value="{{ "/thanks/" | absLangURL }}">
       <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_honeypot" value="">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
       <input type="hidden" name="product" value="{{ .Title }}">
       <input type="hidden" name="source_url" value="{{ .Permalink }}">
       <div class="form-grid">

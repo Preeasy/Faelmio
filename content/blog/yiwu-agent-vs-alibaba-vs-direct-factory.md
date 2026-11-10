@@ -1,7 +1,7 @@
 ---
 title: "Yiwu Sourcing Agent vs Alibaba vs Buying Direct: Which Wins in 2026?"
 seo_title: "Sourcing Agent vs Alibaba vs Direct Factory (2026)"
-description: "A line-by-line comparison of sourcing toys through a Yiwu agent, on Alibaba, or direct from a Chinese factory: real cost per route, hidden risks, and which one fits your order size."
+description: "A line-by-line comparison of sourcing toys via a Yiwu agent, Alibaba, or direct from a Chinese factory: real cost, hidden risks, and fit by order size."
 date: "2026-11-10"
 tags: ["sourcing", "alibaba", "agent", "MOQ"]
 ---

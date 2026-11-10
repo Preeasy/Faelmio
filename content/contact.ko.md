@@ -6,9 +6,9 @@ description: "장난감 소싱 문의나 OEM 견적 요청을 이우 팀으로 �
 
 <form class="contact-form" action="https://formsubmit.co/maxon@maxoncn.com" method="POST">
   <input type="hidden" name="_subject" value="새 장난감 소싱 문의 | maxoncn.com">
-  <input type="hidden" name="_next" value="https://www.faelmio.com/thanks/">
+  <input type="hidden" name="_next" value="https://www.faelmio.com/ko/thanks/">
   <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_honeypot" value="">
+  <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
   <label for="name">성명 *</label>
   <input type="text" id="name" name="name" required>
   <label for="email">비즈니스 이메일 *</label>

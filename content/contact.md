@@ -8,7 +8,7 @@ Send your inquiry with product pictures, target MOQ and specifications. We reply
   <input type="hidden" name="_subject" value="New Toy Sourcing Inquiry | maxoncn.com">
   <input type="hidden" name="_next" value="https://www.faelmio.com/thanks/">
   <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_honeypot" value="">
+  <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
   <label for="name">Full Name *</label>
   <input type="text" id="name" name="name" required>
   <label for="email">Business Email *</label>

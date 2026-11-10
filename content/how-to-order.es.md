@@ -135,7 +135,7 @@ Las reclamaciones se presentan por escrito con fotografías. Respondemos en un p
   <input type="hidden" name="_subject" value="Nueva Consulta de Pedido | Faelmio">
   <input type="hidden" name="_next" value="https://www.faelmio.com/es/thanks/">
   <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_honeypot" value="">
+  <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
   <label for="ord_name">Nombre Completo *</label>
   <input type="text" id="ord_name" name="name" required>
   <label for="ord_email">Correo Empresarial *</label>

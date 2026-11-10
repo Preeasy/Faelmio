@@ -1,6 +1,7 @@
 ---
 title: "Thank You"
 description: "We received your inquiry. We will reply within 24 hours."
+robotsNoIndex: true
 ---
 Thank you for your inquiry!
 We have received your message and will get back to you within 24 hours.

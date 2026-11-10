@@ -1,6 +1,6 @@
 ---
 title: "Juguetes Fidget y Sensoriales"
-seo_title: "Juguetes Fidget y Sensoriales al por mayor desde Yiwu — OEM y stock"
+seo_title: "Juguetes Fidget y Sensoriales al por mayor | Yiwu"
 factory_footage: true
 description: "Pop its, fidget spinners, alivio de estrés y juguetes sensoriales para todas las edades."
 ---

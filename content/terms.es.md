@@ -1,7 +1,7 @@
 ---
 title: "Condiciones del Servicio"
 seo_title: "Condiciones del Servicio"
-description: "Condiciones del servicio de abastecimiento de juguetes de Faelmio: validez de las cotizaciones, pago, propiedad del utillaje, inspección, responsabilidad de cumplimiento y responsabilidad legal."
+description: "Condiciones del servicio de Faelmio: validez de cotizaciones, pago, propiedad del utillaje, inspección, cumplimiento y responsabilidad legal."
 layout: static-page
 eyebrow: "Legal"
 updated: "2026-11-08"

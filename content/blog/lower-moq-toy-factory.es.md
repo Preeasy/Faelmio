@@ -1,7 +1,7 @@
 ---
 title: "Cómo Reducir el MOQ con Fábricas de Juguetes Chinas (Sin Pagar Más)"
 seo_title: "Cómo Negociar un MOQ de Juguetes Más Bajo en China"
-description: "Por qué las fábricas chinas de juguetes fijan cantidades mínimas de pedido, qué palancas las mueven de verdad y las cuatro tácticas que bajan un MOQ de 1,000 piezas a 300 sin penalización de precio."
+description: "Por qué las fábricas chinas fijan MOQ, qué palancas los mueven y cuatro tácticas para bajar de 1.000 a 300 piezas sin penalización de precio."
 date: "2026-11-10"
 tags: ["MOQ", "abastecimiento", "negociación", "fábrica"]
 ---

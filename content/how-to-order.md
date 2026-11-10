@@ -135,7 +135,7 @@ Claims are raised in writing with photographs. We respond within 2 working days 
   <input type="hidden" name="_subject" value="New Order Enquiry | Faelmio">
   <input type="hidden" name="_next" value="https://www.faelmio.com/thanks/">
   <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_honeypot" value="">
+  <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
   <label for="ord_name">Full Name *</label>
   <input type="text" id="ord_name" name="name" required>
   <label for="ord_email">Business Email *</label>

@@ -1,7 +1,7 @@
 ---
 title: "Envío de Juguetes desde China: EXW, FOB, DDP y Preparación FBA"
 seo_title: "Envío de Juguetes desde China: EXW, FOB, DDP, FBA"
-description: "Envío de juguetes desde Yiwu y Ningbo — comparación de EXW, FOB y DDP, tiempos de tránsito marítimo por destino, opciones aéreas y ferroviarias, consolidación y preparación para Amazon FBA."
+description: "Envío de juguetes desde Yiwu y Ningbo: EXW, FOB y DDP, tiempos de tránsito por destino, opciones aéreas, consolidación y preparación FBA."
 layout: static-page
 eyebrow: "Envío y Logística"
 updated: "2026-11-08"
@@ -139,7 +139,7 @@ Envíe el número de cajas, el peso bruto, el destino y — para Amazon — el c
   <input type="hidden" name="_subject" value="Solicitud de Cotización de Envío | Faelmio">
   <input type="hidden" name="_next" value="https://www.faelmio.com/es/thanks/">
   <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_honeypot" value="">
+  <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
   <label for="sh_name">Nombre Completo *</label>
   <input type="text" id="sh_name" name="name" required>
   <label for="sh_email">Correo Empresarial *</label>

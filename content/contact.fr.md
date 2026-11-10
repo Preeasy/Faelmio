@@ -6,9 +6,9 @@ Envoyez votre demande avec photos produit, MOQ cible et sp√©cifications. Nous r√
 
 <form class="contact-form" action="https://formsubmit.co/maxon@maxoncn.com" method="POST">
   <input type="hidden" name="_subject" value="Nouvelle demande de sourcing jouets | maxoncn.com">
-  <input type="hidden" name="_next" value="https://www.faelmio.com/thanks/">
+  <input type="hidden" name="_next" value="https://www.faelmio.com/fr/thanks/">
   <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_honeypot" value="">
+  <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
   <label for="name">Nom complet *</label>
   <input type="text" id="name" name="name" required>
   <label for="email">E-mail professionnel *</label>

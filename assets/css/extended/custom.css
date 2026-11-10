@@ -1503,6 +1503,12 @@ img.img-missing { display: none !important; }
   content: "✓"; position: absolute; left: 0; top: 0;
   color: var(--coral); font-weight: 700; font-size: 0.85rem;
 }
+.pdp-inquiry-copy .pdp-res-links {
+  margin: 14px 0 0; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 9px;
+  font-size: 0.84rem; color: var(--ink-3); max-width: none;
+}
+.pdp-res-links a { color: var(--coral); font-weight: 600; text-decoration: none; }
+.pdp-res-links a:hover { text-decoration: underline; }
 .pdp-inquiry-contact {
   margin-top: auto; padding-top: 18px;
   display: grid; gap: 5px;

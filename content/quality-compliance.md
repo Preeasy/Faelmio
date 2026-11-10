@@ -128,7 +128,7 @@ Send the product or SKU and the market you are selling into. We reply within 24 
   <input type="hidden" name="_subject" value="Compliance Document Request | Faelmio">
   <input type="hidden" name="_next" value="https://www.faelmio.com/thanks/">
   <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_honeypot" value="">
+  <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
   <label for="qc_name">Full Name *</label>
   <input type="text" id="qc_name" name="name" required>
   <label for="qc_email">Business Email *</label>

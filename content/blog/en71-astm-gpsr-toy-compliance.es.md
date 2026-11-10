@@ -1,7 +1,7 @@
 ---
 title: "EN71, ASTM F963 y GPSR: Qué Certificado de Juguete Necesita y Dónde"
 seo_title: "EN71 vs ASTM F963 vs GPSR: Mapa de Cumplimiento"
-description: "Un mapa país por país de lo que un juguete necesita realmente: EN71 para la UE, ASTM F963 y CPC para EE. UU., además de la regla del responsable en la UE bajo GPSR que sorprende a la mayoría de importadores."
+description: "Mapa país por país de lo que necesita un juguete: EN71 en la UE, ASTM F963 y CPC en EE. UU., y la regla del responsable en la UE bajo GPSR."
 date: "2026-11-10"
 tags: ["certificación", "EN71", "ASTM", "GPSR", "cumplimiento"]
 ---

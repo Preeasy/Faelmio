@@ -1,7 +1,7 @@
 ---
 title: "Control de Calidad y Cumplimiento de Juguetes: CE, EN71, ASTM, CPC"
 seo_title: "Cumplimiento de Juguetes: CE, EN71, ASTM, CPC y QC AQL"
-description: "Cómo gestiona Faelmio el cumplimiento de juguetes para EE. UU., la UE, el Reino Unido y Japón — CE, EN71, ASTM F963, CPSIA, CPC, GPSR, REACH — además de un proceso de inspección AQL en tres etapas."
+description: "Cómo gestiona Faelmio el cumplimiento de juguetes para EE. UU., la UE, el Reino Unido y Japón: CE, EN71, ASTM F963, CPSIA, CPC, GPSR y QC AQL."
 layout: static-page
 eyebrow: "Calidad y Cumplimiento"
 updated: "2026-11-08"
@@ -128,7 +128,7 @@ Envíe el producto o SKU y el mercado en el que vende. Respondemos en un plazo d
   <input type="hidden" name="_subject" value="Solicitud de Documentos de Cumplimiento | Faelmio">
   <input type="hidden" name="_next" value="https://www.faelmio.com/es/thanks/">
   <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_honeypot" value="">
+  <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
   <label for="qc_name">Nombre Completo *</label>
   <input type="text" id="qc_name" name="name" required>
   <label for="qc_email">Correo Empresarial *</label>

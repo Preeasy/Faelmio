@@ -408,6 +408,21 @@
           <li>{{ i18n "pdp_i2" | default "Sample before mass production" }}</li>
           <li>{{ i18n "pdp_i3" | default "AQL II inspection on every order" }}</li>
         </ul>
+        {{- $resLinks := slice }}
+        {{- range (slice
+              (dict "path" "/quality-compliance/" "key" "footer_quality" "fallback" "Quality & compliance")
+              (dict "path" "/shipping-logistics/" "key" "footer_shipping" "fallback" "Shipping & logistics")
+              (dict "path" "/how-to-order/" "key" "footer_order" "fallback" "How to order")) }}
+          {{- $it := . }}
+          {{- with site.GetPage $it.path }}
+            {{- $resLinks = $resLinks | append (dict "href" .RelPermalink "label" (i18n $it.key | default $it.fallback)) }}
+          {{- end }}
+        {{- end }}
+        {{- with $resLinks }}
+        <p class="pdp-res-links">
+          {{- range $i, $l := . }}{{ if $i }}<span aria-hidden="true">·</span>{{ end }}<a href="{{ $l.href }}">{{ $l.label }}</a>{{ end }}
+        </p>
+        {{- end }}
         <div class="pdp-inquiry-contact">
           <span>{{ i18n "pdp_inquiry_direct" | default "Prefer to talk?" }}</span>
           <a href="https://wa.me/{{ $c.whatsapp }}?text={{ printf "Hello Faelmio, I'd like a quote for %s." .Title | urlquery }}" target="_blank" rel="noopener noreferrer">{{ i18n "whatsapp" | default "WhatsApp" }} · {{ $c.phone_display }}</a>
@@ -416,9 +431,9 @@
       </div>
       <form class="contact-form" action="https://formsubmit.co/{{ $c.email }}" method="POST">
         <input type="hidden" name="_subject" value="Product Inquiry | {{ .Title }} | Faelmio">
-        <input type="hidden" name="_next" value="https://www.faelmio.com/thanks/">
+        <input type="hidden" name="_next" value="{{ "/thanks/" | absLangURL }}">
         <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_honeypot" value="">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
         <input type="hidden" name="product" value="{{ .Title }}">
         <input type="hidden" name="source_url" value="{{ .Permalink }}">
         <div class="form-grid">

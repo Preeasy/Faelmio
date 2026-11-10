@@ -1,6 +1,7 @@
 ---
 title: "Gracias"
 description: "Hemos recibido su consulta. Le responderemos en 24 horas."
+robotsNoIndex: true
 ---
 ¡Gracias por su consulta! Hemos recibido su mensaje y le responderemos en 24 horas.
 

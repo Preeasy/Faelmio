@@ -8,7 +8,7 @@ Envíe su consulta con fotos de productos, MOQ objetivo y especificaciones. Resp
   <input type="hidden" name="_subject" value="Nueva Consulta de Abastecimiento de Juguetes | maxoncn.com">
   <input type="hidden" name="_next" value="https://www.faelmio.com/es/thanks/">
   <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_honeypot" value="">
+  <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
   <label for="name">Nombre Completo *</label>
   <input type="text" id="name" name="name" required>
   <label for="email">Correo Empresarial *</label>

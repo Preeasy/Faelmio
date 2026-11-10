@@ -1,7 +1,7 @@
 ---
 title: "Cómo Verificar una Fábrica de Juguetes China Antes de Pagar un Depósito"
 seo_title: "Verificar una Fábrica de Juguetes China: 9 Puntos"
-description: "Nueve comprobaciones que distinguen a un verdadero fabricante de juguetes de una empresa comercial, qué prueba cada documento y las dos preguntas que obtienen una respuesta clara en una videollamada con la fábrica."
+description: "Nueve comprobaciones que distinguen a un fabricante real de una empresa comercial, qué prueba cada documento y dos preguntas clave para la videollamada."
 date: "2026-11-10"
 tags: ["abastecimiento", "fábrica", "auditoría", "diligencia debida"]
 ---

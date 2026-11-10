@@ -8,7 +8,7 @@ description: "おもちゃ調達のお問い合わせ、OEM見積もり依頼を
   <input type="hidden" name="_subject" value="新規おもちゃ調達お問い合わせ | maxoncn.com">
   <input type="hidden" name="_next" value="https://www.faelmio.com/ja/thanks/">
   <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_honeypot" value="">
+  <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
   <label for="name">お名前 *</label>
   <input type="text" id="name" name="name" required>
   <label for="email">ビジネスメール *</label>
