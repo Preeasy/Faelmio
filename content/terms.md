@@ -1,7 +1,7 @@
 ---
 title: "Terms of Service"
 seo_title: "Terms of Service"
-description: "Terms governing use of the Faelmio website and the commercial terms that apply to toy sourcing, OEM development, inspection and shipping services provided by Yiwu Maxon Imp.&Exp.Co.,Ltd."
+description: "Terms of service for Faelmio toy sourcing: quotation validity, payment, tooling ownership, inspection, compliance responsibility and liability."
 layout: static-page
 eyebrow: "Legal"
 updated: "2026-11-08"

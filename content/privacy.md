@@ -1,7 +1,7 @@
 ---
 title: "Privacy Policy"
 seo_title: "Privacy Policy"
-description: "How Faelmio (Yiwu Maxon Imp.&Exp.Co.,Ltd.) collects, uses and protects personal data submitted through this website, and how EU, UK and California visitors can exercise their rights."
+description: "How Faelmio collects, uses and protects your data under GDPR and CCPA, plus your access, correction and deletion rights."
 layout: static-page
 eyebrow: "Legal"
 updated: "2026-11-08"

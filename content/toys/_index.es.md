@@ -1,4 +1,5 @@
 ---
 title: "Categorías de Juguetes"
-description: "Explore nuestro catálogo de juguetes al por mayor y OEM de proveedores de Yiwu."
+seo_title: "Juguetes al por mayor desde Yiwu — 8 categorías"
+description: "Explore 8 categorías de juguetes de fábricas auditadas de Yiwu: fidget, peluches, educativos, RC, exterior, fiesta, muñecas y mascotas. MOQ desde 500 uds."
 ---

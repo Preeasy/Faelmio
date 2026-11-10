@@ -5,6 +5,10 @@ Disallow: /es/tags/
 Disallow: /es/categories/
 Disallow: /ja/tags/
 Disallow: /ja/categories/
+Disallow: /fr/tags/
+Disallow: /fr/categories/
+Disallow: /ko/tags/
+Disallow: /ko/categories/
 Disallow: /*/page/
 Allow: /
 Sitemap: https://www.faelmio.com/sitemap.xml

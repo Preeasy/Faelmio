@@ -1,7 +1,7 @@
 ---
 title: "How to Order: Toy Sourcing Process, Payment & Terms"
 seo_title: "How to Order Toys from China: Process & Payment"
-description: "The Faelmio ordering process — enquiry, sampling, quotation, deposit, production, AQL inspection and shipping — with payment methods, sample costs and mould ownership explained."
+description: "The Faelmio ordering process step by step: quote, samples, tooling, deposit, production, inspection and shipping, with typical timings."
 layout: static-page
 eyebrow: "How to Order"
 updated: "2026-11-08"

@@ -1,5 +1,6 @@
 ---
 title: "Jouets fidget et sensoriels"
+seo_title: "Jouets fidget et sensoriels en gros depuis Yiwu — OEM et stock"
 factory_footage: true
 description: "Pop its, spinners fidget, anti-stress et jouets sensoriels pour tous les âges."
 ---

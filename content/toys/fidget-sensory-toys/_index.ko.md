@@ -1,5 +1,6 @@
 ---
 title: "피젯 & 감각 장난감"
+seo_title: "피젯 & 감각 장난감 도매 | 이우 공장 직거래·OEM"
 factory_footage: true
 description: "팝잇, 피젯 스피너, 스트레스 해소 및 모든 연령대를 위한 감각 장난감."
 ---

@@ -36,6 +36,7 @@ category = "categories"
 languageName = "English"
 languageCode = "en-us"
 weight = 1
+title = "Faelmio | Yiwu Toy Sourcing Agent & OEM"
 [Languages.en.menu]
 [[Languages.en.menu.main]]
 name = "Home"
@@ -62,6 +63,7 @@ weight = 5
 languageName = "Español"
 languageCode = "es"
 weight = 2
+title = "Agente de compras de juguetes en China | Faelmio"
 [Languages.es.menu]
 [[Languages.es.menu.main]]
 name = "Inicio"
@@ -84,10 +86,14 @@ name = "Contacto"
 url = "/es/contact/"
 weight = 5
 
+[Languages.es.params]
+description = "Agente de compras de juguetes en Yiwu para compradores B2B. Fabricación OEM, control de calidad AQL, consolidación de pedidos y envío DDP a la UE, EE. UU., Latinoamérica y Japón."
+
 [Languages.ja]
 languageName = "日本語"
 languageCode = "ja"
 weight = 3
+title = "中国・義烏の玩具調達エージェント｜Faelmio"
 [Languages.ja.menu]
 [[Languages.ja.menu.main]]
 name = "ホーム"
@@ -106,10 +112,14 @@ name = "会社概要"
 url = "/ja/about/"
 weight = 4
 
+[Languages.ja.params]
+description = "義烏の玩具調達エージェント。B2B向けOEM製造、AQL検査、混載、EU・米国・南米・日本へのDDP輸送に対応しています。"
+
 [Languages.fr]
 languageName = "Français"
 languageCode = "fr"
 weight = 4
+title = "Agent d'approvisionnement de jouets en Chine | Faelmio"
 [Languages.fr.menu]
 [[Languages.fr.menu.main]]
 name = "Accueil"
@@ -132,10 +142,14 @@ name = "Contact"
 url = "/fr/contact/"
 weight = 5
 
+[Languages.fr.params]
+description = "Agent d'approvisionnement de jouets à Yiwu pour acheteurs B2B. Fabrication OEM, contrôle qualité AQL, groupage et expédition DDP vers l'UE, les États-Unis, l'Amérique latine et le Japon."
+
 [Languages.ko]
 languageName = "한국어"
 languageCode = "ko"
 weight = 5
+title = "중국 이우 완구 소싱 에이전트 | Faelmio"
 [Languages.ko.menu]
 [[Languages.ko.menu.main]]
 name = "홈"
@@ -157,6 +171,9 @@ weight = 4
 name = "문의"
 url = "/ko/contact/"
 weight = 5
+
+[Languages.ko.params]
+description = "B2B 바이어를 위한 이우 완구 소싱 에이전트. OEM 생산, AQL 품질 검사, 혼재 작업과 EU·미국·중남미·일본 DDP 배송을 지원합니다."
 
 [params]
 env = "production"
@@ -218,3 +235,8 @@ unsafe = true
 [markup.highlight]
 noclasses = false
 style = "github"
+
+# Official profiles for schema.org sameAs (entity verification for Google & AI engines).
+# Add only URLs that are genuinely yours: LinkedIn, YouTube, Alibaba store, Facebook, Instagram.
+[params.social]
+sameAs = []

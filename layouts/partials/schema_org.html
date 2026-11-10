@@ -14,7 +14,7 @@
   "image" $orgImage
   "address" (dict "@type" "PostalAddress" "streetAddress" "Yiwu International Trade City" "addressLocality" "Yiwu" "addressRegion" "Zhejiang" "addressCountry" "CN")
   "contactPoint" (dict "@type" "ContactPoint" "telephone" (site.Params.contact.phone_display | default "+86 182 5749 9725") "email" (site.Params.contact.email | default "maxon@maxoncn.com") "contactType" "sales" "areaServed" "Worldwide" "availableLanguage" (slice "en" "es" "ja" "fr" "ko"))
-  "sameAs" (slice "https://yeatru.com")
+  "sameAs" (site.Params.social.sameAs | default slice)
   "knowsAbout" (slice "Yiwu toy sourcing" "OEM toy manufacturing" "AQL quality inspection" "Toy consolidation" "DDP shipping")
   "priceRange" "$"
   "areaServed" "Worldwide"
@@ -42,6 +42,21 @@
     {{- $crumbs = $crumbs | append (dict "@type" "ListItem" "position" 2 "name" .Title "item" .Permalink) }}
   {{- end }}
   {{- $graph = $graph | append (dict "@type" "BreadcrumbList" "itemListElement" $crumbs) }}
+  {{- end }}
+  {{- if and .IsPage (eq .Section "blog") }}
+  {{- $graph = $graph | append (dict
+    "@type" "BlogPosting"
+    "@id" (printf "%s#article" .Permalink)
+    "mainEntityOfPage" (dict "@type" "WebPage" "@id" .Permalink)
+    "headline" .Title
+    "description" (.Description | default (.Summary | plainify | truncate 200))
+    "datePublished" (.Date.Format "2006-01-02T15:04:05Z07:00")
+    "dateModified" (.Lastmod.Format "2006-01-02T15:04:05Z07:00")
+    "author" (dict "@type" "Organization" "name" (site.Params.author | default "Faelmio") "url" $home)
+    "publisher" (dict "@id" (printf "%s#business" $home))
+    "image" $orgImage
+    "inLanguage" site.Language.LanguageCode
+  ) }}
   {{- end }}
 {{- end }}
 <script type="application/ld+json">

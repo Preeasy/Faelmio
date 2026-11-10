@@ -1,5 +1,6 @@
 ---
 title: "フィジェット・感覚玩具"
+seo_title: "フィジェット・感覚玩具 卸売｜義烏工場直送・OEM対応"
 factory_footage: true
 description: "ポップイット、フィジェットスピナー、ストレス解消、全年齢対応感覚玩具。"
 ---
