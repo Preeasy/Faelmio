@@ -52,6 +52,41 @@
             </li>
             {{- end }}
 
+            {{- $resMenu := slice
+                (dict "path" "/blog/" "key" "footer_blog" "fallback" "Sourcing guides")
+                (dict "path" "/quality-compliance/" "key" "footer_quality" "fallback" "Quality & compliance")
+                (dict "path" "/shipping-logistics/" "key" "footer_shipping" "fallback" "Shipping & logistics")
+                (dict "path" "/how-to-order/" "key" "footer_order" "fallback" "How to order")
+            }}
+            {{- $resPages := slice }}
+            {{- range $resMenu }}
+                {{- $item := . }}
+                {{- with site.GetPage $item.path }}
+                    {{- $resPages = $resPages | append (dict "href" .RelPermalink "label" (i18n $item.key | default $item.fallback) "match" .RelPermalink) }}
+                {{- end }}
+            {{- end }}
+            {{- if $resPages }}
+            {{- if eq (len $resPages) 1 }}
+            {{- range $resPages }}
+            <li><a href="{{ .href }}"{{ if strings.HasPrefix $.RelPermalink .match }} class="active-link"{{ end }}>{{ .label }}</a></li>
+            {{- end }}
+            {{- else }}
+            {{- $resActive := false }}
+            {{- range $resPages }}{{ if strings.HasPrefix $.RelPermalink .match }}{{ $resActive = true }}{{ end }}{{ end }}
+            <li class="nav-dropdown-wrap">
+                <button class="nav-dropdown-toggle{{ if $resActive }} is-active{{ end }}" aria-haspopup="true" aria-expanded="false">
+                    {{ i18n "nav_resources" | default "Resources" }}
+                    <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+                </button>
+                <ul class="nav-dropdown-menu" role="menu">
+                    {{- range $resPages }}
+                    <li role="none"><a href="{{ .href }}" role="menuitem">{{ .label }}</a></li>
+                    {{- end }}
+                </ul>
+            </li>
+            {{- end }}
+            {{- end }}
+
             <li><a href="{{ "/contact/" | absLangURL }}" class="nav-cta">{{ i18n "nav_cta" | default "Get a Quote" }}</a></li>
 
             {{- if hugo.IsMultilingual }}
@@ -75,3 +110,20 @@
         </ul>
     </nav>
 </header>
+<script>
+(function () {
+  var t = document.querySelector(".nav-dropdown-toggle"), m = document.querySelector(".nav-dropdown-menu");
+  if (!t || !m) return;
+  function close() {
+    m.classList.remove("open");
+    t.setAttribute("aria-expanded", "false");
+  }
+  t.addEventListener("click", function (e) {
+    e.stopPropagation();
+    m.classList.toggle("open");
+    t.setAttribute("aria-expanded", m.classList.contains("open") ? "true" : "false");
+  });
+  document.addEventListener("click", close);
+  document.addEventListener("keydown", function (e) { if (e.key === "Escape") close(); });
+})();
+</script>

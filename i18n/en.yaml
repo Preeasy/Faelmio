@@ -196,6 +196,8 @@ factory_cap3: 'Packing floor — QC and consolidation'
 pdp_variant: 'Style'
 
 footer_resources: "Buyer resources"
+nav_resources: "Resources"
+footer_blog: "Sourcing guides"
 footer_quality: "Quality & compliance"
 footer_shipping: "Shipping & logistics"
 footer_order: "How to order"

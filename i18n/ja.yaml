@@ -196,6 +196,8 @@ factory_cap3: '梱包ライン — 品質検査と混載'
 pdp_variant: 'スタイル'
 
 footer_resources: "バイヤー向け情報"
+nav_resources: "情報"
+footer_blog: "調達ガイド"
 footer_quality: "品質・コンプライアンス"
 footer_shipping: "配送・物流"
 footer_order: "ご注文の流れ"
