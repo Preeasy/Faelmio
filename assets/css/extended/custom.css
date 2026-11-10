@@ -873,6 +873,43 @@ img { max-width: 100%; }
 }
 .email-float:hover { transform: scale(1.08); background: var(--coral); color: #fff; border-color: var(--coral); }
 .email-float svg { width: 26px; height: 26px; }
+button.email-float { cursor: pointer; font-family: inherit; padding: 0; }
+button.email-float:focus-visible { outline: 3px solid var(--coral); outline-offset: 3px; }
+
+/* email panel — click-to-open fallback when no mail client is configured */
+.email-panel {
+  position: fixed; right: 24px; bottom: 164px; z-index: 951;
+  width: 288px; max-width: calc(100vw - 32px);
+  padding: 16px 18px;
+  background: #fff; border: 1px solid var(--line);
+  border-radius: var(--r-md); box-shadow: var(--shadow-lg);
+  text-align: left;
+}
+.email-panel[hidden] { display: none; }
+.email-panel-label {
+  margin: 0 0 8px; font-size: 0.74rem; font-weight: 700;
+  letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3);
+}
+.email-panel-addr {
+  display: block; margin-bottom: 12px;
+  font-size: 1rem; font-weight: 700; color: var(--ink);
+  word-break: break-all;
+}
+.email-panel-addr:hover { color: var(--coral); }
+.email-panel-actions { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.email-panel-copy {
+  appearance: none; cursor: pointer;
+  padding: 8px 14px; border-radius: var(--r-pill);
+  border: 1px solid var(--coral); background: var(--coral); color: #fff;
+  font-family: inherit; font-size: 0.82rem; font-weight: 600;
+  transition: background var(--dur) var(--ease);
+}
+.email-panel-copy:hover { background: var(--coral-2); border-color: var(--coral-2); }
+.email-panel-link { font-size: 0.82rem; font-weight: 600; color: var(--coral); }
+.email-panel-link:hover { text-decoration: underline; }
+.email-panel-hint {
+  margin: 10px 0 0; font-size: 0.74rem; line-height: 1.5; color: var(--ink-3);
+}
 
 /* ===================== LANGUAGE ===================== */
 .lang-dropdown { position: relative; }
@@ -1532,6 +1569,7 @@ img.img-missing { display: none !important; }
   .pdp-sticky .pdp-btn { padding: 11px 20px; flex: 0 0 auto; }
   .whatsapp-float { bottom: 78px; }
   .email-float { bottom: 140px; }
+  .email-panel { right: 16px; bottom: 200px; width: 264px; }
 }
 
 /* ===== Faelmio brand story banner ===== */
