@@ -23,6 +23,7 @@
     e.stopPropagation();
     var open=panel.hidden;
     panel.hidden=!open; btn.setAttribute('aria-expanded', String(open));
+    if(open && copy){ copy.textContent=copy.getAttribute('data-label')||copy.textContent; }
   });
   panel.addEventListener('click',function(e){ e.stopPropagation(); });
   document.addEventListener('click',close);
@@ -31,12 +32,7 @@
   if(copy){ copy.addEventListener('click',function(){
     var t=copy.getAttribute('data-copy');
     if(!copy.hasAttribute('data-label')) copy.setAttribute('data-label', copy.textContent);
-    var original=copy.getAttribute('data-label');
-    function done(){
-      copy.textContent='Copied ✓';
-      clearTimeout(copy._reset);
-      copy._reset=setTimeout(function(){ copy.textContent=original; },1600);
-    }
+    function done(){ copy.textContent='Copied ✓'; }
     try {
       var ta=document.createElement('textarea');
       ta.value=t; ta.setAttribute('readonly','');
