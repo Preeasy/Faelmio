@@ -48,6 +48,8 @@
     if(navigator.clipboard && navigator.clipboard.writeText){
       navigator.clipboard.writeText(t).then(done, done);
     } else { done(); }
+    /* feedback is shown regardless, so the button never looks dead */
+    done();
   }); }
 })();
 </script>
