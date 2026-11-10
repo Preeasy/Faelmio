@@ -23,7 +23,7 @@ gallery:
   alt: 리테일 칼라 박스 포장의 오렌지 스마트 바운싱 볼
 - type: video
   src: /images/toys/pet-toys/FM-BBT-B5001A-demo.mp4
-  poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.jpg
+  poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.webp
 variants:
 - name: 블루
   sku: FM-BBT-B5001A-BL
@@ -39,7 +39,7 @@ variants:
     alt: 블루와 오렌지 색상의 스마트 바운싱 볼 강아지 장난감, 빛나는 LED 링 포함
   - type: video
     src: /images/toys/pet-toys/FM-BBT-B5001A-demo.mp4
-    poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.jpg
+    poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.webp
 - name: 오렌지
   sku: FM-BBT-B5001A-OR
   color: 오렌지
@@ -54,7 +54,7 @@ variants:
     alt: 블루와 오렌지 색상의 스마트 바운싱 볼 강아지 장난감, 빛나는 LED 링 포함
   - type: video
     src: /images/toys/pet-toys/FM-BBT-B5001A-demo.mp4
-    poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.jpg
+    poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.webp
 answer: 이 스마트 바운싱 펫 볼은 강아지와 고양이를 위한 모션 감지 인터랙티브 장난감입니다. LED 조명과 함께 자동으로 구르고 튀어, 씹기에 강한 자동 놀이로 반려동물의 지루함을 해소해 줍니다. USB Type-C로 충전하며
   1회 충전으로 약 60분 연속 플레이가 가능합니다.
 price_range: $1.75 – $1.85 / 개

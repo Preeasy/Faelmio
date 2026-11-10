@@ -23,7 +23,7 @@ gallery:
   alt: Balle rebondissante intelligente orange avec boîte couleur retail
 - type: video
   src: /images/toys/pet-toys/FM-BBT-B5001A-demo.mp4
-  poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.jpg
+  poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.webp
 variants:
 - name: Bleu
   sku: FM-BBT-B5001A-BL
@@ -39,7 +39,7 @@ variants:
     alt: Balle rebondissante intelligente pour chien en bleu et orange avec anneau lumineux LED
   - type: video
     src: /images/toys/pet-toys/FM-BBT-B5001A-demo.mp4
-    poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.jpg
+    poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.webp
 - name: Orange
   sku: FM-BBT-B5001A-OR
   color: Orange
@@ -54,7 +54,7 @@ variants:
     alt: Balle rebondissante intelligente pour chien en bleu et orange avec anneau lumineux LED
   - type: video
     src: /images/toys/pet-toys/FM-BBT-B5001A-demo.mp4
-    poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.jpg
+    poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.webp
 answer: Cette balle rebondissante intelligente pour animal est un jouet interactif activé par le mouvement pour
   chiens et chats. Elle roule et rebondit automatiquement avec des lumières LED, offrant un jeu autonome résistant
   aux morsures pour soulager l'ennui des animaux. Rechargeable par USB Type-C avec environ 60 minutes de jeu continu

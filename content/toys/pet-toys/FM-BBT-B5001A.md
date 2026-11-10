@@ -23,7 +23,7 @@ gallery:
   alt: Orange smart bouncing ball with retail color box packaging
 - type: video
   src: /images/toys/pet-toys/FM-BBT-B5001A-demo.mp4
-  poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.jpg
+  poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.webp
 variants:
 - name: Blue
   sku: FM-BBT-B5001A-BL
@@ -39,7 +39,7 @@ variants:
     alt: Smart bouncing ball dog toy in blue and orange with glowing LED light ring
   - type: video
     src: /images/toys/pet-toys/FM-BBT-B5001A-demo.mp4
-    poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.jpg
+    poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.webp
 - name: Orange
   sku: FM-BBT-B5001A-OR
   color: Orange
@@ -54,7 +54,7 @@ variants:
     alt: Smart bouncing ball dog toy in blue and orange with glowing LED light ring
   - type: video
     src: /images/toys/pet-toys/FM-BBT-B5001A-demo.mp4
-    poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.jpg
+    poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.webp
 answer: This smart bouncing pet ball is a motion-activated interactive toy for dogs and cats. It rolls and bounces
   automatically with LED lights, offering chew-resistant self-play fun to relieve pet boredom. USB rechargeable via
   Type-C with about 60 minutes of continuous play per charge.

@@ -19,25 +19,25 @@ oem_support: true
 certifications: ["CE", "EN71-1/2/3", "ASTM F963", "CPSIA", "AZO-free"]
 
 cover:
-  image: "/images/products/custom-plush/01-front.jpg"
+  image: "/images/products/custom-plush/01-front.webp"
   alt: "サテンリボン付きのアイボリークリーム色カスタムぬいぐるみベア、スタジオ製品写真"
 
 gallery:
   - src: "https://images.faelmio.com/toys/plush-toys/custom-plush-demo.mp4"
     type: video
-    poster: "/images/products/custom-plush/01-front.jpg"
+    poster: "/images/products/custom-plush/01-front.webp"
     alt: "カスタムぬいぐるみベアの360°回転デモ動画"
-  - src: "/images/products/custom-plush/01-front.jpg"
+  - src: "/images/products/custom-plush/01-front.webp"
     alt: "ベージュ背景でのカスタムぬいぐるみベア斜め正面の姿"
-  - src: "/images/products/custom-plush/02-detail.jpg"
+  - src: "/images/products/custom-plush/02-detail.webp"
     alt: "ぬいぐるみベアの刺繍された目と鼻のマクロ接写"
-  - src: "/images/products/custom-plush/03-sizes.jpg"
+  - src: "/images/products/custom-plush/03-sizes.webp"
     alt: "同じぬいぐるみベアの3サイズを20 cmから45 cmまで並べた比較"
-  - src: "/images/products/custom-plush/04-packaging.jpg"
+  - src: "/images/products/custom-plush/04-packaging.webp"
     alt: "白紙ハングタグ付きクラフトギフトボックスの横に置かれたぬいぐるみベア"
-  - src: "/images/products/custom-plush/05-colours.jpg"
+  - src: "/images/products/custom-plush/05-colours.webp"
     alt: "クリーム、セージグリーン、ブラッシュピンクの3色展開のぬいぐるみベア"
-  - src: "/images/products/custom-plush/06-shelf.jpg"
+  - src: "/images/products/custom-plush/06-shelf.webp"
     alt: "おもちゃ屋の木製棚に陳列されたクリーム色ぬいぐるみベアの列"
 
 carton:

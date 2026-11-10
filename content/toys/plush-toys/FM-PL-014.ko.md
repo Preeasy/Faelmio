@@ -19,25 +19,25 @@ oem_support: true
 certifications: ["CE", "EN71-1/2/3", "ASTM F963", "CPSIA", "AZO-free"]
 
 cover:
-  image: "/images/products/custom-plush/01-front.jpg"
+  image: "/images/products/custom-plush/01-front.webp"
   alt: "새틴 리본을 달린 아이보리 크림색 커스텀 봉제 인형 베어, 스튜디오 제품 사진"
 
 gallery:
   - src: "https://images.faelmio.com/toys/plush-toys/custom-plush-demo.mp4"
     type: video
-    poster: "/images/products/custom-plush/01-front.jpg"
+    poster: "/images/products/custom-plush/01-front.webp"
     alt: "커스텀 봉제 인형 베어 360° 회전 데모 영상"
-  - src: "/images/products/custom-plush/01-front.jpg"
+  - src: "/images/products/custom-plush/01-front.webp"
     alt: "베이지 배경 위에서 촬영한 커스텀 봉제 인형 베어의 3/4 정면 모습"
-  - src: "/images/products/custom-plush/02-detail.jpg"
+  - src: "/images/products/custom-plush/02-detail.webp"
     alt: "봉제 인형 베어의 자수 눈과 코를 클로즈업한 매크로 사진"
-  - src: "/images/products/custom-plush/03-sizes.jpg"
+  - src: "/images/products/custom-plush/03-sizes.webp"
     alt: "20 cm에서 45 cm까지 같은 봉제 인형 베어의 세 가지 사이즈를 나란히 비교한 모습"
-  - src: "/images/products/custom-plush/04-packaging.jpg"
+  - src: "/images/products/custom-plush/04-packaging.webp"
     alt: "공백 행택이 달린 크라프트 선물 박스 옆에 놓인 봉제 인형 베어"
-  - src: "/images/products/custom-plush/05-colours.jpg"
+  - src: "/images/products/custom-plush/05-colours.webp"
     alt: "크림, 세이지 그린, 블러시 핑크 세 가지 색상의 봉제 인형 베어"
-  - src: "/images/products/custom-plush/06-shelf.jpg"
+  - src: "/images/products/custom-plush/06-shelf.webp"
     alt: "장난감 매장의 원목 매대에 전시된 크림색 봉제 인형 베어 한 줄"
 
 carton:

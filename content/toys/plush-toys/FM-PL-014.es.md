@@ -19,25 +19,25 @@ oem_support: true
 certifications: ["CE", "EN71-1/2/3", "ASTM F963", "CPSIA", "AZO-free"]
 
 cover:
-  image: "/images/products/custom-plush/01-front.jpg"
+  image: "/images/products/custom-plush/01-front.webp"
   alt: "Oso de peluche personalizado color crema marfil con cinta de satén, foto de producto de estudio"
 
 gallery:
   - src: "https://images.faelmio.com/toys/plush-toys/custom-plush-demo.mp4"
     type: video
-    poster: "/images/products/custom-plush/01-front.jpg"
+    poster: "/images/products/custom-plush/01-front.webp"
     alt: "Vídeo de demostración en 360° del oso de peluche personalizado"
-  - src: "/images/products/custom-plush/01-front.jpg"
+  - src: "/images/products/custom-plush/01-front.webp"
     alt: "Oso de peluche personalizado, vista frontal a tres cuartos sobre fondo beige"
-  - src: "/images/products/custom-plush/02-detail.jpg"
+  - src: "/images/products/custom-plush/02-detail.webp"
     alt: "Primer plano macro del bordado de ojos y nariz en el oso de peluche"
-  - src: "/images/products/custom-plush/03-sizes.jpg"
+  - src: "/images/products/custom-plush/03-sizes.webp"
     alt: "Tres tamaños del mismo oso de peluche lado a lado, de 20 cm a 45 cm"
-  - src: "/images/products/custom-plush/04-packaging.jpg"
+  - src: "/images/products/custom-plush/04-packaging.webp"
     alt: "Oso de peluche junto a una caja de regalo kraft con etiqueta colgante en blanco"
-  - src: "/images/products/custom-plush/05-colours.jpg"
+  - src: "/images/products/custom-plush/05-colours.webp"
     alt: "Tres combinaciones de color del oso de peluche: crema, verde salvia y rosa rubor"
-  - src: "/images/products/custom-plush/06-shelf.jpg"
+  - src: "/images/products/custom-plush/06-shelf.webp"
     alt: "Fila de osos de peluche color crema expuestos en estanterías de madera en una tienda de juguetes"
 
 carton:

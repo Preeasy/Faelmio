@@ -23,7 +23,7 @@ gallery:
   alt: 小売カラーボックスパッケージ付きオレンジのスマートバウンシングボール
 - type: video
   src: /images/toys/pet-toys/FM-BBT-B5001A-demo.mp4
-  poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.jpg
+  poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.webp
 variants:
 - name: ブルー
   sku: FM-BBT-B5001A-BL
@@ -39,7 +39,7 @@ variants:
     alt: ブルーとオレンジのスマートバウンシングボール犬用おもちゃ、光るLEDリング付き
   - type: video
     src: /images/toys/pet-toys/FM-BBT-B5001A-demo.mp4
-    poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.jpg
+    poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.webp
 - name: オレンジ
   sku: FM-BBT-B5001A-OR
   color: オレンジ
@@ -54,7 +54,7 @@ variants:
     alt: ブルーとオレンジのスマートバウンシングボール犬用おもちゃ、光るLEDリング付き
   - type: video
     src: /images/toys/pet-toys/FM-BBT-B5001A-demo.mp4
-    poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.jpg
+    poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.webp
 answer: このスマートバウンシングペットボールは、犬と猫のためのモーションセンサー式インタラクティブおもちゃです。LEDライトを点灯させながら自動で転がり跳ね、噛み耐性のある自動遊びでペットの退屈を解消します。USB Type-Cで充電でき、1回の充電で約60分の連続プレイが可能です。
 price_range: $1.75 – $1.85 / 個
 price_low: 1.75

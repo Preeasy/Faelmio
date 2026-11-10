@@ -19,25 +19,25 @@ oem_support: true
 certifications: ["CE", "EN71-1/2/3", "ASTM F963", "CPSIA", "AZO-free"]
 
 cover:
-  image: "/images/products/custom-plush/01-front.jpg"
+  image: "/images/products/custom-plush/01-front.webp"
   alt: "Ours en peluche personnalisé crème ivoire avec ruban satiné, photo produit en studio"
 
 gallery:
   - src: "https://images.faelmio.com/toys/plush-toys/custom-plush-demo.mp4"
     type: video
-    poster: "/images/products/custom-plush/01-front.jpg"
+    poster: "/images/products/custom-plush/01-front.webp"
     alt: "Vidéo de démonstration à 360° de l'ours en peluche personnalisé"
-  - src: "/images/products/custom-plush/01-front.jpg"
+  - src: "/images/products/custom-plush/01-front.webp"
     alt: "Ours en peluche personnalisé, vue de face aux trois quarts sur fond beige"
-  - src: "/images/products/custom-plush/02-detail.jpg"
+  - src: "/images/products/custom-plush/02-detail.webp"
     alt: "Gros plan macro de la broderie des yeux et du nez sur l'ours en peluche"
-  - src: "/images/products/custom-plush/03-sizes.jpg"
+  - src: "/images/products/custom-plush/03-sizes.webp"
     alt: "Trois tailles du même ours en peluche côte à côte, de 20 cm à 45 cm"
-  - src: "/images/products/custom-plush/04-packaging.jpg"
+  - src: "/images/products/custom-plush/04-packaging.webp"
     alt: "Ours en peluche à côté d'une boîte cadeau kraft avec étiquette neutre"
-  - src: "/images/products/custom-plush/05-colours.jpg"
+  - src: "/images/products/custom-plush/05-colours.webp"
     alt: "Trois teintes de l'ours en peluche : crème, vert sauge et rose poudré"
-  - src: "/images/products/custom-plush/06-shelf.jpg"
+  - src: "/images/products/custom-plush/06-shelf.webp"
     alt: "Rangée d'ours en peluche crème exposés sur des étagères en bois dans une boutique de jouets"
 
 carton:

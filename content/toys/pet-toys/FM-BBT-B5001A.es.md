@@ -23,7 +23,7 @@ gallery:
   alt: Pelota inteligente naranja que rebota con embalaje de caja de color retail
 - type: video
   src: /images/toys/pet-toys/FM-BBT-B5001A-demo.mp4
-  poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.jpg
+  poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.webp
 variants:
 - name: Azul
   sku: FM-BBT-B5001A-BL
@@ -39,7 +39,7 @@ variants:
     alt: Pelota inteligente que rebota para perro en azul y naranja con anillo de luz LED brillante
   - type: video
     src: /images/toys/pet-toys/FM-BBT-B5001A-demo.mp4
-    poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.jpg
+    poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.webp
 - name: Naranja
   sku: FM-BBT-B5001A-OR
   color: Naranja
@@ -54,7 +54,7 @@ variants:
     alt: Pelota inteligente que rebota para perro en azul y naranja con anillo de luz LED brillante
   - type: video
     src: /images/toys/pet-toys/FM-BBT-B5001A-demo.mp4
-    poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.jpg
+    poster: /images/toys/pet-toys/FM-BBT-B5001A-video-poster.webp
 answer: Esta pelota inteligente que rebota para mascotas es un juguete interactivo activado por movimiento para
   perros y gatos. Rueda y rebota automáticamente con luces LED, ofreciendo diversión de juego autónomo resistente
   a mordidas para aliviar el aburrimiento de las mascotas. Recargable por USB Type-C con unos 60 minutos de juego

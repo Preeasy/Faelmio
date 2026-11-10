@@ -1,5 +1,5 @@
 {{- define "main" }}
-{{- $img := "images/hero/showroom.jpg" | relURL }}
+{{- $img := "images/hero/showroom.webp" | relURL }}
 <!-- ==================== HERO ==================== -->
 <section class="hero">
   <div class="hero-inner">
@@ -57,14 +57,14 @@
 
     <div class="cat-grid">
       {{- $cats := slice
-        (dict "title" (i18n "cat_plush" | default "Plush Toys") "kicker" "01 · Soft goods" "img" "images/toys/plush-toys.jpg" "url" "/toys/plush-toys/")
-        (dict "title" (i18n "cat_educational" | default "Educational & STEM") "kicker" "02 · Learning" "img" "images/toys/educational-stem-toys.jpg" "url" "/toys/educational-stem-toys/")
-        (dict "title" (i18n "cat_fidget" | default "Fidget & Sensory") "kicker" "03 · Trending" "img" "images/toys/fidget-sensory-toys.jpg" "url" "/toys/fidget-sensory-toys/")
-        (dict "title" (i18n "cat_dolls" | default "Dolls & Figures") "kicker" "04 · Collectible" "img" "images/toys/dolls-action-figures.jpg" "url" "/toys/dolls-action-figures/")
-        (dict "title" (i18n "cat_rc" | default "RC & Electronic") "kicker" "05 · Tech toys" "img" "images/toys/rc-electronic-toys.jpg" "url" "/toys/rc-electronic-toys/")
-        (dict "title" (i18n "cat_party" | default "Party & Promotional") "kicker" "06 · Seasonal" "img" "images/toys/party-promotional-toys.jpg" "url" "/toys/party-promotional-toys/")
-        (dict "title" (i18n "cat_outdoor" | default "Outdoor & Water") "kicker" "07 · Summer" "img" "images/toys/outdoor-water-toys.jpg" "url" "/toys/outdoor-water-toys/")
-        (dict "title" (i18n "cat_pet" | default "Pet Toys") "kicker" "08 · Pets" "img" "images/toys/pet-toys.jpg" "url" "/toys/pet-toys/")
+        (dict "title" (i18n "cat_plush" | default "Plush Toys") "kicker" "01 · Soft goods" "img" "images/toys/plush-toys.webp" "url" "/toys/plush-toys/")
+        (dict "title" (i18n "cat_educational" | default "Educational & STEM") "kicker" "02 · Learning" "img" "images/toys/educational-stem-toys.webp" "url" "/toys/educational-stem-toys/")
+        (dict "title" (i18n "cat_fidget" | default "Fidget & Sensory") "kicker" "03 · Trending" "img" "images/toys/fidget-sensory-toys.webp" "url" "/toys/fidget-sensory-toys/")
+        (dict "title" (i18n "cat_dolls" | default "Dolls & Figures") "kicker" "04 · Collectible" "img" "images/toys/dolls-action-figures.webp" "url" "/toys/dolls-action-figures/")
+        (dict "title" (i18n "cat_rc" | default "RC & Electronic") "kicker" "05 · Tech toys" "img" "images/toys/rc-electronic-toys.webp" "url" "/toys/rc-electronic-toys/")
+        (dict "title" (i18n "cat_party" | default "Party & Promotional") "kicker" "06 · Seasonal" "img" "images/toys/party-promotional-toys.webp" "url" "/toys/party-promotional-toys/")
+        (dict "title" (i18n "cat_outdoor" | default "Outdoor & Water") "kicker" "07 · Summer" "img" "images/toys/outdoor-water-toys.webp" "url" "/toys/outdoor-water-toys/")
+        (dict "title" (i18n "cat_pet" | default "Pet Toys") "kicker" "08 · Pets" "img" "images/toys/pet-toys.webp" "url" "/toys/pet-toys/")
       -}}
       {{- range $cats }}
       <a class="cat-card" href="{{ .url | absLangURL }}">
@@ -78,7 +78,7 @@
       {{- end }}
 
       <a class="cat-card is-oem" href="{{ "/custom-toy-oem/" | absLangURL }}">
-        <img src="{{ "images/oem/oem-process.jpg" | relURL }}" alt="Custom toy OEM service" loading="lazy" width="1600" height="1200" decoding="async">
+        <img src="{{ "images/oem/oem-process.webp" | relURL }}" alt="Custom toy OEM service" loading="lazy" width="1600" height="1200" decoding="async">
         <span class="shade"></span>
         <span class="cat-body">
           <span class="cat-copy">
@@ -194,7 +194,7 @@
   <div class="oem-inner">
     <div class="oem-media">
       <div class="frame">
-        <img src="{{ "images/oem/oem-process.jpg" | relURL }}" alt="Toy OEM design, sculpting and prototyping" loading="lazy" width="1600" height="1200" decoding="async">
+        <img src="{{ "images/oem/oem-process.webp" | relURL }}" alt="Toy OEM design, sculpting and prototyping" loading="lazy" width="1600" height="1200" decoding="async">
       </div>
     </div>
     <div>

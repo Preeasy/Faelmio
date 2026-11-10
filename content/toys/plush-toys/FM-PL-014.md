@@ -19,25 +19,25 @@ oem_support: true
 certifications: ["CE", "EN71-1/2/3", "ASTM F963", "CPSIA", "AZO-free"]
 
 cover:
-  image: "/images/products/custom-plush/01-front.jpg"
+  image: "/images/products/custom-plush/01-front.webp"
   alt: "Ivory cream custom plush bear with satin ribbon, studio product photo"
 
 gallery:
   - src: "https://images.faelmio.com/toys/plush-toys/custom-plush-demo.mp4"
     type: video
-    poster: "/images/products/custom-plush/01-front.jpg"
+    poster: "/images/products/custom-plush/01-front.webp"
     alt: "Custom plush bear 360° rotation video demo"
-  - src: "/images/products/custom-plush/01-front.jpg"
+  - src: "/images/products/custom-plush/01-front.webp"
     alt: "Custom plush bear, three-quarter front view on beige background"
-  - src: "/images/products/custom-plush/02-detail.jpg"
+  - src: "/images/products/custom-plush/02-detail.webp"
     alt: "Macro close-up of embroidered eye and nose stitching on the plush bear"
-  - src: "/images/products/custom-plush/03-sizes.jpg"
+  - src: "/images/products/custom-plush/03-sizes.webp"
     alt: "Three sizes of the same plush bear shown side by side, 20 cm to 45 cm"
-  - src: "/images/products/custom-plush/04-packaging.jpg"
+  - src: "/images/products/custom-plush/04-packaging.webp"
     alt: "Plush bear next to a kraft gift box with blank hangtag packaging"
-  - src: "/images/products/custom-plush/05-colours.jpg"
+  - src: "/images/products/custom-plush/05-colours.webp"
     alt: "Three colourways of the plush bear: cream, sage green and blush pink"
-  - src: "/images/products/custom-plush/06-shelf.jpg"
+  - src: "/images/products/custom-plush/06-shelf.webp"
     alt: "Row of cream plush bears displayed on wooden shelves in a toy shop"
 
 carton:
