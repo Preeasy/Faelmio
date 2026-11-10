@@ -198,6 +198,7 @@ pdp_variant: 'Diseño'
 footer_resources: "Recursos para compradores"
 nav_resources: "Recursos"
 footer_blog: "Guías de compra"
+footer_blog_nav: "Blog"
 footer_quality: "Calidad y cumplimiento"
 footer_shipping: "Envío y logística"
 footer_order: "Cómo comprar"

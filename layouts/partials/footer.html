@@ -40,7 +40,6 @@
       <ul>
         <li><a href="{{ "/custom-toy-oem/" | absLangURL }}">{{ i18n "cat_oem" | default "Custom Toy OEM" }}</a></li>
         <li><a href="{{ "/about/" | absLangURL }}">{{ i18n "footer_about" | default "About us" }}</a></li>
-        <li><a href="{{ "/blog/" | absLangURL }}">{{ i18n "footer_blog" | default "Sourcing guides" }}</a></li>
         <li><a href="{{ "/contact/" | absLangURL }}">{{ i18n "contact_us" | default "Contact" }}</a></li>
       </ul>
     </div>
@@ -51,10 +50,14 @@
         {{- $res = $res | append (dict "p" . "key" $.RelPermalink) }}
       {{- end }}
     {{- end }}
-    {{- if $res }}
+    {{- $blog := site.GetPage "/blog/" }}
+    {{- if or $res $blog }}
     <div class="footer-col">
       <strong>{{ i18n "footer_resources" | default "Buyer resources" }}</strong>
       <ul>
+        {{- with $blog }}
+        <li><a href="{{ .RelPermalink }}">{{ i18n "footer_blog_nav" | default "Blog" }}</a></li>
+        {{- end }}
         {{- range $res }}
         {{- $label := "" }}
         {{- if in .p.RelPermalink "quality-compliance" }}{{ $label = i18n "footer_quality" | default "Quality & compliance" }}

@@ -198,6 +198,7 @@ pdp_variant: '스타일'
 footer_resources: "바이어 자료실"
 nav_resources: "자료실"
 footer_blog: "소싱 가이드"
+footer_blog_nav: "블로그"
 footer_quality: "품질 및 규정 준수"
 footer_shipping: "배송 및 물류"
 footer_order: "주문 방법"

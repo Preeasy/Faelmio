@@ -198,6 +198,7 @@ pdp_variant: 'Modèle'
 footer_resources: "Ressources acheteurs"
 nav_resources: "Ressources"
 footer_blog: "Guides d'achat"
+footer_blog_nav: "Blog"
 footer_quality: "Qualité et conformité"
 footer_shipping: "Expédition et logistique"
 footer_order: "Comment commander"
