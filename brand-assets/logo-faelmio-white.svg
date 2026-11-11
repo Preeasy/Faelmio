@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- WHITE REVERSE — for dark backgrounds: letterheads, packaging side, presentation decks -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" role="img" aria-label="Faelmio mark — white reverse">
+  <style>
+    .logofont { font-family: 'Fraunces', Georgia, serif; font-weight: 800; letter-spacing: -0.02em; }
+  </style>
+  <!-- dark block outline becomes white fill -->
+  <g transform="translate(14, 18)">
+    <rect x="2" y="10" width="64" height="64" rx="14" ry="14" fill="#FBF7EE"/>
+    <rect x="10" y="0" width="40" height="28" rx="9" ry="9" fill="#FF7A4F"/>
+    <circle cx="20" cy="14" r="4" fill="#FFD7CC"/>
+    <circle cx="34" cy="14" r="4" fill="#FFD7CC"/>
+    <circle cx="48" cy="42" r="5" fill="#2A3348"/>
+    <circle cx="20" cy="42" r="5" fill="#FF7A4F"/>
+  </g>
+
+  <!-- wordmark: F coral, rest cream -->
+  <text class="logofont" x="112" y="82" font-size="62" fill="#F2643C">F</text>
+  <text class="logofont" x="158" y="82" font-size="62" fill="#FBF7EE">aelmio</text>
+  <text x="112" y="106" font-family="Inter, -apple-system, sans-serif" font-size="12" font-weight="600"
+        letter-spacing="0.22em" fill="#FBF7EE" opacity="0.6">TOY SOURCING · YIWU · SINCE 2008</text>
+</svg>
