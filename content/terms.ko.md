@@ -11,7 +11,7 @@ cta_sub: "상업 조건은 주문별 프로포마 인보이스에서 확인됩�
 
 *이 번역본은 참고용입니다. 내용에 차이가 있을 경우 영문본이 우선합니다.*
 
-본 약관은 **faelmio.com**의 이용과 **Yiwu Maxon Imp.&Exp.Co.,Ltd.**("Faelmio", "저희")가 제공하는 소싱 서비스에 적용됩니다. 이 사이트를 이용하거나 주문하시면 본 약관에 동의하신 것으로 간주됩니다.
+본 약관은 **faelmio.com**의 이용과 **Yiwu Maxon Imp.&Exp.Co.,Ltd. (义乌市贸翔进出口有限公司)**("Faelmio", "저희")가 제공하는 소싱 서비스에 적용됩니다. 이 사이트를 이용하거나 주문하시면 본 약관에 동의하신 것으로 간주됩니다.
 
 ## 1. 웹사이트 콘텐츠
 
@@ -97,6 +97,6 @@ cta_sub: "상업 조건은 주문별 프로포마 인보이스에서 확인됩�
 
 ## 연락처
 
-Yiwu Maxon Imp.&Exp.Co.,Ltd.
+Yiwu Maxon Imp.&Exp.Co.,Ltd. (义乌市贸翔进出口有限公司)
 중국 저장성 이우
 [maxon@maxoncn.com](mailto:maxon@maxoncn.com) · [+86 182 5749 9725](https://wa.me/8618257499725)

@@ -15,7 +15,7 @@ cta_sub: "maxon@maxoncn.com までご連絡ください。30日以内に、法�
 
 **データ管理者**
 
-Yiwu Maxon Imp.&Exp.Co.,Ltd.
+Yiwu Maxon Imp.&Exp.Co.,Ltd. (义乌市贸翔进出口有限公司)
 中国浙江省義烏市
 メール: [maxon@maxoncn.com](mailto:maxon@maxoncn.com)
 WhatsApp: [+86 182 5749 9725](https://wa.me/8618257499725)
@@ -97,4 +97,4 @@ Cookieはブラウザの設定でブロックまたは削除できます。必�
 
 ## お問い合わせ
 
-Yiwu Maxon Imp.&Exp.Co.,Ltd. — [maxon@maxoncn.com](mailto:maxon@maxoncn.com)
+Yiwu Maxon Imp.&Exp.Co.,Ltd. (义乌市贸翔进出口有限公司) — [maxon@maxoncn.com](mailto:maxon@maxoncn.com)

@@ -11,7 +11,7 @@ cta_sub: "Las condiciones comerciales se confirman en cada factura proforma. Pí
 
 *Esta es una traducción al español. En caso de discrepancia, prevalece la versión en inglés.*
 
-Estas condiciones rigen el uso de **faelmio.com** y los servicios de abastecimiento prestados por **Yiwu Maxon Imp.&Exp.Co.,Ltd.** ("Faelmio", "nosotros"). Al utilizar este sitio o realizar un pedido, usted las acepta.
+Estas condiciones rigen el uso de **faelmio.com** y los servicios de abastecimiento prestados por **Yiwu Maxon Imp.&Exp.Co.,Ltd. (义乌市贸翔进出口有限公司)** ("Faelmio", "nosotros"). Al utilizar este sitio o realizar un pedido, usted las acepta.
 
 ## 1. Contenido del sitio web
 
@@ -97,6 +97,6 @@ Podemos actualizar estas condiciones. La versión vigente para su pedido es la q
 
 ## Contacto
 
-Yiwu Maxon Imp.&Exp.Co.,Ltd.
+Yiwu Maxon Imp.&Exp.Co.,Ltd. (义乌市贸翔进出口有限公司)
 Yiwu, Zhejiang, China
 [maxon@maxoncn.com](mailto:maxon@maxoncn.com) · [+86 182 5749 9725](https://wa.me/8618257499725)

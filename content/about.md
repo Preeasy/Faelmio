@@ -1,7 +1,7 @@
 ---
 title: "About Faelmio — 13 Years Sourcing Toys from Yiwu"
 seo_title: "About Faelmio — Toy Sourcing Team in Yiwu"
-description: "Faelmio is a toy sourcing team in Yiwu, China, operated by Yiwu Maxon Imp.&Exp.Co.,Ltd. Since 2012 — 13 years of supply-chain experience for B2B buyers and toy brands."
+description: "Faelmio is a toy sourcing team in Yiwu, China, operated by Yiwu Maxon Imp.&Exp.Co.,Ltd. (义乌市贸翔进出口有限公司) Since 2012 — 13 years of supply-chain experience for B2B buyers and toy brands."
 layout: about
 about:
   eyebrow: "About Faelmio"
@@ -15,7 +15,7 @@ about:
       label: "Happy clients"
     - value: "24h"
       label: "Quote response"
-  story: "Faelmio began in 2012 with a belief that toy sourcing from Yiwu should feel nothing like the cold, transactional experience most buyers expect. Operated by Yiwu Maxon Imp.&Exp.Co.,Ltd., we built our team on the ground in Yiwu — not behind a desk overseas. We walk the wholesale markets at dawn, sit across factory owners in their own language, and inspect every shipment before it leaves. For 13 years, importers, Amazon sellers and independent toy brands have trusted us to be their eyes, ears and voice in China. No middlemen, no markup games, no surprises — just a partner who treats your supply chain like it's our own."
+  story: "Faelmio began in 2012 with a belief that toy sourcing from Yiwu should feel nothing like the cold, transactional experience most buyers expect. Operated by Yiwu Maxon Imp.&Exp.Co.,Ltd. (义乌市贸翔进出口有限公司), we built our team on the ground in Yiwu — not behind a desk overseas. We walk the wholesale markets at dawn, sit across factory owners in their own language, and inspect every shipment before it leaves. For 13 years, importers, Amazon sellers and independent toy brands have trusted us to be their eyes, ears and voice in China. No middlemen, no markup games, no surprises — just a partner who treats your supply chain like it's our own."
   mission: "To make it possible for toy brands of any size to source confidently from China — with the quality control, compliance paperwork and logistics normally reserved for the largest importers."
   values:
     - kicker: "Transparency"

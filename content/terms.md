@@ -9,7 +9,7 @@ cta_title: "Need terms for a specific order?"
 cta_sub: "Commercial terms are confirmed on each proforma invoice. Ask us for the current version before you place a deposit."
 ---
 
-These terms govern use of **faelmio.com** and the sourcing services provided by **Yiwu Maxon Imp.&Exp.Co.,Ltd.** ("Faelmio", "we"). By using this site or placing an order, you accept them.
+These terms govern use of **faelmio.com** and the sourcing services provided by **Yiwu Maxon Imp.&Exp.Co.,Ltd. (义乌市贸翔进出口有限公司)** ("Faelmio", "we"). By using this site or placing an order, you accept them.
 
 ## 1. Website content
 
@@ -95,6 +95,6 @@ We may update these terms. The version in force for your order is the one issued
 
 ## Contact
 
-Yiwu Maxon Imp.&Exp.Co.,Ltd.
+Yiwu Maxon Imp.&Exp.Co.,Ltd. (义乌市贸翔进出口有限公司)
 Yiwu, Zhejiang, China
 [maxon@maxoncn.com](mailto:maxon@maxoncn.com) · [+86 182 5749 9725](https://wa.me/8618257499725)

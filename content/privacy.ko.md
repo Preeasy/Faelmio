@@ -15,7 +15,7 @@ cta_sub: "maxon@maxoncn.com으로 연락해 주시면 30일 이내에, 법령이
 
 **데이터 관리자**
 
-Yiwu Maxon Imp.&Exp.Co.,Ltd.
+Yiwu Maxon Imp.&Exp.Co.,Ltd. (义乌市贸翔进出口有限公司)
 중국 저장성 이우
 이메일: [maxon@maxoncn.com](mailto:maxon@maxoncn.com)
 WhatsApp: [+86 182 5749 9725](https://wa.me/8618257499725)
@@ -97,4 +97,4 @@ WhatsApp: [+86 182 5749 9725](https://wa.me/8618257499725)
 
 ## 연락처
 
-Yiwu Maxon Imp.&Exp.Co.,Ltd. — [maxon@maxoncn.com](mailto:maxon@maxoncn.com)
+Yiwu Maxon Imp.&Exp.Co.,Ltd. (义乌市贸翔进出口有限公司) — [maxon@maxoncn.com](mailto:maxon@maxoncn.com)

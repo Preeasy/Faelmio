@@ -1,7 +1,7 @@
 ---
 title: "À propos de Faelmio — 13 ans de sourcing de jouets depuis Yiwu"
 seo_title: "À propos de Faelmio — Sourcing de Jouets à Yiwu"
-description: "Faelmio est une équipe de sourcing de jouets à Yiwu, Chine, exploitée par Yiwu Maxon Imp.&Exp.Co.,Ltd. Depuis 2012 — 13 ans d'expérience pour acheteurs B2B et marques."
+description: "Faelmio est une équipe de sourcing de jouets à Yiwu, Chine, exploitée par Yiwu Maxon Imp.&Exp.Co.,Ltd. (义乌市贸翔进出口有限公司) Depuis 2012 — 13 ans d'expérience pour acheteurs B2B et marques."
 layout: about
 about:
   eyebrow: "À propos de Faelmio"
@@ -15,7 +15,7 @@ about:
       label: "Clients satisfaits"
     - value: "24h"
       label: "Réponse devis"
-  story: "Faelmio a commencé en 2012 avec la conviction que le sourcing de jouets depuis Yiwu ne devrait pas ressembler à l'expérience froide et transactionnelle que la plupart des acheteurs attendent. Opéré par Yiwu Maxon Imp.&Exp.Co.,Ltd., nous avons construit notre équipe sur le terrain à Yiwu — pas derrière un bureau à l'étranger. Nous parcourons les marchés de gros à l'aube, nous asseyons en face des propriétaires d'usine dans leur langue, et inspectons chaque expédition avant son départ. Depuis 13 ans, les importateurs, vendeurs Amazon et marques de jouets indépendantes nous font confiance pour être leurs yeux, oreilles et voix en Chine. Pas d'intermédiaires, pas de jeux de marge, pas de surprises — juste un partenaire qui traite votre chaîne d'approvisionnement comme la sienne."
+  story: "Faelmio a commencé en 2012 avec la conviction que le sourcing de jouets depuis Yiwu ne devrait pas ressembler à l'expérience froide et transactionnelle que la plupart des acheteurs attendent. Opéré par Yiwu Maxon Imp.&Exp.Co.,Ltd. (义乌市贸翔进出口有限公司), nous avons construit notre équipe sur le terrain à Yiwu — pas derrière un bureau à l'étranger. Nous parcourons les marchés de gros à l'aube, nous asseyons en face des propriétaires d'usine dans leur langue, et inspectons chaque expédition avant son départ. Depuis 13 ans, les importateurs, vendeurs Amazon et marques de jouets indépendantes nous font confiance pour être leurs yeux, oreilles et voix en Chine. Pas d'intermédiaires, pas de jeux de marge, pas de surprises — juste un partenaire qui traite votre chaîne d'approvisionnement comme la sienne."
   mission: "Permettre aux marques de jouets de toute taille de sourcer en toute confiance depuis la Chine — avec le contrôle qualité, la documentation de conformité et la logistique normalement réservés aux plus grands importateurs."
   values:
     - kicker: "Transparence"

@@ -13,7 +13,7 @@ This policy explains what personal data we collect through **faelmio.com**, why 
 
 **Data controller**
 
-Yiwu Maxon Imp.&Exp.Co.,Ltd.
+Yiwu Maxon Imp.&Exp.Co.,Ltd. (义乌市贸翔进出口有限公司)
 Yiwu, Zhejiang, China
 Email: [maxon@maxoncn.com](mailto:maxon@maxoncn.com)
 WhatsApp: [+86 182 5749 9725](https://wa.me/8618257499725)
@@ -95,4 +95,4 @@ If this policy changes materially, the "last updated" date at the top of this pa
 
 ## Contact
 
-Yiwu Maxon Imp.&Exp.Co.,Ltd. — [maxon@maxoncn.com](mailto:maxon@maxoncn.com)
+Yiwu Maxon Imp.&Exp.Co.,Ltd. (义乌市贸翔进出口有限公司) — [maxon@maxoncn.com](mailto:maxon@maxoncn.com)
