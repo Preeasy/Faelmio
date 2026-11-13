@@ -7,6 +7,9 @@
 <meta name="robots" content="noindex, nofollow">
 {{- end }}
 
+{{- /* Bing Webmaster verification (double-check: file + meta tag) */}}
+<meta name="msvalidate.01" content="B5D0726E150DA8C040602CB7CB9DD86A">
+
 {{- /* Title */}}
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Params.seo_title | default .Title }} | {{ site.Params.label.text }}{{ end }}</title>
 
