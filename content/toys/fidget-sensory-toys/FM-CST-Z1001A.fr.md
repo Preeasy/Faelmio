@@ -7,24 +7,24 @@ sku: FM-CST-Z1001A
 factory_footage: true
 badge: Nouveau
 cover:
-  image: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/01-main.jpg
+  image: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/01-main.webp
   alt: Balle fidget squishy 3 couleurs marbrée et croustillante avec argile douce à l'intérieur, pressée par une main pour montrer l'effet ASMR croustillant
 gallery:
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/01-main.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/01-main.webp
   alt: Balle fidget squishy 3 couleurs marbrée et croustillante avec argile douce à l'intérieur
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/02-display1.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/02-display1.webp
   alt: Lot de balles squishy 3 couleurs avec teintes pastel marbrées assorties
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/03-display2.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/03-display2.webp
   alt: Présentoir de vente de balles squishy croustillantes avec couleurs assorties
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/04-closeup.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/04-closeup.webp
   alt: Gros plan de la texture de coque de cire croustillante sur la balle squishy 3 couleurs
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/05-texture.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/05-texture.webp
   alt: Surface texturée de la balle fidget squishy croustillante montrant le motif marbré
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/06-squeeze.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/06-squeeze.webp
   alt: Main pressant la balle squishy 3 couleurs croustillante pour démontrer l'effet ASMR de craquement
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/07-scene.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/07-scene.webp
   alt: Balle squishy croustillante en scène d'emballage de vente avec d'autres jouets fidget
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/08-carton.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/08-carton.webp
   alt: Carton d'exportation pour balles squishy 3 couleurs croustillantes avec dimensions indiquées
 answer: Cette balle fidget squishy 3 couleurs croustillante contient de l'argile douce à l'intérieur. Elle produit des sons
   ASMR croustillants satisfaisants lorsque vous la pressez et la malaxez, vous aidant à libérer le stress et à calmer

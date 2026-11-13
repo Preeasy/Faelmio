@@ -7,24 +7,24 @@ sku: FM-CST-Z1001A
 factory_footage: true
 badge: Nuevo
 cover:
-  image: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/01-main.jpg
+  image: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/01-main.webp
   alt: Bola fidget squishy 3 colores marmoleada y crujiente con arcilla blanda en su interior, apretada por una mano para mostrar el efecto ASMR crujiente
 gallery:
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/01-main.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/01-main.webp
   alt: Bola fidget squishy 3 colores marmoleada y crujiente con arcilla blanda en su interior
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/02-display1.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/02-display1.webp
   alt: Set de bolas squishy 3 colores con colores pasteles marmoleados surtidos
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/03-display2.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/03-display2.webp
   alt: Exposición minorista de bolas squishy crujientes con colores surtidos
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/04-closeup.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/04-closeup.webp
   alt: Primer plano de la textura de cáscara de cera crujiente en la bola squishy 3 colores
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/05-texture.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/05-texture.webp
   alt: Superficie texturizada de la bola fidget squishy crujiente mostrando el patrón marmoleado
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/06-squeeze.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/06-squeeze.webp
   alt: Mano apretando la bola squishy 3 colores crujiente para demostrar el efecto ASMR de crujido
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/07-scene.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/07-scene.webp
   alt: Bola squishy crujiente en escena de embalaje minorista con otros juguetes fidget
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/08-carton.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/08-carton.webp
   alt: Caja de exportación para bolas squishy 3 colores crujientes con dimensiones indicadas
 answer: Esta bola fidget squishy 3 colores crujiente contiene arcilla blanda en su interior. Produce satisfactorios sonidos
   ASMR crujientes al apretarla y amasarla, ayudando a liberar el estrés y calmar la ansiedad. Fabricada con una capa

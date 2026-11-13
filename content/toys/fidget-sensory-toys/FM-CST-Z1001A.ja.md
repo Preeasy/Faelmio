@@ -7,24 +7,24 @@ sku: FM-CST-Z1001A
 factory_footage: true
 badge: 新商品
 cover:
-  image: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/01-main.jpg
+  image: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/01-main.webp
   alt: 中にやわらかい粘土が詰まったクリスピーな3色マーブルスクイーズフィジェットボール、手で握ってASMRのクリスピー効果を示す
 gallery:
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/01-main.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/01-main.webp
   alt: 中にやわらかい粘土が詰まったクリスピーな3色マーブルスクイーズフィジェットボール
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/02-display1.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/02-display1.webp
   alt: パステル調マーブルカラーの3色スクイーズボールセット
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/03-display2.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/03-display2.webp
   alt: クリスピースクイーズボールの多色小売ディスプレイ
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/04-closeup.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/04-closeup.webp
   alt: 3色スクイーズボールのクリスピーなワックスシェル質感のクローズアップ
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/05-texture.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/05-texture.webp
   alt: マーブル模様が見えるクリスピースクイーズフィジェットボールの表面質感
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/06-squeeze.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/06-squeeze.webp
   alt: クリスピーな3色スクイーズボールを手で握り、パチパチとしたASMR効果を実演
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/07-scene.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/07-scene.webp
   alt: 他のフィジェットトイと並んだクリスピースクイーズボールの小売包装シーン
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/08-carton.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/08-carton.webp
   alt: 寸法が表示されたクリスピー3色スクイーズボールの輸出カートン
 answer: このクリスピー3色スクイーズフィジェットボールは中にやわらかい粘土が詰まっています。握ったりもんだりすると、
   心地よいクリスピーなASMR音が鳴り、ストレスを解放し不安を和らげるのに役立ちます。安全なTPR外層でできており、

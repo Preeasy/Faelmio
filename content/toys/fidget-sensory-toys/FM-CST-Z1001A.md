@@ -7,24 +7,24 @@ sku: FM-CST-Z1001A
 factory_footage: true
 badge: New
 cover:
-  image: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/01-main.jpg
+  image: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/01-main.webp
   alt: Crunchy 3-color marbled squishy fidget ball with soft clay inside, squeezed by hand to show the ASMR crunch effect
 gallery:
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/01-main.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/01-main.webp
   alt: Crunchy 3-color marbled squishy fidget ball with soft clay inside
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/02-display1.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/02-display1.webp
   alt: 3-color squishy ball set with assorted marbled pastel colors
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/03-display2.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/03-display2.webp
   alt: Crunchy squishy ball retail display with assorted colors
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/04-closeup.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/04-closeup.webp
   alt: Close-up of the crunchy wax shell texture on the 3-color squishy ball
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/05-texture.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/05-texture.webp
   alt: Textured surface of the crispy squishy fidget ball showing the marbled pattern
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/06-squeeze.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/06-squeeze.webp
   alt: Hand squeezing the crunchy 3-color squishy ball to demonstrate the crackle ASMR effect
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/07-scene.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/07-scene.webp
   alt: Crunchy squishy ball in retail packaging scene with other fidget toys
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/08-carton.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/08-carton.webp
   alt: Export carton for crunchy 3-color squishy balls with dimensions
 answer: This crunchy 3-color squishy fidget ball is filled with soft clay inside. It creates satisfying crispy ASMR crunch sounds
   when you squeeze and knead it, helping you release stress and calm anxiety. Made of safe TPR outer layer, it is a wonderful

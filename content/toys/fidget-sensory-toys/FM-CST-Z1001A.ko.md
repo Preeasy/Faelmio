@@ -7,24 +7,24 @@ sku: FM-CST-Z1001A
 factory_footage: true
 badge: 신제품
 cover:
-  image: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/01-main.jpg
+  image: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/01-main.webp
   alt: 속에 부드러운 점토가 들어 있는 크리스피한 3색 마블 스퀴시 피젯 볼, 손으로 쥐어 ASMR 크리스피 효과를 보여줌
 gallery:
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/01-main.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/01-main.webp
   alt: 속에 부드러운 점토가 들어 있는 크리스피한 3색 마블 스퀴시 피젯 볼
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/02-display1.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/02-display1.webp
   alt: 파스텔 마블 컬러가 어소트된 3색 스퀴시 볼 세트
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/03-display2.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/03-display2.webp
   alt: 다색 크리스피 스퀴시 볼 소매 디스플레이
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/04-closeup.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/04-closeup.webp
   alt: 3색 스퀴시 볼의 크리스피한 왁스 셸 질감 클로즈업
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/05-texture.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/05-texture.webp
   alt: 마블 패턴이 보이는 크리스피 스퀴시 피젯 볼의 표면 질감
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/06-squeeze.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/06-squeeze.webp
   alt: 크리스피한 3색 스퀴시 볼을 손으로 쥐어 파삭파삭한 ASMR 효과를 실연
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/07-scene.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/07-scene.webp
   alt: 다른 피젯 토이와 함께한 크리스피 스퀴시 볼 소매 포장 장면
-- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/08-carton.jpg
+- src: /images/toys/fidget-sensory-toys/FM-CST-Z1001A/08-carton.webp
   alt: 치수가 표시된 크리스피 3색 스퀴시 볼 수출 카톤
 answer: 이 크리스피 3색 스퀴시 피젯 볼은 속에 부드러운 점토가 들어 있습니다. 쥐거나 주무르면 만족스러운
   크리스피한 ASMR 소리가 나며, 스트레스를 해소하고 불안을 가라앉히는 데 도움을 줍니다. 안전한 TPR 외층으로
