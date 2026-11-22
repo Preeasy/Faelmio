@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 {{ range where .Site.Pages "Kind" "not in" (slice "taxonomy" "term") }}
-{{ if not .Params.sitemap_exclude }}
+{{ if and (not .Params.sitemap_exclude) (ne .Params.robotsNoIndex true) }}
 <url>
   <loc>{{ .Permalink }}</loc>
 {{ if not .Lastmod.IsZero }}
