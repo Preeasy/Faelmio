@@ -201,6 +201,9 @@ showtoc = true
 tocopen = false
 copyright = "© 2026 Yiwu Maxon. All rights reserved."
 
+# Google Analytics 4 measurement ID. Leave empty to disable analytics injection.
+ga_measurement_id = "G-P0JWS3XNRY"
+
 [params.contact]
 whatsapp = "8618257499725"
 phone_display = "+86 182 5749 9725"

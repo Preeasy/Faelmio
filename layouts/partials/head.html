@@ -10,6 +10,35 @@
 {{- /* Bing Webmaster verification (double-check: file + meta tag) */}}
 <meta name="msvalidate.01" content="B5D0726E150DA8C040602CB7CB9DD86A">
 
+{{- /* Google Analytics 4 (only in production) */}}
+{{- with site.Params.ga_measurement_id }}
+{{- if or hugo.IsProduction (eq site.Params.env "production") }}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ . }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '{{ . }}', { anonymize_ip: true });
+  (function(){
+    var LANG = {{ site.Language.Lang | jsonify }};
+    function ev(name, params){
+      if (typeof gtag === 'function') gtag('event', name, params || {});
+    }
+    window.__faelmioTrack = ev;
+    // Lead conversion: fires once on any thank-you page (all languages)
+    if (location.pathname.indexOf('/thanks/') !== -1) {
+      ev('generate_lead', { page_location: location.pathname, language: LANG });
+    }
+    // WhatsApp click (event delegation catches the anchor even if target is the SVG)
+    document.addEventListener('click', function(e){
+      var t = e.target && e.target.closest ? e.target.closest('.whatsapp-float') : null;
+      if (t) ev('whatsapp_click', { page_location: location.pathname, language: LANG });
+    });
+  })();
+</script>
+{{- end }}
+{{- end }}
+
 {{- /* Title */}}
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Params.seo_title | default .Title }} | {{ site.Params.label.text }}{{ end }}</title>
 

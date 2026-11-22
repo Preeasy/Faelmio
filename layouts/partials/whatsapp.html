@@ -16,6 +16,7 @@
 </div>
 <script>
 (function(){
+  function track(name){ if (typeof window.__faelmioTrack === 'function') window.__faelmioTrack(name, { page_location: location.pathname }); }
   var btn=document.querySelector('[data-email-panel-toggle]'), panel=document.getElementById('email-panel');
   if(!btn||!panel) return;
   function close(){ panel.hidden=true; btn.setAttribute('aria-expanded','false'); }
@@ -23,7 +24,7 @@
     e.stopPropagation();
     var open=panel.hidden;
     panel.hidden=!open; btn.setAttribute('aria-expanded', String(open));
-    if(open && copy){ copy.textContent=copy.getAttribute('data-label')||copy.textContent; }
+    if(open){ track('email_panel_open'); if(copy){ copy.textContent=copy.getAttribute('data-label')||copy.textContent; } }
   });
   panel.addEventListener('click',function(e){ e.stopPropagation(); });
   document.addEventListener('click',close);
@@ -32,7 +33,7 @@
   if(copy){ copy.addEventListener('click',function(){
     var t=copy.getAttribute('data-copy');
     if(!copy.hasAttribute('data-label')) copy.setAttribute('data-label', copy.textContent);
-    function done(){ copy.textContent='Copied ✓'; }
+    function done(){ copy.textContent='Copied ✓'; track('email_copy'); }
     try {
       var ta=document.createElement('textarea');
       ta.value=t; ta.setAttribute('readonly','');
