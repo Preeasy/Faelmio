@@ -61,6 +61,8 @@ Flete marítimo desde Ningbo / Shanghái, puerto a puerto, sin incluir el despac
 | Corea del Sur | Busan | 3 – 6 días |
 | México | Manzanillo | 20 – 26 días |
 | Brasil | Santos | 35 – 45 días |
+| Colombia | Cartagena / Buenaventura | 30 – 40 días |
+| Chile | San Antonio / Valparaíso | 32 – 42 días |
 | Australia | Sídney / Melbourne | 16 – 24 días |
 | EAU | Jebel Ali | 18 – 24 días |
 
