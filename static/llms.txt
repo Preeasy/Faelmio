@@ -148,6 +148,8 @@ Pet toys
   https://www.faelmio.com/blog/rc-electronic-toys-compliance/
 - Amazon toy compliance checklist (CPC, tracking label, warning wording, GPSR fields, restricted items):
   https://www.faelmio.com/blog/amazon-toy-compliance-checklist/
+- AQL inspection in practice (sampling tables, critical/major/minor, PO clause, reading the report):
+  https://www.faelmio.com/blog/aql-toy-inspection-in-practice/
 
 ## Policies and languages
 
