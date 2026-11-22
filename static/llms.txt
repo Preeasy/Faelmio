@@ -150,6 +150,8 @@ Pet toys
   https://www.faelmio.com/blog/amazon-toy-compliance-checklist/
 - AQL inspection in practice (sampling tables, critical/major/minor, PO clause, reading the report):
   https://www.faelmio.com/blog/aql-toy-inspection-in-practice/
+- FBA first leg from China (consolidation, inbound carton rules, hidden placement/prep/detention fees):
+  https://www.faelmio.com/blog/fba-first-leg-consolidation/
 
 ## Policies and languages
 
