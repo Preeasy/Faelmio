@@ -1,7 +1,7 @@
 {{- $src := .src -}}
 {{- $size := .size | default "120" -}}
 {{- $out := $src -}}
-{{- if and $src (hasPrefix $src "/images/toys/") -}}
+{{- if and $src (or (hasPrefix $src "/images/toys/") (hasPrefix $src "/images/products/")) -}}
 {{- $base := $src -}}
 {{- if strings.HasSuffix $base ".webp" -}}{{- $base = strings.TrimSuffix ".webp" $base -}}{{- end -}}
 {{- if strings.HasSuffix $base ".jpg" -}}{{- $base = strings.TrimSuffix ".jpg" $base -}}{{- end -}}

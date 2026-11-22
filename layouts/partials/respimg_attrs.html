@@ -6,7 +6,7 @@
 {{- $p := $src -}}
 {{- if and $p (hasPrefix $p "http") -}}{{- $p = (urls.Parse $p).Path -}}{{- end -}}
 {{- $out := "" -}}
-{{- if and $p (or (hasPrefix $p "/images/toys/") (hasPrefix $p "/images/hero/") (hasPrefix $p "/images/oem/")) -}}
+{{- if and $p (or (hasPrefix $p "/images/toys/") (hasPrefix $p "/images/products/") (hasPrefix $p "/images/hero/") (hasPrefix $p "/images/oem/")) -}}
   {{- $base := $p -}}
   {{- if strings.HasSuffix $base ".webp" -}}{{- $base = strings.TrimSuffix ".webp" $base -}}{{- end -}}
   {{- if strings.HasSuffix $base ".jpg" -}}{{- $base = strings.TrimSuffix ".jpg" $base -}}{{- end -}}

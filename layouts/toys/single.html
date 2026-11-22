@@ -619,14 +619,14 @@
   if (!img && !vid) return;
 
   function buildSrcset(src) {
-    if (src && src.indexOf("/images/toys/") === 0 && /\.(webp|jpg)$/.test(src)) {
+    if (src && /^\/images\/(toys|products)\//.test(src) && /\.(webp|jpg)$/.test(src)) {
       var base = src.replace(/\.(webp|jpg)$/, "");
       return base + "-480.webp 480w, " + base + "-800.webp 800w, " + base + "-1200.webp 1200w, " + src + " 1500w";
     }
     return "";
   }
   function thumbUrl(src) {
-    if (src && src.indexOf("/images/toys/") === 0 && /\.(webp|jpg)$/.test(src)) {
+    if (src && /^\/images\/(toys|products)\//.test(src) && /\.(webp|jpg)$/.test(src)) {
       return src.replace(/\.(webp|jpg)$/, "") + "-120.webp";
     }
     return src;
