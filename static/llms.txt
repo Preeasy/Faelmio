@@ -144,6 +144,8 @@ Pet toys
   https://www.faelmio.com/blog/plush-toy-sourcing-guide/
 - Japan ST Mark and Korea KC for toys (who can apply, label fields, testing sequence):
   https://www.faelmio.com/blog/japan-st-korea-kc-toy-certification/
+- RC and electronic toy compliance (battery choice, EN 62115, FCC, PSE, button-cell rules, UN38.3 shipping):
+  https://www.faelmio.com/blog/rc-electronic-toys-compliance/
 
 ## Policies and languages
 
