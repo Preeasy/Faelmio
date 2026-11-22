@@ -1,0 +1,15 @@
+{{- /* Emits srcset="..." sizes="..." for product/category images that have pre-generated
+     resized variants (X-480.webp, X-800.webp, X-1200.webp). Accepts relative or absolute
+     src; normalises to the path before matching. Returns empty (safeHTMLAttr) otherwise. */ -}}
+{{- $src := .src -}}
+{{- $sizes := .sizes | default "(max-width: 768px) 92vw, 560px" -}}
+{{- $p := $src -}}
+{{- if and $p (hasPrefix $p "http") -}}{{- $p = (urls.Parse $p).Path -}}{{- end -}}
+{{- $out := "" -}}
+{{- if and $p (or (hasPrefix $p "/images/toys/") (hasPrefix $p "/images/hero/") (hasPrefix $p "/images/oem/")) -}}
+  {{- $base := $p -}}
+  {{- if strings.HasSuffix $base ".webp" -}}{{- $base = strings.TrimSuffix ".webp" $base -}}{{- end -}}
+  {{- if strings.HasSuffix $base ".jpg" -}}{{- $base = strings.TrimSuffix ".jpg" $base -}}{{- end -}}
+  {{- $out = printf `srcset="%s-480.webp 480w, %s-800.webp 800w, %s-1200.webp 1200w, %s 1500w" sizes="%s"` $base $base $base $p $sizes -}}
+{{- end -}}
+{{- return ($out | safeHTMLAttr) -}}

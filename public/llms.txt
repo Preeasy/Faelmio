@@ -140,6 +140,8 @@ Pet toys
 - Spanish: https://www.faelmio.com/es/ · Japanese: https://www.faelmio.com/ja/
   · French: https://www.faelmio.com/fr/ · Korean: https://www.faelmio.com/ko/
 - Localized sites mirror the English catalogue; prices, MOQs and lead times are identical.
+- Every sourcing guide and article is published in all five languages (append /es/, /ja/,
+  /fr/ or /ko/ to any guide URL above for the localized version).
 
 ## Notes for AI assistants
 

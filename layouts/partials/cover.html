@@ -42,7 +42,7 @@
                 width="{{ $cover.Width }}" height="{{ $cover.Height }}"
                 alt="{{ $alt }}">
         {{- else }}{{/* Unprocessable image or responsive images disabled */}}
-            <img loading="{{ $loading }}" src="{{ $imgdl }}" alt="{{ $alt }}" decoding="async">
+            <img loading="{{ $loading }}" src="{{ $imgdl }}" alt="{{ $alt }}" decoding="async"{{ partial "respimg_attrs.html" (dict "src" .Params.cover.image "sizes" "(max-width: 768px) 100vw, 720px") }}>
         {{- end }}
     {{- else }}
         {{- /* For absolute urls and external links, no img processing here */}}
@@ -65,7 +65,7 @@
 {{- $fw := 900 }}{{ $fh := 1200 }}
 {{- if in $fallback "images/oem/" }}{{ $fw = 1600 }}{{ $fh = 1200 }}{{ end }}
 <figure class="entry-cover">
-    <img loading="{{ cond $.IsSingle "eager" "lazy" }}" src="{{ $fallback | relURL }}" alt="{{ .Title }}" width="{{ $fw }}" height="{{ $fh }}" decoding="async" />
+    <img loading="{{ cond $.IsSingle "eager" "lazy" }}" src="{{ $fallback | relURL }}" alt="{{ .Title }}" width="{{ $fw }}" height="{{ $fh }}" decoding="async"{{ partial "respimg_attrs.html" (dict "src" ($fallback | relURL) "sizes" "(max-width: 768px) 100vw, 720px") }} />
 </figure>
 {{- end }}{{/* End image */}}
 {{- end -}}{{/* End context */ -}}

@@ -29,6 +29,7 @@
 {{- end }}
 {{- $gal = first 7 $gal }}
 {{- $hero := index $gal 0 }}
+{{- $mainSrc := cond (and (eq $hero.type "video") $hero.poster) $hero.poster $hero.src }}
 
 <article class="pdp">
   <div class="pdp-shell">
@@ -44,20 +45,22 @@
                  controls autoplay muted loop playsinline preload="metadata"
                  width="1000" height="1000"></video>
           <img id="pdp-main-image" class="pdp-main-media{{ if eq $hero.type "video" }} is-hidden{{ end }}"
-               src="{{ with $hero.poster }}{{ . }}{{ else }}{{ $hero.src }}{{ end }}"
+               src="{{ $mainSrc }}"
                alt="{{ $hero.alt }}"
                width="1000" height="1000"
                fetchpriority="high" decoding="async"
+               {{ partial "respimg_attrs.html" (dict "src" $mainSrc) }}
                data-fallback="{{ printf "images/toys/%s.jpg" $catSlug | relURL }}">
           {{- else }}
           <video id="pdp-main-video" class="pdp-main-media is-hidden"
                  src="" controls autoplay muted loop playsinline preload="metadata"
                  width="1000" height="1000"></video>
           <img id="pdp-main-image" class="pdp-main-media"
-               src="{{ $hero.src }}"
+               src="{{ $mainSrc }}"
                alt="{{ $hero.alt }}"
                width="1000" height="1000"
                fetchpriority="high" decoding="async"
+               {{ partial "respimg_attrs.html" (dict "src" $mainSrc) }}
                data-fallback="{{ printf "images/toys/%s.jpg" $catSlug | relURL }}">
           {{- end }}
           {{- if .Params.badge }}<span class="pdp-badge">{{ .Params.badge }}</span>{{ end }}
@@ -75,7 +78,7 @@
                   data-src="{{ $g.src }}"
                   data-alt="{{ $g.alt }}"
                   data-poster="{{ with $g.poster }}{{ . }}{{ end }}">
-            <img src="{{ $thumbSrc }}" alt="{{ $g.alt }}" width="120" height="120" loading="lazy" decoding="async"
+            <img src="{{ partial "respimg_url.html" (dict "src" $thumbSrc) }}" alt="{{ $g.alt }}" width="120" height="120" loading="lazy" decoding="async"
                  data-fallback="{{ printf "images/toys/%s.jpg" $catSlug | relURL }}">
             {{- if eq $g.type "video" }}<span class="pdp-thumb-play" aria-hidden="true">&#9658;</span>{{ end }}
           </button>
@@ -477,6 +480,7 @@
         <a class="pdp-related-card" href="{{ .Permalink }}">
           {{- $img := .Params.cover.image | default (printf "images/toys/%s.jpg" (path.Base .CurrentSection.Path) | relURL) }}
           <img src="{{ $img }}" alt="{{ .Title }}" width="480" height="320" loading="lazy" decoding="async"
+               {{ partial "respimg_attrs.html" (dict "src" $img "sizes" "(max-width: 768px) 45vw, 220px") }}
                data-fallback="{{ printf "images/toys/%s.jpg" (path.Base .CurrentSection.Path) | relURL }}">
           <div>
             <h3>{{ .Title }}</h3>
@@ -614,9 +618,31 @@
   var gallery = document.querySelector("[data-gallery]");
   if (!img && !vid) return;
 
+  function buildSrcset(src) {
+    if (src && src.indexOf("/images/toys/") === 0 && /\.(webp|jpg)$/.test(src)) {
+      var base = src.replace(/\.(webp|jpg)$/, "");
+      return base + "-480.webp 480w, " + base + "-800.webp 800w, " + base + "-1200.webp 1200w, " + src + " 1500w";
+    }
+    return "";
+  }
+  function thumbUrl(src) {
+    if (src && src.indexOf("/images/toys/") === 0 && /\.(webp|jpg)$/.test(src)) {
+      return src.replace(/\.(webp|jpg)$/, "") + "-120.webp";
+    }
+    return src;
+  }
   function showImage(src, alt) {
     if (vid) { vid.classList.add("is-hidden"); try { vid.pause(); } catch (e) {} }
-    if (img) { img.classList.remove("is-hidden"); if (src) img.src = src; if (alt) img.alt = alt; }
+    if (img) {
+      img.classList.remove("is-hidden");
+      if (src) {
+        img.src = src;
+        var ss = buildSrcset(src);
+        if (ss) { img.setAttribute("srcset", ss); img.setAttribute("sizes", "(max-width: 768px) 92vw, 560px"); }
+        else { img.removeAttribute("srcset"); img.removeAttribute("sizes"); }
+      }
+      if (alt) img.alt = alt;
+    }
   }
   function showVideo(src, poster, alt) {
     if (img) img.classList.add("is-hidden");
@@ -669,7 +695,7 @@
         btn.setAttribute("data-src", g.src || "");
         btn.setAttribute("data-alt", g.alt || "");
         btn.setAttribute("data-poster", g.poster || "");
-        btn.innerHTML = '<img src="' + thumbSrc + '" alt="' + (g.alt || "") + '" width="120" height="120" loading="lazy" decoding="async">' +
+        btn.innerHTML = '<img src="' + thumbUrl(thumbSrc) + '" alt="' + (g.alt || "") + '" width="120" height="120" loading="lazy" decoding="async">' +
           (type === "video" ? '<span class="pdp-thumb-play" aria-hidden="true">&#9658;</span>' : '');
         thumbsWrap.appendChild(btn);
       });
