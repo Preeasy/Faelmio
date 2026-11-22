@@ -146,6 +146,8 @@ Pet toys
   https://www.faelmio.com/blog/japan-st-korea-kc-toy-certification/
 - RC and electronic toy compliance (battery choice, EN 62115, FCC, PSE, button-cell rules, UN38.3 shipping):
   https://www.faelmio.com/blog/rc-electronic-toys-compliance/
+- Amazon toy compliance checklist (CPC, tracking label, warning wording, GPSR fields, restricted items):
+  https://www.faelmio.com/blog/amazon-toy-compliance-checklist/
 
 ## Policies and languages
 
