@@ -6,7 +6,7 @@ seo_title: 幼児STEM向けABSビルディングブロックセット
 description: 角が滑らかな安全なABS樹脂製ビルディングブロックセット。主要ブロックブランドと互換性があり、幼児STEM学習と微細運動能力に適しています。300セットからの卸売。
 sku: FM-ES-V8004A
 cover:
-  image: "https://images.faelmio.com/toys/educational-stem-toys/building-blocks-set.webp"
+  image: "/images/toys/educational-stem-toys.webp"
   alt: 幼児STEM遊び向けのカラフルな組み立て式ABSビルディングブロックセット
 answer: 安全なABS樹脂製で角が滑らかな、カラフルな組み立て式ビルディングブロックセットです。幼児STEM学習、微細運動能力、空間認識のために作られています。複数のサイズ、ピース数、カラーバリエーションを用意し、カスタムパッケージに対応、最小注文数量は300セットです。
 moq: "300セット"

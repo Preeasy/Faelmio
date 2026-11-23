@@ -6,7 +6,7 @@ seo_title: ストックぬいぐるみ 即納卸売・低MOQ 100個から
 description: 義烏から即納できる300種類以上の実績あるデザインを揃えたストックぬいぐるみ。100個からの低MOQ、CE、EN71、ASTMの事前試験済みで、素早い補充に対応します。
 sku: FM-PL-V8002A
 cover:
-  image: "https://images.faelmio.com/toys/plush-toys/stock-plush.webp"
+  image: "/images/toys/plush-toys.webp"
   alt: 実績あるデザインをアソートした即納ストックぬいぐるみ
 answer: 実績ある300種類以上のデザインから選べる即納ストックぬいぐるみです。100個から注文でき、義烏の倉庫から7〜10日で出荷します。CE、EN71、ASTMの事前試験済みのため、迅速な補充を必要とするAmazonセラー、小規模小売業者、販促プロジェクトに実用的です。
 moq: "100個"

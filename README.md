@@ -23,7 +23,7 @@ Output goes to `public/`.
 - First submission activates — check email and click link
 
 ## Images
-All hosted on Cloudflare R2 (images.faelmio.com), NOT in this repo.
+Stored locally under `static/images/` (with pre-generated 480/800/1200 WebP variants and 120px thumbnails).
 
 ## Daily Workflow
 Edit markdown → git add/commit → push → Cloudflare auto-builds

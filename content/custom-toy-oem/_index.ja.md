@@ -2,7 +2,7 @@
 title: "カスタム玩具OEM受託 — スケッチから店頭まで"
 description: "義烏での玩具OEM受託・カスタム玩具製造：3Dデザイン、試作、金型、サンプル、量産、AQL検査、DDP配送まで一貫対応。"
 cover:
-  image: "https://images.faelmio.com/custom-toy-oem/custom-toy-oem.webp"
+  image: "/images/oem/oem-process.webp"
 oem:
   eyebrow: "カスタム玩具OEM"
   lede: "自社ブランドの玩具ラインを形に。義烏でデザイン、金型、サンプル、量産まで一括管理 — 最初のスケッチから納品まで、責任ある1つのパートナー。"

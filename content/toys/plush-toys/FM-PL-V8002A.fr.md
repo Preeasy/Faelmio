@@ -6,7 +6,7 @@ seo_title: Peluches en stock, prêtes à expédier en gros
 description: Peluches en stock avec plus de 300 modèles éprouvés prêts à expédier depuis Yiwu, MOQ dès 100 pièces, conformité CE, EN71 et ASTM pré-testée.
 sku: FM-PL-V8002A
 cover:
-  image: "https://images.faelmio.com/toys/plush-toys/stock-plush.webp"
+  image: "/images/toys/plush-toys.webp"
   alt: Peluches en stock prêtes à expédier dans des modèles éprouvés assortis
 answer: Des peluches en stock prêtes à expédier, sélectionnées parmi plus de 300 modèles éprouvés, disponibles dès 100 pièces avec expédition depuis les entrepôts de Yiwu sous 7 à 10 jours. La gamme est pré-testée CE, EN71 et ASTM, ce qui la rend pratique pour les vendeurs Amazon, les petits détaillants et les projets promotionnels qui ont besoin d'un réassort rapide.
 moq: "100 pièces"

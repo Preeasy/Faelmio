@@ -6,7 +6,7 @@ seo_title: Set de bloques de construcción ABS para STEM preescolar
 description: Set de bloques de construcción ABS seguros con bordes suaves, compatible con las principales marcas, para STEM preescolar. Al por mayor desde 300 juegos.
 sku: FM-ES-V8004A
 cover:
-  image: "https://images.faelmio.com/toys/educational-stem-toys/building-blocks-set.webp"
+  image: "/images/toys/educational-stem-toys.webp"
   alt: Set colorido de bloques de construcción ABS entrelazados para juego STEM preescolar
 answer: Un colorido set de bloques de construcción entrelazados en plástico ABS seguro y con bordes suaves, pensado para el aprendizaje STEM preescolar, las habilidades motoras finas y el razonamiento espacial. Hay disponibles múltiples tamaños, cantidades de piezas y combinaciones de colores, con embalaje personalizado y un pedido mínimo de 300 juegos.
 moq: "300 juegos"

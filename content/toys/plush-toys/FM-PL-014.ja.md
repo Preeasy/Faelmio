@@ -23,10 +23,6 @@ cover:
   alt: "サテンリボン付きのアイボリークリーム色カスタムぬいぐるみベア、スタジオ製品写真"
 
 gallery:
-  - src: "https://images.faelmio.com/toys/plush-toys/custom-plush-demo.mp4"
-    type: video
-    poster: "/images/products/custom-plush/01-front.webp"
-    alt: "カスタムぬいぐるみベアの360°回転デモ動画"
   - src: "/images/products/custom-plush/01-front.webp"
     alt: "ベージュ背景でのカスタムぬいぐるみベア斜め正面の姿"
   - src: "/images/products/custom-plush/02-detail.webp"

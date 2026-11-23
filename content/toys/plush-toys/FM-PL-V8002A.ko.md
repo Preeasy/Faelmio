@@ -6,7 +6,7 @@ seo_title: 재고 봉제 인형, 바로 출고 도매
 description: 이위우에서 바로 출고 가능한 300가지 이상 검증된 디자인의 재고 봉제 인형, 100개부터 낮은 MOQ, CE/EN71/ASTM 사전 시험 완료로 빠른 재입고가 가능합니다.
 sku: FM-PL-V8002A
 cover:
-  image: "https://images.faelmio.com/toys/plush-toys/stock-plush.webp"
+  image: "/images/toys/plush-toys.webp"
   alt: 다양한 검증된 디자인으로 구성된 바로 출고 가능한 재고 봉제 인형
 answer: 이위우 창고에서 7–10일 내 출고되며 100개부터 주문 가능한, 300가지 이상 검증된 디자인 중에서 선별한 바로 출고 가능한 재고 봉제 인형입니다. CE, EN71, ASTM 사전 시험을 완료한 제품군으로 빠른 재입고가 필요한 Amazon 셀러, 소규모 소매점, 프로모션 프로젝트에 실용적입니다.
 moq: "100개"

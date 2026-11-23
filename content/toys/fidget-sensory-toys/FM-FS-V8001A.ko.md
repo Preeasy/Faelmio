@@ -7,7 +7,7 @@ description: 스트레스 해소와 ADHD 집중력 향상을 위한 푸시팝 �
 sku: FM-FS-V8001A
 factory_footage: true
 cover:
-  image: "https://images.faelmio.com/toys/fidget-sensory-toys/push-pop-bubble.webp"
+  image: "/images/toys/fidget-sensory-toys.webp"
   alt: 누를 수 있는 버블 그리드가 있는 푸시팝 버블 실리콘 감각 피젯 완구
 answer: 푸시팝 버블(팝잇)은 시원한 클릭감을 갖춘 실리콘 감각 피젯 완구로, 스트레스 해소와 ADHD 집중력, 조용한 사무실 놀이를 위해 설계되었습니다. 정사각형, 원형, 하트, 동물 디자인 등 20가지 이상의 형태로 제공되며, 도매 구매자를 위한 맞춤 색상과 인쇄는 500개부터 가능합니다.
 moq: "500개"

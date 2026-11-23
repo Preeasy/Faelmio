@@ -6,7 +6,7 @@ seo_title: ABS Building Blocks Set for Preschool STEM
 description: Building blocks set in safe ABS plastic with smooth edges, compatible with major brick brands, for preschool STEM and motor skills. Wholesale from 300 sets.
 sku: FM-ES-V8004A
 cover:
-  image: "https://images.faelmio.com/toys/educational-stem-toys/building-blocks-set.webp"
+  image: "/images/toys/educational-stem-toys.webp"
   alt: Colourful interlocking ABS building blocks set for preschool STEM play
 answer: A colourful interlocking building blocks set in safe ABS plastic with smooth edges, made for preschool
   STEM learning, fine motor skills and spatial reasoning. Multiple sizes, piece counts and colour combinations

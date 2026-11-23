@@ -1,10 +1,10 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-{{- if hugo.IsProduction | or (eq site.Params.env "production") | and (ne .Params.robotsNoIndex true) }}
-<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
-{{- else }}
+{{- if or (eq .Kind "404") (eq .Params.robotsNoIndex true) (not (or hugo.IsProduction (eq site.Params.env "production"))) }}
 <meta name="robots" content="noindex, nofollow">
+{{- else }}
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 {{- end }}
 
 {{- /* Bing Webmaster verification (double-check: file + meta tag) */}}
@@ -126,6 +126,11 @@
 <link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" integrity="{{ $stylesheet.Data.Integrity }}" rel="preload stylesheet" as="style">
 {{- else }}
 <link crossorigin="anonymous" href="{{ $stylesheet.RelPermalink }}" rel="preload stylesheet" as="style">
+{{- end }}
+
+{{- /* Homepage LCP image preload */}}
+{{- if .IsHome }}
+<link rel="preload" as="image" fetchpriority="high" href="{{ "images/hero/showroom.webp" | relURL }}" imagesrcset="{{ "images/hero/showroom-480.webp" | relURL }} 480w, {{ "images/hero/showroom-800.webp" | relURL }} 800w, {{ "images/hero/showroom-1200.webp" | relURL }} 1200w, {{ "images/hero/showroom.webp" | relURL }} 1500w" imagesizes="(max-width: 768px) 100vw, 1200px">
 {{- end }}
 
 {{- /* Favicons */}}

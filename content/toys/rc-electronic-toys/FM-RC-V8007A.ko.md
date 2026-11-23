@@ -6,7 +6,7 @@ seo_title: 2.4GHz 무선 조종 자동차, RC 완구 도매
 description: 2.4GHz 간섭 없는 조종, 20분 이상 주행 가능한 충전식 리튬이온 배터리, 내구성 높은 ABS 차체와 TPR 타이어를 갖춘 무선 조종 자동차. 100개부터 주문.
 sku: FM-RC-V8007A
 cover:
-  image: "https://images.faelmio.com/toys/rc-electronic-toys/remote-control-car.webp"
+  image: "/images/toys/rc-electronic-toys.webp"
   alt: 내구성 높은 ABS 차체와 TPR 타이어를 갖춘 2.4GHz 무선 조종 자동차
 answer: 간섭 없는 송신기, 20분 이상 주행 가능한 충전식 리튬이온 배터리, 내구성 높은 ABS 차체와 TPR 타이어를 갖춘 2.4GHz 무선 조종 자동차입니다. 저가형 1:24 스케일부터 1:12 오프로드 자동차까지 제품군을 구성하며, 100개부터 맞춤 색상, 차체 데칼, 포장을 제공합니다.
 moq: "100개"

@@ -6,7 +6,7 @@ seo_title: Peluches de stock, al por mayor listos para enviar
 description: Peluches de stock con más de 300 diseños probados listos para enviar desde Yiwu, MOQ desde 100 ud y cumplimiento CE, EN71 y ASTM para reposiciones rápidas.
 sku: FM-PL-V8002A
 cover:
-  image: "https://images.faelmio.com/toys/plush-toys/stock-plush.webp"
+  image: "/images/toys/plush-toys.webp"
   alt: Peluches de stock listos para enviar en diseños probados surtidos
 answer: Peluches de stock listos para enviar, seleccionados entre más de 300 diseños probados, disponibles desde 100 ud con despacho desde almacenes de Yiwu en 7–10 días. La gama está previamente probada según CE, EN71 y ASTM, lo que la hace práctica para vendedores de Amazon, pequeños minoristas y proyectos promocionales que necesitan reposición rápida.
 moq: "100 ud"

@@ -23,10 +23,6 @@ cover:
   alt: "Ivory cream custom plush bear with satin ribbon, studio product photo"
 
 gallery:
-  - src: "https://images.faelmio.com/toys/plush-toys/custom-plush-demo.mp4"
-    type: video
-    poster: "/images/products/custom-plush/01-front.webp"
-    alt: "Custom plush bear 360° rotation video demo"
   - src: "/images/products/custom-plush/01-front.webp"
     alt: "Custom plush bear, three-quarter front view on beige background"
   - src: "/images/products/custom-plush/02-detail.webp"

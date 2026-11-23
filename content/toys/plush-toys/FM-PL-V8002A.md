@@ -6,7 +6,7 @@ seo_title: Stock Plush Toys, Ready to Ship Wholesale
 description: Stock plush toys with 300+ proven designs ready to ship from Yiwu, low MOQ from 100 pcs and pre-tested CE, EN71 and ASTM compliance for fast restocking.
 sku: FM-PL-V8002A
 cover:
-  image: "https://images.faelmio.com/toys/plush-toys/stock-plush.webp"
+  image: "/images/toys/plush-toys.webp"
   alt: Ready-to-ship stock plush toys in assorted proven designs
 answer: Ready-to-ship stock plush toys selected from 300+ proven designs, available from 100 pcs with dispatch
   from Yiwu warehouses in 7–10 days. The range is pre-tested for CE, EN71 and ASTM, which makes it practical for

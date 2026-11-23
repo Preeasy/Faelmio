@@ -6,7 +6,7 @@ seo_title: 고강도 비닐 인플레이터블 수영 튜브, 도매
 description: 0.3mm+ UV 방지 비닐, 안전 밸브, 100kg 하중 시험을 통과한 강화 이음새, 수십 가지 형태를 갖춘 인플레이터블 수영 튜브. 200개부터 도매 주문.
 sku: FM-OW-V8005A
 cover:
-  image: "https://images.faelmio.com/toys/outdoor-water-toys/inflatable-pool-float.webp"
+  image: "/images/toys/outdoor-water-toys.webp"
   alt: 독특한 형태의 고강도 비닐 인플레이터블 수영 튜브
 answer: 0.3mm+ UV 방지 비닐과 안전 밸브, 강화 이음새로 제작된 고강도 인플레이터블 수영 튜브입니다. 유니콘과 피자 조각부터 도넛, 플라밍고, 맞춤 디자인까지 수십 가지 형태를 제공하여 200개부터 여름 소매 및 프로모션 상품으로 판매할 수 있습니다.
 moq: "200개"

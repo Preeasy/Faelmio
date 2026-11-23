@@ -6,7 +6,7 @@ seo_title: Heavy-Duty Vinyl Inflatable Pool Float, Wholesale
 description: Inflatable pool float in 0.3mm+ UV-resistant vinyl with safety valves, reinforced seams tested to 100kg and dozens of shapes. Wholesale from 200 pcs.
 sku: FM-OW-V8005A
 cover:
-  image: "https://images.faelmio.com/toys/outdoor-water-toys/inflatable-pool-float.webp"
+  image: "/images/toys/outdoor-water-toys.webp"
   alt: Heavy-duty vinyl inflatable pool float in a novelty shape
 answer: A heavy-duty inflatable pool float made from 0.3 mm+ UV-resistant vinyl with safety valves and reinforced
   seams. Dozens of shapes are available, from unicorns and pizza slices to donuts, flamingos and custom designs,

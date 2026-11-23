@@ -6,7 +6,7 @@ seo_title: 유치원 STEM용 ABS 조립 블록 세트
 description: 매끄러운 모서리의 안전한 ABS 플라스틱 조립 블록 세트로 주요 브릭 브랜드와 호환되며 유치원 STEM 학습과 소근육 운동을 위한 제품입니다. 300세트부터 도매 주문.
 sku: FM-ES-V8004A
 cover:
-  image: "https://images.faelmio.com/toys/educational-stem-toys/building-blocks-set.webp"
+  image: "/images/toys/educational-stem-toys.webp"
   alt: 유치원 STEM 플레이를 위한 알록달록한 상호 연결 ABS 조립 블록 세트
 answer: 매끄러운 모서리의 안전한 ABS 플라스틱으로 만든 알록달록한 상호 연결 조립 블록 세트로, 유치원 STEM 학습과 소근육 운동, 공간 추론을 위해 설계되었습니다. 다양한 사이즈, 부품 수, 색상 조합을 제공하며 맞춤 포장이 가능하고 최소 주문 수량은 300세트입니다.
 moq: "300세트"

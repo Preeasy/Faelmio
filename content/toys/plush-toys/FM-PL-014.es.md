@@ -23,10 +23,6 @@ cover:
   alt: "Oso de peluche personalizado color crema marfil con cinta de satén, foto de producto de estudio"
 
 gallery:
-  - src: "https://images.faelmio.com/toys/plush-toys/custom-plush-demo.mp4"
-    type: video
-    poster: "/images/products/custom-plush/01-front.webp"
-    alt: "Vídeo de demostración en 360° del oso de peluche personalizado"
   - src: "/images/products/custom-plush/01-front.webp"
     alt: "Oso de peluche personalizado, vista frontal a tres cuartos sobre fondo beige"
   - src: "/images/products/custom-plush/02-detail.webp"

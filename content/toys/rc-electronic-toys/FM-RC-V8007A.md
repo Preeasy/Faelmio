@@ -6,7 +6,7 @@ seo_title: 2.4GHz Remote Control Car, Wholesale RC Toy
 description: Remote control car with 2.4GHz interference-free control, rechargeable Li-ion battery with 20+ min runtime and durable ABS shell with TPR tires. From 100 pcs.
 sku: FM-RC-V8007A
 cover:
-  image: "https://images.faelmio.com/toys/rc-electronic-toys/remote-control-car.webp"
+  image: "/images/toys/rc-electronic-toys.webp"
   alt: 2.4GHz remote control car with durable ABS shell and TPR tires
 answer: A 2.4GHz remote control car with an interference-free transmitter, a rechargeable Li-ion battery delivering
   20+ minutes of runtime and a durable ABS shell on TPR tires. The range runs from budget 1:24 scale models to

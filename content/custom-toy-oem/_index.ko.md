@@ -2,7 +2,7 @@
 title: "맞춤 장난감 OEM — 스케치에서 진열대까지"
 description: "이우에서의 원스톱 맞춤 장난감 제조: 3D 디자인, 시제품, 금형, 샘플링, 양산, AQL QC 및 DDP 배송."
 cover:
-  image: "https://images.faelmio.com/custom-toy-oem/custom-toy-oem.webp"
+  image: "/images/oem/oem-process.webp"
 oem:
   eyebrow: "맞춤 장난감 OEM"
   lede: "귀사의 장난감 라인을 현실로 만드십시오. 이우에서 디자인, 금형, 샘플링, 양산을 운영합니다. 첫 스케치부터 배송된 카톤까지 책임지는 하나의 파트너입니다."

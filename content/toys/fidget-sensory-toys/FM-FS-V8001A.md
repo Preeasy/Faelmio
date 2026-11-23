@@ -7,7 +7,7 @@ description: Push pop bubble silicone fidget toy for stress relief and ADHD focu
 sku: FM-FS-V8001A
 factory_footage: true
 cover:
-  image: "https://images.faelmio.com/toys/fidget-sensory-toys/push-pop-bubble.webp"
+  image: "/images/toys/fidget-sensory-toys.webp"
   alt: Push pop bubble silicone fidget toy with a grid of poppable bubbles
 answer: A push pop bubble (Pop It) silicone sensory fidget toy with a satisfying click action, made for stress
   relief, ADHD focus and quiet desk play. It comes in 20+ shapes including square, round, heart and animal designs,

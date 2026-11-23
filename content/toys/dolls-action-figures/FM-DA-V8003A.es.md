@@ -6,7 +6,7 @@ seo_title: Figura de acción articulada, más de 30 puntos OEM
 description: Figura de acción articulada con más de 30 puntos de articulación, accesorios intercambiables y plástico PVC/POM, con color igualado a tu arte. Pedidos OEM desde 200 ud.
 sku: FM-DA-V8003A
 cover:
-  image: "https://images.faelmio.com/toys/dolls-action-figures/posable-action-figure.webp"
+  image: "/images/toys/dolls-action-figures.webp"
   alt: Figura de acción articulada con accesorios intercambiables y embalaje retail dinámico
 answer: Una figura de acción altamente articulada con más de 30 puntos de articulación y accesorios intercambiables, fabricada en plástico PVC/POM para juego, exhibición y estanterías de coleccionistas. La igualación de color a tu arte y el embalaje personalizado la convierten en una opción lista para OEM de personajes originales, con un pedido mínimo de 200 ud.
 moq: "200 ud"

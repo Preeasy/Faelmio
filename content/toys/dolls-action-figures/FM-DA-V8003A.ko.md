@@ -6,7 +6,7 @@ seo_title: 가동 액션 피겨, 30개 이상 포인트, OEM 도매
 description: 30개 이상의 관절 포인트, 교체형 액세서리, PVC/POM 플라스틱을 갖춘 가동 액션 피겨로 아트워크에 맞춘 색상 매칭이 가능합니다. 200개부터 OEM 주문.
 sku: FM-DA-V8003A
 cover:
-  image: "https://images.faelmio.com/toys/dolls-action-figures/posable-action-figure.webp"
+  image: "/images/toys/dolls-action-figures.webp"
   alt: 교체형 액세서리와 역동적인 리테일 포장을 갖춘 가동 액션 피겨
 answer: 30개 이상의 관절 포인트와 교체형 액세서리를 갖춘 고가동 액션 피겨로, 플레이와 디스플레이, 컬렉터 선반을 위해 PVC/POM 플라스틱으로 제작됩니다. 아트워크에 맞춘 색상 매칭과 맞춤 포장을 통해 오리지널 캐릭터를 위한 OEM 옵션으로 활용할 수 있으며 최소 주문 수량은 200개입니다.
 moq: "200개"

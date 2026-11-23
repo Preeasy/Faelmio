@@ -6,7 +6,7 @@ seo_title: 2.4GHz ラジコンカー 卸売 RC玩具
 description: 2.4GHzの干渉防止制御、20分以上の連続走行が可能な充電式リチウムイオンバッテリー、耐久性のあるABSシェルとTPRタイヤを備えたラジコンカー。100個からの卸売に対応。
 sku: FM-RC-V8007A
 cover:
-  image: "https://images.faelmio.com/toys/rc-electronic-toys/remote-control-car.webp"
+  image: "/images/toys/rc-electronic-toys.webp"
   alt: 耐久性のあるABSシェルとTPRタイヤを備えた2.4GHzラジコンカー
 answer: 干渉防止の送信機を備えた2.4GHzラジコンカーで、20分以上の連続走行が可能な充電式リチウムイオンバッテリーと、TPRタイヤを装着した耐久性のあるABSシェルを採用しています。ラインナップは低価格の1:24スケールモデルから1:12オフロードカーまで。カラー、ボディデカール、パッケージのカスタマイズに100個から対応します。
 moq: "100個"

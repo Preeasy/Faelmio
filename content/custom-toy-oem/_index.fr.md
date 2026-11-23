@@ -2,7 +2,7 @@
 title: "Jouets OEM personnalisés — du croquis au rayon"
 description: "Fabrication de jouets personnalisés à Yiwu : design 3D, prototypage, outillage, échantillonnage, production, QC AQL et livraison DDP."
 cover:
-  image: "https://images.faelmio.com/custom-toy-oem/custom-toy-oem.webp"
+  image: "/images/oem/oem-process.webp"
 oem:
   eyebrow: "OEM de jouets personnalisés"
   lede: "Donnez vie à votre propre gamme de jouets. Nous gérons design, outillage, échantillonnage et production à Yiwu — un seul partenaire responsable, du premier croquis au carton livré."

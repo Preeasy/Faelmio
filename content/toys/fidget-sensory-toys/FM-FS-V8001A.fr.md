@@ -7,7 +7,7 @@ description: Jouet fidget sensoriel push pop bubble en silicone pour la relaxati
 sku: FM-FS-V8001A
 factory_footage: true
 cover:
-  image: "https://images.faelmio.com/toys/fidget-sensory-toys/push-pop-bubble.webp"
+  image: "/images/toys/fidget-sensory-toys.webp"
   alt: Jouet fidget sensoriel push pop bubble en silicone avec une grille de bulles à presser
 answer: Un push pop bubble (Pop It) est un jouet fidget sensoriel en silicone doté d'un clic satisfaisant, conçu pour la relaxation, la concentration (TDAH) et le jeu silencieux au bureau. Il existe en plus de 20 formes, dont carrée, ronde, cœur et animaux, avec couleurs et impression personnalisées disponibles pour les acheteurs en gros à partir de 500 pièces.
 moq: "500 pièces"

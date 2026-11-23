@@ -6,7 +6,7 @@ seo_title: 丈夫なビニール製インフレータブルプールフロート
 description: 0.3 mm以上のUV耐性ビニール製インフレータブルプールフロート。安全バルブ、100 kgの耐荷重試験済みの補強シーム、数十種類の形状を備え、200個からの卸売に対応。
 sku: FM-OW-V8005A
 cover:
-  image: "https://images.faelmio.com/toys/outdoor-water-toys/inflatable-pool-float.webp"
+  image: "/images/toys/outdoor-water-toys.webp"
   alt: ノベルティ形状の丈夫なビニール製インフレータブルプールフロート
 answer: 0.3 mm以上のUV耐性ビニールで作られ、安全バルブと補強シームを備えた丈夫なインフレータブルプールフロートです。ユニコーンやピザスライスからドーナツ、フラミンゴ、カスタムデザインまで数十種類の形状を用意しており、200個からの夏の小売・販促アイテムとして適しています。
 moq: "200個"

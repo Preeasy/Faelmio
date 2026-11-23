@@ -6,7 +6,7 @@ seo_title: ノベルティパーティーパック パーティーギフトア�
 description: 風船、バブル、笛、発光グッズなど8〜15点のアソートアイテムを詰めたノベルティパーティーパック。誕生日、企業イベント、ブランド販促に適し、1,000パックからの卸売に対応。
 sku: FM-PP-V8006A
 cover:
-  image: "https://images.faelmio.com/toys/party-promotional-toys/novelty-party-pack.webp"
+  image: "/images/toys/party-promotional-toys.webp"
   alt: 風船、バブル、笛、発光グッズが入ったノベルティパーティーパックのアソート
 answer: 風船、バブル、笛、発光グッズなど8〜15点のアイテムを詰めたノベルティパーティーパックです。誕生日、企業イベント、ブランド販促向けに作られており、フルカラーパッケージと個別アイテムへのブランディングに対応、内容はイベントやキャンペーンに合わせて選択できます。最小注文数量は1,000パックです。
 moq: "1,000パック"

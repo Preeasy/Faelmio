@@ -23,10 +23,6 @@ cover:
   alt: "새틴 리본을 달린 아이보리 크림색 커스텀 봉제 인형 베어, 스튜디오 제품 사진"
 
 gallery:
-  - src: "https://images.faelmio.com/toys/plush-toys/custom-plush-demo.mp4"
-    type: video
-    poster: "/images/products/custom-plush/01-front.webp"
-    alt: "커스텀 봉제 인형 베어 360° 회전 데모 영상"
   - src: "/images/products/custom-plush/01-front.webp"
     alt: "베이지 배경 위에서 촬영한 커스텀 봉제 인형 베어의 3/4 정면 모습"
   - src: "/images/products/custom-plush/02-detail.webp"

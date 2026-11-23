@@ -10,7 +10,7 @@
 title: "Plush Bear Toy"
 description: "Super-soft cuddly plush bear — baby-safe embroidery, multiple sizes and colors, perfect for gifts and retail."
 cover:
-  image: "https://images.faelmio.com/toys/plush-toys/example-plush-bear.webp"
+  image: "/images/toys/plush-toys/example-plush-bear.webp"
   # 图片还没上传也没关系，会自动用分类兜底图占位
 
 # ===========================

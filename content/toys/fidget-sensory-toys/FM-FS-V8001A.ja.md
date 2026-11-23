@@ -7,7 +7,7 @@ description: ストレス解消とADHDの集中をサポートするシリコー
 sku: FM-FS-V8001A
 factory_footage: true
 cover:
-  image: "https://images.faelmio.com/toys/fidget-sensory-toys/push-pop-bubble.webp"
+  image: "/images/toys/fidget-sensory-toys.webp"
   alt: 押せるバブルの格子が並ぶシリコーン製プッシュポップバブルフィジェット玩具
 answer: 押すと心地よいクリック感が得られるシリコーン製の感覚フィジェット玩具、プッシュポップバブル（ポップイット）です。ストレス解消、ADHDの集中、静かなデスク遊びのために作られています。スクエア、ラウンド、ハート、アニマルなど20種類以上の形状を用意し、卸売バイヤー向けに500個からカラーと印刷のカスタマイズに対応します。
 moq: "500個"

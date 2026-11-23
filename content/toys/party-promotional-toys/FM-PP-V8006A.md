@@ -6,7 +6,7 @@ seo_title: Novelty Party Pack, Assorted Party Favors
 description: Novelty party pack with 8–15 assorted items — balloons, bubbles, whistles and glow items — for birthdays, corporate events and promotions. From 1,000 packs.
 sku: FM-PP-V8006A
 cover:
-  image: "https://images.faelmio.com/toys/party-promotional-toys/novelty-party-pack.webp"
+  image: "/images/toys/party-promotional-toys.webp"
   alt: Assorted novelty party pack with balloons, bubbles, whistles and glow items
 answer: An assorted novelty party pack containing 8–15 items such as balloons, bubbles, whistles and glow items,
   built for birthdays, corporate events and brand promotions. Full-colour packaging and individual item branding

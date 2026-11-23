@@ -46,7 +46,7 @@
         {{- end }}
     {{- else }}
         {{- /* For absolute urls and external links, no img processing here */}}
-        <img loading="{{ $loading }}" src="{{ $imgdl }}" alt="{{ $alt }}" decoding="async"{{ with $fallback }} data-fallback="{{ . | relURL }}"{{ end }}>
+        <img loading="{{ $loading }}" src="{{ $imgdl }}" alt="{{ $alt }}" decoding="async"{{ partial "respimg_attrs.html" (dict "src" .Params.cover.image "sizes" "(max-width: 768px) 100vw, 720px") }}{{ with $fallback }} data-fallback="{{ . | relURL }}"{{ end }}>
     {{- end }}
 
     {{- if $addLink }}

@@ -6,7 +6,7 @@ seo_title: 노벨티 파티 팩, 어소트 파티 선물
 description: 풍선, 버블, 호루라기, 발광 아이템 등 8~15가지 어소트 아이템을 담은 노벨티 파티 팩으로 생일, 기업 행사, 프로모션용입니다. 1,000팩부터 주문 가능.
 sku: FM-PP-V8006A
 cover:
-  image: "https://images.faelmio.com/toys/party-promotional-toys/novelty-party-pack.webp"
+  image: "/images/toys/party-promotional-toys.webp"
   alt: 풍선, 버블, 호루라기, 발광 아이템이 담긴 어소트 노벨티 파티 팩
 answer: 풍선, 버블, 호루라기, 발광 아이템 등 8~15가지 아이템을 담은 어소트 노벨티 파티 팩으로 생일, 기업 행사, 브랜드 프로모션을 위해 구성되었습니다. 풀컬러 포장과 개별 아이템 브랜딩이 가능하며 행사나 캠페인에 맞춰 구성을 선택할 수 있고 최소 주문 수량은 1,000팩입니다.
 moq: "1,000팩"

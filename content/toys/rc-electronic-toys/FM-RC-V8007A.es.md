@@ -6,7 +6,7 @@ seo_title: Coche a control remoto de 2.4 GHz, juguete RC al por mayor
 description: Coche a control remoto con control de 2.4 GHz sin interferencias, batería de litio recargable con más de 20 min de autonomía y carrocería ABS. Desde 100 ud.
 sku: FM-RC-V8007A
 cover:
-  image: "https://images.faelmio.com/toys/rc-electronic-toys/remote-control-car.webp"
+  image: "/images/toys/rc-electronic-toys.webp"
   alt: Coche a control remoto de 2.4 GHz con carrocería ABS resistente y neumáticos TPR
 answer: Un coche a control remoto de 2.4 GHz con transmisor sin interferencias, batería de litio recargable que
   ofrece más de 20 minutos de autonomía y una carrocería ABS resistente sobre neumáticos TPR. La gama va desde

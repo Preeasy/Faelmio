@@ -23,10 +23,6 @@ cover:
   alt: "Ours en peluche personnalisé crème ivoire avec ruban satiné, photo produit en studio"
 
 gallery:
-  - src: "https://images.faelmio.com/toys/plush-toys/custom-plush-demo.mp4"
-    type: video
-    poster: "/images/products/custom-plush/01-front.webp"
-    alt: "Vidéo de démonstration à 360° de l'ours en peluche personnalisé"
   - src: "/images/products/custom-plush/01-front.webp"
     alt: "Ours en peluche personnalisé, vue de face aux trois quarts sur fond beige"
   - src: "/images/products/custom-plush/02-detail.webp"

@@ -6,7 +6,7 @@ seo_title: 可動アクションフィギュア 30以上の可動ポイント OE
 description: 30以上の関節可動ポイントと交換可能なアクセサリーを備え、PVC/POM樹脂で作られた可動アクションフィギュア。アートワークに合わせた色合わせが可能で、OEM注文は200個から。
 sku: FM-DA-V8003A
 cover:
-  image: "https://images.faelmio.com/toys/dolls-action-figures/posable-action-figure.webp"
+  image: "/images/toys/dolls-action-figures.webp"
   alt: 交換可能なアクセサリーとダイナミックな小売パッケージを備えた可動アクションフィギュア
 answer: 30以上の関節可動ポイントと交換可能なアクセサリーを備えた高可動アクションフィギュアで、PVC/POM樹脂製のため遊び、ディスプレイ、コレクターの棚に適しています。アートワークに合わせた色合わせとカスタムパッケージに対応し、オリジナルキャラクター向けのOEM対応モデルです。最小注文数量は200個です。
 moq: "200個"

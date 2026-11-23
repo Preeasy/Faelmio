@@ -6,7 +6,7 @@ seo_title: Jeu de blocs de construction ABS pour STEM en maternelle
 description: Jeu de blocs de construction en plastique ABS sûr aux bords lisses, compatible grandes marques, pour l'éveil STEM en maternelle. En gros dès 300 ensembles.
 sku: FM-ES-V8004A
 cover:
-  image: "https://images.faelmio.com/toys/educational-stem-toys/building-blocks-set.webp"
+  image: "/images/toys/educational-stem-toys.webp"
   alt: Jeu de blocs de construction ABS emboîtables et colorés pour le jeu STEM en maternelle
 answer: Un jeu de blocs de construction emboîtables et colorés en plastique ABS sûr aux bords lisses, conçu pour l'apprentissage STEM en maternelle, la motricité fine et le raisonnement spatial. Plusieurs tailles, nombres de pièces et combinaisons de couleurs sont disponibles, avec packaging personnalisé et un minimum de 300 ensembles.
 moq: "300 ensembles"

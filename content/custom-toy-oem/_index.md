@@ -2,7 +2,7 @@
 title: "Custom Toy OEM Manufacturer — From Sketch to Shelf"
 description: "Full-service custom toy OEM manufacturer in Yiwu: 3D design, prototyping, tooling, sampling, mass production of plush, plastic, water and electronic toys, AQL QC and DDP delivery."
 cover:
-  image: "https://images.faelmio.com/custom-toy-oem/custom-toy-oem.webp"
+  image: "/images/oem/oem-process.webp"
 oem:
   eyebrow: "Custom Toy OEM"
   lede: "Bring your own toy line to life. We run design, tooling, sampling and mass production in Yiwu — one accountable partner from first sketch to delivered carton."

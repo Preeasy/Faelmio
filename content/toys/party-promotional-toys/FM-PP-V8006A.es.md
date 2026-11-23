@@ -6,7 +6,7 @@ seo_title: Paquete de fiesta novedoso, surtido de recuerdos de fiesta
 description: Paquete de fiesta novedoso con 8–15 artículos surtidos (globos, burbujas, silbatos y artículos luminosos) para cumpleaños y eventos. Desde 1.000 packs.
 sku: FM-PP-V8006A
 cover:
-  image: "https://images.faelmio.com/toys/party-promotional-toys/novelty-party-pack.webp"
+  image: "/images/toys/party-promotional-toys.webp"
   alt: Paquete de fiesta novedoso surtido con globos, burbujas, silbatos y artículos luminosos
 answer: Un paquete de fiesta novedoso surtido que contiene de 8 a 15 artículos, como globos, burbujas, silbatos
   y artículos luminosos, pensado para cumpleaños, eventos corporativos y promociones de marca. Hay embalaje a

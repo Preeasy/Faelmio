@@ -2,7 +2,7 @@
 title: "OEM de Juguetes Personalizado — Del Boceto al Estante"
 description: "Fabricación de juguetes personalizados en Yiwu: diseño 3D, prototipos, moldes, muestras, producción en serie, QC AQL y entrega DDP."
 cover:
-  image: "https://images.faelmio.com/custom-toy-oem/custom-toy-oem.webp"
+  image: "/images/oem/oem-process.webp"
 oem:
   eyebrow: "OEM de Juguetes"
   lede: "Da vida a tu propia línea de juguetes. Gestionamos diseño, moldes, muestras y producción en serie en Yiwu — un solo socio responsable desde el primer boceto hasta el cartón entregado."

@@ -6,7 +6,7 @@ seo_title: Flotador de piscina inflable, vinilo resistente al por mayor
 description: Flotador de piscina inflable en vinilo resistente a los rayos UV de más de 0.3 mm, válvula de seguridad y costuras probadas a 100 kg. Al por mayor desde 200 ud.
 sku: FM-OW-V8005A
 cover:
-  image: "https://images.faelmio.com/toys/outdoor-water-toys/inflatable-pool-float.webp"
+  image: "/images/toys/outdoor-water-toys.webp"
   alt: Flotador de piscina inflable de vinilo resistente con una forma novedosa
 answer: Un flotador de piscina inflable resistente, fabricado en vinilo resistente a los rayos UV de más de
   0.3 mm, con válvulas de seguridad y costuras reforzadas. Hay docenas de formas disponibles, desde unicornios

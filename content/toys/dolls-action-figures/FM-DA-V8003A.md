@@ -6,7 +6,7 @@ seo_title: Posable Action Figure, 30+ Points, OEM Wholesale
 description: Posable action figure with 30+ articulation points, interchangeable accessories and PVC/POM plastic, colour-matched to your artwork. OEM orders from 200 pcs.
 sku: FM-DA-V8003A
 cover:
-  image: "https://images.faelmio.com/toys/dolls-action-figures/posable-action-figure.webp"
+  image: "/images/toys/dolls-action-figures.webp"
   alt: Posable action figure with interchangeable accessories and dynamic retail packaging
 answer: A highly posable action figure with 30+ points of articulation and interchangeable accessories, built in
   PVC/POM plastic for play, display and collector shelves. Colour-matching to your artwork and custom packaging

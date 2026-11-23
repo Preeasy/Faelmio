@@ -6,7 +6,7 @@ seo_title: Bouée de piscine gonflable en vinyle haute résistance
 description: Bouée de piscine gonflable en vinyle résistant aux UV de 0.3 mm+ avec soupapes de sécurité et coutures testées à 100 kg. En gros dès 200 pièces.
 sku: FM-OW-V8005A
 cover:
-  image: "https://images.faelmio.com/toys/outdoor-water-toys/inflatable-pool-float.webp"
+  image: "/images/toys/outdoor-water-toys.webp"
   alt: Bouée de piscine gonflable en vinyle haute résistance de forme originale
 answer: Une bouée de piscine gonflable haute résistance en vinyle résistant aux UV de 0.3 mm+ avec soupapes de sécurité et coutures renforcées. Des dizaines de formes sont disponibles, de la licorne à la part de pizza en passant par le donut, le flamant rose et des designs personnalisés, ce qui en fait un article retail et promotionnel d'été à partir de 200 pièces.
 moq: "200 pièces"

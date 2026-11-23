@@ -6,7 +6,7 @@ seo_title: Voiture télécommandée 2.4 GHz, jouet RC en gros
 description: Voiture télécommandée avec commande 2.4 GHz sans interférence, batterie Li-ion rechargeable de plus de 20 min d'autonomie et coque ABS durable. Dès 100 pièces.
 sku: FM-RC-V8007A
 cover:
-  image: "https://images.faelmio.com/toys/rc-electronic-toys/remote-control-car.webp"
+  image: "/images/toys/rc-electronic-toys.webp"
   alt: Voiture télécommandée 2.4GHz avec coque ABS durable et pneus TPR
 answer: Une voiture télécommandée 2.4 GHz dotée d'un émetteur sans interférence, d'une batterie Li-ion rechargeable offrant plus de 20 minutes d'autonomie et d'une coque ABS durable sur pneus TPR. La gamme va des modèles économiques à l'échelle 1:24 aux voitures tout-terrain 1:12, avec couleurs, décalcomanies de carrosserie et packaging personnalisés dès 100 pièces.
 moq: "100 pièces"

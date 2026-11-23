@@ -6,7 +6,7 @@ seo_title: Figurine articulée, plus de 30 points, OEM en gros
 description: Figurine articulée avec plus de 30 points d'articulation, accessoires interchangeables et plastique PVC/POM. Commandes OEM en gros dès 200 pièces.
 sku: FM-DA-V8003A
 cover:
-  image: "https://images.faelmio.com/toys/dolls-action-figures/posable-action-figure.webp"
+  image: "/images/toys/dolls-action-figures.webp"
   alt: Figurine articulée avec accessoires interchangeables et packaging retail dynamique
 answer: Une figurine fortement articulée avec plus de 30 points d'articulation et des accessoires interchangeables, fabriquée en plastique PVC/POM pour le jeu, l'exposition et les étagères de collection. L'appariement des couleurs à votre visuel et un packaging personnalisé en font une option prête pour l'OEM destinée à des personnages originaux, avec un minimum de 200 pièces.
 moq: "200 pièces"

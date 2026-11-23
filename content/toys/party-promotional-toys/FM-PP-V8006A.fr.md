@@ -6,7 +6,7 @@ seo_title: Pack de fête fantaisie, cadeaux de fête assortis
 description: Pack de fête fantaisie avec 8 à 15 articles assortis (ballons, bulles, sifflets, articles lumineux) pour anniversaires et événements. Dès 1 000 packs.
 sku: FM-PP-V8006A
 cover:
-  image: "https://images.faelmio.com/toys/party-promotional-toys/novelty-party-pack.webp"
+  image: "/images/toys/party-promotional-toys.webp"
   alt: Pack de fête fantaisie assorti avec ballons, bulles, sifflets et articles lumineux
 answer: Un pack de fête fantaisie assorti contenant 8 à 15 articles tels que ballons, bulles, sifflets et articles lumineux, conçu pour les anniversaires, les événements d'entreprise et les promotions de marque. Un packaging quadrichromie et un marquage des articles individuels sont disponibles, et le contenu peut être sélectionné selon l'événement ou la campagne, avec un minimum de 1 000 packs.
 moq: "1 000 packs"

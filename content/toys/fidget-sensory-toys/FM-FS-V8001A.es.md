@@ -7,7 +7,7 @@ description: Juguete fidget sensorial push pop bubble de silicona para aliviar e
 sku: FM-FS-V8001A
 factory_footage: true
 cover:
-  image: "https://images.faelmio.com/toys/fidget-sensory-toys/push-pop-bubble.webp"
+  image: "/images/toys/fidget-sensory-toys.webp"
   alt: Juguete fidget sensorial push pop bubble de silicona con una cuadrícula de burbujas pulsables
 answer: Un juguete fidget sensorial push pop bubble (Pop It) de silicona con una acción de clic satisfactoria,
   pensado para aliviar el estrés, mejorar el enfoque en TDAH y el juego tranquilo en el escritorio. Está
